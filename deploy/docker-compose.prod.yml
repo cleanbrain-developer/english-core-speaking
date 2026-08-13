@@ -47,8 +47,9 @@ services:
     image: caddy:2-alpine
     restart: unless-stopped
     ports:
-      - "80:80"
-      - "443:443"
+      # External port 3000 (see deploy/Caddyfile). Switch to 80/443 and
+      # point the Caddyfile at a real domain once HTTPS is wired up.
+      - "3000:80"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data

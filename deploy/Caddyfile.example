@@ -1,4 +1,4 @@
-english.example.com {
+:80 {
   encode zstd gzip
   handle /api/* {
     reverse_proxy api:3000
@@ -7,3 +7,18 @@ english.example.com {
     reverse_proxy web:80
   }
 }
+
+# Once a domain is pointed at this server and you're ready for HTTPS,
+# replace the block above with the domain (Caddy issues/renews the
+# certificate automatically) and switch deploy/docker-compose.prod.yml's
+# caddy "ports" back to 80:80 / 443:443:
+#
+# english.example.com {
+#   encode zstd gzip
+#   handle /api/* {
+#     reverse_proxy api:3000
+#   }
+#   handle {
+#     reverse_proxy web:80
+#   }
+# }
