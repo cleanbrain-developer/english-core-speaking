@@ -1,0 +1,38 @@
+{
+  "name": "speaking-core-1350",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @speaking-core/web dev",
+    "dev:api": "pnpm --filter @speaking-core/api start:dev",
+    "build": "pnpm --filter @speaking-core/api build && pnpm --filter @speaking-core/web build",
+    "build:web": "pnpm --filter @speaking-core/web build",
+    "build:api": "pnpm --filter @speaking-core/api build",
+    "test": "pnpm --filter @speaking-core/api test && pnpm --filter @speaking-core/web test:unit",
+    "test:api": "pnpm --filter @speaking-core/api test",
+    "test:web": "pnpm --filter @speaking-core/web test:unit",
+    "typecheck": "pnpm --filter @speaking-core/api typecheck && pnpm --filter @speaking-core/web typecheck",
+    "lint": "pnpm --filter @speaking-core/api lint && pnpm --filter @speaking-core/web lint",
+    "prisma:generate": "prisma generate --schema prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema prisma/schema.prisma",
+    "prisma:migrate:deploy": "prisma migrate deploy --schema prisma/schema.prisma",
+    "prisma:studio": "prisma studio --schema prisma/schema.prisma",
+    "seed": "tsx prisma/seed.ts",
+    "seed:validate": "python scripts/validate_seed.py"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}

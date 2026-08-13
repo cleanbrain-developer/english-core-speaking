@@ -1,5 +1,8 @@
 generator client {
   provider      = "prisma-client-js"
+  // "native" covers local dev machines; debian-openssl-3.0.x covers the
+  // node:20-slim Docker runtime (Alpine/musl OpenSSL-3.0 auto-detection is
+  // unreliable on current Alpine releases, so we deploy on Debian instead).
   binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 
@@ -7,6 +10,10 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+// Canonical schema for Speaking Core 1350.
+// Mirrors database/schema.prisma (the reviewed initial contract) 1:1; this
+// copy is what Prisma CLI and the API actually run against.
 
 model User {
   id               String             @id @default(uuid())
