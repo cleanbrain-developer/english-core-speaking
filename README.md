@@ -2,7 +2,7 @@
 
 영어 회화 학습(문장 청크, 구동사, 핵심 단어, 비즈니스 영어) 1,350개 항목을 서버 기반 진도 동기화와 함께 학습하는 모바일 우선 PWA입니다. PC와 스마트폰에서 동일한 Google 계정으로 로그인해 학습 상태를 공유합니다.
 
-> **현재 상태: Phase 1** — 모노레포/DB/Google OAuth 인증/Seed/기본 API 골격이 구현되어 있습니다. 학습 UI(오늘의 30개, 스피킹 모드, 복습 스케줄러 API 등)는 Phase 2에서 구현합니다. 자세한 범위는 `CLAUDE.md`, `docs/IMPLEMENTATION_SPEC.md` 참고.
+> **현재 상태: Phase 2 완료** — 모노레포/DB/Google OAuth 인증/Seed(Phase 1)에 이어 SRS v1 복습 스케줄러, 오늘의 30개/복습/신규/취약 큐, 학습 세션·리뷰 API, 진행률 요약/캘린더, 카드형 학습 UI, 카테고리·검색 브라우징(무한 스크롤)까지 구현되어 있습니다. 자세한 범위는 `CLAUDE.md`, `docs/IMPLEMENTATION_SPEC.md`, `docs/API_CONTRACT.md` 참고.
 
 ## Architecture
 
@@ -166,7 +166,7 @@ pnpm test:web    # Vitest 단위 테스트
 cd apps/api && npx jest --config ./test/jest-e2e.json
 ```
 
-`test:api`의 e2e 스위트는 `/api/health`, 인증 Guard가 비인증 요청을 401로 차단하는지, `/api/auth/google`이 Google 동의 화면으로 리다이렉트하는지 검증합니다(더미 Client ID로도 리다이렉트 자체는 발급되며, 실제 Google 서버 호출은 발생하지 않습니다).
+`test:api`의 e2e 스위트는 `/api/health`, 인증 Guard가 비인증 요청을 401로 차단하는지, `/api/auth/google`이 Google 동의 화면으로 리다이렉트하는지 검증합니다(더미 Client ID로도 리다이렉트 자체는 발급되며, 실제 Google 서버 호출은 발생하지 않습니다). `study.e2e-spec.ts`는 세션 생성 → 리뷰 제출 → 복습 큐 반영 → 진행률/캘린더 갱신까지 실제 Google 로그인 없이 throwaway 테스트 사용자로 검증합니다.
 
 ## Production Build
 
@@ -200,6 +200,96 @@ docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
 
 Caddy는 `deploy/Caddyfile.example`을 `deploy/Caddyfile`로 복사한 뒤 도메인을 실제 값으로 바꿔 사용합니다(운영 환경에는 실제 도메인과 HTTPS 인증서 발급이 필요하므로 로컬에서는 `caddy` 서비스 없이 `postgres`/`api`/`web`만 띄워 검증하는 것을 권장합니다).
 
+## Hetzner 배포 (Production)
+
+아래 순서대로 진행합니다. 모든 명령어는 서버에 SSH로 접속한 뒤(별도 표기가 없으면) 실행합니다.
+
+### 1. 서버 준비
+- Hetzner Cloud Console에서 서버 생성 (Ubuntu 22.04+, 최소 2vCPU/4GB 권장), SSH 키 등록
+- 도메인 DNS의 A(및 필요 시 AAAA) 레코드를 서버 공인 IP로 지정
+- 방화벽: 22(SSH), 80, 443만 허용
+  ```bash
+  ufw allow 22/tcp && ufw allow 80/tcp && ufw allow 443/tcp && ufw enable
+  ```
+
+### 2. Docker 설치
+```bash
+curl -fsSL https://get.docker.com | sh
+```
+
+### 3. 저장소 배포
+```bash
+git clone https://github.com/cleanbrain-developer/english-core-speaking.git
+cd english-core-speaking
+```
+이미 배포된 서버를 업데이트할 때는 `git pull`만 실행하면 됩니다(아래 6단계부터 반복).
+
+### 4. 환경변수 설정
+```bash
+cp .env.example .env
+nano .env   # 또는 vi
+```
+로컬 개발과 다르게 채워야 하는 값:
+- `POSTGRES_PASSWORD` — 강력한 랜덤 값
+- `SESSION_SECRET` — `openssl rand -base64 48`
+- `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET` — 프로덕션용 Google OAuth Credential (5단계에서 발급/등록)
+- `GOOGLE_CALLBACK_URL=https://<도메인>/api/auth/google/callback`
+- `FRONTEND_ORIGIN=https://<도메인>`
+- `NODE_ENV=production`
+
+### 5. Google Cloud Console에 프로덕션 값 등록
+기존 OAuth Client(또는 프로덕션용으로 새로 생성한 Client)의 **Credentials** 설정에 추가:
+- Authorized JavaScript origins: `https://<도메인>`
+- Authorized redirect URIs: `https://<도메인>/api/auth/google/callback`
+
+### 6. Caddyfile 준비
+```bash
+cp deploy/Caddyfile.example deploy/Caddyfile
+nano deploy/Caddyfile   # 첫 줄의 도메인을 실제 도메인으로 교체
+```
+Caddy가 Let's Encrypt로 HTTPS 인증서를 자동 발급/갱신하므로 별도 인증서 작업은 필요 없습니다(80/443이 해당 도메인으로 실제 접근 가능해야 발급됩니다).
+
+### 7. 빌드 및 기동
+```bash
+docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
+docker compose --env-file .env -f deploy/docker-compose.prod.yml ps
+```
+
+### 8. Migration 실행
+```bash
+docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
+  node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
+```
+
+### 9. Seed 실행 (최초 1회)
+프로덕션 이미지에는 seed 실행에 필요한 `tsx`가 포함돼 있지 않으므로, SSH 터널로 로컬 `pnpm seed`를 원격 DB에 실행합니다.
+```bash
+# 로컬 머신에서: 서버의 5432를 로컬 15432로 터널링
+ssh -N -L 15432:localhost:5432 <user>@<서버IP>
+```
+```bash
+# 별도 터미널(로컬, 저장소 루트)에서
+DATABASE_URL="postgresql://speaking_core:<POSTGRES_PASSWORD>@localhost:15432/speaking_core?schema=public" pnpm seed
+```
+
+### 10. 동작 확인
+```bash
+curl https://<도메인>/api/health
+```
+브라우저로 `https://<도메인>` 접속 → Google 로그인 → 오늘의 30개 등이 정상 동작하는지 확인합니다.
+
+### 11. 로그 / 재기동 / 업데이트 배포
+```bash
+docker compose --env-file .env -f deploy/docker-compose.prod.yml logs -f api
+docker compose --env-file .env -f deploy/docker-compose.prod.yml restart api
+
+# 코드 업데이트 배포
+git pull
+docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
+docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
+  node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
+```
+
 ## Backup
 
 PostgreSQL 데이터는 named volume(`speaking_core_pg`)에 저장됩니다. 백업 예시:
@@ -209,10 +299,18 @@ docker compose --env-file .env -f deploy/docker-compose.prod.yml exec postgres \
   pg_dump -U "$POSTGRES_USER" "$POSTGRES_DB" > backup_$(date +%Y%m%d).sql
 ```
 
-## 남은 작업 (Phase 2)
+## Study 기능 (Phase 2)
 
-- 오늘의 30개 / 복습·신규 큐, Spaced Repetition 도메인 서비스(`CLAUDE.md`의 Scheduler v1 공식)
-- 학습 세션, 복습 기록 API (`StudySession`, `StudyReview`)
-- Progress 요약/캘린더 API
-- 실제 학습 UI (뜻 가리기, TTS, 스피킹 모드, 검색/랜덤 학습)
-- Google 실 계정을 이용한 End-to-End 로그인 검증 (Phase 1에서는 Credential 발급 전까지 리다이렉트 발급만 검증됨)
+- **오늘의 30개 / 복습 / 신규 / 취약 항목**: 홈 화면의 모드 카드에서 진입 (`GET /api/study/{daily,due,new,weak}`)
+- **카테고리 브라우징 / 검색 / 랜덤 학습**: `/browse` — 카테고리 필터, 한/영 검색, 무한 스크롤, "뜻 가리기" 토글, 순서대로/랜덤 학습 시작
+- **스피킹 학습 모드 v1**: 카드에서 타이핑으로 회상 후 "정답 확인"으로 뜻/예문 노출 (마이크 인식은 Phase 3 검토 대상)
+- **영어 발음 듣기**: 브라우저 `SpeechSynthesis` API
+- **난이도 평가 4단계**: 다시(1)/어려움(2)/보통(3)/쉬움(4) → 서버의 SRS v1 스케줄러(`apps/api/src/study/scheduler/`)가 다음 복습일 계산. 알고리즘 교체를 위해 `REVIEW_SCHEDULER` DI 토큰으로 분리되어 있음
+- **진행률 요약**: 홈 화면 상단 (전체/학습함/복습 대상/오늘 학습)
+
+## 남은 작업 (Phase 3 후보)
+
+- 로그인 상태를 유지한 Playwright 등 자동화된 E2E UI 테스트
+- 마이크 기반 발음 인식 스피킹 모드
+- Progress 캘린더 시각화 UI (API는 구현됨: `GET /api/progress/calendar`)
+- PWA 오프라인 학습 진도 동기화
