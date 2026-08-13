@@ -16,6 +16,10 @@ FROM deps AS build
 COPY apps/api apps/api
 RUN pnpm --filter @speaking-core/api exec prisma generate --schema ../../prisma/schema.prisma
 RUN pnpm --filter @speaking-core/api build
+# Precompiles prisma/seed.ts to plain JS (via apps/api/tsconfig.seed.json,
+# which can see apps/api's own @types/node) so seeding a deployed container
+# needs nothing beyond `node` (no tsx/ts-node at runtime, no SSH tunnel).
+RUN pnpm --filter @speaking-core/api exec tsc --project tsconfig.seed.json
 
 FROM base AS runtime
 ENV NODE_ENV=production
@@ -26,7 +30,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget openssl \
 COPY --from=deps /repo/node_modules ./node_modules
 COPY --from=deps /repo/apps/api/node_modules ./apps/api/node_modules
 COPY --from=build /repo/apps/api/dist ./apps/api/dist
+COPY --from=build /repo/prisma-dist ./prisma-dist
 COPY prisma ./prisma
+COPY data ./data
 WORKDIR /repo/apps/api
 EXPOSE 3000
 CMD ["node", "dist/main.js"]

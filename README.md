@@ -271,15 +271,11 @@ docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
 ```
 
 ### 9. Seed 실행 (최초 1회)
-프로덕션 이미지에는 seed 실행에 필요한 `tsx`가 포함돼 있지 않으므로, SSH 터널로 로컬 `pnpm seed`를 원격 DB에 실행합니다.
+API 이미지 빌드 시 `prisma/seed.ts`를 미리 컴파일해두므로, 컨테이너 안에서 `node`만으로 바로 실행됩니다(SSH 터널 불필요):
 ```bash
-# 로컬 머신에서: 서버의 5432를 로컬 15432로 터널링
-ssh -N -L 15432:localhost:5432 <user>@<서버IP>
+docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api node ../../prisma-dist/seed.js
 ```
-```bash
-# 별도 터미널(로컬, 저장소 루트)에서
-DATABASE_URL="postgresql://speaking_core:<POSTGRES_PASSWORD>@localhost:15432/speaking_core?schema=public" pnpm seed
-```
+여러 번 실행해도 `id` 기준 upsert라 중복 생성되지 않습니다.
 
 ### 10. 동작 확인
 ```bash
