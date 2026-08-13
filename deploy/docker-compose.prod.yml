@@ -47,9 +47,12 @@ services:
     image: caddy:2-alpine
     restart: unless-stopped
     ports:
-      # External port 3000 (see deploy/Caddyfile). Switch to 80/443 and
-      # point the Caddyfile at a real domain once HTTPS is wired up.
-      - "3000:80"
+      # Site traffic — matches the "<domain>:3000" address in deploy/Caddyfile.
+      - "3000:3000"
+      # Required for Let's Encrypt's HTTP-01 challenge (and its periodic
+      # renewal), even though the site itself is served on :3000, not :80.
+      # Caddy handles this internally; nothing else needs to listen here.
+      - "80:80"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data

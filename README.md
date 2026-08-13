@@ -198,17 +198,19 @@ docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
   node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
 ```
 
-Caddy는 `deploy/Caddyfile.example`을 `deploy/Caddyfile`로 복사해 사용합니다. 기본값은 도메인 없이 평문 HTTP로 호스트 포트 **3000**에 노출됩니다 — 자세한 배포 순서와 도메인/HTTPS 전환 방법은 아래 "Hetzner 배포" 섹션 참고.
+Caddy는 `deploy/Caddyfile.example`을 `deploy/Caddyfile`로 복사해 사용합니다. 기본값은 `https://cleanbrain.me:3000`처럼 실제 도메인 + 커스텀 포트에서 자동 HTTPS입니다 — 자세한 배포 순서는 아래 "Hetzner 배포" 섹션 참고. 로컬 검증 시에는 도메인이 없으므로 `caddy` 서비스 없이 `postgres`/`api`/`web`만 띄우는 것을 권장합니다.
 
 ## Hetzner 배포 (Production)
 
-이 프로젝트를 단독으로 Hetzner에 올리는 순서입니다. **기본값은 외부 포트 3000, 평문 HTTP**입니다(도메인/HTTPS 없이 `http://<서버IP>:3000`으로 바로 접근). 도메인을 연결하고 HTTPS로 전환하는 방법은 6단계 마지막에 별도로 안내합니다. 모든 명령어는 서버에 SSH로 접속한 뒤(별도 표기가 없으면) 실행합니다.
+`https://cleanbrain.me:3000`으로 이 프로젝트를 단독으로 Hetzner에 올리는 순서입니다 — 표준 443 대신 커스텀 포트 3000에서 자동 HTTPS(Let's Encrypt)를 사용합니다. 다른 프로젝트는 같은 서버에서 다른 포트/서브도메인으로 독립적으로 구동할 수 있습니다. 모든 명령어는 서버에 SSH로 접속한 뒤(별도 표기가 없으면) 실행합니다.
 
 ### 1. 서버 준비
 - Hetzner Cloud Console에서 서버 생성 (Ubuntu 22.04+, 최소 2vCPU/4GB 권장), SSH 키 등록
-- 방화벽: 22(SSH)와 3000만 허용
+- 도메인 DNS에 A 레코드 등록: `cleanbrain.me` → 서버 공인 IP (이미 서브도메인을 쓰기로 했다면 `Host`에 해당 서브도메인 입력)
+- 전파 확인: `dig +short cleanbrain.me`가 서버 IP와 일치하는지
+- 방화벽: 22(SSH), 3000(서비스), 80(ACME 인증서 발급/갱신 전용, 실제 콘텐츠는 안 나감)만 허용
   ```bash
-  ufw allow 22/tcp && ufw allow 3000/tcp && ufw enable
+  ufw allow 22/tcp && ufw allow 3000/tcp && ufw allow 80/tcp && ufw enable
   ```
 
 ### 2. Docker 설치
@@ -228,39 +230,39 @@ cd english-core-speaking
 cp .env.example .env
 nano .env   # 또는 vi
 ```
-로컬 개발과 다르게 채워야 하는 값 (`<서버IP>`는 실제 공인 IP, 도메인이 있다면 도메인으로 대체):
+로컬 개발과 다르게 채워야 하는 값:
 - `POSTGRES_PASSWORD` — 강력한 랜덤 값
 - `SESSION_SECRET` — `openssl rand -base64 48`
 - `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET` — 프로덕션용 Google OAuth Credential (5단계에서 발급/등록)
-- `GOOGLE_CALLBACK_URL=http://<서버IP>:3000/api/auth/google/callback`
-- `FRONTEND_ORIGIN=http://<서버IP>:3000`
+- `GOOGLE_CALLBACK_URL=https://cleanbrain.me:3000/api/auth/google/callback`
+- `FRONTEND_ORIGIN=https://cleanbrain.me:3000`
 - `NODE_ENV=production`
 
 ### 5. Google Cloud Console에 프로덕션 값 등록
 기존 OAuth Client(또는 프로덕션용으로 새로 생성한 Client)의 **Credentials** 설정에 추가:
-- Authorized JavaScript origins: `http://<서버IP>:3000`
-- Authorized redirect URIs: `http://<서버IP>:3000/api/auth/google/callback`
-
-> Google OAuth는 `http://`+IP:포트 조합도 Authorized 값으로 등록 가능하지만, 브라우저가 `http://` origin의 쿠키를 더 엄격하게 다룰 수 있습니다. 실사용자 대상 운영에는 아래 "도메인 + HTTPS로 전환" 절차를 권장합니다.
+- Authorized JavaScript origins: `https://cleanbrain.me:3000`
+- Authorized redirect URIs: `https://cleanbrain.me:3000/api/auth/google/callback`
 
 ### 6. Caddyfile 준비
 ```bash
 cp deploy/Caddyfile.example deploy/Caddyfile
 ```
-기본 `deploy/Caddyfile.example`은 `:80 { ... }` — 도메인 없이 평문 HTTP로 `/`는 `web`, `/api/*`는 `api`로 라우팅합니다. `deploy/docker-compose.prod.yml`의 `caddy` 서비스가 이 내부 80번 포트를 호스트의 **3000**번에 매핑합니다(`"3000:80"`).
-
-**도메인 + HTTPS로 전환**하려면:
-1. 도메인 DNS의 A(및 필요 시 AAAA) 레코드를 서버 공인 IP로 지정
-2. `deploy/Caddyfile`의 `:80 { ... }` 블록을 실제 도메인으로 교체 (파일 하단에 예시 주석 포함) — Caddy가 Let's Encrypt로 인증서를 자동 발급/갱신합니다
-3. `deploy/docker-compose.prod.yml`의 `caddy.ports`를 `"3000:80"` 대신 `"80:80"` / `"443:443"`으로 변경
-4. `.env`의 `GOOGLE_CALLBACK_URL`/`FRONTEND_ORIGIN`을 `https://<도메인>`으로, Google Console의 Authorized 값도 동일하게 갱신
-5. 방화벽에서 3000 대신 80/443 허용, `docker compose ... up -d --build`로 재기동
+기본 `deploy/Caddyfile.example`의 첫 블록이 바로 이 패턴입니다:
+```
+cleanbrain.me:3000 {
+  encode zstd gzip
+  handle /api/* { reverse_proxy api:3000 }
+  handle { reverse_proxy web:80 }
+}
+```
+`deploy/docker-compose.prod.yml`의 `caddy` 서비스가 호스트 **3000**(실제 트래픽)과 **80**(Let's Encrypt 인증 전용, Caddy가 내부적으로만 사용)을 매핑합니다. 도메인이 다르면 파일의 `cleanbrain.me`를 실제 도메인으로 바꾸세요. 파일 하단에 "도메인 없을 때"/"표준 443 포트로 쓰고 싶을 때" 대안 예시도 주석으로 포함되어 있습니다.
 
 ### 7. 빌드 및 기동
 ```bash
 docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
 docker compose --env-file .env -f deploy/docker-compose.prod.yml ps
 ```
+Caddy가 첫 요청 시 `cleanbrain.me`용 Let's Encrypt 인증서를 자동 발급합니다 (포트 80이 실제로 그 도메인에서 접근 가능해야 발급에 성공합니다).
 
 ### 8. Migration 실행
 ```bash
@@ -281,9 +283,9 @@ DATABASE_URL="postgresql://speaking_core:<POSTGRES_PASSWORD>@localhost:15432/spe
 
 ### 10. 동작 확인
 ```bash
-curl http://<서버IP>:3000/api/health
+curl https://cleanbrain.me:3000/api/health
 ```
-브라우저로 `http://<서버IP>:3000` 접속 → Google 로그인 → 오늘의 30개 등이 정상 동작하는지 확인합니다.
+브라우저로 `https://cleanbrain.me:3000` 접속 → Google 로그인 → 오늘의 30개 등이 정상 동작하는지 확인합니다.
 
 ### 11. 로그 / 재기동 / 업데이트 배포
 ```bash
