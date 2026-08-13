@@ -1,9 +1,7 @@
-# Real domain, served on a custom external port (:3000) with automatic
-# HTTPS. Caddy still needs host port 80 reachable (see
-# docker-compose.prod.yml) to complete the Let's Encrypt HTTP-01 challenge
-# and its renewals, even though nothing is actually served on 80 itself —
-# Caddy also uses it to redirect stray http:// hits to the https://:3000 site.
-cleanbrain.me:3000 {
+# Real domain, plain HTTP, custom port — no TLS/ACME involved at all. The
+# explicit "http://" scheme tells Caddy not to attempt automatic HTTPS for
+# this site, so host port 80 doesn't need to be open for this to work.
+http://cleanbrain.me:3000 {
   encode zstd gzip
   handle /api/* {
     reverse_proxy api:3000
@@ -13,9 +11,10 @@ cleanbrain.me:3000 {
   }
 }
 
-# No domain yet? Use a bare port instead (plain HTTP, no TLS/ACME at all).
-# Also change docker-compose.prod.yml's caddy ports to just "3000:80".
-# :80 {
+# Ready for automatic HTTPS later? Drop the "http://" prefix and keep the
+# port (Caddy issues/renews a Let's Encrypt cert via the HTTP-01 challenge,
+# which needs host port 80 reachable — see docker-compose.prod.yml):
+# cleanbrain.me:3000 {
 #   encode zstd gzip
 #   handle /api/* {
 #     reverse_proxy api:3000
@@ -25,9 +24,20 @@ cleanbrain.me:3000 {
 #   }
 # }
 
-# Prefer the standard HTTPS port instead of a custom one? Drop ":3000" from
-# the site address below (Caddy defaults to 443), and change
-# docker-compose.prod.yml's caddy ports to "80:80" / "443:443".
+# No domain yet? Use a bare port instead:
+# :3000 {
+#   encode zstd gzip
+#   handle /api/* {
+#     reverse_proxy api:3000
+#   }
+#   handle {
+#     reverse_proxy web:80
+#   }
+# }
+
+# Prefer the standard HTTPS port instead of a custom one? Drop ":3000" and
+# "http://" (Caddy defaults to 443 with automatic HTTPS), and change
+# docker-compose.prod.yml's caddy ports to "80:80" / "443:443":
 # cleanbrain.me {
 #   encode zstd gzip
 #   handle /api/* {

@@ -198,19 +198,19 @@ docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
   node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
 ```
 
-Caddy는 `deploy/Caddyfile.example`을 `deploy/Caddyfile`로 복사해 사용합니다. 기본값은 `https://cleanbrain.me:3000`처럼 실제 도메인 + 커스텀 포트에서 자동 HTTPS입니다 — 자세한 배포 순서는 아래 "Hetzner 배포" 섹션 참고. 로컬 검증 시에는 도메인이 없으므로 `caddy` 서비스 없이 `postgres`/`api`/`web`만 띄우는 것을 권장합니다.
+Caddy는 `deploy/Caddyfile.example`을 `deploy/Caddyfile`로 복사해 사용합니다. 기본값은 `http://cleanbrain.me:3000`처럼 실제 도메인 + 커스텀 포트의 평문 HTTP입니다(HTTPS는 아직 미적용) — 자세한 배포 순서는 아래 "Hetzner 배포" 섹션 참고. 로컬 검증 시에는 도메인이 없으므로 `caddy` 서비스 없이 `postgres`/`api`/`web`만 띄우는 것을 권장합니다.
 
 ## Hetzner 배포 (Production)
 
-`https://cleanbrain.me:3000`으로 이 프로젝트를 단독으로 Hetzner에 올리는 순서입니다 — 표준 443 대신 커스텀 포트 3000에서 자동 HTTPS(Let's Encrypt)를 사용합니다. 다른 프로젝트는 같은 서버에서 다른 포트/서브도메인으로 독립적으로 구동할 수 있습니다. 모든 명령어는 서버에 SSH로 접속한 뒤(별도 표기가 없으면) 실행합니다.
+`http://cleanbrain.me:3000`으로 이 프로젝트를 단독으로 Hetzner에 올리는 순서입니다. **일단 서비스를 띄우는 게 목적이라 HTTPS는 아직 켜지 않습니다** — 평문 HTTP + 커스텀 포트 3000이며, 인증서/ACME가 전혀 개입하지 않아 가장 단순합니다. 나중에 HTTPS로 전환하는 방법은 6단계 마지막에 별도로 안내합니다. 다른 프로젝트는 같은 서버에서 다른 포트/서브도메인으로 독립적으로 구동할 수 있습니다. 모든 명령어는 서버에 SSH로 접속한 뒤(별도 표기가 없으면) 실행합니다.
 
 ### 1. 서버 준비
 - Hetzner Cloud Console에서 서버 생성 (Ubuntu 22.04+, 최소 2vCPU/4GB 권장), SSH 키 등록
 - 도메인 DNS에 A 레코드 등록: `cleanbrain.me` → 서버 공인 IP (이미 서브도메인을 쓰기로 했다면 `Host`에 해당 서브도메인 입력)
 - 전파 확인: `dig +short cleanbrain.me`가 서버 IP와 일치하는지
-- 방화벽: 22(SSH), 3000(서비스), 80(ACME 인증서 발급/갱신 전용, 실제 콘텐츠는 안 나감)만 허용
+- 방화벽: 22(SSH)와 3000(서비스)만 허용 — HTTPS를 아직 안 쓰므로 80/443은 불필요
   ```bash
-  ufw allow 22/tcp && ufw allow 3000/tcp && ufw allow 80/tcp && ufw enable
+  ufw allow 22/tcp && ufw allow 3000/tcp && ufw enable
   ```
 
 ### 2. Docker 설치
@@ -234,14 +234,14 @@ nano .env   # 또는 vi
 - `POSTGRES_PASSWORD` — 강력한 랜덤 값
 - `SESSION_SECRET` — `openssl rand -base64 48`
 - `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET` — 프로덕션용 Google OAuth Credential (5단계에서 발급/등록)
-- `GOOGLE_CALLBACK_URL=https://cleanbrain.me:3000/api/auth/google/callback`
-- `FRONTEND_ORIGIN=https://cleanbrain.me:3000`
+- `GOOGLE_CALLBACK_URL=http://cleanbrain.me:3000/api/auth/google/callback`
+- `FRONTEND_ORIGIN=http://cleanbrain.me:3000`
 - `NODE_ENV=production`
 
 ### 5. Google Cloud Console에 프로덕션 값 등록
 기존 OAuth Client(또는 프로덕션용으로 새로 생성한 Client)의 **Credentials** 설정에 추가:
-- Authorized JavaScript origins: `https://cleanbrain.me:3000`
-- Authorized redirect URIs: `https://cleanbrain.me:3000/api/auth/google/callback`
+- Authorized JavaScript origins: `http://cleanbrain.me:3000`
+- Authorized redirect URIs: `http://cleanbrain.me:3000/api/auth/google/callback`
 
 ### 6. Caddyfile 준비
 ```bash
@@ -249,20 +249,19 @@ cp deploy/Caddyfile.example deploy/Caddyfile
 ```
 기본 `deploy/Caddyfile.example`의 첫 블록이 바로 이 패턴입니다:
 ```
-cleanbrain.me:3000 {
+http://cleanbrain.me:3000 {
   encode zstd gzip
   handle /api/* { reverse_proxy api:3000 }
   handle { reverse_proxy web:80 }
 }
 ```
-`deploy/docker-compose.prod.yml`의 `caddy` 서비스가 호스트 **3000**(실제 트래픽)과 **80**(Let's Encrypt 인증 전용, Caddy가 내부적으로만 사용)을 매핑합니다. 도메인이 다르면 파일의 `cleanbrain.me`를 실제 도메인으로 바꾸세요. 파일 하단에 "도메인 없을 때"/"표준 443 포트로 쓰고 싶을 때" 대안 예시도 주석으로 포함되어 있습니다.
+`http://` 스킴을 명시하면 Caddy가 그 사이트에 대해 자동 HTTPS/ACME를 아예 시도하지 않습니다 — 그래서 포트 80을 열 필요가 없습니다. `deploy/docker-compose.prod.yml`의 `caddy` 서비스는 호스트 **3000**만 매핑합니다. 도메인이 다르면 파일의 `cleanbrain.me`를 실제 도메인으로 바꾸세요. 파일 하단에 "HTTPS로 전환할 때"/"도메인 없을 때"/"표준 443 포트로 쓰고 싶을 때" 대안 예시도 주석으로 포함되어 있습니다.
 
 ### 7. 빌드 및 기동
 ```bash
 docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
 docker compose --env-file .env -f deploy/docker-compose.prod.yml ps
 ```
-Caddy가 첫 요청 시 `cleanbrain.me`용 Let's Encrypt 인증서를 자동 발급합니다 (포트 80이 실제로 그 도메인에서 접근 가능해야 발급에 성공합니다).
 
 ### 8. Migration 실행
 ```bash
@@ -279,9 +278,12 @@ docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api node .
 
 ### 10. 동작 확인
 ```bash
-curl https://cleanbrain.me:3000/api/health
+curl http://cleanbrain.me:3000/api/health
 ```
-브라우저로 `https://cleanbrain.me:3000` 접속 → Google 로그인 → 오늘의 30개 등이 정상 동작하는지 확인합니다.
+브라우저로 `http://cleanbrain.me:3000` 접속 → Google 로그인 → 오늘의 30개 등이 정상 동작하는지 확인합니다.
+
+### HTTPS로 전환하고 싶어지면
+`deploy/Caddyfile`에서 `http://cleanbrain.me:3000`의 `http://`만 지우고(`cleanbrain.me:3000 { ... }`) 방화벽에 80을 추가로 열면(`ufw allow 80/tcp`) 됩니다 — 나머지(`.env`, Google Console)는 스킴만 `https://`로 바꾸면 그대로 재사용됩니다. Caddy가 포트 80을 통해 Let's Encrypt 인증서를 자동 발급/갱신합니다.
 
 ### 11. 로그 / 재기동 / 업데이트 배포
 ```bash
