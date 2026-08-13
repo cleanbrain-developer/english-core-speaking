@@ -34,7 +34,8 @@ speaking-core-1350/
 │  └─ speaking_core_1350_seed_v2.json
 ├─ deploy/
 │  ├─ docker-compose.prod.yml
-│  └─ Caddyfile
+│  └─ Caddyfile.example
+├─ docker-compose.dev.yml   # local PostgreSQL only
 └─ docs/
    ├─ IMPLEMENTATION_SPEC.md
    └─ DATA_QUALITY_REPORT.md

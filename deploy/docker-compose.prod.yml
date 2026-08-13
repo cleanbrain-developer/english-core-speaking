@@ -3,10 +3,6 @@ services:
     image: postgres:16-alpine
     restart: unless-stopped
     env_file: ../.env
-    environment:
-      POSTGRES_DB: $${POSTGRES_DB}
-      POSTGRES_USER: $${POSTGRES_USER}
-      POSTGRES_PASSWORD: $${POSTGRES_PASSWORD}
     volumes:
       - speaking_core_pg:/var/lib/postgresql/data
     healthcheck:
@@ -21,6 +17,10 @@ services:
       dockerfile: apps/api/Dockerfile
     restart: unless-stopped
     env_file: ../.env
+    environment:
+      # Inside the compose network, Postgres is reachable at the service
+      # name "postgres", not at whatever host/port .env uses for local dev.
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}?schema=public
     depends_on:
       postgres:
         condition: service_healthy
