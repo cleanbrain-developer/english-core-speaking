@@ -1,0 +1,1351 @@
+﻿id,category,rank,english,korean,example,datasetVersion,sourceType
+1,Conversation Chunk,1,I think so.,그런 것 같아.,I think so. That should work.,2.0,curated-speaking-core
+2,Conversation Chunk,2,I don't think so.,아닌 것 같아.,I don't think so. We need another option.,2.0,curated-speaking-core
+3,Conversation Chunk,3,I don't know.,모르겠어.,I don't know what happened.,2.0,curated-speaking-core
+4,Conversation Chunk,4,I have no idea.,전혀 모르겠어.,I have no idea why it failed.,2.0,curated-speaking-core
+5,Conversation Chunk,5,I know what you mean.,무슨 말인지 알아.,I know what you mean. It can be confusing.,2.0,curated-speaking-core
+6,Conversation Chunk,6,I see what you mean.,무슨 뜻인지 알겠어.,I see what you mean now.,2.0,curated-speaking-core
+7,Conversation Chunk,7,What do you mean?,무슨 뜻이야?,What do you mean by that?,2.0,curated-speaking-core
+8,Conversation Chunk,8,It depends.,경우에 따라 달라.,It depends on the situation.,2.0,curated-speaking-core
+9,Conversation Chunk,9,That makes sense.,말이 되네.,That makes sense to me.,2.0,curated-speaking-core
+10,Conversation Chunk,10,Sounds good.,좋아.,Sounds good. Let's do that.,2.0,curated-speaking-core
+11,Conversation Chunk,11,That's fine.,괜찮아.,That's fine with me.,2.0,curated-speaking-core
+12,Conversation Chunk,12,Not really.,딱히 그렇진 않아.,Do you like it? Not really.,2.0,curated-speaking-core
+13,Conversation Chunk,13,I'm not sure.,잘 모르겠어.,I'm not sure if that's correct.,2.0,curated-speaking-core
+14,Conversation Chunk,14,Let me think.,생각 좀 해볼게.,Let me think about it.,2.0,curated-speaking-core
+15,Conversation Chunk,15,Give me a second.,잠깐만.,Give me a second. I'm checking.,2.0,curated-speaking-core
+16,Conversation Chunk,16,Hold on.,잠깐만.,Hold on. I need to check something.,2.0,curated-speaking-core
+17,Conversation Chunk,17,Wait a minute.,잠깐만.,Wait a minute. Something is wrong.,2.0,curated-speaking-core
+18,Conversation Chunk,18,"By the way,",그런데 / 그건 그렇고,"By the way, did you get my message?",2.0,curated-speaking-core
+19,Conversation Chunk,19,"Actually,",사실은,"Actually, I changed my mind.",2.0,curated-speaking-core
+20,Conversation Chunk,20,"Basically,",기본적으로 / 쉽게 말하면,"Basically, the process is the same.",2.0,curated-speaking-core
+21,Conversation Chunk,21,"I mean,",내 말은,"I mean, we can try another way.",2.0,curated-speaking-core
+22,Conversation Chunk,22,"You know,",있잖아 / 알다시피,"You know, this happens sometimes.",2.0,curated-speaking-core
+23,Conversation Chunk,23,"For example,",예를 들면,"For example, we can start with this case.",2.0,curated-speaking-core
+24,Conversation Chunk,24,"In that case,",그렇다면,"In that case, let's do it tomorrow.",2.0,curated-speaking-core
+25,Conversation Chunk,25,At least,적어도,At least we know the cause now.,2.0,curated-speaking-core
+26,Conversation Chunk,26,It looks like...,~인 것 같아.,It looks like the server is down.,2.0,curated-speaking-core
+27,Conversation Chunk,27,It seems like...,~인 것 같아.,It seems like there's a problem.,2.0,curated-speaking-core
+28,Conversation Chunk,28,I feel like...,~하고 싶은 기분이야 / ~인 느낌이야,I feel like taking a break.,2.0,curated-speaking-core
+29,Conversation Chunk,29,I'd like to...,~하고 싶어.,I'd like to learn more about it.,2.0,curated-speaking-core
+30,Conversation Chunk,30,I want to...,~하고 싶어.,I want to try it.,2.0,curated-speaking-core
+31,Conversation Chunk,31,I need to...,~해야 해.,I need to check the logs.,2.0,curated-speaking-core
+32,Conversation Chunk,32,I have to...,~해야 해.,I have to leave now.,2.0,curated-speaking-core
+33,Conversation Chunk,33,I'm going to...,~할 거야.,I'm going to call him later.,2.0,curated-speaking-core
+34,Conversation Chunk,34,I'm trying to...,~하려고 하고 있어.,I'm trying to understand the issue.,2.0,curated-speaking-core
+35,Conversation Chunk,35,I'm looking for...,~을 찾고 있어.,I'm looking for a better solution.,2.0,curated-speaking-core
+36,Conversation Chunk,36,I'm thinking about...,~을 생각 중이야.,I'm thinking about changing jobs.,2.0,curated-speaking-core
+37,Conversation Chunk,37,Do you want to...?,~할래?,Do you want to grab some coffee?,2.0,curated-speaking-core
+38,Conversation Chunk,38,Would you like to...?,~하시겠어요?,Would you like to join us?,2.0,curated-speaking-core
+39,Conversation Chunk,39,Can I...?,내가 ~해도 돼?,Can I ask you something?,2.0,curated-speaking-core
+40,Conversation Chunk,40,Can you...?,~해줄 수 있어?,Can you check this?,2.0,curated-speaking-core
+41,Conversation Chunk,41,Could you...?,~해주시겠어요?,Could you send it again?,2.0,curated-speaking-core
+42,Conversation Chunk,42,How about...?,~어때?,How about tomorrow morning?,2.0,curated-speaking-core
+43,Conversation Chunk,43,What about...?,~은 어때?,What about this option?,2.0,curated-speaking-core
+44,Conversation Chunk,44,Why don't we...?,우리 ~하는 게 어때?,Why don't we try again?,2.0,curated-speaking-core
+45,Conversation Chunk,45,Let me know.,알려줘.,Let me know if anything changes.,2.0,curated-speaking-core
+46,Conversation Chunk,46,No problem.,문제없어.,No problem. I can do that.,2.0,curated-speaking-core
+47,Conversation Chunk,47,That's okay.,괜찮아.,That's okay. Don't worry about it.,2.0,curated-speaking-core
+48,Conversation Chunk,48,Of course.,물론이지.,Of course. I'll help you.,2.0,curated-speaking-core
+49,Conversation Chunk,49,Probably.,아마.,It'll probably be fine.,2.0,curated-speaking-core
+50,Conversation Chunk,50,Maybe.,아마도.,Maybe we should wait.,2.0,curated-speaking-core
+51,Conversation Chunk,51,I guess so.,그런 것 같아.,I guess so. Let's see.,2.0,curated-speaking-core
+52,Conversation Chunk,52,I hope so.,그러길 바라.,I hope so too.,2.0,curated-speaking-core
+53,Conversation Chunk,53,I hope not.,아니길 바라.,I hope not. That would be bad.,2.0,curated-speaking-core
+54,Conversation Chunk,54,Why not?,왜 안 돼? / 좋지.,Why not? Let's go.,2.0,curated-speaking-core
+55,Conversation Chunk,55,That's true.,그건 맞아.,"That's true, but we still need to check.",2.0,curated-speaking-core
+56,Conversation Chunk,56,Exactly.,"맞아, 바로 그거야.",Exactly. That's the point.,2.0,curated-speaking-core
+57,Conversation Chunk,57,Absolutely.,물론이지 / 완전히 동의해.,Absolutely. I agree.,2.0,curated-speaking-core
+58,Conversation Chunk,58,Definitely.,확실히.,I'll definitely check it.,2.0,curated-speaking-core
+59,Conversation Chunk,59,Not exactly.,꼭 그렇진 않아.,Not exactly. There's one difference.,2.0,curated-speaking-core
+60,Conversation Chunk,60,Not yet.,아직 아니야.,Not yet. I'm still working on it.,2.0,curated-speaking-core
+61,Conversation Chunk,61,Not anymore.,이제는 아니야.,I don't use it anymore.,2.0,curated-speaking-core
+62,Conversation Chunk,62,Not at all.,전혀 아니야 / 천만에.,Not at all. Happy to help.,2.0,curated-speaking-core
+63,Conversation Chunk,63,"So far, so good.",지금까지는 괜찮아.,"So far, so good. No issues yet.",2.0,curated-speaking-core
+64,Conversation Chunk,64,That's enough.,그 정도면 됐어.,That's enough for today.,2.0,curated-speaking-core
+65,Conversation Chunk,65,That's all.,그게 전부야.,That's all I wanted to say.,2.0,curated-speaking-core
+66,Conversation Chunk,66,That's it.,그게 다야 / 바로 그거야.,That's it. We're done.,2.0,curated-speaking-core
+67,Conversation Chunk,67,Here you go.,여기 있어.,Here you go. This is the file.,2.0,curated-speaking-core
+68,Conversation Chunk,68,There you go.,"됐어 / 자, 여기.",There you go. It's fixed.,2.0,curated-speaking-core
+69,Conversation Chunk,69,Here we go.,"자, 시작하자.",Here we go. Let's begin.,2.0,curated-speaking-core
+70,Conversation Chunk,70,There we go.,됐네.,There we go. Now it works.,2.0,curated-speaking-core
+71,Conversation Chunk,71,Come on.,에이 / 어서.,Come on. We can do this.,2.0,curated-speaking-core
+72,Conversation Chunk,72,Take your time.,천천히 해.,Take your time. No rush.,2.0,curated-speaking-core
+73,Conversation Chunk,73,Take care.,잘 지내 / 몸조심해.,Take care. See you next week.,2.0,curated-speaking-core
+74,Conversation Chunk,74,See you around.,또 보자.,See you around.,2.0,curated-speaking-core
+75,Conversation Chunk,75,See you then.,그때 보자.,See you then at three.,2.0,curated-speaking-core
+76,Conversation Chunk,76,Talk to you later.,나중에 얘기하자.,Talk to you later.,2.0,curated-speaking-core
+77,Conversation Chunk,77,Have a good one.,좋은 하루 보내.,Have a good one.,2.0,curated-speaking-core
+78,Conversation Chunk,78,Good for you.,잘됐네.,Good for you. That's great news.,2.0,curated-speaking-core
+79,Conversation Chunk,79,Lucky you.,좋겠다.,Lucky you. I wish I could go.,2.0,curated-speaking-core
+80,Conversation Chunk,80,My bad.,내 실수야.,My bad. I sent the wrong file.,2.0,curated-speaking-core
+81,Conversation Chunk,81,Never mind.,신경 쓰지 마 / 됐어.,Never mind. I found it.,2.0,curated-speaking-core
+82,Conversation Chunk,82,Forget it.,됐어 / 신경 쓰지 마.,Forget it. It's not important.,2.0,curated-speaking-core
+83,Conversation Chunk,83,No worries.,걱정 마.,No worries. It's fine.,2.0,curated-speaking-core
+84,Conversation Chunk,84,It doesn't matter.,상관없어.,It doesn't matter which one you choose.,2.0,curated-speaking-core
+85,Conversation Chunk,85,It works for me.,난 괜찮아.,Three o'clock works for me.,2.0,curated-speaking-core
+86,Conversation Chunk,86,Works for me.,난 좋아.,Works for me. See you then.,2.0,curated-speaking-core
+87,Conversation Chunk,87,I'm good.,난 괜찮아.,"No thanks, I'm good.",2.0,curated-speaking-core
+88,Conversation Chunk,88,I'm all set.,난 준비됐어 / 필요한 거 다 됐어.,I'm all set. We can start.,2.0,curated-speaking-core
+89,Conversation Chunk,89,I'm ready.,준비됐어.,I'm ready when you are.,2.0,curated-speaking-core
+90,Conversation Chunk,90,I'm on my way.,가는 중이야.,I'm on my way. I'll be there soon.,2.0,curated-speaking-core
+91,Conversation Chunk,91,I'm almost there.,거의 다 왔어.,I'm almost there.,2.0,curated-speaking-core
+92,Conversation Chunk,92,I'm running late.,늦고 있어.,"Sorry, I'm running late.",2.0,curated-speaking-core
+93,Conversation Chunk,93,I'm in a hurry.,급해.,I'm in a hurry right now.,2.0,curated-speaking-core
+94,Conversation Chunk,94,I'm busy right now.,지금 바빠.,I'm busy right now. Can I call you later?,2.0,curated-speaking-core
+95,Conversation Chunk,95,I'm free now.,지금 시간 돼.,I'm free now if you want to talk.,2.0,curated-speaking-core
+96,Conversation Chunk,96,I'm tired.,피곤해.,I'm tired. I need some rest.,2.0,curated-speaking-core
+97,Conversation Chunk,97,I'm exhausted.,완전 지쳤어.,I'm exhausted after work.,2.0,curated-speaking-core
+98,Conversation Chunk,98,I'm hungry.,배고파.,I'm hungry. Let's get something to eat.,2.0,curated-speaking-core
+99,Conversation Chunk,99,I'm thirsty.,목말라.,I'm thirsty. I need some water.,2.0,curated-speaking-core
+100,Conversation Chunk,100,I'm full.,배불러.,I'm full. I can't eat anymore.,2.0,curated-speaking-core
+101,Conversation Chunk,101,I'm bored.,심심해.,I'm bored. Let's go out.,2.0,curated-speaking-core
+102,Conversation Chunk,102,I'm excited.,기대돼.,I'm excited about the trip.,2.0,curated-speaking-core
+103,Conversation Chunk,103,I'm nervous.,긴장돼.,I'm nervous about the interview.,2.0,curated-speaking-core
+104,Conversation Chunk,104,I'm worried.,걱정돼.,I'm worried about the deadline.,2.0,curated-speaking-core
+105,Conversation Chunk,105,I'm confused.,헷갈려.,I'm confused about this part.,2.0,curated-speaking-core
+106,Conversation Chunk,106,I'm surprised.,놀랐어.,I'm surprised it worked.,2.0,curated-speaking-core
+107,Conversation Chunk,107,I'm sorry.,미안해.,I'm sorry I'm late.,2.0,curated-speaking-core
+108,Conversation Chunk,108,I'm glad.,기뻐.,I'm glad you came.,2.0,curated-speaking-core
+109,Conversation Chunk,109,I'm happy to hear that.,그 말 들으니 좋다.,I'm happy to hear that.,2.0,curated-speaking-core
+110,Conversation Chunk,110,I'm sorry to hear that.,그 말 들으니 안타깝다.,I'm sorry to hear that.,2.0,curated-speaking-core
+111,Conversation Chunk,111,That's too bad.,안됐네.,That's too bad. Maybe next time.,2.0,curated-speaking-core
+112,Conversation Chunk,112,What happened?,무슨 일이 있었어?,What happened to the server?,2.0,curated-speaking-core
+113,Conversation Chunk,113,What's wrong?,무슨 일이야?,What's wrong? You look tired.,2.0,curated-speaking-core
+114,Conversation Chunk,114,What's going on?,무슨 일이야?,What's going on here?,2.0,curated-speaking-core
+115,Conversation Chunk,115,How's it going?,어떻게 지내?,How's it going these days?,2.0,curated-speaking-core
+116,Conversation Chunk,116,How are things?,요즘 어때?,How are things at work?,2.0,curated-speaking-core
+117,Conversation Chunk,117,How have you been?,그동안 잘 지냈어?,How have you been lately?,2.0,curated-speaking-core
+118,Conversation Chunk,118,What have you been up to?,요즘 뭐 하고 지냈어?,What have you been up to?,2.0,curated-speaking-core
+119,Conversation Chunk,119,What are you doing?,뭐 하고 있어?,What are you doing right now?,2.0,curated-speaking-core
+120,Conversation Chunk,120,What are you up to?,뭐 하는 중이야?,What are you up to this weekend?,2.0,curated-speaking-core
+121,Conversation Chunk,121,What do you think?,어떻게 생각해?,What do you think about this idea?,2.0,curated-speaking-core
+122,Conversation Chunk,122,How do you feel about it?,그거 어떻게 생각해?,How do you feel about the change?,2.0,curated-speaking-core
+123,Conversation Chunk,123,What do you want to do?,뭐 하고 싶어?,What do you want to do today?,2.0,curated-speaking-core
+124,Conversation Chunk,124,What should we do?,우리 뭐 해야 하지?,What should we do next?,2.0,curated-speaking-core
+125,Conversation Chunk,125,What can we do?,우리가 뭘 할 수 있지?,What can we do about it?,2.0,curated-speaking-core
+126,Conversation Chunk,126,What do you need?,뭐 필요해?,What do you need from me?,2.0,curated-speaking-core
+127,Conversation Chunk,127,What do you want?,뭐 원해?,What do you want for lunch?,2.0,curated-speaking-core
+128,Conversation Chunk,128,Which one do you prefer?,어느 쪽을 더 선호해?,Which one do you prefer?,2.0,curated-speaking-core
+129,Conversation Chunk,129,Which one is better?,어느 게 더 나아?,Which one is better for you?,2.0,curated-speaking-core
+130,Conversation Chunk,130,Are you sure?,확실해?,Are you sure that's correct?,2.0,curated-speaking-core
+131,Conversation Chunk,131,Are you okay?,괜찮아?,Are you okay? You look tired.,2.0,curated-speaking-core
+132,Conversation Chunk,132,Are you ready?,준비됐어?,Are you ready to start?,2.0,curated-speaking-core
+133,Conversation Chunk,133,Are you serious?,진짜야?,Are you serious right now?,2.0,curated-speaking-core
+134,Conversation Chunk,134,Really?,정말?,Really? I didn't know that.,2.0,curated-speaking-core
+135,Conversation Chunk,135,Seriously?,진짜로?,Seriously? That's surprising.,2.0,curated-speaking-core
+136,Conversation Chunk,136,For real?,진짜야?,For real? That's amazing.,2.0,curated-speaking-core
+137,Conversation Chunk,137,What else?,또 뭐가 있어?,What else do we need?,2.0,curated-speaking-core
+138,Conversation Chunk,138,Anything else?,또 필요한 거 있어?,Anything else before we finish?,2.0,curated-speaking-core
+139,Conversation Chunk,139,Anything new?,새로운 거 있어?,Anything new today?,2.0,curated-speaking-core
+140,Conversation Chunk,140,Anything wrong?,문제 있어?,Anything wrong with the system?,2.0,curated-speaking-core
+141,Conversation Chunk,141,What's next?,다음은 뭐야?,What's next on the list?,2.0,curated-speaking-core
+142,Conversation Chunk,142,What's the problem?,문제가 뭐야?,What's the problem exactly?,2.0,curated-speaking-core
+143,Conversation Chunk,143,What's the difference?,차이가 뭐야?,What's the difference between these two?,2.0,curated-speaking-core
+144,Conversation Chunk,144,What's the point?,요점이 뭐야?,What's the point of this change?,2.0,curated-speaking-core
+145,Conversation Chunk,145,What's the plan?,계획이 뭐야?,What's the plan for tomorrow?,2.0,curated-speaking-core
+146,Conversation Chunk,146,What time is it?,몇 시야?,What time is it now?,2.0,curated-speaking-core
+147,Conversation Chunk,147,What time should we meet?,몇 시에 만날까?,What time should we meet tomorrow?,2.0,curated-speaking-core
+148,Conversation Chunk,148,Where are you?,어디야?,Where are you now?,2.0,curated-speaking-core
+149,Conversation Chunk,149,Where should we go?,어디로 갈까?,Where should we go for dinner?,2.0,curated-speaking-core
+150,Conversation Chunk,150,How long does it take?,얼마나 걸려?,How long does it take to get there?,2.0,curated-speaking-core
+151,Conversation Chunk,151,How much is it?,얼마야?,How much is it?,2.0,curated-speaking-core
+152,Conversation Chunk,152,How often do you...?,얼마나 자주 ~해?,How often do you exercise?,2.0,curated-speaking-core
+153,Conversation Chunk,153,How come?,왜? / 어째서?,How come you didn't tell me?,2.0,curated-speaking-core
+154,Conversation Chunk,154,Why is that?,왜 그래?,Why is that a problem?,2.0,curated-speaking-core
+155,Conversation Chunk,155,Why do you think so?,왜 그렇게 생각해?,Why do you think so?,2.0,curated-speaking-core
+156,Conversation Chunk,156,How does it work?,어떻게 작동해?,How does this feature work?,2.0,curated-speaking-core
+157,Conversation Chunk,157,How did it go?,어땠어?,How did the interview go?,2.0,curated-speaking-core
+158,Conversation Chunk,158,How was it?,어땠어?,How was the trip?,2.0,curated-speaking-core
+159,Conversation Chunk,159,How was your day?,오늘 하루 어땠어?,How was your day today?,2.0,curated-speaking-core
+160,Conversation Chunk,160,How was work?,일 어땠어?,How was work today?,2.0,curated-speaking-core
+161,Conversation Chunk,161,What was it like?,어땠어?,What was it like living there?,2.0,curated-speaking-core
+162,Conversation Chunk,162,What does that mean?,그게 무슨 뜻이야?,What does that mean in this context?,2.0,curated-speaking-core
+163,Conversation Chunk,163,How do you say this in English?,이거 영어로 어떻게 말해?,How do you say this in English?,2.0,curated-speaking-core
+164,Conversation Chunk,164,How do you pronounce this?,이거 어떻게 발음해?,How do you pronounce this word?,2.0,curated-speaking-core
+165,Conversation Chunk,165,Can you say that again?,다시 말해줄래?,Can you say that again more slowly?,2.0,curated-speaking-core
+166,Conversation Chunk,166,Could you repeat that?,다시 말해줄래?,"Could you repeat that, please?",2.0,curated-speaking-core
+167,Conversation Chunk,167,Could you speak more slowly?,좀 더 천천히 말해줄래?,Could you speak more slowly?,2.0,curated-speaking-core
+168,Conversation Chunk,168,I didn't catch that.,잘 못 들었어.,"Sorry, I didn't catch that.",2.0,curated-speaking-core
+169,Conversation Chunk,169,I didn't hear you.,못 들었어.,I didn't hear you. Can you repeat it?,2.0,curated-speaking-core
+170,Conversation Chunk,170,I don't understand.,이해가 안 돼.,I don't understand this part.,2.0,curated-speaking-core
+171,Conversation Chunk,171,I get it.,알겠어.,"Oh, I get it now.",2.0,curated-speaking-core
+172,Conversation Chunk,172,Got it.,알겠어.,Got it. I'll do that.,2.0,curated-speaking-core
+173,Conversation Chunk,173,I got it.,알겠어 / 내가 할게.,I got it. Don't worry.,2.0,curated-speaking-core
+174,Conversation Chunk,174,I understand.,이해했어.,I understand what you mean.,2.0,curated-speaking-core
+175,Conversation Chunk,175,Now I understand.,이제 알겠어.,Now I understand the problem.,2.0,curated-speaking-core
+176,Conversation Chunk,176,That helps.,도움이 되네.,That helps a lot.,2.0,curated-speaking-core
+177,Conversation Chunk,177,That explains it.,그래서 그랬구나.,That explains it.,2.0,curated-speaking-core
+178,Conversation Chunk,178,That reminds me.,그러고 보니 생각났어.,"That reminds me, I need to call him.",2.0,curated-speaking-core
+179,Conversation Chunk,179,"Speaking of which,",말 나온 김에,"Speaking of which, did you check the file?",2.0,curated-speaking-core
+180,Conversation Chunk,180,"As I said,",내가 말했듯이,"As I said, we need more time.",2.0,curated-speaking-core
+181,Conversation Chunk,181,"Like I said,",내가 말했듯이,"Like I said, it's not ready yet.",2.0,curated-speaking-core
+182,Conversation Chunk,182,"As you know,",알다시피,"As you know, this is a temporary fix.",2.0,curated-speaking-core
+183,Conversation Chunk,183,"As far as I know,",내가 아는 한,"As far as I know, it's still available.",2.0,curated-speaking-core
+184,Conversation Chunk,184,"As far as I can tell,",내가 보기엔,"As far as I can tell, everything is fine.",2.0,curated-speaking-core
+185,Conversation Chunk,185,"From what I know,",내가 알기로는,"From what I know, this is expected.",2.0,curated-speaking-core
+186,Conversation Chunk,186,"From what I can see,",내가 보기에는,"From what I can see, there is no error.",2.0,curated-speaking-core
+187,Conversation Chunk,187,"From my point of view,",내 관점에서는,"From my point of view, this is simpler.",2.0,curated-speaking-core
+188,Conversation Chunk,188,"In my opinion,",내 생각에는,"In my opinion, we should wait.",2.0,curated-speaking-core
+189,Conversation Chunk,189,"Personally,",개인적으로는,"Personally, I prefer the first option.",2.0,curated-speaking-core
+190,Conversation Chunk,190,"To be clear,",분명히 말하면,"To be clear, I'm not against the idea.",2.0,curated-speaking-core
+191,Conversation Chunk,191,"In other words,",다시 말해,"In other words, we need to start over.",2.0,curated-speaking-core
+192,Conversation Chunk,192,"The thing is,",문제는 / 사실은,"The thing is, we don't have enough time.",2.0,curated-speaking-core
+193,Conversation Chunk,193,"The problem is,",문제는,"The problem is, the data is missing.",2.0,curated-speaking-core
+194,Conversation Chunk,194,"The point is,",요점은,"The point is, we need a decision.",2.0,curated-speaking-core
+195,Conversation Chunk,195,"The good thing is,",좋은 점은,"The good thing is, we found the cause.",2.0,curated-speaking-core
+196,Conversation Chunk,196,"The bad thing is,",안 좋은 점은,"The bad thing is, we need more time.",2.0,curated-speaking-core
+197,Conversation Chunk,197,It turns out...,알고 보니,It turns out the issue was already fixed.,2.0,curated-speaking-core
+198,Conversation Chunk,198,It looks good.,좋아 보여.,It looks good to me.,2.0,curated-speaking-core
+199,Conversation Chunk,199,It sounds good.,좋아 보여 / 괜찮아 보여.,It sounds good to me.,2.0,curated-speaking-core
+200,Conversation Chunk,200,It feels good.,느낌이 좋아.,It feels good to be back.,2.0,curated-speaking-core
+201,Conversation Chunk,201,It doesn't look right.,뭔가 이상해 보여.,It doesn't look right.,2.0,curated-speaking-core
+202,Conversation Chunk,202,It doesn't sound right.,뭔가 이상하게 들려.,That doesn't sound right.,2.0,curated-speaking-core
+203,Conversation Chunk,203,It doesn't feel right.,뭔가 이상해.,It doesn't feel right.,2.0,curated-speaking-core
+204,Conversation Chunk,204,It doesn't work.,작동하지 않아.,It doesn't work on my laptop.,2.0,curated-speaking-core
+205,Conversation Chunk,205,It works now.,이제 돼.,It works now. Thanks.,2.0,curated-speaking-core
+206,Conversation Chunk,206,It should work.,될 거야.,It should work after the update.,2.0,curated-speaking-core
+207,Conversation Chunk,207,It might work.,될 수도 있어.,It might work if we restart it.,2.0,curated-speaking-core
+208,Conversation Chunk,208,It won't work.,안 될 거야.,It won't work without permission.,2.0,curated-speaking-core
+209,Conversation Chunk,209,It can wait.,나중에 해도 돼.,It can wait until tomorrow.,2.0,curated-speaking-core
+210,Conversation Chunk,210,It can't wait.,미룰 수 없어.,This can't wait. We need to act now.,2.0,curated-speaking-core
+211,Conversation Chunk,211,It's up to you.,네가 정해.,It's up to you which one we use.,2.0,curated-speaking-core
+212,Conversation Chunk,212,It's your call.,네 판단이야.,It's your call. I'll support either option.,2.0,curated-speaking-core
+213,Conversation Chunk,213,It's worth a try.,해볼 만해.,It's worth a try.,2.0,curated-speaking-core
+214,Conversation Chunk,214,It's worth it.,그럴 가치가 있어.,"It's expensive, but it's worth it.",2.0,curated-speaking-core
+215,Conversation Chunk,215,It's not worth it.,그럴 가치가 없어.,It's not worth the risk.,2.0,curated-speaking-core
+216,Conversation Chunk,216,It's a good idea.,좋은 생각이야.,I think it's a good idea.,2.0,curated-speaking-core
+217,Conversation Chunk,217,It's not a bad idea.,나쁘지 않은 생각이야.,It's not a bad idea at all.,2.0,curated-speaking-core
+218,Conversation Chunk,218,That's a good point.,좋은 지적이야.,That's a good point. I missed that.,2.0,curated-speaking-core
+219,Conversation Chunk,219,You have a point.,일리가 있어.,You have a point there.,2.0,curated-speaking-core
+220,Conversation Chunk,220,I agree.,동의해.,I agree with you.,2.0,curated-speaking-core
+221,Conversation Chunk,221,I totally agree.,완전 동의해.,I totally agree with that.,2.0,curated-speaking-core
+222,Conversation Chunk,222,I disagree.,동의하지 않아.,I disagree with that approach.,2.0,curated-speaking-core
+223,Conversation Chunk,223,I don't agree.,동의하지 않아.,I don't agree with the decision.,2.0,curated-speaking-core
+224,Conversation Chunk,224,I don't mind.,상관없어.,I don't mind waiting.,2.0,curated-speaking-core
+225,Conversation Chunk,225,I don't care.,상관 안 해.,I don't care which one we choose.,2.0,curated-speaking-core
+226,Conversation Chunk,226,I prefer this one.,난 이게 더 좋아.,I prefer this one.,2.0,curated-speaking-core
+227,Conversation Chunk,227,I'd rather...,차라리 ~할래.,I'd rather stay home.,2.0,curated-speaking-core
+228,Conversation Chunk,228,I'd better...,~하는 게 좋겠어.,I'd better get going.,2.0,curated-speaking-core
+229,Conversation Chunk,229,You'd better...,~하는 게 좋을 거야.,You'd better check it again.,2.0,curated-speaking-core
+230,Conversation Chunk,230,We should...,우리 ~해야 해.,We should test it first.,2.0,curated-speaking-core
+231,Conversation Chunk,231,We shouldn't...,우리 ~하지 말아야 해.,We shouldn't rush this.,2.0,curated-speaking-core
+232,Conversation Chunk,232,We could...,우리 ~할 수도 있어.,We could try another approach.,2.0,curated-speaking-core
+233,Conversation Chunk,233,We can...,우리 ~할 수 있어.,We can handle it tomorrow.,2.0,curated-speaking-core
+234,Conversation Chunk,234,We can't...,우리 ~할 수 없어.,We can't change it right now.,2.0,curated-speaking-core
+235,Conversation Chunk,235,We have to...,우리 ~해야 해.,We have to finish this today.,2.0,curated-speaking-core
+236,Conversation Chunk,236,We don't have to...,우리 ~할 필요 없어.,We don't have to decide now.,2.0,curated-speaking-core
+237,Conversation Chunk,237,We need to...,우리 ~해야 해.,We need to verify the data.,2.0,curated-speaking-core
+238,Conversation Chunk,238,We don't need to...,우리 ~할 필요 없어.,We don't need to change anything.,2.0,curated-speaking-core
+239,Conversation Chunk,239,Let's...,~하자.,Let's start with the basics.,2.0,curated-speaking-core
+240,Conversation Chunk,240,Let's not...,~하지 말자.,Let's not overcomplicate it.,2.0,curated-speaking-core
+241,Conversation Chunk,241,Let's see.,어디 보자 / 두고 보자.,Let's see what happens.,2.0,curated-speaking-core
+242,Conversation Chunk,242,Let's try it.,한번 해보자.,Let's try it in QA first.,2.0,curated-speaking-core
+243,Conversation Chunk,243,Let's do it.,하자.,"Okay, let's do it.",2.0,curated-speaking-core
+244,Conversation Chunk,244,Let's go.,가자.,Let's go before it gets crowded.,2.0,curated-speaking-core
+245,Conversation Chunk,245,Let's get started.,시작하자.,Let's get started.,2.0,curated-speaking-core
+246,Conversation Chunk,246,Let's move on.,다음으로 넘어가자.,Let's move on to the next topic.,2.0,curated-speaking-core
+247,Conversation Chunk,247,Let's take a look.,한번 보자.,Let's take a look at the logs.,2.0,curated-speaking-core
+248,Conversation Chunk,248,Let's check.,확인해보자.,Let's check the configuration.,2.0,curated-speaking-core
+249,Conversation Chunk,249,Let's find out.,알아보자.,Let's find out what caused it.,2.0,curated-speaking-core
+250,Conversation Chunk,250,Let's figure it out.,해결해보자.,Let's figure it out together.,2.0,curated-speaking-core
+251,Conversation Chunk,251,Let me check.,내가 확인해볼게.,Let me check the status.,2.0,curated-speaking-core
+252,Conversation Chunk,252,Let me see.,내가 볼게 / 어디 보자.,Let me see what I can do.,2.0,curated-speaking-core
+253,Conversation Chunk,253,Let me know what you think.,어떻게 생각하는지 알려줘.,Let me know what you think about this.,2.0,curated-speaking-core
+254,Conversation Chunk,254,Let me explain.,설명할게.,Let me explain how it works.,2.0,curated-speaking-core
+255,Conversation Chunk,255,Let me show you.,보여줄게.,Let me show you an example.,2.0,curated-speaking-core
+256,Conversation Chunk,256,Let me try.,내가 해볼게.,Let me try one more time.,2.0,curated-speaking-core
+257,Conversation Chunk,257,Let me help.,내가 도와줄게.,Let me help you with that.,2.0,curated-speaking-core
+258,Conversation Chunk,258,Can I help?,도와줄까?,Can I help with anything?,2.0,curated-speaking-core
+259,Conversation Chunk,259,Do you need help?,도움 필요해?,Do you need help with that?,2.0,curated-speaking-core
+260,Conversation Chunk,260,Could you help me?,도와줄래?,Could you help me with this?,2.0,curated-speaking-core
+261,Conversation Chunk,261,Can you give me a hand?,좀 도와줄래?,Can you give me a hand with this?,2.0,curated-speaking-core
+262,Conversation Chunk,262,Can you show me?,보여줄래?,Can you show me how it works?,2.0,curated-speaking-core
+263,Conversation Chunk,263,Can you explain?,설명해줄래?,Can you explain this part?,2.0,curated-speaking-core
+264,Conversation Chunk,264,Can you check?,확인해줄래?,Can you check the latest status?,2.0,curated-speaking-core
+265,Conversation Chunk,265,Can you confirm?,확인해줄래?,Can you confirm whether this is correct?,2.0,curated-speaking-core
+266,Conversation Chunk,266,Can you send it?,보내줄래?,Can you send it by email?,2.0,curated-speaking-core
+267,Conversation Chunk,267,Can you wait?,기다려줄래?,Can you wait a few minutes?,2.0,curated-speaking-core
+268,Conversation Chunk,268,Do you mind...?,~해도 괜찮아?,Do you mind if I sit here?,2.0,curated-speaking-core
+269,Conversation Chunk,269,Would you mind...?,~해주시겠어요?,Would you mind checking this?,2.0,curated-speaking-core
+270,Conversation Chunk,270,Would it be okay if...?,~해도 괜찮을까?,Would it be okay if I joined later?,2.0,curated-speaking-core
+271,Conversation Chunk,271,Is it okay if...?,~해도 돼?,Is it okay if I leave early?,2.0,curated-speaking-core
+272,Conversation Chunk,272,Is that okay?,그거 괜찮아?,Is that okay with you?,2.0,curated-speaking-core
+273,Conversation Chunk,273,Is that possible?,그게 가능해?,Is that possible by Friday?,2.0,curated-speaking-core
+274,Conversation Chunk,274,Is there any way...?,방법이 있을까?,Is there any way to fix this today?,2.0,curated-speaking-core
+275,Conversation Chunk,275,Do we have to...?,우리 ~해야 해?,Do we have to do it now?,2.0,curated-speaking-core
+276,Conversation Chunk,276,Do we need to...?,우리 ~할 필요 있어?,Do we need to update this?,2.0,curated-speaking-core
+277,Conversation Chunk,277,Do you know if...?,~인지 알아?,Do you know if he's available?,2.0,curated-speaking-core
+278,Conversation Chunk,278,Do you happen to know...?,혹시 ~알아?,Do you happen to know the password?,2.0,curated-speaking-core
+279,Conversation Chunk,279,Have you ever...?,~해본 적 있어?,Have you ever been to Japan?,2.0,curated-speaking-core
+280,Conversation Chunk,280,Have you seen...?,~봤어?,Have you seen this error before?,2.0,curated-speaking-core
+281,Conversation Chunk,281,Have you heard...?,~들어봤어?,Have you heard about this tool?,2.0,curated-speaking-core
+282,Conversation Chunk,282,Have you tried...?,~해봤어?,Have you tried restarting it?,2.0,curated-speaking-core
+283,Conversation Chunk,283,Did you check...?,~확인했어?,Did you check the logs?,2.0,curated-speaking-core
+284,Conversation Chunk,284,Did you get...?,~받았어?,Did you get my email?,2.0,curated-speaking-core
+285,Conversation Chunk,285,Did you see...?,~봤어?,Did you see the latest message?,2.0,curated-speaking-core
+286,Conversation Chunk,286,Did you hear...?,~들었어?,Did you hear what happened?,2.0,curated-speaking-core
+287,Conversation Chunk,287,Did you finish...?,~끝냈어?,Did you finish the task?,2.0,curated-speaking-core
+288,Conversation Chunk,288,Are you done?,다 했어?,Are you done with the report?,2.0,curated-speaking-core
+289,Conversation Chunk,289,I'm done.,다 했어.,I'm done with the task.,2.0,curated-speaking-core
+290,Conversation Chunk,290,I'm not done yet.,아직 안 끝났어.,I'm not done yet.,2.0,curated-speaking-core
+291,Conversation Chunk,291,I'm working on it.,작업 중이야.,I'm working on it right now.,2.0,curated-speaking-core
+292,Conversation Chunk,292,I'm checking.,확인 중이야.,I'm checking the issue now.,2.0,curated-speaking-core
+293,Conversation Chunk,293,I'm looking into it.,조사 중이야.,I'm looking into it.,2.0,curated-speaking-core
+294,Conversation Chunk,294,I'm waiting for...,~을 기다리는 중이야.,I'm waiting for their response.,2.0,curated-speaking-core
+295,Conversation Chunk,295,I'm still waiting.,아직 기다리고 있어.,I'm still waiting for approval.,2.0,curated-speaking-core
+296,Conversation Chunk,296,I'm almost done.,거의 다 했어.,I'm almost done with the report.,2.0,curated-speaking-core
+297,Conversation Chunk,297,I'm getting there.,거의 되어가.,I'm getting there. Give me a few more minutes.,2.0,curated-speaking-core
+298,Conversation Chunk,298,I'm not used to it.,아직 익숙하지 않아.,I'm not used to speaking English every day.,2.0,curated-speaking-core
+299,Conversation Chunk,299,I'm used to it.,익숙해.,I'm used to working at night.,2.0,curated-speaking-core
+300,Conversation Chunk,300,I'm getting used to it.,익숙해지는 중이야.,I'm getting used to the new system.,2.0,curated-speaking-core
+301,Phrasal Verb,1,go on,계속하다 / 일어나다,What's going on?,2.0,curated-speaking-core
+302,Phrasal Verb,2,come back,돌아오다,I'll come back later.,2.0,curated-speaking-core
+303,Phrasal Verb,3,find out,알아내다,I'll find out what happened.,2.0,curated-speaking-core
+304,Phrasal Verb,4,come up,생기다 / 언급되다,Something came up.,2.0,curated-speaking-core
+305,Phrasal Verb,5,go back,돌아가다,I want to go back.,2.0,curated-speaking-core
+306,Phrasal Verb,6,pick up,집다 / 데리러 가다 / 익히다,I'll pick you up at six.,2.0,curated-speaking-core
+307,Phrasal Verb,7,come out,나오다,When does it come out?,2.0,curated-speaking-core
+308,Phrasal Verb,8,go out,나가다,Let's go out tonight.,2.0,curated-speaking-core
+309,Phrasal Verb,9,point out,지적하다,Let me point out one thing.,2.0,curated-speaking-core
+310,Phrasal Verb,10,grow up,자라다,I grew up in Korea.,2.0,curated-speaking-core
+311,Phrasal Verb,11,set up,설정하다 / 준비하다,I'll set it up.,2.0,curated-speaking-core
+312,Phrasal Verb,12,turn out,결과적으로 ~되다,It turned out fine.,2.0,curated-speaking-core
+313,Phrasal Verb,13,get back,돌아오다,I'll get back soon.,2.0,curated-speaking-core
+314,Phrasal Verb,14,take off,벗다 / 이륙하다,The plane takes off at nine.,2.0,curated-speaking-core
+315,Phrasal Verb,15,look up,찾아보다,I'll look it up.,2.0,curated-speaking-core
+316,Phrasal Verb,16,figure out,알아내다 / 해결하다,I'll figure it out.,2.0,curated-speaking-core
+317,Phrasal Verb,17,give up,포기하다,Don't give up.,2.0,curated-speaking-core
+318,Phrasal Verb,18,bring up,화제를 꺼내다,She brought it up.,2.0,curated-speaking-core
+319,Phrasal Verb,19,run out of,다 떨어지다,We're running out of time.,2.0,curated-speaking-core
+320,Phrasal Verb,20,deal with,처리하다,I'll deal with it.,2.0,curated-speaking-core
+321,Phrasal Verb,21,look into,조사하다,I'll look into the issue.,2.0,curated-speaking-core
+322,Phrasal Verb,22,go over,검토하다,Let's go over the requirements.,2.0,curated-speaking-core
+323,Phrasal Verb,23,move on,다음으로 넘어가다,Let's move on.,2.0,curated-speaking-core
+324,Phrasal Verb,24,run into,우연히 만나다 / 문제에 부딪히다,We ran into a problem.,2.0,curated-speaking-core
+325,Phrasal Verb,25,work out,잘 해결되다 / 운동하다,I'm sure it'll work out.,2.0,curated-speaking-core
+326,Phrasal Verb,26,turn on,켜다,Turn on the monitor.,2.0,curated-speaking-core
+327,Phrasal Verb,27,turn off,끄다,Turn off the computer.,2.0,curated-speaking-core
+328,Phrasal Verb,28,log in,로그인하다,I can't log in.,2.0,curated-speaking-core
+329,Phrasal Verb,29,log out,로그아웃하다,Don't forget to log out.,2.0,curated-speaking-core
+330,Phrasal Verb,30,sign up,가입하다,I signed up yesterday.,2.0,curated-speaking-core
+331,Phrasal Verb,31,sign in,로그인하다,Please sign in first.,2.0,curated-speaking-core
+332,Phrasal Verb,32,sign out,로그아웃하다,Please sign out when you leave.,2.0,curated-speaking-core
+333,Phrasal Verb,33,check in,체크인하다 / 확인하다,I'll check in at three.,2.0,curated-speaking-core
+334,Phrasal Verb,34,check out,확인하다 / 체크아웃하다,Check out this tool.,2.0,curated-speaking-core
+335,Phrasal Verb,35,fill out,작성하다,Please fill out this form.,2.0,curated-speaking-core
+336,Phrasal Verb,36,write down,적다,Write it down.,2.0,curated-speaking-core
+337,Phrasal Verb,37,note down,메모하다,Let me note that down.,2.0,curated-speaking-core
+338,Phrasal Verb,38,call back,다시 전화하다,I'll call you back.,2.0,curated-speaking-core
+339,Phrasal Verb,39,hang up,전화를 끊다,Don't hang up.,2.0,curated-speaking-core
+340,Phrasal Verb,40,hold on,기다리다,Hold on for a second.,2.0,curated-speaking-core
+341,Phrasal Verb,41,cut off,끊기다 / 차단하다,The call got cut off.,2.0,curated-speaking-core
+342,Phrasal Verb,42,break down,고장 나다 / 분석하다,The server broke down.,2.0,curated-speaking-core
+343,Phrasal Verb,43,shut down,종료하다,We need to shut down the service.,2.0,curated-speaking-core
+344,Phrasal Verb,44,start up,시작하다 / 기동하다,The system is starting up.,2.0,curated-speaking-core
+345,Phrasal Verb,45,back up,백업하다,Back up the data first.,2.0,curated-speaking-core
+346,Phrasal Verb,46,roll back,되돌리다,We may need to roll back.,2.0,curated-speaking-core
+347,Phrasal Verb,47,clean up,정리하다,Let's clean up the old files.,2.0,curated-speaking-core
+348,Phrasal Verb,48,speed up,속도를 높이다,This should speed up the process.,2.0,curated-speaking-core
+349,Phrasal Verb,49,slow down,속도를 늦추다,Please slow down.,2.0,curated-speaking-core
+350,Phrasal Verb,50,scale up,확장하다,We need to scale up the service.,2.0,curated-speaking-core
+351,Phrasal Verb,51,scale down,축소하다,We can scale down later.,2.0,curated-speaking-core
+352,Phrasal Verb,52,follow up,후속 조치하다,I'll follow up tomorrow.,2.0,curated-speaking-core
+353,Phrasal Verb,53,catch up,따라잡다 / 밀린 얘기하다,Let's catch up later.,2.0,curated-speaking-core
+354,Phrasal Verb,54,keep up,계속 유지하다,Keep up the good work.,2.0,curated-speaking-core
+355,Phrasal Verb,55,keep on,계속하다,Keep on trying.,2.0,curated-speaking-core
+356,Phrasal Verb,56,carry on,계속하다,Please carry on.,2.0,curated-speaking-core
+357,Phrasal Verb,57,carry out,수행하다,We carried out the test.,2.0,curated-speaking-core
+358,Phrasal Verb,58,put off,미루다,Let's not put it off.,2.0,curated-speaking-core
+359,Phrasal Verb,59,hold off,미루다 / 보류하다,Let's hold off for now.,2.0,curated-speaking-core
+360,Phrasal Verb,60,put on,입다 / 켜다,Put on your jacket.,2.0,curated-speaking-core
+361,Phrasal Verb,61,take out,꺼내다 / 데리고 나가다,Take out your phone.,2.0,curated-speaking-core
+362,Phrasal Verb,62,put away,치우다,Put it away.,2.0,curated-speaking-core
+363,Phrasal Verb,63,throw away,버리다,Don't throw it away.,2.0,curated-speaking-core
+364,Phrasal Verb,64,give back,돌려주다,I'll give it back tomorrow.,2.0,curated-speaking-core
+365,Phrasal Verb,65,hand over,넘겨주다,I'll hand it over to the team.,2.0,curated-speaking-core
+366,Phrasal Verb,66,pass on,전달하다,I'll pass it on.,2.0,curated-speaking-core
+367,Phrasal Verb,67,send out,발송하다,We'll send out the notice.,2.0,curated-speaking-core
+368,Phrasal Verb,68,reach out,연락하다,I'll reach out to them.,2.0,curated-speaking-core
+369,Phrasal Verb,69,get in touch,연락하다,I'll get in touch with him.,2.0,curated-speaking-core
+370,Phrasal Verb,70,get along,잘 지내다,We get along well.,2.0,curated-speaking-core
+371,Phrasal Verb,71,get over,극복하다,You'll get over it.,2.0,curated-speaking-core
+372,Phrasal Verb,72,get through,통과하다 / 끝내다,We got through the test.,2.0,curated-speaking-core
+373,Phrasal Verb,73,get by,그럭저럭 해내다,I can get by with basic English.,2.0,curated-speaking-core
+374,Phrasal Verb,74,get into,~에 빠지다 / 들어가다,I got into backend development.,2.0,curated-speaking-core
+375,Phrasal Verb,75,get out,나가다,Let's get out of here.,2.0,curated-speaking-core
+376,Phrasal Verb,76,get off,내리다,Get off at the next stop.,2.0,curated-speaking-core
+377,Phrasal Verb,77,get on,타다 / 잘 지내다,Get on the bus here.,2.0,curated-speaking-core
+378,Phrasal Verb,78,get up,일어나다,I get up at seven.,2.0,curated-speaking-core
+379,Phrasal Verb,79,wake up,잠에서 깨다,I woke up early.,2.0,curated-speaking-core
+380,Phrasal Verb,80,lie down,눕다,I need to lie down.,2.0,curated-speaking-core
+381,Phrasal Verb,81,sit down,앉다,Please sit down.,2.0,curated-speaking-core
+382,Phrasal Verb,82,stand up,일어서다,Please stand up.,2.0,curated-speaking-core
+383,Phrasal Verb,83,show up,나타나다,He didn't show up.,2.0,curated-speaking-core
+384,Phrasal Verb,84,turn up,나타나다 / 소리를 높이다,He turned up late.,2.0,curated-speaking-core
+385,Phrasal Verb,85,turn down,거절하다 / 낮추다,I turned down the offer.,2.0,curated-speaking-core
+386,Phrasal Verb,86,take over,인수하다,I'll take over from here.,2.0,curated-speaking-core
+387,Phrasal Verb,87,take on,맡다,I can take on this task.,2.0,curated-speaking-core
+388,Phrasal Verb,88,take back,되돌려주다 / 취소하다,I take back what I said.,2.0,curated-speaking-core
+389,Phrasal Verb,89,take apart,분해하다,We took it apart.,2.0,curated-speaking-core
+390,Phrasal Verb,90,put together,조립하다 / 정리하다,I put together a quick demo.,2.0,curated-speaking-core
+391,Phrasal Verb,91,break up,헤어지다 / 쪼개다,Let's break it up into smaller tasks.,2.0,curated-speaking-core
+392,Phrasal Verb,92,split up,나누다,Let's split up the work.,2.0,curated-speaking-core
+393,Phrasal Verb,93,sum up,요약하다,Let me sum it up.,2.0,curated-speaking-core
+394,Phrasal Verb,94,wrap up,마무리하다,Let's wrap up the meeting.,2.0,curated-speaking-core
+395,Phrasal Verb,95,clear up,해결하다 / 개다,That should clear things up.,2.0,curated-speaking-core
+396,Phrasal Verb,96,sort out,정리하다 / 해결하다,We'll sort it out.,2.0,curated-speaking-core
+397,Phrasal Verb,97,iron out,문제를 해결하다,We need to iron out a few issues.,2.0,curated-speaking-core
+398,Phrasal Verb,98,fix up,수리하다 / 정리하다,I'll fix it up.,2.0,curated-speaking-core
+399,Phrasal Verb,99,mess up,망치다,I messed up the configuration.,2.0,curated-speaking-core
+400,Phrasal Verb,100,screw up,망치다,I screwed up.,2.0,curated-speaking-core
+401,Phrasal Verb,101,end up,결국 ~하다,We ended up waiting.,2.0,curated-speaking-core
+402,Phrasal Verb,102,wind up,결국 ~하다,We wound up using the old system.,2.0,curated-speaking-core
+403,Phrasal Verb,103,leave out,빼다,Don't leave out this step.,2.0,curated-speaking-core
+404,Phrasal Verb,104,leave behind,두고 가다,I left my charger behind.,2.0,curated-speaking-core
+405,Phrasal Verb,105,drop off,내려주다 / 떨어지다,I'll drop you off.,2.0,curated-speaking-core
+406,Phrasal Verb,106,drop by,잠깐 들르다,I'll drop by later.,2.0,curated-speaking-core
+407,Phrasal Verb,107,stop by,잠깐 들르다,Stop by when you're free.,2.0,curated-speaking-core
+408,Phrasal Verb,108,come over,놀러오다,Come over this weekend.,2.0,curated-speaking-core
+409,Phrasal Verb,109,come along,함께 오다,You can come along.,2.0,curated-speaking-core
+410,Phrasal Verb,110,come across,우연히 발견하다,I came across this article.,2.0,curated-speaking-core
+411,Phrasal Verb,111,run across,우연히 발견하다,I ran across an old file.,2.0,curated-speaking-core
+412,Phrasal Verb,112,look for,찾다,I'm looking for the file.,2.0,curated-speaking-core
+413,Phrasal Verb,113,look at,보다,Let's look at the data.,2.0,curated-speaking-core
+414,Phrasal Verb,114,look after,돌보다,Can you look after this?,2.0,curated-speaking-core
+415,Phrasal Verb,115,look forward to,기대하다,I look forward to hearing from you.,2.0,curated-speaking-core
+416,Phrasal Verb,116,look out,조심하다,Look out!,2.0,curated-speaking-core
+417,Phrasal Verb,117,watch out,조심하다,Watch out for that step.,2.0,curated-speaking-core
+418,Phrasal Verb,118,check on,상태를 확인하다,I'll check on the server.,2.0,curated-speaking-core
+419,Phrasal Verb,119,check over,검토하다,Please check over the document.,2.0,curated-speaking-core
+420,Phrasal Verb,120,read through,끝까지 읽다,I'll read through it.,2.0,curated-speaking-core
+421,Phrasal Verb,121,think over,곰곰이 생각하다,Let me think it over.,2.0,curated-speaking-core
+422,Phrasal Verb,122,talk over,상의하다,Let's talk it over.,2.0,curated-speaking-core
+423,Phrasal Verb,123,work on,작업하다,I'm working on it.,2.0,curated-speaking-core
+424,Phrasal Verb,124,work with,함께 일하다 / 다루다,I work with APIs.,2.0,curated-speaking-core
+425,Phrasal Verb,125,help out,도와주다,Can you help me out?,2.0,curated-speaking-core
+426,Phrasal Verb,126,join in,참여하다,Feel free to join in.,2.0,curated-speaking-core
+427,Phrasal Verb,127,step in,개입하다,I'll step in if needed.,2.0,curated-speaking-core
+428,Phrasal Verb,128,step out,잠깐 나가다,I need to step out.,2.0,curated-speaking-core
+429,Phrasal Verb,129,step down,물러나다,He stepped down.,2.0,curated-speaking-core
+430,Phrasal Verb,130,step up,나서다 / 강화하다,We need to step up.,2.0,curated-speaking-core
+431,Phrasal Verb,131,back down,물러서다,He refused to back down.,2.0,curated-speaking-core
+432,Phrasal Verb,132,back out,빠지다,They backed out of the deal.,2.0,curated-speaking-core
+433,Phrasal Verb,133,back off,물러나다,Back off a little.,2.0,curated-speaking-core
+434,Phrasal Verb,134,go ahead,진행하다,Go ahead.,2.0,curated-speaking-core
+435,Phrasal Verb,135,go through,검토하다 / 겪다,Let's go through the details.,2.0,curated-speaking-core
+436,Phrasal Verb,136,go with,선택하다 / 어울리다,Let's go with option A.,2.0,curated-speaking-core
+437,Phrasal Verb,137,go without,~없이 지내다,I can go without coffee.,2.0,curated-speaking-core
+438,Phrasal Verb,138,come in,들어오다,Come in.,2.0,curated-speaking-core
+439,Phrasal Verb,139,come from,~에서 오다,Where do you come from?,2.0,curated-speaking-core
+440,Phrasal Verb,140,come down,내려오다 / 감소하다,Prices came down.,2.0,curated-speaking-core
+441,Phrasal Verb,141,come around,마음을 바꾸다 / 들르다,He'll come around.,2.0,curated-speaking-core
+442,Phrasal Verb,142,fall apart,무너지다,The plan fell apart.,2.0,curated-speaking-core
+443,Phrasal Verb,143,fall behind,뒤처지다,We're falling behind.,2.0,curated-speaking-core
+444,Phrasal Verb,144,fall through,무산되다,The deal fell through.,2.0,curated-speaking-core
+445,Phrasal Verb,145,pay back,갚다,I'll pay you back.,2.0,curated-speaking-core
+446,Phrasal Verb,146,pay off,성과가 나다 / 갚다,The effort paid off.,2.0,curated-speaking-core
+447,Phrasal Verb,147,save up,저축하다,I'm saving up for a trip.,2.0,curated-speaking-core
+448,Phrasal Verb,148,use up,다 써버리다,We used up all the storage.,2.0,curated-speaking-core
+449,Phrasal Verb,149,cut down,줄이다,We need to cut down costs.,2.0,curated-speaking-core
+450,Phrasal Verb,150,cut back,줄이다,We should cut back on spending.,2.0,curated-speaking-core
+451,Core Word,1,get,얻다 / 되다 / 도착하다 / 이해하다,I get it.,2.0,curated-speaking-core
+452,Core Word,2,go,가다,I have to go.,2.0,curated-speaking-core
+453,Core Word,3,know,알다,I know what you mean.,2.0,curated-speaking-core
+454,Core Word,4,think,생각하다,I think it's fine.,2.0,curated-speaking-core
+455,Core Word,5,want,원하다,I want to try it.,2.0,curated-speaking-core
+456,Core Word,6,come,오다,Come with me.,2.0,curated-speaking-core
+457,Core Word,7,take,가져가다 / 걸리다,It takes ten minutes.,2.0,curated-speaking-core
+458,Core Word,8,make,만들다 / ~하게 하다,That makes sense.,2.0,curated-speaking-core
+459,Core Word,9,see,보다 / 이해하다,I see.,2.0,curated-speaking-core
+460,Core Word,10,mean,의미하다,What do you mean?,2.0,curated-speaking-core
+461,Core Word,11,give,주다,Give me a second.,2.0,curated-speaking-core
+462,Core Word,12,need,필요하다,I need some help.,2.0,curated-speaking-core
+463,Core Word,13,feel,느끼다,I feel tired.,2.0,curated-speaking-core
+464,Core Word,14,try,시도하다,I'll try again.,2.0,curated-speaking-core
+465,Core Word,15,work,일하다 / 작동하다,It doesn't work.,2.0,curated-speaking-core
+466,Core Word,16,call,전화하다 / 부르다,I'll call you.,2.0,curated-speaking-core
+467,Core Word,17,ask,묻다,Can I ask you something?,2.0,curated-speaking-core
+468,Core Word,18,tell,말해주다,Tell me what happened.,2.0,curated-speaking-core
+469,Core Word,19,seem,~처럼 보이다,It seems fine.,2.0,curated-speaking-core
+470,Core Word,20,help,돕다,Can you help me?,2.0,curated-speaking-core
+471,Core Word,21,talk,이야기하다,Can we talk?,2.0,curated-speaking-core
+472,Core Word,22,turn,돌다 / 바꾸다,Turn left here.,2.0,curated-speaking-core
+473,Core Word,23,start,시작하다,Let's start.,2.0,curated-speaking-core
+474,Core Word,24,show,보여주다,Let me show you.,2.0,curated-speaking-core
+475,Core Word,25,hear,듣다,I can't hear you.,2.0,curated-speaking-core
+476,Core Word,26,play,놀다 / 하다,Do you play tennis?,2.0,curated-speaking-core
+477,Core Word,27,run,달리다 / 운영하다,I run every morning.,2.0,curated-speaking-core
+478,Core Word,28,move,움직이다,Let's move on.,2.0,curated-speaking-core
+479,Core Word,29,like,좋아하다 / ~같다,I like this.,2.0,curated-speaking-core
+480,Core Word,30,happen,일어나다,What happened?,2.0,curated-speaking-core
+481,Core Word,31,live,살다,I live in Korea.,2.0,curated-speaking-core
+482,Core Word,32,believe,믿다,I believe you.,2.0,curated-speaking-core
+483,Core Word,33,hold,잡다 / 유지하다,Hold on.,2.0,curated-speaking-core
+484,Core Word,34,bring,가져오다,Bring your laptop.,2.0,curated-speaking-core
+485,Core Word,35,write,쓰다,Write it down.,2.0,curated-speaking-core
+486,Core Word,36,provide,제공하다,We provide support.,2.0,curated-speaking-core
+487,Core Word,37,sit,앉다,Sit here.,2.0,curated-speaking-core
+488,Core Word,38,stand,서다,Stand over there.,2.0,curated-speaking-core
+489,Core Word,39,lose,잃다,I lost my key.,2.0,curated-speaking-core
+490,Core Word,40,pay,지불하다,I'll pay.,2.0,curated-speaking-core
+491,Core Word,41,meet,만나다,Let's meet tomorrow.,2.0,curated-speaking-core
+492,Core Word,42,include,포함하다,This includes tax.,2.0,curated-speaking-core
+493,Core Word,43,continue,계속하다,Please continue.,2.0,curated-speaking-core
+494,Core Word,44,set,설정하다 / 놓다,Set the time.,2.0,curated-speaking-core
+495,Core Word,45,learn,배우다,I want to learn English.,2.0,curated-speaking-core
+496,Core Word,46,change,바꾸다,We need to change it.,2.0,curated-speaking-core
+497,Core Word,47,lead,이끌다,She leads the team.,2.0,curated-speaking-core
+498,Core Word,48,understand,이해하다,I understand.,2.0,curated-speaking-core
+499,Core Word,49,watch,보다,Watch this.,2.0,curated-speaking-core
+500,Core Word,50,follow,따르다,Follow me.,2.0,curated-speaking-core
+501,Core Word,51,stop,멈추다,Stop here.,2.0,curated-speaking-core
+502,Core Word,52,create,만들다,Let's create a new file.,2.0,curated-speaking-core
+503,Core Word,53,speak,말하다,Please speak slowly.,2.0,curated-speaking-core
+504,Core Word,54,read,읽다,Read this.,2.0,curated-speaking-core
+505,Core Word,55,allow,허용하다,This allows access.,2.0,curated-speaking-core
+506,Core Word,56,add,추가하다,Add one more.,2.0,curated-speaking-core
+507,Core Word,57,spend,쓰다 / 보내다,I spend a lot of time coding.,2.0,curated-speaking-core
+508,Core Word,58,grow,성장하다,The company is growing.,2.0,curated-speaking-core
+509,Core Word,59,open,열다,Open the file.,2.0,curated-speaking-core
+510,Core Word,60,walk,걷다,Let's walk.,2.0,curated-speaking-core
+511,Core Word,61,win,이기다,We won.,2.0,curated-speaking-core
+512,Core Word,62,offer,제공하다 / 제안하다,They offered me a job.,2.0,curated-speaking-core
+513,Core Word,63,remember,기억하다,I remember.,2.0,curated-speaking-core
+514,Core Word,64,love,사랑하다 / 아주 좋아하다,I love coffee.,2.0,curated-speaking-core
+515,Core Word,65,consider,고려하다,Let's consider another option.,2.0,curated-speaking-core
+516,Core Word,66,appear,나타나다,An error appeared.,2.0,curated-speaking-core
+517,Core Word,67,buy,사다,I bought a new laptop.,2.0,curated-speaking-core
+518,Core Word,68,wait,기다리다,Wait here.,2.0,curated-speaking-core
+519,Core Word,69,serve,제공하다 / 응대하다,This API serves data.,2.0,curated-speaking-core
+520,Core Word,70,die,죽다,The battery died.,2.0,curated-speaking-core
+521,Core Word,71,send,보내다,Send me the file.,2.0,curated-speaking-core
+522,Core Word,72,expect,기대하다,I expect it to work.,2.0,curated-speaking-core
+523,Core Word,73,build,만들다 / 구축하다,We built the system.,2.0,curated-speaking-core
+524,Core Word,74,stay,머무르다,Stay here.,2.0,curated-speaking-core
+525,Core Word,75,fall,떨어지다,Prices fell.,2.0,curated-speaking-core
+526,Core Word,76,cut,자르다 / 줄이다,Cut the cost.,2.0,curated-speaking-core
+527,Core Word,77,reach,도달하다 / 연락하다,Reach out to me.,2.0,curated-speaking-core
+528,Core Word,78,remain,남다,Two tasks remain.,2.0,curated-speaking-core
+529,Core Word,79,suggest,제안하다,I suggest waiting.,2.0,curated-speaking-core
+530,Core Word,80,raise,올리다,Raise the limit.,2.0,curated-speaking-core
+531,Core Word,81,pass,통과하다 / 건네다,Pass me that.,2.0,curated-speaking-core
+532,Core Word,82,sell,팔다,They sell software.,2.0,curated-speaking-core
+533,Core Word,83,require,필요로 하다,This requires approval.,2.0,curated-speaking-core
+534,Core Word,84,report,보고하다,Please report the issue.,2.0,curated-speaking-core
+535,Core Word,85,decide,결정하다,We need to decide.,2.0,curated-speaking-core
+536,Core Word,86,pull,당기다,Pull the door.,2.0,curated-speaking-core
+537,Core Word,87,return,돌아오다 / 반환하다,I'll return tomorrow.,2.0,curated-speaking-core
+538,Core Word,88,explain,설명하다,Let me explain.,2.0,curated-speaking-core
+539,Core Word,89,hope,바라다,I hope so.,2.0,curated-speaking-core
+540,Core Word,90,develop,개발하다,We develop backend services.,2.0,curated-speaking-core
+541,Core Word,91,carry,나르다,Can you carry this?,2.0,curated-speaking-core
+542,Core Word,92,break,부수다 / 고장 나다,Don't break it.,2.0,curated-speaking-core
+543,Core Word,93,receive,받다,I received your email.,2.0,curated-speaking-core
+544,Core Word,94,agree,동의하다,I agree.,2.0,curated-speaking-core
+545,Core Word,95,support,지원하다,We support this feature.,2.0,curated-speaking-core
+546,Core Word,96,hit,치다 / 도달하다,We hit the limit.,2.0,curated-speaking-core
+547,Core Word,97,produce,생산하다,The system produces logs.,2.0,curated-speaking-core
+548,Core Word,98,eat,먹다,Let's eat.,2.0,curated-speaking-core
+549,Core Word,99,cover,포함하다 / 덮다,This covers the basics.,2.0,curated-speaking-core
+550,Core Word,100,catch,잡다 / 이해하다,I didn't catch that.,2.0,curated-speaking-core
+551,Core Word,101,draw,그리다,Draw a diagram.,2.0,curated-speaking-core
+552,Core Word,102,choose,고르다,Choose one.,2.0,curated-speaking-core
+553,Core Word,103,cause,원인이 되다,This caused the error.,2.0,curated-speaking-core
+554,Core Word,104,listen,듣다,Listen carefully.,2.0,curated-speaking-core
+555,Core Word,105,realize,깨닫다,I realized the problem.,2.0,curated-speaking-core
+556,Core Word,106,place,놓다 / 장소,Place it here.,2.0,curated-speaking-core
+557,Core Word,107,close,닫다,Close the window.,2.0,curated-speaking-core
+558,Core Word,108,plan,계획하다,Let's plan ahead.,2.0,curated-speaking-core
+559,Core Word,109,drive,운전하다,I drive to work.,2.0,curated-speaking-core
+560,Core Word,110,sleep,자다,I need to sleep.,2.0,curated-speaking-core
+561,Core Word,111,wear,입다,Wear a jacket.,2.0,curated-speaking-core
+562,Core Word,112,recognize,알아보다,I recognized the pattern.,2.0,curated-speaking-core
+563,Core Word,113,answer,대답하다,Please answer.,2.0,curated-speaking-core
+564,Core Word,114,save,저장하다 / 아끼다,Save the file.,2.0,curated-speaking-core
+565,Core Word,115,record,기록하다,Record the result.,2.0,curated-speaking-core
+566,Core Word,116,review,검토하다,Let's review it.,2.0,curated-speaking-core
+567,Core Word,117,test,테스트하다,Test it first.,2.0,curated-speaking-core
+568,Core Word,118,check,확인하다,Check the logs.,2.0,curated-speaking-core
+569,Core Word,119,fix,고치다,I'll fix it.,2.0,curated-speaking-core
+570,Core Word,120,use,사용하다,Use this one.,2.0,curated-speaking-core
+571,Core Word,121,find,찾다,I found the bug.,2.0,curated-speaking-core
+572,Core Word,122,keep,유지하다,Keep it simple.,2.0,curated-speaking-core
+573,Core Word,123,put,놓다,Put it here.,2.0,curated-speaking-core
+574,Core Word,124,leave,떠나다 / 두다,Leave it there.,2.0,curated-speaking-core
+575,Core Word,125,become,~이 되다,It became a problem.,2.0,curated-speaking-core
+576,Core Word,126,begin,시작하다,Let's begin.,2.0,curated-speaking-core
+577,Core Word,127,look,보다,Look at this.,2.0,curated-speaking-core
+578,Core Word,128,say,말하다,What did you say?,2.0,curated-speaking-core
+579,Core Word,129,do,하다,What should we do?,2.0,curated-speaking-core
+580,Core Word,130,have,가지다,I have a question.,2.0,curated-speaking-core
+581,Core Word,131,be,~이다 / 있다,It's okay.,2.0,curated-speaking-core
+582,Core Word,132,about,~에 대해 / 약,"I use the word ""about"" often.",2.0,curated-speaking-core
+583,Core Word,133,above,위에,"I use the word ""above"" often.",2.0,curated-speaking-core
+584,Core Word,134,across,가로질러 / 건너편에,"I use the word ""across"" often.",2.0,curated-speaking-core
+585,Core Word,135,action,행동 / 조치,"I use the word ""action"" often.",2.0,curated-speaking-core
+586,Core Word,136,activity,활동,"I use the word ""activity"" often.",2.0,curated-speaking-core
+587,Core Word,137,actually,사실은,Please do it actually.,2.0,curated-speaking-core
+588,Core Word,138,address,주소 / 다루다,"I use the word ""address"" often.",2.0,curated-speaking-core
+589,Core Word,139,after,후에,"I use the word ""after"" often.",2.0,curated-speaking-core
+590,Core Word,140,again,다시,We use this again in conversation.,2.0,curated-speaking-core
+591,Core Word,141,against,~에 반대하여,"I use the word ""against"" often.",2.0,curated-speaking-core
+592,Core Word,142,age,나이,"I use the word ""age"" often.",2.0,curated-speaking-core
+593,Core Word,143,ago,~전에,"I use the word ""ago"" often.",2.0,curated-speaking-core
+594,Core Word,144,air,공기,"I use the word ""air"" often.",2.0,curated-speaking-core
+595,Core Word,145,all,모두,"I use the word ""all"" often.",2.0,curated-speaking-core
+596,Core Word,146,almost,거의,We use this almost in conversation.,2.0,curated-speaking-core
+597,Core Word,147,alone,혼자,"I use the word ""alone"" often.",2.0,curated-speaking-core
+598,Core Word,148,along,따라서 / 함께,"I use the word ""along"" often.",2.0,curated-speaking-core
+599,Core Word,149,already,이미,We use this already in conversation.,2.0,curated-speaking-core
+600,Core Word,150,also,또한,"I use the word ""also"" often.",2.0,curated-speaking-core
+601,Core Word,151,always,항상,"I use the word ""always"" often.",2.0,curated-speaking-core
+602,Core Word,152,among,~사이에,"I use the word ""among"" often.",2.0,curated-speaking-core
+603,Core Word,153,amount,양,"I use the word ""amount"" often.",2.0,curated-speaking-core
+604,Core Word,154,another,또 다른,"I use the word ""another"" often.",2.0,curated-speaking-core
+605,Core Word,155,any,어떤 / 아무,"I use the word ""any"" often.",2.0,curated-speaking-core
+606,Core Word,156,anyone,누구든,"I use the word ""anyone"" often.",2.0,curated-speaking-core
+607,Core Word,157,anything,무엇이든,"I use the word ""anything"" often.",2.0,curated-speaking-core
+608,Core Word,158,around,주변에 / 약,"I use the word ""around"" often.",2.0,curated-speaking-core
+609,Core Word,159,away,떨어져,"I use the word ""away"" often.",2.0,curated-speaking-core
+610,Core Word,160,back,뒤 / 다시,"I use the word ""back"" often.",2.0,curated-speaking-core
+611,Core Word,161,bad,나쁜,"I use the word ""bad"" often.",2.0,curated-speaking-core
+612,Core Word,162,base,기반,"I use the word ""base"" often.",2.0,curated-speaking-core
+613,Core Word,163,basic,기본적인,"I use the word ""basic"" often.",2.0,curated-speaking-core
+614,Core Word,164,because,왜냐하면,We can use 'because' to connect ideas.,2.0,curated-speaking-core
+615,Core Word,165,before,전에,"I use the word ""before"" often.",2.0,curated-speaking-core
+616,Core Word,166,behind,뒤에,"I use the word ""behind"" often.",2.0,curated-speaking-core
+617,Core Word,167,best,최고의,This is a best option.,2.0,curated-speaking-core
+618,Core Word,168,better,더 나은,This is a better option.,2.0,curated-speaking-core
+619,Core Word,169,between,사이에,"I use the word ""between"" often.",2.0,curated-speaking-core
+620,Core Word,170,big,큰,"I use the word ""big"" often.",2.0,curated-speaking-core
+621,Core Word,171,bit,조금,"I use the word ""bit"" often.",2.0,curated-speaking-core
+622,Core Word,172,both,둘 다,"I use the word ""both"" often.",2.0,curated-speaking-core
+623,Core Word,173,business,업무 / 사업,"I use the word ""business"" often.",2.0,curated-speaking-core
+624,Core Word,174,case,경우,"I use the word ""case"" often.",2.0,curated-speaking-core
+625,Core Word,175,certain,확실한,This is a certain option.,2.0,curated-speaking-core
+626,Core Word,176,chance,기회 / 가능성,"I use the word ""chance"" often.",2.0,curated-speaking-core
+627,Core Word,177,clear,명확한,This is a clear option.,2.0,curated-speaking-core
+628,Core Word,178,common,흔한,This is a common option.,2.0,curated-speaking-core
+629,Core Word,179,company,회사,"I use the word ""company"" often.",2.0,curated-speaking-core
+630,Core Word,180,complete,완료된,"I use the word ""complete"" often.",2.0,curated-speaking-core
+631,Core Word,181,current,현재의,"I use the word ""current"" often.",2.0,curated-speaking-core
+632,Core Word,182,data,데이터,"I use the word ""data"" often.",2.0,curated-speaking-core
+633,Core Word,183,day,날,"I use the word ""day"" often.",2.0,curated-speaking-core
+634,Core Word,184,deal,다루다 / 거래,"I use the word ""deal"" often.",2.0,curated-speaking-core
+635,Core Word,185,different,다른,This is a different option.,2.0,curated-speaking-core
+636,Core Word,186,easy,쉬운,This is a easy option.,2.0,curated-speaking-core
+637,Core Word,187,either,둘 중 하나,"I use the word ""either"" often.",2.0,curated-speaking-core
+638,Core Word,188,else,그 밖에,"I use the word ""else"" often.",2.0,curated-speaking-core
+639,Core Word,189,end,끝,"I use the word ""end"" often.",2.0,curated-speaking-core
+640,Core Word,190,enough,충분한,"I use the word ""enough"" often.",2.0,curated-speaking-core
+641,Core Word,191,error,오류,"I use the word ""error"" often.",2.0,curated-speaking-core
+642,Core Word,192,even,심지어,"I use the word ""even"" often.",2.0,curated-speaking-core
+643,Core Word,193,ever,언젠가 / ever,"I use the word ""ever"" often.",2.0,curated-speaking-core
+644,Core Word,194,every,모든,"I use the word ""every"" often.",2.0,curated-speaking-core
+645,Core Word,195,example,예시,"I use the word ""example"" often.",2.0,curated-speaking-core
+646,Core Word,196,fact,사실,"I use the word ""fact"" often.",2.0,curated-speaking-core
+647,Core Word,197,far,멀리,"I use the word ""far"" often.",2.0,curated-speaking-core
+648,Core Word,198,few,몇몇,"I use the word ""few"" often.",2.0,curated-speaking-core
+649,Core Word,199,first,첫 번째,"I use the word ""first"" often.",2.0,curated-speaking-core
+650,Core Word,200,free,무료의 / 한가한,This is a free option.,2.0,curated-speaking-core
+651,Core Word,201,full,가득 찬,This is a full option.,2.0,curated-speaking-core
+652,Core Word,202,general,일반적인,This is a general option.,2.0,curated-speaking-core
+653,Core Word,203,good,좋은,This is a good option.,2.0,curated-speaking-core
+654,Core Word,204,great,훌륭한,This is a great option.,2.0,curated-speaking-core
+655,Core Word,205,group,그룹,"I use the word ""group"" often.",2.0,curated-speaking-core
+656,Core Word,206,hard,어려운 / 열심히,This is a hard option.,2.0,curated-speaking-core
+657,Core Word,207,here,여기,"I use the word ""here"" often.",2.0,curated-speaking-core
+658,Core Word,208,high,높은,This is a high option.,2.0,curated-speaking-core
+659,Core Word,209,home,집,"I use the word ""home"" often.",2.0,curated-speaking-core
+660,Core Word,210,hour,시간,"I use the word ""hour"" often.",2.0,curated-speaking-core
+661,Core Word,211,idea,아이디어,"I use the word ""idea"" often.",2.0,curated-speaking-core
+662,Core Word,212,important,중요한,This is a important option.,2.0,curated-speaking-core
+663,Core Word,213,information,정보,"I use the word ""information"" often.",2.0,curated-speaking-core
+664,Core Word,214,inside,안쪽,"I use the word ""inside"" often.",2.0,curated-speaking-core
+665,Core Word,215,issue,이슈 / 문제,"I use the word ""issue"" often.",2.0,curated-speaking-core
+666,Core Word,216,job,직업 / 작업,"I use the word ""job"" often.",2.0,curated-speaking-core
+667,Core Word,217,kind,종류,"I use the word ""kind"" often.",2.0,curated-speaking-core
+668,Core Word,218,last,마지막 / 지난,"I use the word ""last"" often.",2.0,curated-speaking-core
+669,Core Word,219,late,늦은,"I use the word ""late"" often.",2.0,curated-speaking-core
+670,Core Word,220,later,나중에,We use this later in conversation.,2.0,curated-speaking-core
+671,Core Word,221,least,최소,"I use the word ""least"" often.",2.0,curated-speaking-core
+672,Core Word,222,less,더 적은,"I use the word ""less"" often.",2.0,curated-speaking-core
+673,Core Word,223,level,수준,"I use the word ""level"" often.",2.0,curated-speaking-core
+674,Core Word,224,life,삶,"I use the word ""life"" often.",2.0,curated-speaking-core
+675,Core Word,225,little,조금 / 작은,"I use the word ""little"" often.",2.0,curated-speaking-core
+676,Core Word,226,long,긴,This is a long option.,2.0,curated-speaking-core
+677,Core Word,227,lot,많이,"I use the word ""lot"" often.",2.0,curated-speaking-core
+678,Core Word,228,low,낮은,This is a low option.,2.0,curated-speaking-core
+679,Core Word,229,main,주요한,This is a main option.,2.0,curated-speaking-core
+680,Core Word,230,many,많은,"I use the word ""many"" often.",2.0,curated-speaking-core
+681,Core Word,231,matter,문제 / 중요하다,"I use the word ""matter"" often.",2.0,curated-speaking-core
+682,Core Word,232,maybe,아마,We use this maybe in conversation.,2.0,curated-speaking-core
+683,Core Word,233,more,더 많은,"I use the word ""more"" often.",2.0,curated-speaking-core
+684,Core Word,234,most,대부분,"I use the word ""most"" often.",2.0,curated-speaking-core
+685,Core Word,235,much,많이,"I use the word ""much"" often.",2.0,curated-speaking-core
+686,Core Word,236,name,이름,"I use the word ""name"" often.",2.0,curated-speaking-core
+687,Core Word,237,new,새로운,This is a new option.,2.0,curated-speaking-core
+688,Core Word,238,next,다음,"I use the word ""next"" often.",2.0,curated-speaking-core
+689,Core Word,239,nothing,아무것도 없음,"I use the word ""nothing"" often.",2.0,curated-speaking-core
+690,Core Word,240,number,숫자,"I use the word ""number"" often.",2.0,curated-speaking-core
+691,Core Word,241,old,오래된,This is a old option.,2.0,curated-speaking-core
+692,Core Word,242,once,한 번,"I use the word ""once"" often.",2.0,curated-speaking-core
+693,Core Word,243,only,오직,Please do it only.,2.0,curated-speaking-core
+694,Core Word,244,other,다른,"I use the word ""other"" often.",2.0,curated-speaking-core
+695,Core Word,245,outside,밖,"I use the word ""outside"" often.",2.0,curated-speaking-core
+696,Core Word,246,own,자신의,"I use the word ""own"" often.",2.0,curated-speaking-core
+697,Core Word,247,part,부분,"I use the word ""part"" often.",2.0,curated-speaking-core
+698,Core Word,248,people,사람들,"I use the word ""people"" often.",2.0,curated-speaking-core
+699,Core Word,249,point,점 / 요점,"I use the word ""point"" often.",2.0,curated-speaking-core
+700,Core Word,250,possible,가능한,This is a possible option.,2.0,curated-speaking-core
+701,Core Word,251,problem,문제,"I use the word ""problem"" often.",2.0,curated-speaking-core
+702,Core Word,252,process,프로세스,We need to process this today.,2.0,curated-speaking-core
+703,Core Word,253,project,프로젝트,"I use the word ""project"" often.",2.0,curated-speaking-core
+704,Core Word,254,question,질문,"I use the word ""question"" often.",2.0,curated-speaking-core
+705,Core Word,255,quick,빠른,This is a quick option.,2.0,curated-speaking-core
+706,Core Word,256,ready,준비된,This is a ready option.,2.0,curated-speaking-core
+707,Core Word,257,reason,이유,"I use the word ""reason"" often.",2.0,curated-speaking-core
+708,Core Word,258,result,결과,"I use the word ""result"" often.",2.0,curated-speaking-core
+709,Core Word,259,right,맞는 / 오른쪽,This is a right option.,2.0,curated-speaking-core
+710,Core Word,260,same,같은,This is a same option.,2.0,curated-speaking-core
+711,Core Word,261,second,두 번째 / 초,"I use the word ""second"" often.",2.0,curated-speaking-core
+712,Core Word,262,service,서비스,"I use the word ""service"" often.",2.0,curated-speaking-core
+713,Core Word,263,short,짧은,This is a short option.,2.0,curated-speaking-core
+714,Core Word,264,side,쪽,"I use the word ""side"" often.",2.0,curated-speaking-core
+715,Core Word,265,simple,간단한,This is a simple option.,2.0,curated-speaking-core
+716,Core Word,266,small,작은,This is a small option.,2.0,curated-speaking-core
+717,Core Word,267,something,무언가,"I use the word ""something"" often.",2.0,curated-speaking-core
+718,Core Word,268,soon,곧,We use this soon in conversation.,2.0,curated-speaking-core
+719,Core Word,269,special,특별한,This is a special option.,2.0,curated-speaking-core
+720,Core Word,270,still,여전히,We use this still in conversation.,2.0,curated-speaking-core
+721,Core Word,271,system,시스템,"I use the word ""system"" often.",2.0,curated-speaking-core
+722,Core Word,272,team,팀,"I use the word ""team"" often.",2.0,curated-speaking-core
+723,Core Word,273,thing,것,"I use the word ""thing"" often.",2.0,curated-speaking-core
+724,Core Word,274,time,시간,"I use the word ""time"" often.",2.0,curated-speaking-core
+725,Core Word,275,today,오늘,"I use the word ""today"" often.",2.0,curated-speaking-core
+726,Core Word,276,together,함께,We use this together in conversation.,2.0,curated-speaking-core
+727,Core Word,277,tomorrow,내일,"I use the word ""tomorrow"" often.",2.0,curated-speaking-core
+728,Core Word,278,too,너무 / 또한,"I use the word ""too"" often.",2.0,curated-speaking-core
+729,Core Word,279,under,아래에,"I use the word ""under"" often.",2.0,curated-speaking-core
+730,Core Word,280,until,~까지,"I use the word ""until"" often.",2.0,curated-speaking-core
+731,Core Word,281,up,위로,"I use the word ""up"" often.",2.0,curated-speaking-core
+732,Core Word,282,very,매우,"I use the word ""very"" often.",2.0,curated-speaking-core
+733,Core Word,283,way,방법,"I use the word ""way"" often.",2.0,curated-speaking-core
+734,Core Word,284,week,주,"I use the word ""week"" often.",2.0,curated-speaking-core
+735,Core Word,285,well,잘,"I use the word ""well"" often.",2.0,curated-speaking-core
+736,Core Word,286,whole,전체의,This is a whole option.,2.0,curated-speaking-core
+737,Core Word,287,wrong,잘못된,This is a wrong option.,2.0,curated-speaking-core
+738,Core Word,288,year,년,"I use the word ""year"" often.",2.0,curated-speaking-core
+739,Core Word,289,access,접근 / 접근하다,"I use the word ""access"" often.",2.0,curated-speaking-core
+740,Core Word,290,account,계정,"I use the word ""account"" often.",2.0,curated-speaking-core
+741,Core Word,291,application,애플리케이션 / 지원,"I use the word ""application"" often.",2.0,curated-speaking-core
+742,Core Word,292,approval,승인,"I use the word ""approval"" often.",2.0,curated-speaking-core
+743,Core Word,293,area,영역,"I use the word ""area"" often.",2.0,curated-speaking-core
+744,Core Word,294,available,사용 가능한,This is a available option.,2.0,curated-speaking-core
+745,Core Word,295,backup,백업,"I use the word ""backup"" often.",2.0,curated-speaking-core
+746,Core Word,296,batch,배치,"I use the word ""batch"" often.",2.0,curated-speaking-core
+747,Core Word,297,behavior,동작 / 행동,"I use the word ""behavior"" often.",2.0,curated-speaking-core
+748,Core Word,298,branch,브랜치,"I use the word ""branch"" often.",2.0,curated-speaking-core
+749,Core Word,299,bug,버그,"I use the word ""bug"" often.",2.0,curated-speaking-core
+750,Core Word,300,button,버튼,"I use the word ""button"" often.",2.0,curated-speaking-core
+751,Core Word,301,client,클라이언트,"I use the word ""client"" often.",2.0,curated-speaking-core
+752,Core Word,302,code,코드,"I use the word ""code"" often.",2.0,curated-speaking-core
+753,Core Word,303,config,설정,"I use the word ""config"" often.",2.0,curated-speaking-core
+754,Core Word,304,connection,연결,"I use the word ""connection"" often.",2.0,curated-speaking-core
+755,Core Word,305,database,데이터베이스,"I use the word ""database"" often.",2.0,curated-speaking-core
+756,Core Word,306,deadline,마감일,"I use the word ""deadline"" often.",2.0,curated-speaking-core
+757,Core Word,307,decision,결정,"I use the word ""decision"" often.",2.0,curated-speaking-core
+758,Core Word,308,detail,세부사항,"I use the word ""detail"" often.",2.0,curated-speaking-core
+759,Core Word,309,document,문서,"I use the word ""document"" often.",2.0,curated-speaking-core
+760,Core Word,310,environment,환경,"I use the word ""environment"" often.",2.0,curated-speaking-core
+761,Core Word,311,event,이벤트,"I use the word ""event"" often.",2.0,curated-speaking-core
+762,Core Word,312,feature,기능,"I use the word ""feature"" often.",2.0,curated-speaking-core
+763,Core Word,313,file,파일,"I use the word ""file"" often.",2.0,curated-speaking-core
+764,Core Word,314,flow,흐름,"I use the word ""flow"" often.",2.0,curated-speaking-core
+765,Core Word,315,function,기능 / 함수,"I use the word ""function"" often.",2.0,curated-speaking-core
+766,Core Word,316,history,이력,"I use the word ""history"" often.",2.0,curated-speaking-core
+767,Core Word,317,input,입력,"I use the word ""input"" often.",2.0,curated-speaking-core
+768,Core Word,318,integration,연동,"I use the word ""integration"" often.",2.0,curated-speaking-core
+769,Core Word,319,interface,인터페이스,"I use the word ""interface"" often.",2.0,curated-speaking-core
+770,Core Word,320,item,항목,"I use the word ""item"" often.",2.0,curated-speaking-core
+771,Core Word,321,language,언어,"I use the word ""language"" often.",2.0,curated-speaking-core
+772,Core Word,322,limit,제한,"I use the word ""limit"" often.",2.0,curated-speaking-core
+773,Core Word,323,link,링크,"I use the word ""link"" often.",2.0,curated-speaking-core
+774,Core Word,324,list,목록,"I use the word ""list"" often.",2.0,curated-speaking-core
+775,Core Word,325,log,로그,"I use the word ""log"" often.",2.0,curated-speaking-core
+776,Core Word,326,message,메시지,"I use the word ""message"" often.",2.0,curated-speaking-core
+777,Core Word,327,method,방법,"I use the word ""method"" often.",2.0,curated-speaking-core
+778,Core Word,328,model,모델,"I use the word ""model"" often.",2.0,curated-speaking-core
+779,Core Word,329,network,네트워크,"I use the word ""network"" often.",2.0,curated-speaking-core
+780,Core Word,330,option,옵션,"I use the word ""option"" often.",2.0,curated-speaking-core
+781,Core Word,331,output,출력,"I use the word ""output"" often.",2.0,curated-speaking-core
+782,Core Word,332,page,페이지,"I use the word ""page"" often.",2.0,curated-speaking-core
+783,Core Word,333,permission,권한,"I use the word ""permission"" often.",2.0,curated-speaking-core
+784,Core Word,334,platform,플랫폼,"I use the word ""platform"" often.",2.0,curated-speaking-core
+785,Core Word,335,priority,우선순위,"I use the word ""priority"" often.",2.0,curated-speaking-core
+786,Core Word,336,release,릴리스,"I use the word ""release"" often.",2.0,curated-speaking-core
+787,Core Word,337,request,요청,"I use the word ""request"" often.",2.0,curated-speaking-core
+788,Core Word,338,response,응답,"I use the word ""response"" often.",2.0,curated-speaking-core
+789,Core Word,339,risk,위험,"I use the word ""risk"" often.",2.0,curated-speaking-core
+790,Core Word,340,role,역할,"I use the word ""role"" often.",2.0,curated-speaking-core
+791,Core Word,341,screen,화면,"I use the word ""screen"" often.",2.0,curated-speaking-core
+792,Core Word,342,server,서버,"I use the word ""server"" often.",2.0,curated-speaking-core
+793,Core Word,343,session,세션,"I use the word ""session"" often.",2.0,curated-speaking-core
+794,Core Word,344,setting,설정,"I use the word ""setting"" often.",2.0,curated-speaking-core
+795,Core Word,345,source,소스,"I use the word ""source"" often.",2.0,curated-speaking-core
+796,Core Word,346,status,상태,"I use the word ""status"" often.",2.0,curated-speaking-core
+797,Core Word,347,step,단계,"I use the word ""step"" often.",2.0,curated-speaking-core
+798,Core Word,348,storage,저장공간,"I use the word ""storage"" often.",2.0,curated-speaking-core
+799,Core Word,349,task,작업,"I use the word ""task"" often.",2.0,curated-speaking-core
+800,Core Word,350,tool,도구,"I use the word ""tool"" often.",2.0,curated-speaking-core
+801,Core Word,351,transaction,트랜잭션,"I use the word ""transaction"" often.",2.0,curated-speaking-core
+802,Core Word,352,update,업데이트,"I use the word ""update"" often.",2.0,curated-speaking-core
+803,Core Word,353,user,사용자,"I use the word ""user"" often.",2.0,curated-speaking-core
+804,Core Word,354,value,값,"I use the word ""value"" often.",2.0,curated-speaking-core
+805,Core Word,355,version,버전,"I use the word ""version"" often.",2.0,curated-speaking-core
+806,Core Word,356,workaround,우회책,"I use the word ""workaround"" often.",2.0,curated-speaking-core
+807,Core Word,357,accept,수락하다,We need to accept this today.,2.0,curated-speaking-core
+808,Core Word,358,achieve,달성하다,We need to achieve this today.,2.0,curated-speaking-core
+809,Core Word,359,apply,지원하다 / 적용하다,Please do it apply.,2.0,curated-speaking-core
+810,Core Word,360,arrive,도착하다,We need to arrive this today.,2.0,curated-speaking-core
+811,Core Word,361,avoid,피하다,We need to avoid this today.,2.0,curated-speaking-core
+812,Core Word,362,cancel,취소하다,We need to cancel this today.,2.0,curated-speaking-core
+813,Core Word,363,compare,비교하다,Compare the two results.,2.0,curated-speaking-core
+814,Core Word,364,confirm,확인하다,Can you confirm this?,2.0,curated-speaking-core
+815,Core Word,365,connect,연결하다,We need to connect this today.,2.0,curated-speaking-core
+816,Core Word,366,contact,연락하다,We need to contact this today.,2.0,curated-speaking-core
+817,Core Word,367,control,제어하다,We need to control this today.,2.0,curated-speaking-core
+818,Core Word,368,copy,복사하다,We need to copy this today.,2.0,curated-speaking-core
+819,Core Word,369,correct,수정하다 / 맞는,This is a correct option.,2.0,curated-speaking-core
+820,Core Word,370,delete,삭제하다,We need to delete this today.,2.0,curated-speaking-core
+821,Core Word,371,deploy,배포하다,We will deploy the fix tomorrow.,2.0,curated-speaking-core
+822,Core Word,372,describe,설명하다,We need to describe this today.,2.0,curated-speaking-core
+823,Core Word,373,design,설계하다,We need to design this today.,2.0,curated-speaking-core
+824,Core Word,374,discuss,논의하다,We need to discuss this today.,2.0,curated-speaking-core
+825,Core Word,375,download,다운로드하다,We need to download this today.,2.0,curated-speaking-core
+826,Core Word,376,edit,수정하다,We need to edit this today.,2.0,curated-speaking-core
+827,Core Word,377,enable,활성화하다,We need to enable this today.,2.0,curated-speaking-core
+828,Core Word,378,enter,입력하다 / 들어가다,We need to enter this today.,2.0,curated-speaking-core
+829,Core Word,379,fail,실패하다,We need to fail this today.,2.0,curated-speaking-core
+830,Core Word,380,finish,끝내다,We need to finish this today.,2.0,curated-speaking-core
+831,Core Word,381,focus,집중하다,We need to focus this today.,2.0,curated-speaking-core
+832,Core Word,382,handle,처리하다,We need to handle this today.,2.0,curated-speaking-core
+833,Core Word,383,improve,개선하다,We can improve this later.,2.0,curated-speaking-core
+834,Core Word,384,increase,증가시키다,We need to increase this today.,2.0,curated-speaking-core
+835,Core Word,385,join,참여하다,We need to join this today.,2.0,curated-speaking-core
+836,Core Word,386,manage,관리하다,We need to manage this today.,2.0,curated-speaking-core
+837,Core Word,387,match,맞추다 / 일치하다,We need to match this today.,2.0,curated-speaking-core
+838,Core Word,388,notice,알아차리다 / 공지,We need to notice this today.,2.0,curated-speaking-core
+839,Core Word,389,prepare,준비하다,We need to prepare this today.,2.0,curated-speaking-core
+840,Core Word,390,prevent,방지하다,We need to prevent this today.,2.0,curated-speaking-core
+841,Core Word,391,print,출력하다,We need to print this today.,2.0,curated-speaking-core
+842,Core Word,392,replace,교체하다,We need to replace this today.,2.0,curated-speaking-core
+843,Core Word,393,reply,답장하다,Please do it reply.,2.0,curated-speaking-core
+844,Core Word,394,restart,재시작하다,We may need to restart the service.,2.0,curated-speaking-core
+845,Core Word,395,restore,복구하다,We restored the data from backup.,2.0,curated-speaking-core
+846,Core Word,396,retry,재시도하다,Let us retry the request.,2.0,curated-speaking-core
+847,Core Word,397,search,검색하다,We need to search this today.,2.0,curated-speaking-core
+848,Core Word,398,select,선택하다,We need to select this today.,2.0,curated-speaking-core
+849,Core Word,399,share,공유하다,We need to share this today.,2.0,curated-speaking-core
+850,Core Word,400,solve,해결하다,We need to solve this today.,2.0,curated-speaking-core
+851,Core Word,401,sort,정렬하다,We need to sort this today.,2.0,curated-speaking-core
+852,Core Word,402,submit,제출하다,Please submit the request today.,2.0,curated-speaking-core
+853,Core Word,403,switch,전환하다,We need to switch this today.,2.0,curated-speaking-core
+854,Core Word,404,sync,동기화하다,We need to sync this today.,2.0,curated-speaking-core
+855,Core Word,405,upload,업로드하다,We need to upload this today.,2.0,curated-speaking-core
+856,Core Word,406,verify,검증하다,Please verify the result.,2.0,curated-speaking-core
+857,Core Word,407,accurate,정확한,The data looks accurate.,2.0,curated-speaking-core
+858,Core Word,408,active,활성의 / 활동적인,The account is still active.,2.0,curated-speaking-core
+859,Core Word,409,actual,실제의,The actual result is different.,2.0,curated-speaking-core
+860,Core Word,410,additional,추가의,We need additional information.,2.0,curated-speaking-core
+861,Core Word,411,careful,주의 깊은,Be careful with this change.,2.0,curated-speaking-core
+862,Core Word,412,direct,직접적인,We need a direct answer.,2.0,curated-speaking-core
+863,Core Word,413,early,이른 / 일찍,Please do it early.,2.0,curated-speaking-core
+864,Core Word,414,effective,효과적인,This is an effective solution.,2.0,curated-speaking-core
+865,Core Word,415,empty,비어 있는,The response is empty.,2.0,curated-speaking-core
+866,Core Word,416,exact,정확한,What is the exact error message?,2.0,curated-speaking-core
+867,Core Word,417,final,최종의,This is the final version.,2.0,curated-speaking-core
+868,Core Word,418,fine,괜찮은 / 좋은,Everything looks fine.,2.0,curated-speaking-core
+869,Core Word,419,internal,내부의,This is for internal use only.,2.0,curated-speaking-core
+870,Core Word,420,latest,최신의,Please use the latest version.,2.0,curated-speaking-core
+871,Core Word,421,local,로컬의 / 지역의,It works in my local environment.,2.0,curated-speaking-core
+872,Core Word,422,manual,수동의 / 매뉴얼,We need a manual check.,2.0,curated-speaking-core
+873,Core Word,423,missing,누락된,One field is missing.,2.0,curated-speaking-core
+874,Core Word,424,normal,정상적인 / 보통의,This is normal behavior.,2.0,curated-speaking-core
+875,Core Word,425,previous,이전의,Compare it with the previous version.,2.0,curated-speaking-core
+876,Core Word,426,private,개인적인 / 비공개의,This repository is private.,2.0,curated-speaking-core
+877,Core Word,427,public,공개의,This page is public.,2.0,curated-speaking-core
+878,Core Word,428,recent,최근의,Do you have a recent example?,2.0,curated-speaking-core
+879,Core Word,429,required,필수의 / 요구되는,This field is required.,2.0,curated-speaking-core
+880,Core Word,430,stable,안정적인,The service is stable now.,2.0,curated-speaking-core
+881,Core Word,431,successful,성공적인,The deployment was successful.,2.0,curated-speaking-core
+882,Core Word,432,temporary,임시의,This is a temporary fix.,2.0,curated-speaking-core
+883,Core Word,433,quickly,빠르게,Please do it quickly.,2.0,curated-speaking-core
+884,Core Word,434,slowly,천천히,Please do it slowly.,2.0,curated-speaking-core
+885,Core Word,435,exactly,정확히 / 바로,Please do it exactly.,2.0,curated-speaking-core
+886,Core Word,436,probably,아마도,Please do it probably.,2.0,curated-speaking-core
+887,Core Word,437,really,정말로,Please do it really.,2.0,curated-speaking-core
+888,Core Word,438,recently,최근에,Please do it recently.,2.0,curated-speaking-core
+889,Core Word,439,usually,보통,Please do it usually.,2.0,curated-speaking-core
+890,Core Word,440,sometimes,가끔,Sometimes I work from home.,2.0,curated-speaking-core
+891,Core Word,441,often,자주,How often does this happen?,2.0,curated-speaking-core
+892,Core Word,442,rarely,드물게,Please do it rarely.,2.0,curated-speaking-core
+893,Core Word,443,finally,마침내 / 마지막으로,Please do it finally.,2.0,curated-speaking-core
+894,Core Word,444,currently,현재,Please do it currently.,2.0,curated-speaking-core
+895,Core Word,445,directly,직접,Please do it directly.,2.0,curated-speaking-core
+896,Core Word,446,especially,특히,Please do it especially.,2.0,curated-speaking-core
+897,Core Word,447,basically,기본적으로 / 쉽게 말해,Please do it basically.,2.0,curated-speaking-core
+898,Core Word,448,simply,간단히,Please do it simply.,2.0,curated-speaking-core
+899,Core Word,449,clearly,명확하게,Please do it clearly.,2.0,curated-speaking-core
+900,Core Word,450,carefully,주의 깊게,Please do it carefully.,2.0,curated-speaking-core
+901,Core Word,451,yet,아직 / 벌써,I have not finished yet.,2.0,curated-speaking-core
+902,Core Word,452,who,누구,Who is it?,2.0,curated-speaking-core
+903,Core Word,453,what,무엇,What is it?,2.0,curated-speaking-core
+904,Core Word,454,when,언제,When is it?,2.0,curated-speaking-core
+905,Core Word,455,where,어디,Where is it?,2.0,curated-speaking-core
+906,Core Word,456,why,왜,Why is it?,2.0,curated-speaking-core
+907,Core Word,457,how,어떻게,How is it?,2.0,curated-speaking-core
+908,Core Word,458,which,어느 것,Which is it?,2.0,curated-speaking-core
+909,Core Word,459,this,이것 / 이,This looks good.,2.0,curated-speaking-core
+910,Core Word,460,that,저것 / 그,That makes sense.,2.0,curated-speaking-core
+911,Core Word,461,these,이것들 / 이,These are the latest files.,2.0,curated-speaking-core
+912,Core Word,462,those,저것들 / 그,Those are the old versions.,2.0,curated-speaking-core
+913,Core Word,463,someone,누군가,Someone changed the setting.,2.0,curated-speaking-core
+914,Core Word,464,everyone,모두,Everyone is ready.,2.0,curated-speaking-core
+915,Core Word,465,nobody,아무도 ~않다,Nobody knows the answer.,2.0,curated-speaking-core
+916,Core Word,466,each,각각,Check each item carefully.,2.0,curated-speaking-core
+917,Core Word,467,neither,둘 다 아닌,Neither option works for me.,2.0,curated-speaking-core
+918,Core Word,468,some,일부 / 어떤,I need some more time.,2.0,curated-speaking-core
+919,Core Word,469,no,없는 / 아니,There is no problem.,2.0,curated-speaking-core
+920,Core Word,470,several,몇몇의,We have several options.,2.0,curated-speaking-core
+921,Core Word,471,and,그리고,We can use 'and' to connect ideas.,2.0,curated-speaking-core
+922,Core Word,472,but,하지만,We can use 'but' to connect ideas.,2.0,curated-speaking-core
+923,Core Word,473,or,또는,We can use 'or' to connect ideas.,2.0,curated-speaking-core
+924,Core Word,474,so,그래서,We can use 'so' to connect ideas.,2.0,curated-speaking-core
+925,Core Word,475,if,만약 ~라면,We can use 'if' to connect ideas.,2.0,curated-speaking-core
+926,Core Word,476,though,비록 ~이지만,We can use 'though' to connect ideas.,2.0,curated-speaking-core
+927,Core Word,477,although,비록 ~이지만,We can use 'although' to connect ideas.,2.0,curated-speaking-core
+928,Core Word,478,while,~하는 동안 / 반면에,We can use 'while' to connect ideas.,2.0,curated-speaking-core
+929,Core Word,479,since,~이후로 / ~이므로,We can use 'since' to connect ideas.,2.0,curated-speaking-core
+930,Core Word,480,unless,~하지 않는 한,We can use 'unless' to connect ideas.,2.0,curated-speaking-core
+931,Core Word,481,whether,~인지 아닌지,We need to confirm whether it works.,2.0,curated-speaking-core
+932,Core Word,482,than,~보다,This option is simpler than the other one.,2.0,curated-speaking-core
+933,Core Word,483,as,~처럼 / ~로서,Use it as a temporary workaround.,2.0,curated-speaking-core
+934,Core Word,484,in,~안에,The data is in the database.,2.0,curated-speaking-core
+935,Core Word,485,on,~위에 / ~에,The file is on the server.,2.0,curated-speaking-core
+936,Core Word,486,at,~에서 / ~에,Let us meet at three.,2.0,curated-speaking-core
+937,Core Word,487,to,~로 / ~에게,Send the file to me.,2.0,curated-speaking-core
+938,Core Word,488,for,~을 위해 / ~동안,This is for the next release.,2.0,curated-speaking-core
+939,Core Word,489,from,~로부터,I got a reply from the vendor.,2.0,curated-speaking-core
+940,Core Word,490,with,~와 함께,I work with several systems.,2.0,curated-speaking-core
+941,Core Word,491,without,~없이,It will not work without permission.,2.0,curated-speaking-core
+942,Core Word,492,by,~에 의해 / ~까지,Please finish it by Friday.,2.0,curated-speaking-core
+943,Core Word,493,over,~위로 / ~동안,Let us go over the details.,2.0,curated-speaking-core
+944,Core Word,494,through,~을 통해,The request goes through the API.,2.0,curated-speaking-core
+945,Core Word,495,during,~동안,The error occurred during deployment.,2.0,curated-speaking-core
+946,Core Word,496,beside,~옆에,Sit beside me.,2.0,curated-speaking-core
+947,Core Word,497,near,~근처에,The hotel is near the station.,2.0,curated-speaking-core
+948,Core Word,498,into,~안으로,The data goes into the database.,2.0,curated-speaking-core
+949,Core Word,499,onto,~위로,Upload the file onto the server.,2.0,curated-speaking-core
+950,Core Word,500,off,~에서 떨어져 / 꺼진,Turn the service off.,2.0,curated-speaking-core
+951,Core Word,501,out,밖으로,The new version is out.,2.0,curated-speaking-core
+952,Core Word,502,ability,능력,Speaking ability improves with practice.,2.0,curated-speaking-core
+953,Core Word,503,absence,부재,The issue happened in his absence.,2.0,curated-speaking-core
+954,Core Word,504,acceptance,수락 / 승인,We are waiting for acceptance.,2.0,curated-speaking-core
+955,Core Word,505,accessibility,접근성,Accessibility matters on mobile.,2.0,curated-speaking-core
+956,Core Word,506,accuracy,정확도,We need to improve the accuracy.,2.0,curated-speaking-core
+957,Core Word,507,advantage,장점,The main advantage is simplicity.,2.0,curated-speaking-core
+958,Core Word,508,advice,조언,Can I ask for your advice?,2.0,curated-speaking-core
+959,Core Word,509,agreement,합의,We reached an agreement.,2.0,curated-speaking-core
+960,Core Word,510,analysis,분석,The analysis shows the root cause.,2.0,curated-speaking-core
+961,Core Word,511,api,API / 응용 프로그램 인터페이스,The API returned an error.,2.0,curated-speaking-core
+962,Core Word,512,approach,접근 방식,I prefer this approach.,2.0,curated-speaking-core
+963,Core Word,513,argument,주장 / 인수,This function takes two arguments.,2.0,curated-speaking-core
+964,Core Word,514,availability,가용성 / 가능 시간,Please check your availability.,2.0,curated-speaking-core
+965,Core Word,515,background,배경,Let me give you some background.,2.0,curated-speaking-core
+966,Core Word,516,benefit,이점 / 복지,What is the main benefit?,2.0,curated-speaking-core
+967,Core Word,517,challenge,과제 / 도전,The biggest challenge is time.,2.0,curated-speaking-core
+968,Core Word,518,choice,선택,It is your choice.,2.0,curated-speaking-core
+969,Core Word,519,comment,의견 / 코멘트,I left a comment on the issue.,2.0,curated-speaking-core
+970,Core Word,520,communication,의사소통,Clear communication is important.,2.0,curated-speaking-core
+971,Core Word,521,condition,조건 / 상태,Check the condition first.,2.0,curated-speaking-core
+972,Core Word,522,context,맥락,I need more context.,2.0,curated-speaking-core
+973,Core Word,523,conversation,대화,We had a short conversation.,2.0,curated-speaking-core
+974,Core Word,524,cost,비용,We need to reduce the cost.,2.0,curated-speaking-core
+975,Core Word,525,customer,고객,The customer reported an issue.,2.0,curated-speaking-core
+976,Core Word,526,date,날짜,What is the target date?,2.0,curated-speaking-core
+977,Core Word,527,difference,차이,What is the difference?,2.0,curated-speaking-core
+978,Core Word,528,direction,방향,I think this is the right direction.,2.0,curated-speaking-core
+979,Core Word,529,effect,효과 / 영향,This change has no user effect.,2.0,curated-speaking-core
+980,Core Word,530,effort,노력,This will take some effort.,2.0,curated-speaking-core
+981,Core Word,531,email,이메일,I sent you an email.,2.0,curated-speaking-core
+982,Core Word,532,experience,경험,It was a good experience.,2.0,curated-speaking-core
+983,Core Word,533,goal,목표,Our goal is to keep it simple.,2.0,curated-speaking-core
+984,Core Word,534,guide,가이드 / 안내,Please follow the guide.,2.0,curated-speaking-core
+985,Core Word,535,importance,중요성,I understand the importance of this.,2.0,curated-speaking-core
+986,Core Word,536,improvement,개선,This is a clear improvement.,2.0,curated-speaking-core
+987,Core Word,537,instruction,지시 / 설명,Please follow the instructions.,2.0,curated-speaking-core
+988,Core Word,538,knowledge,지식,I have basic knowledge of it.,2.0,curated-speaking-core
+989,Core Word,539,meeting,회의,Let us discuss it in the meeting.,2.0,curated-speaking-core
+990,Core Word,540,note,메모 / 주의사항,I added a note.,2.0,curated-speaking-core
+991,Core Word,541,order,순서 / 주문,Check the order of the steps.,2.0,curated-speaking-core
+992,Core Word,542,owner,소유자 / 담당자,Who is the issue owner?,2.0,curated-speaking-core
+993,Core Word,543,performance,성능,We need to improve performance.,2.0,curated-speaking-core
+994,Core Word,544,practice,연습 / 관행,Speaking takes practice.,2.0,curated-speaking-core
+995,Core Word,545,progress,진행,I will share the progress tomorrow.,2.0,curated-speaking-core
+996,Core Word,546,purpose,목적,What is the purpose of this field?,2.0,curated-speaking-core
+997,Core Word,547,quality,품질,We need to improve the quality.,2.0,curated-speaking-core
+998,Core Word,548,requirement,요구사항,The requirement is unclear.,2.0,curated-speaking-core
+999,Core Word,549,schedule,일정,We are on schedule.,2.0,curated-speaking-core
+1000,Core Word,550,solution,해결책,We need a better solution.,2.0,curated-speaking-core
+1001,Core Word,551,success,성공,The release was a success.,2.0,curated-speaking-core
+1002,Core Word,552,target,목표 / 대상,What is the target date?,2.0,curated-speaking-core
+1003,Core Word,553,technology,기술,This technology is new to me.,2.0,curated-speaking-core
+1004,Core Word,554,topic,주제,Let us move to the next topic.,2.0,curated-speaking-core
+1005,Core Word,555,training,교육 / 훈련,The training starts tomorrow.,2.0,curated-speaking-core
+1006,Core Word,556,travel,여행,I like to travel.,2.0,curated-speaking-core
+1007,Core Word,557,workflow,업무 흐름,The workflow has three steps.,2.0,curated-speaking-core
+1008,Core Word,558,career,경력,I am thinking about my career.,2.0,curated-speaking-core
+1009,Core Word,559,interview,면접,I have an interview tomorrow.,2.0,curated-speaking-core
+1010,Core Word,560,resume,이력서,I updated my resume.,2.0,curated-speaking-core
+1011,Core Word,561,salary,연봉 / 급여,What is the salary range?,2.0,curated-speaking-core
+1012,Core Word,562,office,사무실,I am at the office.,2.0,curated-speaking-core
+1013,Core Word,563,remote,원격의,This role is fully remote.,2.0,curated-speaking-core
+1014,Core Word,564,hybrid,하이브리드,The company uses a hybrid work model.,2.0,curated-speaking-core
+1015,Core Word,565,backend,백엔드,I work mainly on backend systems.,2.0,curated-speaking-core
+1016,Core Word,566,frontend,프론트엔드,The frontend calls this API.,2.0,curated-speaking-core
+1017,Core Word,567,cloud,클라우드,The service runs in the cloud.,2.0,curated-speaking-core
+1018,Core Word,568,security,보안,Security is a top priority.,2.0,curated-speaking-core
+1019,Core Word,569,token,토큰,The token has expired.,2.0,curated-speaking-core
+1020,Core Word,570,cache,캐시,Clear the cache and try again.,2.0,curated-speaking-core
+1021,Core Word,571,queue,큐,The message is still in the queue.,2.0,curated-speaking-core
+1022,Core Word,572,payload,페이로드,The payload is missing a field.,2.0,curated-speaking-core
+1023,Core Word,573,endpoint,엔드포인트,This endpoint requires authentication.,2.0,curated-speaking-core
+1024,Core Word,574,microservice,마이크로서비스,This microservice handles payments.,2.0,curated-speaking-core
+1025,Core Word,575,container,컨테이너,The container restarted.,2.0,curated-speaking-core
+1026,Core Word,576,monitoring,모니터링,We need better monitoring.,2.0,curated-speaking-core
+1027,Core Word,577,deployment,배포,The deployment is complete.,2.0,curated-speaking-core
+1028,Core Word,578,repository,저장소,The code is in the repository.,2.0,curated-speaking-core
+1029,Core Word,579,commit,커밋,I checked the latest commit.,2.0,curated-speaking-core
+1030,Core Word,580,merge,병합,The merge caused a conflict.,2.0,curated-speaking-core
+1031,Core Word,581,pipeline,파이프라인,The pipeline failed.,2.0,curated-speaking-core
+1032,Core Word,582,framework,프레임워크,Which framework do you use?,2.0,curated-speaking-core
+1033,Core Word,583,library,라이브러리,We need to update the library.,2.0,curated-speaking-core
+1034,Core Word,584,runtime,런타임,The error occurs at runtime.,2.0,curated-speaking-core
+1035,Core Word,585,memory,메모리,Memory usage is high.,2.0,curated-speaking-core
+1036,Core Word,586,cpu,CPU / 중앙처리장치,CPU usage is high.,2.0,curated-speaking-core
+1037,Core Word,587,latency,지연 시간,The latency is too high.,2.0,curated-speaking-core
+1038,Core Word,588,timeout,타임아웃,The request ended in a timeout.,2.0,curated-speaking-core
+1039,Core Word,589,exception,예외,The application threw an exception.,2.0,curated-speaking-core
+1040,Core Word,590,failure,실패,We need to understand the failure.,2.0,curated-speaking-core
+1041,Core Word,591,rollback,롤백,The rollback was successful.,2.0,curated-speaking-core
+1042,Core Word,592,schema,스키마,The schema has changed.,2.0,curated-speaking-core
+1043,Core Word,593,field,필드,This field is required.,2.0,curated-speaking-core
+1044,Core Word,594,column,열 / 컬럼,Add an index to this column.,2.0,curated-speaking-core
+1045,Core Word,595,row,행 / 로우,This row has invalid data.,2.0,curated-speaking-core
+1046,Core Word,596,table,테이블,The data is stored in this table.,2.0,curated-speaking-core
+1047,Core Word,597,query,쿼리,The query is slow.,2.0,curated-speaking-core
+1048,Core Word,598,index,인덱스,We need an index here.,2.0,curated-speaking-core
+1049,Core Word,599,mapping,매핑,The mapping is incorrect.,2.0,curated-speaking-core
+1050,Core Word,600,rule,규칙,This rule applies to all users.,2.0,curated-speaking-core
+1051,Core Word,601,person,사람,She's a very kind person.,2.0,curated-speaking-core
+1052,Core Word,602,friend,친구,He's a close friend of mine.,2.0,curated-speaking-core
+1053,Core Word,603,family,가족,My family lives in Korea.,2.0,curated-speaking-core
+1054,Core Word,604,room,방,The room is clean.,2.0,curated-speaking-core
+1055,Core Word,605,car,차,I left my phone in the car.,2.0,curated-speaking-core
+1056,Core Word,606,food,음식,The food was really good.,2.0,curated-speaking-core
+1057,Core Word,607,water,물,Can I get some water?,2.0,curated-speaking-core
+1058,Core Word,608,coffee,커피,I need some coffee.,2.0,curated-speaking-core
+1059,Core Word,609,money,돈,I don't want to spend too much money.,2.0,curated-speaking-core
+1060,Core Word,610,phone,전화기 / 휴대폰,I left my phone at home.,2.0,curated-speaking-core
+1061,Core Word,611,doctor,의사,I need to see a doctor.,2.0,curated-speaking-core
+1062,Core Word,612,world,세계,The world is changing fast.,2.0,curated-speaking-core
+1063,Core Word,613,country,나라,Which country do you want to visit?,2.0,curated-speaking-core
+1064,Core Word,614,city,도시,It's a beautiful city.,2.0,curated-speaking-core
+1065,Core Word,615,morning,아침,I usually exercise in the morning.,2.0,curated-speaking-core
+1066,Core Word,616,afternoon,오후,I'm free this afternoon.,2.0,curated-speaking-core
+1067,Core Word,617,evening,저녁,Let's meet this evening.,2.0,curated-speaking-core
+1068,Core Word,618,night,밤,I stayed up late last night.,2.0,curated-speaking-core
+1069,Core Word,619,minute,분,Give me a minute.,2.0,curated-speaking-core
+1070,Core Word,620,month,달 / 월,I'll be there next month.,2.0,curated-speaking-core
+1071,Core Word,621,story,이야기,That's a long story.,2.0,curated-speaking-core
+1072,Core Word,622,word,단어,I don't know this word.,2.0,curated-speaking-core
+1073,Core Word,623,nurse,간호사,The nurse was very helpful.,2.0,curated-speaking-core
+1074,Core Word,624,school,학교,I learned it at school.,2.0,curated-speaking-core
+1075,Core Word,625,teacher,선생님,My teacher speaks slowly.,2.0,curated-speaking-core
+1076,Core Word,626,market,시장,The market is changing quickly.,2.0,curated-speaking-core
+1077,Core Word,627,price,가격,The price is too high.,2.0,curated-speaking-core
+1078,Core Word,628,trip,여행,How was your trip?,2.0,curated-speaking-core
+1079,Core Word,629,hotel,호텔,The hotel is near the station.,2.0,curated-speaking-core
+1080,Core Word,630,restaurant,식당,Do you know a good restaurant?,2.0,curated-speaking-core
+1081,Core Word,631,road,도로,This road is busy.,2.0,curated-speaking-core
+1082,Core Word,632,station,역,I'll meet you at the station.,2.0,curated-speaking-core
+1083,Core Word,633,airport,공항,How long does it take to get to the airport?,2.0,curated-speaking-core
+1084,Core Word,634,train,기차,I usually take the train.,2.0,curated-speaking-core
+1085,Core Word,635,bus,버스,The bus is late.,2.0,curated-speaking-core
+1086,Core Word,636,seat,좌석,Is this seat taken?,2.0,curated-speaking-core
+1087,Core Word,637,door,문,Please close the door.,2.0,curated-speaking-core
+1088,Core Word,638,window,창문,Can you open the window?,2.0,curated-speaking-core
+1089,Core Word,639,student,학생,I was a student at the time.,2.0,curated-speaking-core
+1090,Core Word,640,book,책,I'm reading a good book.,2.0,curated-speaking-core
+1091,Core Word,641,music,음악,What kind of music do you like?,2.0,curated-speaking-core
+1092,Core Word,642,movie,영화,Have you seen this movie?,2.0,curated-speaking-core
+1093,Core Word,643,game,게임,Do you play this game?,2.0,curated-speaking-core
+1094,Core Word,644,weather,날씨,The weather is nice today.,2.0,curated-speaking-core
+1095,Core Word,645,rain,비,It looks like rain.,2.0,curated-speaking-core
+1096,Core Word,646,parent,부모,My parents live in Korea.,2.0,curated-speaking-core
+1097,Core Word,647,child,아이,The child is sleeping.,2.0,curated-speaking-core
+1098,Core Word,648,brother,형제 / 남자 형제,My brother works in Seoul.,2.0,curated-speaking-core
+1099,Core Word,649,sister,자매 / 여자 형제,My sister called me yesterday.,2.0,curated-speaking-core
+1100,Core Word,650,manager,매니저 / 관리자,I need to ask my manager.,2.0,curated-speaking-core
+1101,Core Word,651,leader,리더,She is the team leader.,2.0,curated-speaking-core
+1102,Core Word,652,member,구성원,Every team member joined the meeting.,2.0,curated-speaking-core
+1103,Core Word,653,skill,기술 / 능력,Speaking is an important skill.,2.0,curated-speaking-core
+1104,Core Word,654,partner,파트너,We work closely with our partner.,2.0,curated-speaking-core
+1105,Core Word,655,vendor,벤더 / 공급업체,The vendor sent an update.,2.0,curated-speaking-core
+1106,Core Word,656,mistake,실수,Everyone makes mistakes.,2.0,curated-speaking-core
+1107,Core Word,657,dealer,딜러,The dealer reported the issue.,2.0,curated-speaking-core
+1108,Core Word,658,product,제품,This product is easy to use.,2.0,curated-speaking-core
+1109,Core Word,659,developer,개발자,I work as a backend developer.,2.0,curated-speaking-core
+1110,Core Word,660,future,미래,I'm thinking about my future.,2.0,curated-speaking-core
+1111,Core Word,661,past,과거,We can't change the past.,2.0,curated-speaking-core
+1112,Core Word,662,engineer,엔지니어,The engineer checked the server.,2.0,curated-speaking-core
+1113,Core Word,663,designer,디자이너,The designer updated the screen.,2.0,curated-speaking-core
+1114,Core Word,664,yesterday,어제,I saw him yesterday.,2.0,curated-speaking-core
+1115,Core Word,665,operator,운영자,The operator restarted the service.,2.0,curated-speaking-core
+1116,Core Word,666,admin,관리자,Ask the admin for permission.,2.0,curated-speaking-core
+1117,Core Word,667,busy,바쁜,I'm busy right now.,2.0,curated-speaking-core
+1118,Core Word,668,sales,영업,I talked to the sales team.,2.0,curated-speaking-core
+1119,Core Word,669,finance,재무,Finance approved the payment.,2.0,curated-speaking-core
+1120,Core Word,670,sure,확신하는,Are you sure?,2.0,curated-speaking-core
+1121,Core Word,671,health,건강,Health is more important than work.,2.0,curated-speaking-core
+1122,Core Word,672,hospital,병원,The hospital is near my house.,2.0,curated-speaking-core
+1123,Core Word,673,store,가게 / 저장하다,I stopped by the store.,2.0,curated-speaking-core
+1124,Core Word,674,similar,비슷한,The two systems are similar.,2.0,curated-speaking-core
+1125,Core Word,675,shop,가게 / 쇼핑하다,There is a coffee shop nearby.,2.0,curated-speaking-core
+1126,Core Word,676,difficult,어려운,This part is difficult.,2.0,curated-speaking-core
+1127,Core Word,677,bank,은행,I need to go to the bank.,2.0,curated-speaking-core
+1128,Core Word,678,beach,해변,We walked along the beach.,2.0,curated-speaking-core
+1129,Core Word,679,mountain,산,I like hiking in the mountains.,2.0,curated-speaking-core
+1130,Core Word,680,river,강,The hotel is near the river.,2.0,curated-speaking-core
+1131,Core Word,681,true,사실인 / 맞는,That's true.,2.0,curated-speaking-core
+1132,Core Word,682,real,진짜의 / 실제의,Is this real?,2.0,curated-speaking-core
+1133,Core Word,683,sea,바다,I want to see the sea.,2.0,curated-speaking-core
+1134,Core Word,684,useful,유용한,This is very useful.,2.0,curated-speaking-core
+1135,Core Word,685,necessary,필요한,Is this really necessary?,2.0,curated-speaking-core
+1136,Core Word,686,park,공원,I run in the park.,2.0,curated-speaking-core
+1137,Core Word,687,street,거리,The street is crowded.,2.0,curated-speaking-core
+1138,Core Word,688,floor,층 / 바닥,The office is on the third floor.,2.0,curated-speaking-core
+1139,Core Word,689,wall,벽,There is a screen on the wall.,2.0,curated-speaking-core
+1140,Core Word,690,key,열쇠 / 핵심,The key point is simplicity.,2.0,curated-speaking-core
+1141,Core Word,691,bag,가방,My laptop is in the bag.,2.0,curated-speaking-core
+1142,Core Word,692,clothes,옷,I need to change my clothes.,2.0,curated-speaking-core
+1143,Core Word,693,shoes,신발,These shoes are comfortable.,2.0,curated-speaking-core
+1144,Core Word,694,never,절대 ~않다,I've never been there.,2.0,curated-speaking-core
+1145,Core Word,695,breakfast,아침 식사,I usually skip breakfast.,2.0,curated-speaking-core
+1146,Core Word,696,lunch,점심,What do you want for lunch?,2.0,curated-speaking-core
+1147,Core Word,697,dinner,저녁 식사,Let us have dinner together.,2.0,curated-speaking-core
+1148,Core Word,698,weekend,주말,What are you doing this weekend?,2.0,curated-speaking-core
+1149,Core Word,699,holiday,휴일,The office is closed for the holiday.,2.0,curated-speaking-core
+1150,Core Word,700,vacation,휴가,I am planning a short vacation.,2.0,curated-speaking-core
+1151,Work English,1,I'll check and get back to you.,확인하고 다시 알려줄게.,I'll check the logs and get back to you.,2.0,curated-speaking-core
+1152,Work English,2,Let me clarify one thing.,한 가지 확인할게.,Let me clarify one thing before we proceed.,2.0,curated-speaking-core
+1153,Work English,3,"As far as I know,",내가 아는 한,"As far as I know, this is expected behavior.",2.0,curated-speaking-core
+1154,Work English,4,The issue seems to be caused by...,문제 원인은 ~인 것 같아.,The issue seems to be caused by a timeout.,2.0,curated-speaking-core
+1155,Work English,5,We need to confirm whether...,~인지 확인해야 해.,We need to confirm whether the API was called.,2.0,curated-speaking-core
+1156,Work English,6,Could you check this on your side?,너희 쪽에서 확인해줄 수 있어?,Could you check this on your side?,2.0,curated-speaking-core
+1157,Work English,7,I reproduced the issue.,이슈를 재현했어.,I reproduced the issue in QA.,2.0,curated-speaking-core
+1158,Work English,8,I couldn't reproduce the issue.,이슈를 재현하지 못했어.,I couldn't reproduce the issue in my environment.,2.0,curated-speaking-core
+1159,Work English,9,Let's keep it simple.,단순하게 가자.,Let's keep it simple for the first version.,2.0,curated-speaking-core
+1160,Work English,10,"From my understanding,",내가 이해한 바로는,"From my understanding, the flow is correct.",2.0,curated-speaking-core
+1161,Work English,11,I'll look into it.,확인해볼게 / 조사해볼게.,I'll look into it and update you.,2.0,curated-speaking-core
+1162,Work English,12,I'll follow up on this.,이 건 후속 조치할게.,I'll follow up on this tomorrow.,2.0,curated-speaking-core
+1163,Work English,13,Could you share more details?,조금 더 자세히 공유해줄래?,Could you share more details about the error?,2.0,curated-speaking-core
+1164,Work English,14,Could you send me the logs?,로그 보내줄래?,Could you send me the logs from production?,2.0,curated-speaking-core
+1165,Work English,15,Could you confirm the expected behavior?,기대 동작을 확인해줄래?,Could you confirm the expected behavior?,2.0,curated-speaking-core
+1166,Work English,16,What is the expected result?,기대 결과가 뭐야?,What is the expected result in this case?,2.0,curated-speaking-core
+1167,Work English,17,What is the actual result?,실제 결과가 뭐야?,What is the actual result?,2.0,curated-speaking-core
+1168,Work English,18,When did this start happening?,언제부터 발생했어?,When did this start happening?,2.0,curated-speaking-core
+1169,Work English,19,How often does this happen?,얼마나 자주 발생해?,How often does this happen?,2.0,curated-speaking-core
+1170,Work English,20,Is this reproducible?,재현 가능해?,Is this reproducible in QA?,2.0,curated-speaking-core
+1171,Work English,21,Can you reproduce it?,재현할 수 있어?,Can you reproduce it on your side?,2.0,curated-speaking-core
+1172,Work English,22,I found the root cause.,근본 원인을 찾았어.,I found the root cause.,2.0,curated-speaking-core
+1173,Work English,23,We haven't found the root cause yet.,아직 근본 원인을 못 찾았어.,We haven't found the root cause yet.,2.0,curated-speaking-core
+1174,Work English,24,This is a temporary workaround.,이건 임시 우회책이야.,This is a temporary workaround.,2.0,curated-speaking-core
+1175,Work English,25,This is not a permanent fix.,이건 영구 수정은 아니야.,This is not a permanent fix.,2.0,curated-speaking-core
+1176,Work English,26,We need a permanent fix.,영구 수정이 필요해.,We need a permanent fix for this.,2.0,curated-speaking-core
+1177,Work English,27,The fix is ready.,수정이 준비됐어.,The fix is ready for testing.,2.0,curated-speaking-core
+1178,Work English,28,The fix has been deployed.,수정이 배포됐어.,The fix has been deployed to QA.,2.0,curated-speaking-core
+1179,Work English,29,The deployment is complete.,배포가 완료됐어.,The deployment is complete.,2.0,curated-speaking-core
+1180,Work English,30,The deployment failed.,배포가 실패했어.,The deployment failed due to a permission issue.,2.0,curated-speaking-core
+1181,Work English,31,We rolled back the change.,변경을 롤백했어.,We rolled back the change.,2.0,curated-speaking-core
+1182,Work English,32,We need to roll back.,롤백이 필요해.,We need to roll back this release.,2.0,curated-speaking-core
+1183,Work English,33,Please test it again.,다시 테스트해줘.,Please test it again in QA.,2.0,curated-speaking-core
+1184,Work English,34,Please verify the result.,결과를 확인해줘.,Please verify the result after the fix.,2.0,curated-speaking-core
+1185,Work English,35,Please let me know the result.,결과 알려줘.,Please let me know the result.,2.0,curated-speaking-core
+1186,Work English,36,We need more information.,정보가 더 필요해.,We need more information before we decide.,2.0,curated-speaking-core
+1187,Work English,37,We need more time.,시간이 더 필요해.,We need more time to investigate.,2.0,curated-speaking-core
+1188,Work English,38,We need to prioritize this.,이걸 우선 처리해야 해.,We need to prioritize this issue.,2.0,curated-speaking-core
+1189,Work English,39,This is high priority.,이건 우선순위가 높아.,This is high priority.,2.0,curated-speaking-core
+1190,Work English,40,This is not urgent.,이건 긴급하지 않아.,This is not urgent.,2.0,curated-speaking-core
+1191,Work English,41,This can wait until tomorrow.,이건 내일까지 기다려도 돼.,This can wait until tomorrow.,2.0,curated-speaking-core
+1192,Work English,42,Let's discuss this in the meeting.,회의에서 논의하자.,Let's discuss this in the meeting.,2.0,curated-speaking-core
+1193,Work English,43,Let's schedule a meeting.,회의 잡자.,Let's schedule a meeting for tomorrow.,2.0,curated-speaking-core
+1194,Work English,44,Are you available tomorrow?,내일 시간 돼?,Are you available tomorrow afternoon?,2.0,curated-speaking-core
+1195,Work English,45,What time works for you?,몇 시가 괜찮아?,What time works for you?,2.0,curated-speaking-core
+1196,Work English,46,That time works for me.,그 시간 괜찮아.,That time works for me.,2.0,curated-speaking-core
+1197,Work English,47,I have a conflict at that time.,그 시간에 다른 일정이 있어.,I have a conflict at that time.,2.0,curated-speaking-core
+1198,Work English,48,Can we move the meeting?,회의 시간 옮길 수 있어?,Can we move the meeting to Friday?,2.0,curated-speaking-core
+1199,Work English,49,Can we reschedule?,일정 다시 잡을 수 있어?,Can we reschedule for next week?,2.0,curated-speaking-core
+1200,Work English,50,Let's start with the current status.,현재 상태부터 보자.,Let's start with the current status.,2.0,curated-speaking-core
+1201,Work English,51,Here's the current status.,현재 상태는 이래.,Here's the current status.,2.0,curated-speaking-core
+1202,Work English,52,There are two open issues.,열린 이슈가 두 개 있어.,There are two open issues.,2.0,curated-speaking-core
+1203,Work English,53,This issue is resolved.,이 이슈는 해결됐어.,This issue is resolved.,2.0,curated-speaking-core
+1204,Work English,54,This issue is still open.,이 이슈는 아직 열려 있어.,This issue is still open.,2.0,curated-speaking-core
+1205,Work English,55,We're waiting for confirmation.,확인을 기다리는 중이야.,We're waiting for confirmation from the vendor.,2.0,curated-speaking-core
+1206,Work English,56,We're waiting for approval.,승인을 기다리는 중이야.,We're waiting for approval.,2.0,curated-speaking-core
+1207,Work English,57,We need your confirmation.,네 확인이 필요해.,We need your confirmation before deployment.,2.0,curated-speaking-core
+1208,Work English,58,We need your approval.,네 승인이 필요해.,We need your approval to proceed.,2.0,curated-speaking-core
+1209,Work English,59,Please confirm by Friday.,금요일까지 확인해줘.,Please confirm by Friday.,2.0,curated-speaking-core
+1210,Work English,60,Please review the attached file.,첨부 파일 검토해줘.,Please review the attached file.,2.0,curated-speaking-core
+1211,Work English,61,Please see the details below.,아래 상세 내용 확인해줘.,Please see the details below.,2.0,curated-speaking-core
+1212,Work English,62,"For your reference,",참고로,"For your reference, I've attached the logs.",2.0,curated-speaking-core
+1213,Work English,63,"For your information,",참고로 알려주면,"For your information, the fix is already deployed.",2.0,curated-speaking-core
+1214,Work English,64,"Just to confirm,",확인차 말하면,"Just to confirm, are we using the latest version?",2.0,curated-speaking-core
+1215,Work English,65,"Just to clarify,",명확히 하기 위해 말하면,"Just to clarify, this only affects QA.",2.0,curated-speaking-core
+1216,Work English,66,"To summarize,",요약하면,"To summarize, we have two options.",2.0,curated-speaking-core
+1217,Work English,67,"In short,",간단히 말하면,"In short, we need to retry.",2.0,curated-speaking-core
+1218,Work English,68,The main point is...,핵심은 ~야.,The main point is data consistency.,2.0,curated-speaking-core
+1219,Work English,69,The key issue is...,핵심 이슈는 ~야.,The key issue is the timeout.,2.0,curated-speaking-core
+1220,Work English,70,The main difference is...,주요 차이는 ~야.,The main difference is the API version.,2.0,curated-speaking-core
+1221,Work English,71,There are two options.,옵션이 두 개 있어.,There are two options.,2.0,curated-speaking-core
+1222,Work English,72,Option A is simpler.,A안이 더 단순해.,Option A is simpler.,2.0,curated-speaking-core
+1223,Work English,73,Option B is safer.,B안이 더 안전해.,Option B is safer.,2.0,curated-speaking-core
+1224,Work English,74,I recommend option A.,A안을 추천해.,I recommend option A.,2.0,curated-speaking-core
+1225,Work English,75,My recommendation is...,내 추천은 ~야.,My recommendation is to keep the current flow.,2.0,curated-speaking-core
+1226,Work English,76,I prefer option B.,B안을 선호해.,I prefer option B for maintainability.,2.0,curated-speaking-core
+1227,Work English,77,What do you recommend?,뭘 추천해?,What do you recommend?,2.0,curated-speaking-core
+1228,Work English,78,What are the risks?,리스크가 뭐야?,What are the risks of this approach?,2.0,curated-speaking-core
+1229,Work English,79,What are the pros and cons?,장단점이 뭐야?,What are the pros and cons?,2.0,curated-speaking-core
+1230,Work English,80,What is the impact?,영향이 뭐야?,What is the impact on users?,2.0,curated-speaking-core
+1231,Work English,81,Will this affect production?,이게 운영에 영향 줘?,Will this affect production?,2.0,curated-speaking-core
+1232,Work English,82,This only affects QA.,이건 QA에만 영향 줘.,This only affects QA.,2.0,curated-speaking-core
+1233,Work English,83,This affects all users.,이건 모든 사용자에게 영향 줘.,This affects all users.,2.0,curated-speaking-core
+1234,Work English,84,The impact is limited.,영향은 제한적이야.,The impact is limited.,2.0,curated-speaking-core
+1235,Work English,85,There is no user impact.,사용자 영향은 없어.,There is no user impact.,2.0,curated-speaking-core
+1236,Work English,86,We need to prevent this from happening again.,재발 방지가 필요해.,We need to prevent this from happening again.,2.0,curated-speaking-core
+1237,Work English,87,We should add validation.,검증 로직을 추가해야 해.,We should add validation.,2.0,curated-speaking-core
+1238,Work English,88,We should add logging.,로그를 추가해야 해.,We should add logging.,2.0,curated-speaking-core
+1239,Work English,89,We should add monitoring.,모니터링을 추가해야 해.,We should add monitoring.,2.0,curated-speaking-core
+1240,Work English,90,We should handle this case.,이 케이스를 처리해야 해.,We should handle this case explicitly.,2.0,curated-speaking-core
+1241,Work English,91,We should document this.,이걸 문서화해야 해.,We should document this process.,2.0,curated-speaking-core
+1242,Work English,92,Let's document the flow.,흐름을 문서화하자.,Let's document the flow.,2.0,curated-speaking-core
+1243,Work English,93,Let's draw the process.,프로세스를 그려보자.,Let's draw the process first.,2.0,curated-speaking-core
+1244,Work English,94,Let's break it down.,쪼개서 보자.,Let's break it down step by step.,2.0,curated-speaking-core
+1245,Work English,95,Let's go step by step.,단계별로 가자.,Let's go step by step.,2.0,curated-speaking-core
+1246,Work English,96,Let's focus on the root cause.,근본 원인에 집중하자.,Let's focus on the root cause.,2.0,curated-speaking-core
+1247,Work English,97,Let's not change too much at once.,한 번에 너무 많이 바꾸지 말자.,Let's not change too much at once.,2.0,curated-speaking-core
+1248,Work English,98,We can improve this later.,이건 나중에 개선할 수 있어.,We can improve this later.,2.0,curated-speaking-core
+1249,Work English,99,This is enough for the first version.,첫 버전엔 이 정도면 충분해.,This is enough for the first version.,2.0,curated-speaking-core
+1250,Work English,100,We can add it in the next phase.,다음 단계에 추가할 수 있어.,We can add it in the next phase.,2.0,curated-speaking-core
+1251,Work English,101,This is out of scope.,이건 범위 밖이야.,This is out of scope for this release.,2.0,curated-speaking-core
+1252,Work English,102,This is in scope.,이건 범위 안이야.,This is in scope for this sprint.,2.0,curated-speaking-core
+1253,Work English,103,Let's confirm the scope.,범위를 확인하자.,Let's confirm the scope first.,2.0,curated-speaking-core
+1254,Work English,104,What's the deadline?,마감이 언제야?,What's the deadline for this task?,2.0,curated-speaking-core
+1255,Work English,105,Can we meet the deadline?,마감 맞출 수 있어?,Can we meet the deadline?,2.0,curated-speaking-core
+1256,Work English,106,We're behind schedule.,일정이 밀렸어.,We're behind schedule.,2.0,curated-speaking-core
+1257,Work English,107,We're on schedule.,일정대로야.,We're on schedule.,2.0,curated-speaking-core
+1258,Work English,108,We're ahead of schedule.,일정보다 빨라.,We're ahead of schedule.,2.0,curated-speaking-core
+1259,Work English,109,This will take longer than expected.,예상보다 오래 걸릴 거야.,This will take longer than expected.,2.0,curated-speaking-core
+1260,Work English,110,This should be quick.,이건 금방 될 거야.,This should be quick.,2.0,curated-speaking-core
+1261,Work English,111,It will take about an hour.,한 시간 정도 걸릴 거야.,It will take about an hour.,2.0,curated-speaking-core
+1262,Work English,112,I'll update you once it's done.,끝나면 업데이트할게.,I'll update you once it's done.,2.0,curated-speaking-core
+1263,Work English,113,I'll keep you posted.,계속 진행상황 공유할게.,I'll keep you posted.,2.0,curated-speaking-core
+1264,Work English,114,I'll send an update tomorrow.,내일 업데이트 보낼게.,I'll send an update tomorrow.,2.0,curated-speaking-core
+1265,Work English,115,No update yet.,아직 업데이트 없어.,No update yet.,2.0,curated-speaking-core
+1266,Work English,116,There is a new update.,새 업데이트가 있어.,There is a new update.,2.0,curated-speaking-core
+1267,Work English,117,The status has changed.,상태가 바뀌었어.,The status has changed.,2.0,curated-speaking-core
+1268,Work English,118,Nothing has changed.,바뀐 건 없어.,Nothing has changed.,2.0,curated-speaking-core
+1269,Work English,119,We need to check the latest version.,최신 버전을 확인해야 해.,We need to check the latest version.,2.0,curated-speaking-core
+1270,Work English,120,Please use the latest version.,최신 버전 사용해줘.,Please use the latest version.,2.0,curated-speaking-core
+1271,Work English,121,This is the latest version.,이게 최신 버전이야.,This is the latest version.,2.0,curated-speaking-core
+1272,Work English,122,The old version is no longer supported.,구버전은 더 이상 지원 안 돼.,The old version is no longer supported.,2.0,curated-speaking-core
+1273,Work English,123,This is backward compatible.,하위 호환돼.,This is backward compatible.,2.0,curated-speaking-core
+1274,Work English,124,This is not backward compatible.,하위 호환 안 돼.,This is not backward compatible.,2.0,curated-speaking-core
+1275,Work English,125,We need to update the API.,API 업데이트가 필요해.,We need to update the API.,2.0,curated-speaking-core
+1276,Work English,126,The API call failed.,API 호출이 실패했어.,The API call failed.,2.0,curated-speaking-core
+1277,Work English,127,The API returned an error.,API가 오류를 반환했어.,The API returned an error.,2.0,curated-speaking-core
+1278,Work English,128,The response is empty.,응답이 비어 있어.,The response is empty.,2.0,curated-speaking-core
+1279,Work English,129,The request timed out.,요청이 타임아웃됐어.,The request timed out.,2.0,curated-speaking-core
+1280,Work English,130,The connection was lost.,연결이 끊겼어.,The connection was lost.,2.0,curated-speaking-core
+1281,Work English,131,The data is missing.,데이터가 누락됐어.,The data is missing.,2.0,curated-speaking-core
+1282,Work English,132,The data is duplicated.,데이터가 중복됐어.,The data is duplicated.,2.0,curated-speaking-core
+1283,Work English,133,The data is inconsistent.,데이터가 불일치해.,The data is inconsistent.,2.0,curated-speaking-core
+1284,Work English,134,The data looks correct.,데이터가 정상으로 보여.,The data looks correct.,2.0,curated-speaking-core
+1285,Work English,135,The value is null.,값이 null이야.,The value is null.,2.0,curated-speaking-core
+1286,Work English,136,The field is required.,이 필드는 필수야.,The field is required.,2.0,curated-speaking-core
+1287,Work English,137,The format is invalid.,형식이 잘못됐어.,The format is invalid.,2.0,curated-speaking-core
+1288,Work English,138,The permission is missing.,권한이 없어.,The permission is missing.,2.0,curated-speaking-core
+1289,Work English,139,Access is denied.,접근이 거부됐어.,Access is denied.,2.0,curated-speaking-core
+1290,Work English,140,The server is down.,서버가 내려갔어.,The server is down.,2.0,curated-speaking-core
+1291,Work English,141,The server is back up.,서버가 다시 올라왔어.,The server is back up.,2.0,curated-speaking-core
+1292,Work English,142,The service is unavailable.,서비스를 사용할 수 없어.,The service is unavailable.,2.0,curated-speaking-core
+1293,Work English,143,The service is stable now.,서비스가 지금 안정적이야.,The service is stable now.,2.0,curated-speaking-core
+1294,Work English,144,CPU usage is high.,CPU 사용률이 높아.,CPU usage is high.,2.0,curated-speaking-core
+1295,Work English,145,Memory usage is high.,메모리 사용률이 높아.,Memory usage is high.,2.0,curated-speaking-core
+1296,Work English,146,Latency is high.,지연 시간이 높아.,Latency is high.,2.0,curated-speaking-core
+1297,Work English,147,We need to check the logs.,로그를 확인해야 해.,We need to check the logs.,2.0,curated-speaking-core
+1298,Work English,148,The logs show an error.,로그에 오류가 보여.,The logs show an error.,2.0,curated-speaking-core
+1299,Work English,149,I don't see any errors in the logs.,로그에 오류가 안 보여.,I don't see any errors in the logs.,2.0,curated-speaking-core
+1300,Work English,150,The configuration looks wrong.,설정이 잘못된 것 같아.,The configuration looks wrong.,2.0,curated-speaking-core
+1301,Work English,151,The configuration looks fine.,설정은 정상으로 보여.,The configuration looks fine.,2.0,curated-speaking-core
+1302,Work English,152,We need to restart the service.,서비스 재시작이 필요해.,We need to restart the service.,2.0,curated-speaking-core
+1303,Work English,153,The restart fixed the issue.,재시작으로 해결됐어.,The restart fixed the issue.,2.0,curated-speaking-core
+1304,Work English,154,We need to clear the cache.,캐시를 비워야 해.,We need to clear the cache.,2.0,curated-speaking-core
+1305,Work English,155,The cache is stale.,캐시가 오래됐어.,The cache is stale.,2.0,curated-speaking-core
+1306,Work English,156,The database connection failed.,DB 연결이 실패했어.,The database connection failed.,2.0,curated-speaking-core
+1307,Work English,157,The query is slow.,쿼리가 느려.,The query is slow.,2.0,curated-speaking-core
+1308,Work English,158,We need an index.,인덱스가 필요해.,We need an index on this column.,2.0,curated-speaking-core
+1309,Work English,159,The transaction failed.,트랜잭션이 실패했어.,The transaction failed.,2.0,curated-speaking-core
+1310,Work English,160,The transaction was rolled back.,트랜잭션이 롤백됐어.,The transaction was rolled back.,2.0,curated-speaking-core
+1311,Work English,161,The message was not delivered.,메시지가 전달되지 않았어.,The message was not delivered.,2.0,curated-speaking-core
+1312,Work English,162,The event was processed twice.,이벤트가 두 번 처리됐어.,The event was processed twice.,2.0,curated-speaking-core
+1313,Work English,163,We need idempotency.,멱등성이 필요해.,We need idempotency here.,2.0,curated-speaking-core
+1314,Work English,164,We need retry logic.,재시도 로직이 필요해.,We need retry logic.,2.0,curated-speaking-core
+1315,Work English,165,We need error handling.,에러 처리가 필요해.,We need better error handling.,2.0,curated-speaking-core
+1316,Work English,166,We need a fallback.,대체 경로가 필요해.,We need a fallback.,2.0,curated-speaking-core
+1317,Work English,167,We need to validate the input.,입력값 검증이 필요해.,We need to validate the input.,2.0,curated-speaking-core
+1318,Work English,168,We need to sanitize the input.,입력값 정제가 필요해.,We need to sanitize the input.,2.0,curated-speaking-core
+1319,Work English,169,We need to map the fields.,필드 매핑이 필요해.,We need to map the fields.,2.0,curated-speaking-core
+1320,Work English,170,The mapping is wrong.,매핑이 잘못됐어.,The mapping is wrong.,2.0,curated-speaking-core
+1321,Work English,171,The payload is different.,페이로드가 달라.,The payload is different.,2.0,curated-speaking-core
+1322,Work English,172,The schema has changed.,스키마가 바뀌었어.,The schema has changed.,2.0,curated-speaking-core
+1323,Work English,173,The endpoint has changed.,엔드포인트가 바뀌었어.,The endpoint has changed.,2.0,curated-speaking-core
+1324,Work English,174,The token expired.,토큰이 만료됐어.,The token expired.,2.0,curated-speaking-core
+1325,Work English,175,Authentication failed.,인증이 실패했어.,Authentication failed.,2.0,curated-speaking-core
+1326,Work English,176,Authorization failed.,인가가 실패했어.,Authorization failed.,2.0,curated-speaking-core
+1327,Work English,177,We need to refresh the token.,토큰 갱신이 필요해.,We need to refresh the token.,2.0,curated-speaking-core
+1328,Work English,178,This endpoint requires authentication.,이 엔드포인트는 인증이 필요해.,This endpoint requires authentication.,2.0,curated-speaking-core
+1329,Work English,179,This role doesn't have permission.,이 역할엔 권한이 없어.,This role doesn't have permission.,2.0,curated-speaking-core
+1330,Work English,180,We need to update the environment variables.,환경변수 업데이트가 필요해.,We need to update the environment variables.,2.0,curated-speaking-core
+1331,Work English,181,This works in local but not in QA.,로컬에서는 되는데 QA에서는 안 돼.,This works in local but not in QA.,2.0,curated-speaking-core
+1332,Work English,182,This only happens in production.,운영에서만 발생해.,This only happens in production.,2.0,curated-speaking-core
+1333,Work English,183,I tested it locally.,로컬에서 테스트했어.,I tested it locally.,2.0,curated-speaking-core
+1334,Work English,184,I tested it in QA.,QA에서 테스트했어.,I tested it in QA.,2.0,curated-speaking-core
+1335,Work English,185,I verified it in production.,운영에서 확인했어.,I verified it in production.,2.0,curated-speaking-core
+1336,Work English,186,The test passed.,테스트 통과했어.,The test passed.,2.0,curated-speaking-core
+1337,Work English,187,The test failed.,테스트 실패했어.,The test failed.,2.0,curated-speaking-core
+1338,Work English,188,All tests passed.,모든 테스트 통과했어.,All tests passed.,2.0,curated-speaking-core
+1339,Work English,189,We need more test cases.,테스트 케이스가 더 필요해.,We need more test cases.,2.0,curated-speaking-core
+1340,Work English,190,This case is not covered.,이 케이스는 커버되지 않아.,This case is not covered.,2.0,curated-speaking-core
+1341,Work English,191,This is an edge case.,이건 엣지 케이스야.,This is an edge case.,2.0,curated-speaking-core
+1342,Work English,192,This is expected behavior.,이건 정상 동작이야.,This is expected behavior.,2.0,curated-speaking-core
+1343,Work English,193,This is unexpected behavior.,이건 비정상 동작이야.,This is unexpected behavior.,2.0,curated-speaking-core
+1344,Work English,194,This is a regression.,이건 회귀 결함이야.,This is a regression.,2.0,curated-speaking-core
+1345,Work English,195,This worked before.,예전엔 됐어.,This worked before.,2.0,curated-speaking-core
+1346,Work English,196,This never worked before.,예전부터 안 됐어.,This never worked before.,2.0,curated-speaking-core
+1347,Work English,197,We need to compare with the previous version.,이전 버전과 비교해야 해.,We need to compare with the previous version.,2.0,curated-speaking-core
+1348,Work English,198,Let's check the change history.,변경 이력을 확인하자.,Let's check the change history.,2.0,curated-speaking-core
+1349,Work English,199,Let's check the commit history.,커밋 이력을 확인하자.,Let's check the commit history.,2.0,curated-speaking-core
+1350,Work English,200,Who made this change?,누가 이 변경했어?,Who made this change?,2.0,curated-speaking-core

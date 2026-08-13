@@ -1,0 +1,77 @@
+[
+  {
+    "path": ".env.example",
+    "sha256": "f4566f2d67df0cf1334ea4c20f1fff2083149f9a61d473264b3c1c995ccfed8d",
+    "bytes": 329
+  },
+  {
+    "path": "CLAUDE.md",
+    "sha256": "d894edecbaad16c27433e129a3641b5c36c3caa6f5c475bd8ac14942fe9bff50",
+    "bytes": 3530
+  },
+  {
+    "path": "README_HANDOFF.md",
+    "sha256": "a8de0335ee763d26c937cfa3cdcfc657bb423a0d5af0995fcd4d83ebabef5a36",
+    "bytes": 1141
+  },
+  {
+    "path": "data/speaking_core_1350_seed_v2.csv",
+    "sha256": "029052ae9a555dc157612839ea8f2da25081dc86604a1956fbbb7eba1f6c0b32",
+    "bytes": 139483
+  },
+  {
+    "path": "data/speaking_core_1350_seed_v2.json",
+    "sha256": "4ef3fd04774b133bec3e882be8006de2d4ac55868a62ac6bab6ff5586ce013d7",
+    "bytes": 340043
+  },
+  {
+    "path": "data/speaking_core_1350_seed_v2_manifest.json",
+    "sha256": "dd7e9266315d460cd1a226d629d39231f48cdde270059bd8610cfcfeac35e611",
+    "bytes": 400
+  },
+  {
+    "path": "database/schema.prisma",
+    "sha256": "3c644e4324140d652a9d595e05403c6d1e3f3b2e514126e45128f6914537f4f5",
+    "bytes": 3030
+  },
+  {
+    "path": "deploy/Caddyfile.example",
+    "sha256": "e11bc53f8f1c356bd4b23eae7fdea31e669c86b791dc408aefaef5132d4e3045",
+    "bytes": 132
+  },
+  {
+    "path": "deploy/docker-compose.prod.yml",
+    "sha256": "6ca9dfbbfad64f258014c9b87cecb252e73828f1352b5c50ba93353cef2aeb25",
+    "bytes": 1328
+  },
+  {
+    "path": "docs/API_CONTRACT.md",
+    "sha256": "5a1e90ca9398ca740276962130a448c9abba9628d6483b4d98ebe59503d6d374",
+    "bytes": 651
+  },
+  {
+    "path": "docs/DATA_QUALITY_REPORT.md",
+    "sha256": "db59c09807509d2f680beb4f23f3525e085c476f3478c04bac6456931cb12751",
+    "bytes": 939
+  },
+  {
+    "path": "docs/IMPLEMENTATION_SPEC.md",
+    "sha256": "8d5771f1d9452cd03b673a05a9b956014f994c3acb286a981a215f2989160014",
+    "bytes": 3644
+  },
+  {
+    "path": "docs/PROJECT_STRUCTURE.md",
+    "sha256": "33ae1ce57de42b549378ae52c06648143db21210fc6b73eb6a3ff01c7a24c055",
+    "bytes": 1149
+  },
+  {
+    "path": "reference/original_prototype.html",
+    "sha256": "675a3bfed275fe8751365c3ea9717f5999c6ea0ee04f97c6fb4d3176b5328abc",
+    "bytes": 202040
+  },
+  {
+    "path": "scripts/validate_seed.py",
+    "sha256": "22b1b830185c98f819738719a8964a8acfbb2c63a1bc8e3efcb37b0aa8abc43b",
+    "bytes": 775
+  }
+]

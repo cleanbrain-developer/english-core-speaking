@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String             @id @default(uuid())
+  googleId         String             @unique
+  email            String             @unique
+  displayName      String?
+  profileImageUrl  String?
+  timezone         String             @default("Asia/Seoul")
+  progress         LearningProgress[]
+  sessions         StudySession[]
+  reviews          StudyReview[]
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  lastLoginAt      DateTime?
+}
+
+model LearningItem {
+  id             Int                @id
+  category       String
+  rank           Int
+  english        String
+  korean         String
+  example        String
+  datasetVersion String             @default("2.0")
+  sourceType     String             @default("curated-speaking-core")
+  isActive       Boolean            @default(true)
+  progress       LearningProgress[]
+  reviews        StudyReview[]
+  @@unique([category, rank])
+  @@index([category, isActive])
+}
+
+model LearningProgress {
+  id             String       @id @default(uuid())
+  userId         String
+  learningItemId Int
+  reps           Int          @default(0)
+  ease           Float        @default(2.5)
+  intervalDays   Int          @default(0)
+  dueDate        DateTime?
+  lapses         Int          @default(0)
+  lastReviewedAt DateTime?
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  learningItem   LearningItem @relation(fields: [learningItemId], references: [id], onDelete: Cascade)
+  @@unique([userId, learningItemId])
+  @@index([userId, dueDate])
+}
+
+model StudySession {
+  id            String        @id @default(uuid())
+  userId        String
+  mode          String
+  startedAt     DateTime      @default(now())
+  endedAt       DateTime?
+  reviewedCount Int           @default(0)
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reviews       StudyReview[]
+  @@index([userId, startedAt])
+}
+
+model StudyReview {
+  id               String       @id @default(uuid())
+  sessionId        String
+  userId           String
+  learningItemId   Int
+  rating           Int
+  previousInterval Int
+  nextInterval     Int
+  previousEase     Float
+  nextEase         Float
+  reviewedAt       DateTime     @default(now())
+  session          StudySession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  user             User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  learningItem     LearningItem @relation(fields: [learningItemId], references: [id], onDelete: Cascade)
+  @@index([userId, reviewedAt])
+  @@index([learningItemId])
+}

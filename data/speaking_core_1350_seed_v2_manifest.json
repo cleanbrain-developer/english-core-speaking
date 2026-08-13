@@ -1,0 +1,17 @@
+{
+  "dataset": "Speaking Core 1350",
+  "version": "2.0",
+  "total": 1350,
+  "counts": {
+    "Conversation Chunk": 300,
+    "Phrasal Verb": 150,
+    "Core Word": 700,
+    "Work English": 200
+  },
+  "sha256": "4ef3fd04774b133bec3e882be8006de2d4ac55868a62ac6bab6ff5586ce013d7",
+  "validation": {
+    "withinCategoryDuplicateEnglish": 0,
+    "untranslatedCoreGloss": 0,
+    "placeholderExamples": 0
+  }
+}
