@@ -295,6 +295,9 @@ git pull
 docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
 docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
   node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
+
+# 이번 배포처럼 data/*.json 콘텐츠가 추가/변경된 경우에만 재실행 (id 기준 upsert라 여러 번 실행해도 안전)
+docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api node ../../prisma-dist/seed.js
 ```
 
 ## Backup
