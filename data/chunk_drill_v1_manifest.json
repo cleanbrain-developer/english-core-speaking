@@ -1,0 +1,12 @@
+{
+  "dataset": "Chunk Speaking Drill",
+  "version": "1.0",
+  "total": 100,
+  "sha256": "d4950b902829aa7552a2c4bcbf86ec88b3b7127267848f6700132089deecd6c8",
+  "validation": {
+    "duplicateEnglish": 0,
+    "duplicateId": 0,
+    "duplicateRank": 0
+  },
+  "note": "Curated set of high-utility spoken-English chunks (discourse markers, hedging, agreement/disagreement, clarification, storytelling connectors, small talk, requests, emphasis, comparison) for shadowing/production-speed drilling. Ranked by general spoken-English frequency and communicative utility based on established formulaic-sequence/discourse-marker research, not a live corpus-frequency pull -- same limitation as noted for the v2 seed's curated ordering (see docs/DATA_QUALITY_REPORT.md). Independent of the canonical speaking_core_1350_seed_v2 dataset; safe to expand in a v2 without touching the canonical seed."
+}

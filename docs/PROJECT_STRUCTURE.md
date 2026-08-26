@@ -24,6 +24,7 @@ speaking-core-1350/
 │     │  ├─ learning-items/
 │     │  ├─ study/
 │     │  ├─ progress/
+│     │  ├─ chunk-drill/           # shadowing/speed drill, independent of the SRS scheduler above
 │     │  ├─ health/
 │     │  └─ prisma/
 │     └─ Dockerfile
@@ -31,7 +32,8 @@ speaking-core-1350/
 │  ├─ schema.prisma
 │  └─ seed.ts
 ├─ data/
-│  └─ speaking_core_1350_seed_v2.json
+│  ├─ speaking_core_1350_seed_v2.json    # canonical seed, do not edit
+│  └─ chunk_drill_v1.json                 # independent chunk-drill dataset
 ├─ deploy/
 │  ├─ docker-compose.prod.yml
 │  └─ Caddyfile.example

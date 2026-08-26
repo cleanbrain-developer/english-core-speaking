@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router';
 import { useAuthStore } from '../stores/auth';
 import { googleLoginUrl } from '../api/client';
 import { apiFetch } from '../api/client';
-import type { ProgressSummaryResponseDto } from '../api/types';
+import type { ChunkDrillSummaryDto, ProgressSummaryResponseDto } from '../api/types';
 
 const auth = useAuthStore();
 const { user, status } = storeToRefs(auth);
@@ -13,6 +13,7 @@ const router = useRouter();
 
 const summary = ref<ProgressSummaryResponseDto | null>(null);
 const summaryError = ref<string | null>(null);
+const chunkSummary = ref<ChunkDrillSummaryDto | null>(null);
 
 const STUDY_MODES: Array<{ mode: 'daily' | 'due' | 'new' | 'weak'; label: string; description: string }> = [
   { mode: 'daily', label: '오늘의 30개', description: '복습 예정 우선, 부족하면 신규 항목' },
@@ -30,10 +31,21 @@ async function loadSummary() {
   }
 }
 
+async function loadChunkSummary() {
+  try {
+    chunkSummary.value = await apiFetch<ChunkDrillSummaryDto>('/chunk-drill/summary');
+  } catch {
+    chunkSummary.value = null;
+  }
+}
+
 watch(
   user,
   (value) => {
-    if (value) loadSummary();
+    if (value) {
+      loadSummary();
+      loadChunkSummary();
+    }
   },
   { immediate: true },
 );
@@ -83,6 +95,19 @@ watch(
       </section>
 
       <button class="browse-btn" @click="router.push('/browse')">카테고리 / 검색으로 학습</button>
+
+      <section class="chunk-drill-card" @click="router.push('/chunk-drill')">
+        <div class="chunk-drill-heading">
+          <span class="chunk-drill-icon">🗣️</span>
+          <div>
+            <p class="chunk-drill-title">Chunk 스피킹 드릴</p>
+            <p class="chunk-drill-desc">회화에 자주 쓰이는 chunk를 쉐도잉으로 반복 연습</p>
+          </div>
+        </div>
+        <p v-if="chunkSummary" class="chunk-drill-stat">
+          {{ chunkSummary.practicedAtLeastOnce }}/{{ chunkSummary.total }} 연습함 · 오늘 {{ chunkSummary.practicedToday }}개
+        </p>
+      </section>
     </template>
 
     <section v-else class="card">
@@ -185,5 +210,40 @@ button {
 }
 .browse-btn {
   width: 100%;
+}
+.chunk-drill-card {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(217, 119, 6, 0.45);
+  cursor: pointer;
+  text-align: left;
+}
+.chunk-drill-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.chunk-drill-icon {
+  font-size: 1.5rem;
+}
+.chunk-drill-title {
+  font-weight: 700;
+  margin: 0;
+}
+.chunk-drill-desc {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin: 0.15rem 0 0;
+}
+.chunk-drill-stat {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin: 0;
 }
 </style>

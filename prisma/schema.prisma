@@ -16,18 +16,19 @@ datasource db {
 // copy is what Prisma CLI and the API actually run against.
 
 model User {
-  id               String             @id @default(uuid())
-  googleId         String             @unique
-  email            String             @unique
-  displayName      String?
-  profileImageUrl  String?
-  timezone         String             @default("Asia/Seoul")
-  progress         LearningProgress[]
-  sessions         StudySession[]
-  reviews          StudyReview[]
-  createdAt        DateTime           @default(now())
-  updatedAt        DateTime           @updatedAt
-  lastLoginAt      DateTime?
+  id                 String               @id @default(uuid())
+  googleId           String               @unique
+  email              String               @unique
+  displayName        String?
+  profileImageUrl    String?
+  timezone           String               @default("Asia/Seoul")
+  progress           LearningProgress[]
+  sessions           StudySession[]
+  reviews            StudyReview[]
+  chunkDrillProgress ChunkDrillProgress[]
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  lastLoginAt        DateTime?
 }
 
 model LearningItem {
@@ -90,4 +91,29 @@ model StudyReview {
   learningItem     LearningItem @relation(fields: [learningItemId], references: [id], onDelete: Cascade)
   @@index([userId, reviewedAt])
   @@index([learningItemId])
+}
+
+// Chunk speaking drill (docs: high-frequency spoken-English chunk shadowing
+// practice, separate from the SRS-scheduled LearningItem catalog above).
+model ChunkItem {
+  id             Int                  @id
+  rank           Int                  @unique
+  english        String
+  korean         String
+  example        String
+  datasetVersion String               @default("1.0")
+  isActive       Boolean              @default(true)
+  progress       ChunkDrillProgress[]
+}
+
+model ChunkDrillProgress {
+  id              String    @id @default(uuid())
+  userId          String
+  chunkItemId     Int
+  practiceCount   Int       @default(0)
+  lastPracticedAt DateTime?
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  chunkItem       ChunkItem @relation(fields: [chunkItemId], references: [id], onDelete: Cascade)
+  @@unique([userId, chunkItemId])
+  @@index([userId, practiceCount])
 }

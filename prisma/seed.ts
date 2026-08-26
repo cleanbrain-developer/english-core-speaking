@@ -15,12 +15,22 @@ interface SeedRow {
   sourceType: string;
 }
 
+interface ChunkDrillRow {
+  id: number;
+  rank: number;
+  english: string;
+  korean: string;
+  example: string;
+}
+
 const EXPECTED_COUNTS: Record<string, number> = {
   'Conversation Chunk': 300,
   'Phrasal Verb': 150,
   'Core Word': 700,
   'Work English': 200,
 };
+
+const EXPECTED_CHUNK_DRILL_COUNT = 100;
 
 async function main(): Promise<void> {
   const seedPath = join(__dirname, '..', 'data', 'speaking_core_1350_seed_v2.json');
@@ -67,6 +77,39 @@ async function main(): Promise<void> {
 
   const total = await prisma.learningItem.count();
   console.log('Seed complete.', { total, counts });
+
+  await seedChunkDrill();
+}
+
+async function seedChunkDrill(): Promise<void> {
+  const seedPath = join(__dirname, '..', 'data', 'chunk_drill_v1.json');
+  const rows: ChunkDrillRow[] = JSON.parse(readFileSync(seedPath, 'utf-8'));
+
+  if (rows.length !== EXPECTED_CHUNK_DRILL_COUNT) {
+    throw new Error(`Expected ${EXPECTED_CHUNK_DRILL_COUNT} chunk drill rows, found ${rows.length}`);
+  }
+
+  for (const row of rows) {
+    await prisma.chunkItem.upsert({
+      where: { id: row.id },
+      create: {
+        id: row.id,
+        rank: row.rank,
+        english: row.english,
+        korean: row.korean,
+        example: row.example,
+      },
+      update: {
+        rank: row.rank,
+        english: row.english,
+        korean: row.korean,
+        example: row.example,
+      },
+    });
+  }
+
+  const total = await prisma.chunkItem.count();
+  console.log('Chunk drill seed complete.', { total });
 }
 
 main()

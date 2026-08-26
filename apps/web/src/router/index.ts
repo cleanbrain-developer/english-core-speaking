@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import StudyView from '../views/StudyView.vue';
 import BrowseView from '../views/BrowseView.vue';
+import ChunkDrillView from '../views/ChunkDrillView.vue';
 import { useAuthStore } from '../stores/auth';
 
 export const router = createRouter({
@@ -10,6 +11,7 @@ export const router = createRouter({
     { path: '/', name: 'home', component: HomeView },
     { path: '/study/:mode', name: 'study', component: StudyView, meta: { requiresAuth: true } },
     { path: '/browse', name: 'browse', component: BrowseView, meta: { requiresAuth: true } },
+    { path: '/chunk-drill', name: 'chunk-drill', component: ChunkDrillView, meta: { requiresAuth: true } },
   ],
 });
 

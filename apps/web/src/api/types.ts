@@ -56,3 +56,24 @@ export interface ProgressSummaryResponseDto {
   today: number;
   categories: ProgressCategoryDto[];
 }
+
+export interface ChunkDrillItemDto {
+  id: number;
+  rank: number;
+  english: string;
+  korean: string;
+  example: string;
+  practiceCount: number;
+  lastPracticedAt: string | null;
+}
+
+export interface ChunkDrillSetResponseDto {
+  items: ChunkDrillItemDto[];
+  total: number;
+}
+
+export interface ChunkDrillSummaryDto {
+  total: number;
+  practicedAtLeastOnce: number;
+  practicedToday: number;
+}

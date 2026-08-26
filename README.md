@@ -2,7 +2,7 @@
 
 영어 회화 학습(문장 청크, 구동사, 핵심 단어, 비즈니스 영어) 1,350개 항목을 서버 기반 진도 동기화와 함께 학습하는 모바일 우선 PWA입니다. PC와 스마트폰에서 동일한 Google 계정으로 로그인해 학습 상태를 공유합니다.
 
-> **현재 상태: Phase 2 완료** — 모노레포/DB/Google OAuth 인증/Seed(Phase 1)에 이어 SRS v1 복습 스케줄러, 오늘의 30개/복습/신규/취약 큐, 학습 세션·리뷰 API, 진행률 요약/캘린더, 카드형 학습 UI, 카테고리·검색 브라우징(무한 스크롤)까지 구현되어 있습니다. 자세한 범위는 `CLAUDE.md`, `docs/IMPLEMENTATION_SPEC.md`, `docs/API_CONTRACT.md` 참고.
+> **현재 상태: Phase 2 완료 + Chunk 스피킹 드릴 추가** — 모노레포/DB/Google OAuth 인증/Seed(Phase 1)에 이어 SRS v1 복습 스케줄러, 오늘의 30개/복습/신규/취약 큐, 학습 세션·리뷰 API, 진행률 요약/캘린더, 카드형 학습 UI, 카테고리·검색 브라우징(무한 스크롤)까지 구현되어 있습니다(Phase 2). 여기에 더해, SRS 복습과는 별개로 고빈도 스피킹 Chunk를 쉐도잉으로 반복 연습하는 "Chunk 스피킹 드릴" 메뉴가 추가되었습니다. 자세한 범위는 `CLAUDE.md`, `docs/IMPLEMENTATION_SPEC.md`, `docs/API_CONTRACT.md` 참고.
 
 ## Architecture
 
@@ -26,12 +26,12 @@ english-core-speaking/
 │  ├─ web/            # Vue 3 + Vite + PWA
 │  │  └─ src/{api,components,composables,router,stores,views}
 │  └─ api/             # NestJS
-│     └─ src/{auth,users,learning-items,health,prisma,common}
+│     └─ src/{auth,users,learning-items,study,progress,chunk-drill,health,prisma,common}
 ├─ prisma/
 │  ├─ schema.prisma    # 실제 사용되는 스키마 (database/schema.prisma와 동기화)
-│  └─ seed.ts           # deterministic upsert 기반 seed 스크립트
+│  └─ seed.ts           # deterministic upsert 기반 seed 스크립트 (canonical seed + chunk drill 데이터셋)
 ├─ database/schema.prisma   # 최초 계약서(리뷰용 기준 문서)
-├─ data/                # Canonical seed (1,350개 항목) — 임의 수정 금지
+├─ data/                # Canonical seed (1,350개 항목, 임의 수정 금지) + chunk_drill_v1.json(별도 보조 데이터셋)
 ├─ deploy/               # 프로덕션 Docker Compose, Caddyfile
 ├─ docker-compose.dev.yml   # 로컬 개발용 PostgreSQL만 기동
 ├─ scripts/              # seed 검증, PWA 아이콘 생성 스크립트
@@ -88,7 +88,7 @@ pnpm prisma:migrate --name init
 pnpm seed
 ```
 
-`data/speaking_core_1350_seed_v2.json`의 1,350개 항목을 `id` 기준 upsert로 적재합니다. 여러 번 실행해도 중복되지 않습니다(idempotent).
+`data/speaking_core_1350_seed_v2.json`의 1,350개 항목과 `data/chunk_drill_v1.json`의 Chunk 스피킹 드릴 100개 항목을 각각 `id` 기준 upsert로 적재합니다. 여러 번 실행해도 중복되지 않습니다(idempotent).
 
 검증:
 
@@ -315,9 +315,18 @@ docker compose --env-file .env -f deploy/docker-compose.prod.yml exec postgres \
 - **난이도 평가 4단계**: 다시(1)/어려움(2)/보통(3)/쉬움(4) → 서버의 SRS v1 스케줄러(`apps/api/src/study/scheduler/`)가 다음 복습일 계산. 알고리즘 교체를 위해 `REVIEW_SCHEDULER` DI 토큰으로 분리되어 있음
 - **진행률 요약**: 홈 화면 상단 (전체/학습함/복습 대상/오늘 학습)
 
+## Chunk 스피킹 드릴
+
+SRS 기반 암기 복습(위 Study 기능)과는 별개의 메뉴입니다. 목적이 "기억"이 아니라 "산출 자동화"이기 때문에 서버가 다음 복습일을 계산하는 스케줄러 없이, 단순 반복/커버리지 기반으로 동작합니다.
+
+- **콘텐츠**: `data/chunk_drill_v1.json` — 회화에서 자주 쓰이는 스피킹 Chunk(담화 표지, 의견/완곡 표현, 동의·반대, 되묻기, 이야기 연결어, 스몰토크, 부탁/제안, 강조, 비교 등) 100개. 학습 콘텐츠 원칙(`CLAUDE.md`)에 따라 canonical seed(`speaking_core_1350_seed_v2.json`)와는 완전히 분리된 독립 데이터셋이며, 실제 코퍼스 빈도가 아니라 정립된 formulaic-sequence/담화표지 연구에 기반해 큐레이션한 순위입니다(자세한 한계는 `data/chunk_drill_v1_manifest.json`의 `note` 참고). v2에서 빈도 코퍼스를 반영해 확장할 수 있습니다.
+- **연습 방식**: 홈 화면의 별도 카드(🗣️ Chunk 스피킹 드릴)로 진입 → `GET /api/chunk-drill/set`으로 아직 안 다룬 항목을 우선(그다음 가장 오래 전에 연습한 항목 우선)으로 세트를 받아 카드 하나씩 진행. 카드가 뜨면 브라우저 `SpeechSynthesis`로 자동 반복 재생(1/3/5회 선택)되어 바로 따라 말하고, "다음"을 눌러 넘어갑니다. 세트를 다 돌면 `POST /api/chunk-drill/complete`로 완료 기록.
+- **진행 기록**: `ChunkDrillProgress`(사용자별 `practiceCount`/`lastPracticedAt`)만 저장하는 경량 모델이며, `LearningProgress`/SRS 스케줄러와는 완전히 독립적입니다. 홈 화면에 "N/100 연습함 · 오늘 M개" 요약이 표시됩니다(`GET /api/chunk-drill/summary`).
+
 ## 남은 작업 (Phase 3 후보)
 
 - 로그인 상태를 유지한 Playwright 등 자동화된 E2E UI 테스트
 - 마이크 기반 발음 인식 스피킹 모드
 - Progress 캘린더 시각화 UI (API는 구현됨: `GET /api/progress/calendar`)
 - PWA 오프라인 학습 진도 동기화
+- Chunk 스피킹 드릴 데이터셋을 실제 코퍼스 빈도 기반으로 확장 (v2)

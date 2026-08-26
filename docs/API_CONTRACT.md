@@ -46,3 +46,16 @@ All endpoints require an authenticated session. Queue endpoints return `{ items,
 - GET `/api/progress/calendar?days=30` — `{ from, to, days: [{ date: "YYYY-MM-DD", count }] }`, one entry per day in range (zero-filled).
 
 Due-date and "today" boundaries are computed in the user's stored timezone (`User.timezone`, default `Asia/Seoul`), not the server's local time.
+
+## Chunk Drill
+
+Separate from Study/SRS above — a shadowing/production-speed drill over `data/chunk_drill_v1.json` (independent `ChunkItem` catalog, no due dates, no scheduler). All endpoints require an authenticated session.
+
+- GET `/api/chunk-drill/set?size=20` — `size` max 100, default 20. Returns `{ items, total }`; `total` is the full catalog size, not the returned slice. Each item:
+  ```json
+  { "id": 1, "rank": 1, "english": "I mean", "korean": "내 말은", "example": "I mean, it's not a big deal.",
+    "practiceCount": 2, "lastPracticedAt": "2026-08-20T03:00:00.000Z" }
+  ```
+  Ordering: never-practiced items first (by `rank`), then practiced items by ascending `practiceCount`, then least-recently-practiced first.
+- POST `/api/chunk-drill/complete` — body `{ "chunkItemIds": [1, 2, 3] }` (deduplicated server-side). Upserts `ChunkDrillProgress` per id: `practiceCount += 1`, `lastPracticedAt = now`. Returns `{ "practicedCount": 3 }`.
+- GET `/api/chunk-drill/summary` — `{ total, practicedAtLeastOnce, practicedToday }`, `practicedToday` computed in the user's timezone like the Progress endpoints.
