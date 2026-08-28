@@ -1,0 +1,33 @@
+# Change "cleanbrain.me" (both here and in k3s/secret.yaml's
+# GOOGLE_CALLBACK_URL / FRONTEND_ORIGIN) if the domain differs.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: speaking-core
+  namespace: speaking-core
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: traefik
+  tls:
+    - hosts:
+        - cleanbrain.me
+      secretName: speaking-core-tls
+  rules:
+    - host: cleanbrain.me
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: api
+                port:
+                  number: 3000
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: web
+                port:
+                  number: 80

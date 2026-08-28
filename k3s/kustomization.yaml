@@ -1,0 +1,18 @@
+# kubectl apply -k k3s/
+#
+# Deliberately excludes the *.example.yaml templates (secret, cluster-issuer)
+# -- copy those to real files with real values first, see k3s/README.md.
+# No migrate/seed Job: the api container applies pending migrations and
+# seeds itself on every boot (apps/api/Dockerfile CMD + src/prisma/seed.service.ts).
+resources:
+  - 00-namespace.yaml
+  - 02-postgres.yaml
+  - 04-api.yaml
+  - 05-web.yaml
+  - 07-ingress.yaml
+
+images:
+  - name: ghcr.io/cleanbrain-developer/english-core-speaking-api
+    newTag: latest
+  - name: ghcr.io/cleanbrain-developer/english-core-speaking-web
+    newTag: latest

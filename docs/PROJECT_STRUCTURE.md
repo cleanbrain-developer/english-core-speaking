@@ -34,9 +34,10 @@ speaking-core-1350/
 ├─ data/
 │  ├─ speaking_core_1350_seed_v2.json    # canonical seed, do not edit
 │  └─ chunk_drill_v1.json                 # independent chunk-drill dataset
-├─ deploy/
-│  ├─ docker-compose.prod.yml
-│  └─ Caddyfile.example
+├─ k3s/                      # production deploy manifests (k3s + Traefik + cert-manager)
+│  ├─ *.yaml
+│  ├─ *.example.yaml          # copy to a real file with real values (gitignored)
+│  └─ README.md
 ├─ docker-compose.dev.yml   # local PostgreSQL only
 └─ docs/
    ├─ IMPLEMENTATION_SPEC.md

@@ -1,0 +1,22 @@
+# ClusterIssuer is cluster-scoped, not namespaced -- skip this file if the
+# cluster already has one from another app on the same box (check with
+# `kubectl get clusterissuer`) and just point 07-ingress.yaml's
+# cert-manager.io/cluster-issuer annotation at the existing name instead.
+# Requires cert-manager already installed in the cluster.
+#
+# Copy to k3s/06-cluster-issuer.yaml with a real email, then:
+#   kubectl apply -f k3s/06-cluster-issuer.yaml
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: CHANGE_ME@example.com
+    privateKeySecretRef:
+      name: letsencrypt-prod-account-key
+    solvers:
+      - http01:
+          ingress:
+            ingressClassName: traefik

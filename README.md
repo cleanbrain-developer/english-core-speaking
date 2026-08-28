@@ -8,13 +8,13 @@
 
 ```mermaid
 flowchart LR
-  U[iPhone / Desktop PWA] -->|HTTPS| RP[Caddy / Nginx]
+  U[iPhone / Desktop PWA] -->|HTTPS| RP[k3s Traefik Ingress]
   RP --> W[Vue 3 Web]
   RP -->|/api| A[NestJS API]
   A --> P[(PostgreSQL 16)]
 ```
 
-프로덕션에서는 프론트엔드와 백엔드가 같은 도메인을 사용합니다 (`/` → Vue, `/api/*` → NestJS). Google OAuth Callback도 같은 도메인 하위(`/api/auth/google/callback`)에서 처리되어 CORS/쿠키/Redirect URI 구성이 단순해집니다.
+프로덕션은 k3s 클러스터 위에서 돌아갑니다 (`k3s/` 참고). 프론트엔드와 백엔드가 같은 도메인을 사용하며(`/` → Vue, `/api/*` → NestJS), k3s에 기본 포함된 Traefik이 이 라우팅과 cert-manager 기반 자동 HTTPS를 처리합니다. Google OAuth Callback도 같은 도메인 하위(`/api/auth/google/callback`)에서 처리되어 CORS/쿠키/Redirect URI 구성이 단순해집니다.
 
 인증은 **Google OAuth 2.0 / OpenID Connect만** 지원합니다. 자체 회원가입, 이메일/비밀번호 로그인은 존재하지 않습니다. 로그인 성공 시 백엔드가 Secure/HttpOnly/SameSite 쿠키에 서명된 세션 토큰을 발급하며, 프론트엔드 JavaScript는 이 토큰에 접근하지 않습니다.
 
@@ -32,7 +32,7 @@ english-core-speaking/
 │  └─ seed.ts           # deterministic upsert 기반 seed 스크립트 (canonical seed + chunk drill 데이터셋)
 ├─ database/schema.prisma   # 최초 계약서(리뷰용 기준 문서)
 ├─ data/                # Canonical seed (1,350개 항목, 임의 수정 금지) + chunk_drill_v1.json(별도 보조 데이터셋)
-├─ deploy/               # 프로덕션 Docker Compose, Caddyfile
+├─ k3s/                  # 프로덕션 배포 매니페스트 (k3s + Traefik + cert-manager, 자세한 건 k3s/README.md)
 ├─ docker-compose.dev.yml   # 로컬 개발용 PostgreSQL만 기동
 ├─ scripts/              # seed 검증, PWA 아이콘 생성 스크립트
 └─ docs/                 # 제품/기술 명세, API 계약
@@ -42,7 +42,7 @@ english-core-speaking/
 
 - Node.js 20+
 - pnpm 9+ (`corepack enable` 권장)
-- Docker Desktop (PostgreSQL 및 프로덕션 이미지 실행용)
+- Docker Desktop (로컬 PostgreSQL 및 프로덕션 이미지 빌드용)
 - Google Cloud 프로젝트 (OAuth 클라이언트) — 실제 로그인 테스트 시 필요
 
 ## Local 실행 방법
@@ -82,13 +82,13 @@ pnpm prisma:generate
 pnpm prisma:migrate --name init
 ```
 
-### 5. Seed 실행
+### 5. Seed 실행 (선택)
 
 ```bash
 pnpm seed
 ```
 
-`data/speaking_core_1350_seed_v2.json`의 1,350개 항목과 `data/chunk_drill_v1.json`의 Chunk 스피킹 드릴 100개 항목을 각각 `id` 기준 upsert로 적재합니다. 여러 번 실행해도 중복되지 않습니다(idempotent).
+`data/speaking_core_1350_seed_v2.json`의 1,350개 항목과 `data/chunk_drill_v1.json`의 Chunk 스피킹 드릴 100개 항목을 각각 `id` 기준 upsert로 적재합니다. 여러 번 실행해도 중복되지 않습니다(idempotent). API 서버 자체도 기동할 때마다 동일한 로직으로 자동 시딩하므로(`apps/api/src/prisma/seed.service.ts`), 다음 단계에서 `pnpm dev:api`를 실행하면 이 단계 없이도 데이터가 채워집니다 — 서버를 띄우지 않고 바로 시드만 넣고 싶을 때 쓰는 명령입니다.
 
 검증:
 
@@ -175,137 +175,28 @@ pnpm build          # api + web 순서로 빌드
 pnpm typecheck       # tsc / vue-tsc
 ```
 
-## Docker 실행 방법
-
-### 로컬 개발용 (PostgreSQL만)
+## Docker 실행 방법 (로컬 개발용 PostgreSQL만)
 
 ```bash
 docker compose -f docker-compose.dev.yml up -d
 ```
 
-### 프로덕션 스택 (PostgreSQL + API + Web + Caddy)
+프로덕션은 더 이상 Docker Compose로 띄우지 않습니다 (Caddy 기반 스택은 k3s로 이전되어 제거됨).
 
-```bash
-docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
-```
+## k3s 배포 (Production)
 
-> `docker compose`의 프로젝트 디렉터리는 기본적으로 첫 번째 `-f`로 지정한 파일이 위치한 디렉터리(`deploy/`)를 기준으로 하므로, 저장소 루트의 `.env`를 사용하려면 반드시 `--env-file .env`를 함께 지정합니다.
+프로덕션은 k3s 클러스터에서 돌아갑니다. k3s 기본 포함 Traefik이 Caddy를 대신해 `/`→Vue, `/api/*`→NestJS 라우팅을 맡고, cert-manager가 `cleanbrain.me`의 Let's Encrypt 인증서를 자동 발급/갱신합니다. 이미지는 GitHub Container Registry(`ghcr.io/cleanbrain-developer`)에 push해서 클러스터가 pull합니다.
 
-최초 기동 후 마이그레이션과 seed를 컨테이너 네트워크 안에서 실행합니다.
+전체 순서(이미지 빌드/push, 클러스터 시크릿·ClusterIssuer 준비, `kubectl apply`)는 **[`k3s/README.md`](k3s/README.md)**에 정리되어 있습니다. 매니페스트는 `k3s/*.yaml`, 실제 값을 채워 넣는 시크릿/ClusterIssuer는 `*.example.yaml`을 복사해서 씁니다(둘 다 gitignore 처리되어 있어 실수로 커밋되지 않음). 기존 Docker Compose 배포의 데이터는 이관하지 않고 새 클러스터에서 새로 시작합니다.
 
-```bash
-docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
-  node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
-```
-
-Caddy는 `deploy/Caddyfile.example`을 `deploy/Caddyfile`로 복사해 사용합니다. 기본값은 `http://cleanbrain.me:3000`처럼 실제 도메인 + 커스텀 포트의 평문 HTTP입니다(HTTPS는 아직 미적용) — 자세한 배포 순서는 아래 "Hetzner 배포" 섹션 참고. 로컬 검증 시에는 도메인이 없으므로 `caddy` 서비스 없이 `postgres`/`api`/`web`만 띄우는 것을 권장합니다.
-
-## Hetzner 배포 (Production)
-
-`http://cleanbrain.me:3000`으로 이 프로젝트를 단독으로 Hetzner에 올리는 순서입니다. **일단 서비스를 띄우는 게 목적이라 HTTPS는 아직 켜지 않습니다** — 평문 HTTP + 커스텀 포트 3000이며, 인증서/ACME가 전혀 개입하지 않아 가장 단순합니다. 나중에 HTTPS로 전환하는 방법은 6단계 마지막에 별도로 안내합니다. 다른 프로젝트는 같은 서버에서 다른 포트/서브도메인으로 독립적으로 구동할 수 있습니다. 모든 명령어는 서버에 SSH로 접속한 뒤(별도 표기가 없으면) 실행합니다.
-
-### 1. 서버 준비
-- Hetzner Cloud Console에서 서버 생성 (Ubuntu 22.04+, 최소 2vCPU/4GB 권장), SSH 키 등록
-- 도메인 DNS에 A 레코드 등록: `cleanbrain.me` → 서버 공인 IP (이미 서브도메인을 쓰기로 했다면 `Host`에 해당 서브도메인 입력)
-- 전파 확인: `dig +short cleanbrain.me`가 서버 IP와 일치하는지
-- 방화벽: 22(SSH)와 3000(서비스)만 허용 — HTTPS를 아직 안 쓰므로 80/443은 불필요
-  ```bash
-  ufw allow 22/tcp && ufw allow 3000/tcp && ufw enable
-  ```
-
-### 2. Docker 설치
-```bash
-curl -fsSL https://get.docker.com | sh
-```
-
-### 3. 저장소 배포
-```bash
-git clone https://github.com/cleanbrain-developer/english-core-speaking.git
-cd english-core-speaking
-```
-이미 배포된 서버를 업데이트할 때는 `git pull`만 실행하면 됩니다(아래 7단계부터 반복).
-
-### 4. 환경변수 설정
-```bash
-cp .env.example .env
-nano .env   # 또는 vi
-```
-로컬 개발과 다르게 채워야 하는 값:
-- `POSTGRES_PASSWORD` — 강력한 랜덤 값
-- `SESSION_SECRET` — `openssl rand -base64 48`
-- `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET` — 프로덕션용 Google OAuth Credential (5단계에서 발급/등록)
-- `GOOGLE_CALLBACK_URL=http://cleanbrain.me:3000/api/auth/google/callback`
-- `FRONTEND_ORIGIN=http://cleanbrain.me:3000`
-- `NODE_ENV=production`
-
-### 5. Google Cloud Console에 프로덕션 값 등록
-기존 OAuth Client(또는 프로덕션용으로 새로 생성한 Client)의 **Credentials** 설정에 추가:
-- Authorized JavaScript origins: `http://cleanbrain.me:3000`
-- Authorized redirect URIs: `http://cleanbrain.me:3000/api/auth/google/callback`
-
-### 6. Caddyfile 준비
-```bash
-cp deploy/Caddyfile.example deploy/Caddyfile
-```
-기본 `deploy/Caddyfile.example`의 첫 블록이 바로 이 패턴입니다:
-```
-http://cleanbrain.me:3000 {
-  encode zstd gzip
-  handle /api/* { reverse_proxy api:3000 }
-  handle { reverse_proxy web:80 }
-}
-```
-`http://` 스킴을 명시하면 Caddy가 그 사이트에 대해 자동 HTTPS/ACME를 아예 시도하지 않습니다 — 그래서 포트 80을 열 필요가 없습니다. `deploy/docker-compose.prod.yml`의 `caddy` 서비스는 호스트 **3000**만 매핑합니다. 도메인이 다르면 파일의 `cleanbrain.me`를 실제 도메인으로 바꾸세요. 파일 하단에 "HTTPS로 전환할 때"/"도메인 없을 때"/"표준 443 포트로 쓰고 싶을 때" 대안 예시도 주석으로 포함되어 있습니다.
-
-### 7. 빌드 및 기동
-```bash
-docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
-docker compose --env-file .env -f deploy/docker-compose.prod.yml ps
-```
-
-### 8. Migration 실행
-```bash
-docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
-  node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
-```
-
-### 9. Seed 실행 (최초 1회)
-API 이미지 빌드 시 `prisma/seed.ts`를 미리 컴파일해두므로, 컨테이너 안에서 `node`만으로 바로 실행됩니다(SSH 터널 불필요):
-```bash
-docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api node ../../prisma-dist/seed.js
-```
-여러 번 실행해도 `id` 기준 upsert라 중복 생성되지 않습니다.
-
-### 10. 동작 확인
-```bash
-curl http://cleanbrain.me:3000/api/health
-```
-브라우저로 `http://cleanbrain.me:3000` 접속 → Google 로그인 → 오늘의 30개 등이 정상 동작하는지 확인합니다.
-
-### HTTPS로 전환하고 싶어지면
-`deploy/Caddyfile`에서 `http://cleanbrain.me:3000`의 `http://`만 지우고(`cleanbrain.me:3000 { ... }`) 방화벽에 80을 추가로 열면(`ufw allow 80/tcp`) 됩니다 — 나머지(`.env`, Google Console)는 스킴만 `https://`로 바꾸면 그대로 재사용됩니다. Caddy가 포트 80을 통해 Let's Encrypt 인증서를 자동 발급/갱신합니다.
-
-### 11. 로그 / 재기동 / 업데이트 배포
-```bash
-docker compose --env-file .env -f deploy/docker-compose.prod.yml logs -f api
-docker compose --env-file .env -f deploy/docker-compose.prod.yml restart api
-
-# 코드 업데이트 배포
-git pull
-docker compose --env-file .env -f deploy/docker-compose.prod.yml up -d --build
-docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api \
-  node_modules/.bin/prisma migrate deploy --schema ../../prisma/schema.prisma
-
-# 이번 배포처럼 data/*.json 콘텐츠가 추가/변경된 경우에만 재실행 (id 기준 upsert라 여러 번 실행해도 안전)
-docker compose --env-file .env -f deploy/docker-compose.prod.yml exec api node ../../prisma-dist/seed.js
-```
+api 컨테이너는 기동할 때마다(최초 설치/재배포/재시작 모두) 스스로 `prisma migrate deploy`를 실행한 뒤 시드 데이터를 주입합니다(`apps/api/src/prisma/seed.service.ts`) — 별도의 마이그레이션/시드 단계가 필요 없습니다.
 
 ## Backup
 
-PostgreSQL 데이터는 named volume(`speaking_core_pg`)에 저장됩니다. 백업 예시:
+PostgreSQL 데이터는 k3s의 `postgres` StatefulSet이 쓰는 PVC에 저장됩니다. 백업 예시:
 
 ```bash
-docker compose --env-file .env -f deploy/docker-compose.prod.yml exec postgres \
+kubectl -n speaking-core exec statefulset/postgres -- \
   pg_dump -U "$POSTGRES_USER" "$POSTGRES_DB" > backup_$(date +%Y%m%d).sql
 ```
 

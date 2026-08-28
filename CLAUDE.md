@@ -8,8 +8,8 @@ Build a production-ready, mobile-first English speaking study PWA that syncs lea
 - Backend: NestJS + TypeScript
 - ORM/DB: Prisma + PostgreSQL 16
 - Auth: Google OAuth 2.0 / OpenID Connect only (no passwords, no other providers). Backend verifies Google's signed result and identifies users by Google `sub`. Application session is a Secure, HttpOnly, SameSite cookie holding a backend-signed session token — no long-lived secrets in `localStorage`.
-- Deployment: Docker Compose on Hetzner Linux
-- Reverse proxy: Caddy example included; keep Nginx-compatible routing simple
+- Deployment: k3s on Hetzner Linux. Container images built from `apps/api/Dockerfile` / `apps/web/Dockerfile` and pushed to GitHub Container Registry (`ghcr.io/cleanbrain-developer`); manifests live in `k3s/` (see `k3s/README.md`). `docker-compose.dev.yml` (Postgres only) remains for local development.
+- Reverse proxy: k3s's built-in Traefik ingress controller + cert-manager for automatic HTTPS (Let's Encrypt). No Caddy.
 
 ## Source of truth
 1. `docs/IMPLEMENTATION_SPEC.md` - product/technical requirements

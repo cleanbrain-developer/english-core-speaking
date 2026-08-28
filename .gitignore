@@ -14,8 +14,9 @@ apps/api/dist/
 .env.*
 !.env.example
 
-# Per-deployment Caddy config (domain/port differs per server)
-deploy/Caddyfile
+# Real k3s secrets/cluster-issuer (copy from the *.example.yaml templates)
+k3s/secret.yaml
+k3s/cluster-issuer.yaml
 
 # Test / coverage
 coverage/
