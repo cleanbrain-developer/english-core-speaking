@@ -76,7 +76,8 @@ function extractDetails(exception: unknown): unknown {
   if (exception instanceof HttpException) {
     const response = exception.getResponse();
     if (typeof response === 'object' && response !== null) {
-      const { message: _message, ...rest } = response as Record<string, unknown>;
+      const rest = { ...(response as Record<string, unknown>) };
+      delete rest.message;
       return Object.keys(rest).length > 0 ? rest : undefined;
     }
   }
