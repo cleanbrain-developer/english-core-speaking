@@ -1,0 +1,148 @@
+name: Build, Push, Deploy
+
+# CI/CD bridge for the single Hetzner K3s server. This is an interim step
+# before ArgoCD/GitOps: it builds+pushes images to GHCR, then SSHes into the
+# server and imperatively `kubectl set image`s the running Deployments.
+# Declarative base manifests (namespace/probes/resources/routing) live in
+# the cleanbrain-me-infra repo and are NOT re-applied by this workflow -- see
+# that repo's README for why, and for the manual bootstrap/rollback steps.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+# No pull_request trigger above -- PRs never reach build-and-push/deploy.
+# Only main pushes and manual dispatch can, and the two production jobs
+# below additionally gate on github.ref so a workflow_dispatch run against
+# a non-main ref (the Actions UI lets you pick one) still can't deploy.
+
+# Serializes whole runs so two pushes close together queue instead of
+# overlapping `kubectl set image` / `rollout status` against the same
+# Deployments. cancel-in-progress stays false: cancelling mid-deploy could
+# leave a rollout half-applied.
+concurrency:
+  group: english-core-speaking-production-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_OWNER: cleanbrain-developer
+  NAMESPACE: cleanbrain-me-english-core-speaking
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+
+  build-and-push:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    strategy:
+      matrix:
+        component: [api, web]
+    outputs:
+      sha: ${{ github.sha }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/${{ matrix.component }}/Dockerfile
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/english-core-speaking-${{ matrix.component }}:${{ github.sha }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/english-core-speaking-${{ matrix.component }}:latest
+          cache-from: type=gha,scope=${{ matrix.component }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.component }}
+
+  deploy:
+    needs: build-and-push
+    # ENABLE_PRODUCTION_DEPLOY is a repo VARIABLE (Settings -> Secrets and
+    # variables -> Actions -> Variables), not a secret -- it starts unset
+    # (falsy) so this job is skipped, not failed, until the cluster
+    # administrator has bootstrapped the api/web Deployments by hand (see
+    # cleanbrain-me-infra's README "First-time deployment"). `kubectl set
+    # image` on a Deployment that doesn't exist yet would hard-fail the run.
+    # Flip the variable to "true" once bootstrap is verified; main pushes
+    # before that still run tests and publish images to GHCR, just without
+    # the deploy step.
+    if: github.ref == 'refs/heads/main' && vars.ENABLE_PRODUCTION_DEPLOY == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      # Proper host-key verification instead of TOFU/StrictHostKeyChecking=no.
+      # HETZNER_SSH_KNOWN_HOSTS is the output of `ssh-keyscan -p <port> -H
+      # <host>` captured once by the administrator (ideally cross-checked
+      # against the host key Hetzner's own console reports) and stored as a
+      # secret -- see cleanbrain-me-infra's README for the exact command.
+      - name: Configure known SSH host key
+        env:
+          KNOWN_HOSTS: ${{ secrets.HETZNER_SSH_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Deploy over SSH
+        env:
+          SSH_KEY: ${{ secrets.HETZNER_SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.HETZNER_SSH_HOST }}
+          SSH_USER: ${{ secrets.HETZNER_SSH_USER }}
+          SSH_PORT: ${{ secrets.HETZNER_SSH_PORT }}
+        run: |
+          KEY_FILE="$(mktemp)"
+          printf '%s\n' "$SSH_KEY" > "$KEY_FILE"
+          chmod 600 "$KEY_FILE"
+          PORT="${SSH_PORT:-22}"
+
+          # StrictHostKeyChecking=yes against the known_hosts file staged
+          # above -- an unrecognized or changed host key aborts the
+          # connection instead of silently trusting it.
+          ssh -i "$KEY_FILE" -p "$PORT" \
+            -o StrictHostKeyChecking=yes \
+            -o UserKnownHostsFile="$HOME/.ssh/known_hosts" \
+            "$SSH_USER@$SSH_HOST" bash -s -- "${{ github.sha }}" <<'REMOTE'
+              set -euo pipefail
+              SHA="$1"
+              NS="cleanbrain-me-english-core-speaking"
+              # Explicit, not relying on kubectl's implicit ~/.kube/config
+              # discovery -- see cleanbrain-me-infra README "CI kubeconfig
+              # behavior". This is the scoped ci-deployer kubeconfig, never
+              # the cluster-admin one.
+              export KUBECONFIG=/home/deploy/.kube/config
+              kubectl -n "$NS" set image deployment/api api=ghcr.io/cleanbrain-developer/english-core-speaking-api:"$SHA"
+              kubectl -n "$NS" set image deployment/web web=ghcr.io/cleanbrain-developer/english-core-speaking-web:"$SHA"
+              kubectl -n "$NS" rollout status deployment/api --timeout=180s
+              kubectl -n "$NS" rollout status deployment/web --timeout=120s
+REMOTE
+
+          rm -f "$KEY_FILE"

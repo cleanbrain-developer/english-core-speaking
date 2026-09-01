@@ -1,5 +1,13 @@
 # k3s Deployment
 
+> **Superseded, kept for reference only.** Declarative manifests for the running
+> cluster now live in the [cleanbrain-me-infra](https://github.com/cleanbrain-developer/cleanbrain-me-infra)
+> repo (namespace `cleanbrain-me-english-core-speaking`, Gateway API `HTTPRoute`
+> instead of the `Ingress` below, host `english-core-speaking.cleanbrain.me`). CI/CD
+> lives in `.github/workflows/deploy.yml` in this repo. This directory is left in
+> place until the cutover to that setup is verified in production, then it (and the
+> `speaking-core` namespace / `Ingress` it describes) should be removed.
+
 Replaces the old Docker Compose + Caddy production stack. k3s's built-in Traefik ingress controller
 does the reverse-proxy routing that Caddy used to do, and cert-manager handles automatic HTTPS.
 `docker-compose.dev.yml` at the repo root is unaffected -- it's still the local dev Postgres.
