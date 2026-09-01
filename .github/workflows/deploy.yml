@@ -118,11 +118,30 @@ jobs:
           SSH_HOST: ${{ secrets.HETZNER_SSH_HOST }}
           SSH_USER: ${{ secrets.HETZNER_SSH_USER }}
           SSH_PORT: ${{ secrets.HETZNER_SSH_PORT }}
+          GIT_SHA: ${{ github.sha }}
         run: |
           KEY_FILE="$(mktemp)"
           printf '%s\n' "$SSH_KEY" > "$KEY_FILE"
           chmod 600 "$KEY_FILE"
           PORT="${SSH_PORT:-22}"
+
+          # Built as a variable (not a heredoc) so no dedented terminator
+          # line can prematurely end this step's YAML block scalar -- see
+          # cleanbrain-me-infra README for why a heredoc broke this before.
+          # $1 is filled in remotely by `bash -s -- "$GIT_SHA"` below, not
+          # by this outer shell (single quotes keep it literal here).
+          REMOTE_SCRIPT='set -euo pipefail
+          SHA="$1"
+          NS="cleanbrain-me-english-core-speaking"
+          # Explicit, not relying on the default ~/.kube/config discovery
+          # kubectl would otherwise use -- see cleanbrain-me-infra README
+          # "CI kubeconfig behavior". This is the scoped ci-deployer
+          # kubeconfig, never the cluster-admin one.
+          export KUBECONFIG=/home/deploy/.kube/config
+          kubectl -n "$NS" set image deployment/api api=ghcr.io/cleanbrain-developer/english-core-speaking-api:"$SHA"
+          kubectl -n "$NS" set image deployment/web web=ghcr.io/cleanbrain-developer/english-core-speaking-web:"$SHA"
+          kubectl -n "$NS" rollout status deployment/api --timeout=180s
+          kubectl -n "$NS" rollout status deployment/web --timeout=120s'
 
           # StrictHostKeyChecking=yes against the known_hosts file staged
           # above -- an unrecognized or changed host key aborts the
@@ -130,19 +149,6 @@ jobs:
           ssh -i "$KEY_FILE" -p "$PORT" \
             -o StrictHostKeyChecking=yes \
             -o UserKnownHostsFile="$HOME/.ssh/known_hosts" \
-            "$SSH_USER@$SSH_HOST" bash -s -- "${{ github.sha }}" <<'REMOTE'
-              set -euo pipefail
-              SHA="$1"
-              NS="cleanbrain-me-english-core-speaking"
-              # Explicit, not relying on kubectl's implicit ~/.kube/config
-              # discovery -- see cleanbrain-me-infra README "CI kubeconfig
-              # behavior". This is the scoped ci-deployer kubeconfig, never
-              # the cluster-admin one.
-              export KUBECONFIG=/home/deploy/.kube/config
-              kubectl -n "$NS" set image deployment/api api=ghcr.io/cleanbrain-developer/english-core-speaking-api:"$SHA"
-              kubectl -n "$NS" set image deployment/web web=ghcr.io/cleanbrain-developer/english-core-speaking-web:"$SHA"
-              kubectl -n "$NS" rollout status deployment/api --timeout=180s
-              kubectl -n "$NS" rollout status deployment/web --timeout=120s
-REMOTE
+            "$SSH_USER@$SSH_HOST" bash -s -- "$GIT_SHA" <<< "$REMOTE_SCRIPT"
 
           rm -f "$KEY_FILE"
