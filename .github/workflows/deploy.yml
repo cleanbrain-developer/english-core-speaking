@@ -46,6 +46,17 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # @prisma/client's own postinstall hook is best-effort only: per its
+      # source (node_modules/@prisma/client/scripts/postinstall.js), if it
+      # can't resolve the schema path relative to whichever workspace
+      # package context it runs in, it writes a stub client (no generated
+      # model types) instead of failing loudly -- which is exactly what
+      # produced "Property 'chunkItem' does not exist on type
+      # 'PrismaService'" etc. in a clean checkout. Reuses the existing root
+      # script (prisma generate --schema prisma/schema.prisma) so there's
+      # one explicit, deterministic generation step instead of relying on
+      # that implicit side effect.
+      - run: pnpm prisma:generate
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm test
