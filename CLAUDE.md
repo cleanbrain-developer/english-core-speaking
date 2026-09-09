@@ -8,8 +8,8 @@ Build a production-ready, mobile-first English speaking study PWA that syncs lea
 - Backend: NestJS + TypeScript
 - ORM/DB: Prisma + PostgreSQL 16
 - Auth: Google OAuth 2.0 / OpenID Connect only (no passwords, no other providers). Backend verifies Google's signed result and identifies users by Google `sub`. Application session is a Secure, HttpOnly, SameSite cookie holding a backend-signed session token — no long-lived secrets in `localStorage`.
-- Deployment: k3s on Hetzner Linux. Container images built from `apps/api/Dockerfile` / `apps/web/Dockerfile` and pushed to GitHub Container Registry (`ghcr.io/cleanbrain-developer`); manifests live in `k3s/` (see `k3s/README.md`). `docker-compose.dev.yml` (Postgres only) remains for local development.
-- Reverse proxy: k3s's built-in Traefik ingress controller + cert-manager for automatic HTTPS (Let's Encrypt). No Caddy.
+- Deployment: K3s on Hetzner, migration complete. Container images built from `apps/api/Dockerfile` / `apps/web/Dockerfile` and pushed to GitHub Container Registry (`ghcr.io/cleanbrain-developer`); Kubernetes manifests are owned by the separate `cleanbrain-me-infra` repository, not this one (see README.md's "Kubernetes Deployment" section). `docker-compose.dev.yml` (Postgres only) remains for local development.
+- Reverse proxy: Traefik's Gateway API support + cert-manager for automatic HTTPS (Let's Encrypt). No Caddy, no Docker Compose in production.
 
 ## Source of truth
 1. `docs/IMPLEMENTATION_SPEC.md` - product/technical requirements

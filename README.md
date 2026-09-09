@@ -44,7 +44,6 @@ english-core-speaking/
 ├─ database/schema.prisma   # original schema contract (reference document)
 ├─ data/                     # canonical seed (1,350 items, not to be edited ad hoc) + chunk_drill_v1.json
 ├─ .github/workflows/        # CI/CD (test, build/push images, SSH deploy) — see CI/CD below
-├─ k3s/                      # historical: pre-Gateway API manifests, superseded by cleanbrain-me-infra (see k3s/README.md)
 ├─ docker-compose.dev.yml    # local PostgreSQL only
 ├─ scripts/                  # seed validation, PWA icon generation
 └─ docs/                     # product/technical spec, API contract
@@ -202,20 +201,39 @@ Production images are built from `apps/api/Dockerfile` and `apps/web/Dockerfile`
 `.github/workflows/deploy.yml` runs on every push to `main`:
 
 ```text
-test  →  build & push images to GHCR  →  SSH deploy to the K3s host
+GitHub Actions
+  → test
+    → Docker build
+      → GHCR
+        → SSH deployment
+          → scoped ci-deployer RBAC
+            → immutable Git SHA rollout
 ```
 
 - **test** — typecheck, lint, and unit tests for both `api` and `web`.
 - **build-and-push** — builds both Docker images and pushes `:<git-sha>` and `:latest` to GHCR.
-- **deploy** — SSHes into the production host and runs `kubectl set image` + `kubectl rollout status` against the already-deployed `api`/`web` Kubernetes Deployments, using the immutable SHA tag (never `:latest`).
+- **deploy** — SSHes into the production host and, authenticated as a namespace-scoped `ci-deployer` Kubernetes identity (defined in `cleanbrain-me-infra`, not a cluster-admin credential), runs `kubectl set image` + `kubectl rollout status` against the `api`/`web` Deployments using the immutable Git SHA tag (never `:latest`).
 
-The deploy step only runs once a repository variable (`ENABLE_PRODUCTION_DEPLOY`) is set — this exists so the very first pushes to `main` can build and publish images without trying to deploy against a cluster that hasn't been bootstrapped yet. This SSH-based deploy is an interim step; a GitOps-based deploy (ArgoCD) is planned to replace it.
+This SSH-based deploy is the current, working deployment mechanism. A GitOps-based deploy (ArgoCD) is on the roadmap to replace it, independent of the K3s migration itself, which is complete.
 
 ## Kubernetes Deployment
 
-Production runs on a single-node K3s cluster (Hetzner), with Traefik's Gateway API support handling routing and cert-manager handling TLS via Let's Encrypt. The declarative Kubernetes manifests (Namespace, Deployments, Services, the PostgreSQL StatefulSet, HTTPRoute, RBAC for the CI deploy identity) are maintained in a separate repository, [`cleanbrain-me-infra`](https://github.com/cleanbrain-developer/cleanbrain-me-infra) — application code and infrastructure are deliberately kept apart.
+The application runs in production on Kubernetes (K3s). The Docker Compose + Caddy setup this project started with has been fully decommissioned — no containers, networks, volumes, images, or the old external port 3000 remain from it.
 
-The `k3s/` directory in this repo predates that setup (it used a classic Ingress and a different namespace/hostname) and is kept only for historical reference; it's no longer what's actually deployed. It also documents the earlier migration off Docker Compose and Caddy, which have not been part of the production stack since that move.
+```text
+Cloudflare DNS
+  → Hetzner
+    → K3s
+      → Traefik
+        → Gateway API
+          → HTTPRoute
+            → Web / API
+              → PostgreSQL
+```
+
+TLS is issued and renewed automatically by cert-manager via Let's Encrypt. Web and API run as separate Deployments behind their own Services; PostgreSQL runs as a StatefulSet with persistent storage.
+
+The declarative Kubernetes manifests (Namespace, Deployments, Services, the PostgreSQL StatefulSet, HTTPRoute, RBAC for the CI deploy identity) are the responsibility of a separate repository, [`cleanbrain-me-infra`](https://github.com/cleanbrain-developer/cleanbrain-me-infra) — that repo is the source of truth for cluster state; this repo owns application code and Dockerfiles only.
 
 ## Backup
 

@@ -28,7 +28,7 @@ Speaking Core 1350 is a mobile-first PWA for converting high-value English vocab
 ## 4. Architecture
 ```mermaid
 flowchart LR
-  U[iPhone / Desktop PWA] -->|HTTPS| RP[k3s Traefik Ingress]
+  U[iPhone / Desktop PWA] -->|HTTPS| RP[k3s Traefik + Gateway API]
   RP --> W[Vue 3 Web]
   RP -->|/api| A[NestJS API]
   A --> P[(PostgreSQL 16)]
@@ -81,7 +81,7 @@ The primary learning screen must fit an iPhone viewport without horizontal scrol
 - No secrets in repository
 
 ## 11. Deployment
-Use `k3s/*.yaml` (see `k3s/README.md`) and `.env.example` as the deployment starting point. PostgreSQL must use a PersistentVolumeClaim (StatefulSet, not an ephemeral pod volume). Backups must be documented.
+Kubernetes manifests live in the separate `cleanbrain-me-infra` repository, not here; use `.env.example` for the required application configuration. PostgreSQL must use a PersistentVolumeClaim (StatefulSet, not an ephemeral pod volume). Backups must be documented.
 
 ## 12. Acceptance criteria
 1. Seed count 1,350 and category counts 300/150/700/200 are verified automatically.

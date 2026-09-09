@@ -35,16 +35,6 @@
     "bytes": 3030
   },
   {
-    "path": "deploy/Caddyfile.example",
-    "sha256": "e11bc53f8f1c356bd4b23eae7fdea31e669c86b791dc408aefaef5132d4e3045",
-    "bytes": 132
-  },
-  {
-    "path": "deploy/docker-compose.prod.yml",
-    "sha256": "6ca9dfbbfad64f258014c9b87cecb252e73828f1352b5c50ba93353cef2aeb25",
-    "bytes": 1328
-  },
-  {
     "path": "docs/API_CONTRACT.md",
     "sha256": "5a1e90ca9398ca740276962130a448c9abba9628d6483b4d98ebe59503d6d374",
     "bytes": 651
