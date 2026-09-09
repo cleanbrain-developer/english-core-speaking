@@ -25,6 +25,20 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+        // Workbox's generated NavigationRoute defaults to allowlist: [/./],
+        // denylist: [] -- i.e. it intercepts *every* navigation request
+        // (request.mode === 'navigate') and serves the cached index.html,
+        // regardless of path. That silently swallowed backend routes that
+        // the browser navigates to directly, most importantly the Google
+        // OAuth redirect chain: GET /api/auth/google (a 302 to Google) and
+        // GET /api/auth/google/callback (the redirect back) were both
+        // being served index.html by the service worker instead of ever
+        // reaching NestJS. Denylisting the whole /api/ prefix excludes all
+        // backend routes -- including /api/health and /api/auth/me, which
+        // are normally fetch()'d (mode: 'cors'/'same-origin', not
+        // affected) rather than navigated to, but are excluded too in case
+        // they're ever opened directly in a tab (e.g. for debugging).
+        navigateFallbackDenylist: [/^\/api\//],
       },
       devOptions: {
         enabled: false,
