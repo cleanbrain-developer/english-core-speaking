@@ -2,7 +2,7 @@
 
 A mobile-first PWA for practicing English speaking through 1,350 curated items across four categories (conversation chunks, phrasal verbs, core words, business English), with server-side progress sync so a learner's queue stays consistent across phone and desktop.
 
-**Production:** [english-core-speaking.cleanbrain.me](https://english-core-speaking.cleanbrain.me)
+**Production:** [english-core-speaking.education.cleanbrain.me](https://english-core-speaking.education.cleanbrain.me)
 
 ## Status
 
@@ -135,10 +135,10 @@ Open `http://localhost:5173`. The Vite dev server proxies `/api/*` requests to `
    - Application type: **Web application**
    - **Authorized JavaScript origins**
      - Local: `http://localhost:5173`
-     - Production: `https://english-core-speaking.cleanbrain.me`
+     - Production: `https://english-core-speaking.education.cleanbrain.me`
    - **Authorized redirect URIs**
      - Local: `http://localhost:3000/api/auth/google/callback`
-     - Production: `https://english-core-speaking.cleanbrain.me/api/auth/google/callback`
+     - Production: `https://english-core-speaking.education.cleanbrain.me/api/auth/google/callback`
 4. Copy the generated **Client ID** and **Client Secret** into `.env` as `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET`.
 5. Set `GOOGLE_CALLBACK_URL` to **exactly** the redirect URI registered in step 3.
 
