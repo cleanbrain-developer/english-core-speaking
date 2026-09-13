@@ -134,7 +134,10 @@ watch(
     </template>
 
     <section v-else class="card">
-      <p>Google 계정으로 로그인하세요.</p>
+      <p class="intro">
+        회화 표현·구동사·핵심 단어·비즈니스 영어, 엄선된 1,350개 표현을 간격반복(SRS) 복습으로
+        익히는 스피킹 연습 서비스입니다. 로그인하면 학습 진행 상황이 기기 간에 그대로 이어집니다.
+      </p>
       <a class="google-btn" :href="googleLoginUrl()">Google로 로그인</a>
       <p class="privacy-note">
         로그인 시 Google 계정의 이메일·이름·프로필 사진과, 서비스 이용 중 생성되는 학습 기록(복습 진행 상황
@@ -185,6 +188,12 @@ watch(
   opacity: 0.65;
   line-height: 1.4;
   max-width: 320px;
+}
+.intro {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 340px;
+  opacity: 0.9;
 }
 .google-btn {
   display: inline-block;

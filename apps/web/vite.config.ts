@@ -11,7 +11,8 @@ export default defineConfig({
       manifest: {
         name: 'Speaking Core 1350',
         short_name: 'Speaking 1350',
-        description: 'Mobile-first English speaking study app',
+        description:
+          'Practice English speaking with 1,350 curated conversation chunks, phrasal verbs, core words, and business English, reviewed with a spaced-repetition scheduler.',
         theme_color: '#4f46e5',
         background_color: '#0f172a',
         display: 'standalone',
