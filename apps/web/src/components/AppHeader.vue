@@ -1,19 +1,25 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import { fetchTodayCount, recordVisitOnce } from '../lib/visitorCounter';
+import { fetchAllTimeCount, fetchTodayCount, recordVisitOnce } from '../lib/visitorCounter';
 
 const todayCount = ref<number | null>(null);
+const allTimeCount = ref<number | null>(null);
 
 onMounted(async () => {
   await recordVisitOnce();
   todayCount.value = await fetchTodayCount();
+  allTimeCount.value = await fetchAllTimeCount();
 });
 </script>
 
 <template>
   <header class="app-header">
     <span class="brand">Speaking Core 1350</span>
-    <span v-if="todayCount !== null" class="visitor-count">Today · {{ todayCount }}</span>
+    <span class="visitor-count">
+      <template v-if="todayCount !== null">Today · {{ todayCount }}</template>
+      <template v-if="todayCount !== null && allTimeCount !== null"> · </template>
+      <template v-if="allTimeCount !== null">All · {{ allTimeCount }}</template>
+    </span>
   </header>
 </template>
 
