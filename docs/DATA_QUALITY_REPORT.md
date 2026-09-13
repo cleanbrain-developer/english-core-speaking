@@ -19,3 +19,17 @@
 
 ## Important limitation
 The current ordering is a curated speaking-priority curriculum. It should not be described as an exact universal frequency ranking. A later v3 can add independently sourced corpus-frequency metadata while preserving stable IDs.
+
+## Content provenance (recorded 2026-09-14, ahead of public multi-user launch)
+All 1,350 rows carry `sourceType: "curated-speaking-core"`. This content was
+AI-generated (no specific textbook, word list, or corpus was used as an
+input); the original author does not have a record of any single external
+source it was drawn from. No row cites or is known to reproduce a specific
+copyrighted textbook, workbook, or proprietary word list.
+
+Assessed risk: low. The dataset is overwhelmingly short, common
+conversational phrases and single words ("I think so.", "go on", "get")
+that are not independently copyrightable expressions, and no distinctive,
+book-length, or otherwise creatively unique passages are present. This is
+not a legal opinion -- if the dataset is redistributed at meaningful scale
+or a specific overlap is ever flagged, re-review at that time.
