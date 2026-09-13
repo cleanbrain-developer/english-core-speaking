@@ -19,7 +19,7 @@ const deleteError = ref<string | null>(null);
 
 async function handleDeleteAccount() {
   const confirmed = confirm(
-    '정말 계정을 삭제하시겠습니까?\n학습 기록과 진행 상황이 영구적으로 삭제되며 복구할 수 없습니다.',
+    '정말 탈퇴하시겠습니까?\n학습 기록과 진행 상황이 영구적으로 삭제되며 복구할 수 없습니다.',
   );
   if (!confirmed) return;
 
@@ -28,7 +28,7 @@ async function handleDeleteAccount() {
   try {
     await auth.deleteAccount();
   } catch (err) {
-    deleteError.value = err instanceof Error ? err.message : '계정을 삭제하지 못했습니다.';
+    deleteError.value = err instanceof Error ? err.message : '탈퇴 처리에 실패했습니다.';
   } finally {
     deleting.value = false;
   }
@@ -83,10 +83,6 @@ watch(
         <img v-if="user.profileImageUrl" :src="user.profileImageUrl" alt="" class="avatar" />
         <p>{{ user.displayName ?? user.email }}</p>
         <button @click="auth.logout()">로그아웃</button>
-        <button class="danger-link" :disabled="deleting" @click="handleDeleteAccount">
-          {{ deleting ? '삭제 중...' : '계정 삭제' }}
-        </button>
-        <p v-if="deleteError" class="error">{{ deleteError }}</p>
       </section>
 
       <section v-if="summary" class="summary-card">
@@ -131,6 +127,13 @@ watch(
           {{ chunkSummary.practicedAtLeastOnce }}/{{ chunkSummary.total }} 연습함 · 오늘 {{ chunkSummary.practicedToday }}개
         </p>
       </section>
+
+      <footer class="account-footer">
+        <button class="danger-link" :disabled="deleting" @click="handleDeleteAccount">
+          {{ deleting ? '탈퇴 처리 중...' : '탈퇴하기' }}
+        </button>
+        <p v-if="deleteError" class="error">{{ deleteError }}</p>
+      </footer>
     </template>
 
     <section v-else class="card">
@@ -141,7 +144,7 @@ watch(
       <a class="google-btn" :href="googleLoginUrl()">Google로 로그인</a>
       <p class="privacy-note">
         로그인 시 Google 계정의 이메일·이름·프로필 사진과, 서비스 이용 중 생성되는 학습 기록(복습 진행 상황
-        등)을 저장합니다. 다른 목적으로 공유하지 않으며, 로그인 후 언제든 "계정 삭제"로 본인 데이터를
+        등)을 저장합니다. 다른 목적으로 공유하지 않으며, 로그인 후 언제든 탈퇴를 통해 본인 데이터를
         영구적으로 삭제할 수 있습니다.
       </p>
     </section>
@@ -175,11 +178,21 @@ watch(
 .error {
   color: #f87171;
 }
+.account-footer {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
 .danger-link {
   border: none;
   background: none;
-  color: #f87171;
-  font-size: 0.75rem;
+  color: rgba(248, 113, 113, 0.7);
+  font-size: 0.7rem;
   padding: 0.25rem;
   text-decoration: underline;
 }
