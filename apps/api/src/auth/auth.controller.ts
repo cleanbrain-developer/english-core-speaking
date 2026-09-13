@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Req, Res, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { ConfigService } from '@nestjs/config';
+import { Throttle } from '@nestjs/throttler';
 import { Request, Response } from 'express';
 import { Public } from './decorators/public.decorator';
 import { CurrentUser } from './decorators/current-user.decorator';
@@ -17,7 +18,11 @@ export class AuthController {
     private readonly config: ConfigService,
   ) {}
 
+  // Tighter than the global default -- these routes drive an OAuth
+  // handshake against Google, not ordinary app traffic, so a normal user
+  // never needs more than a handful of attempts per minute.
   @Public()
+  @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Get('google')
   @UseGuards(AuthGuard('google'))
   googleLogin(): void {
@@ -25,6 +30,7 @@ export class AuthController {
   }
 
   @Public()
+  @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Get('google/callback')
   @UseGuards(AuthGuard('google'))
   async googleCallback(@Req() req: Request, @Res() res: Response): Promise<void> {
