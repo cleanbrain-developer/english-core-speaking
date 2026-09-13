@@ -6,6 +6,7 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
+import { logError } from '../logging/log-error';
 
 interface ErrorEnvelope {
   error: {
@@ -35,8 +36,10 @@ export class AllExceptionsFilter implements ExceptionFilter {
       },
     };
 
-    // eslint-disable-next-line no-console
-    if (status >= 500) console.error(`[${request.method} ${request.url}]`, exception);
+    if (status >= 500) {
+      const userId = (request as Request & { user?: { id: string } }).user?.id;
+      logError({ method: request.method, url: request.url, status, userId }, exception);
+    }
 
     response.status(status).json(body);
   }

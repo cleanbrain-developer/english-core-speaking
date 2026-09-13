@@ -7,6 +7,23 @@ import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
 import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
+import { logError } from './common/logging/log-error';
+
+// Errors outside a request (a rejected promise nobody awaited, a callback
+// throwing async) never reach AllExceptionsFilter and, with no error
+// tracker or log aggregator wired up, would otherwise vanish into
+// `console.error`'s free-form output or crash the process with no record
+// at all. Log them structured, then fail fast -- Kubernetes' restart
+// policy is this app's actual recovery mechanism for a genuinely corrupt
+// process state, so we don't try to keep running after one.
+process.on('uncaughtException', (err) => {
+  logError({}, err);
+  process.exit(1);
+});
+process.on('unhandledRejection', (reason) => {
+  logError({}, reason);
+  process.exit(1);
+});
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
