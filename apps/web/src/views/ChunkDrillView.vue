@@ -9,7 +9,7 @@ import { speakTimes } from '../composables/useSpeech';
 
 const router = useRouter();
 const store = useChunkDrillStore();
-const { current, index, total, isDone } = storeToRefs(store);
+const { current, index, total, isDone, advancing, completing, finishError } = storeToRefs(store);
 
 const loading = ref(true);
 const error = ref<string | null>(null);
@@ -67,6 +67,12 @@ function goHome() {
     <section v-else-if="isDone" class="center summary">
       <h2>드릴 완료!</h2>
       <p>{{ total }}개의 Chunk를 연습했습니다.</p>
+      <template v-if="finishError">
+        <p class="error">저장에 실패했습니다: {{ finishError }}</p>
+        <button :disabled="completing" @click="store.finish()">
+          {{ completing ? '재시도 중...' : '다시 저장' }}
+        </button>
+      </template>
       <button @click="goHome">홈으로</button>
     </section>
 
@@ -98,7 +104,9 @@ function goHome() {
     </section>
 
     <footer v-if="current" class="next-bar">
-      <button class="next-btn" @click="onNext">따라 말했어요, 다음 ▶</button>
+      <button class="next-btn" :disabled="advancing" @click="onNext">
+        {{ advancing ? '...' : '따라 말했어요, 다음 ▶' }}
+      </button>
     </footer>
   </main>
 </template>
@@ -215,6 +223,10 @@ function goHome() {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+}
+.next-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
 }
 button {
   padding: 0.6rem 1.2rem;

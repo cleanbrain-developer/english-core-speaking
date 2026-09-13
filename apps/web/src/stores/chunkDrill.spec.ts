@@ -55,4 +55,28 @@ describe('useChunkDrillStore', () => {
     expect(store.isDone).toBe(false);
     expect(fetchMock).not.toHaveBeenCalled();
   });
+
+  it('ignores next() while a previous call is still in flight', async () => {
+    const store = useChunkDrillStore();
+    store.start(items);
+    store.advancing = true; // simulates a prior next() call not yet settled
+
+    await store.next();
+
+    expect(store.index).toBe(0);
+    expect(store.practicedIds).toEqual([]);
+  });
+
+  it('records a finishError instead of throwing when completion fails to save', async () => {
+    const store = useChunkDrillStore();
+    store.start(items);
+
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse({ error: { code: 'ERR', message: 'boom' } }, 500)));
+
+    await store.next();
+    await expect(store.next()).resolves.toBeUndefined();
+
+    expect(store.isDone).toBe(true);
+    expect(store.finishError).toBeTruthy();
+  });
 });

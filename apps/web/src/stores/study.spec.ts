@@ -63,4 +63,42 @@ describe('useStudyStore', () => {
     expect(store.sessionId).toBeNull();
     expect(fetchMock).not.toHaveBeenCalled();
   });
+
+  it('finishes an open session when reset() is called mid-session (e.g. leaving via ✕)', async () => {
+    const fetchMock = vi.fn().mockResolvedValueOnce(jsonResponse({ id: 'session-1' }, 201));
+    vi.stubGlobal('fetch', fetchMock);
+
+    const store = useStudyStore();
+    await store.start('new', items);
+    expect(store.isDone).toBe(false); // left before rating anything
+
+    fetchMock.mockResolvedValueOnce(jsonResponse({ id: 'session-1', endedAt: '2026-08-13T00:00:00.000Z' }));
+    store.reset();
+    await Promise.resolve(); // let the fire-and-forget finish() call's microtask run
+
+    expect(fetchMock).toHaveBeenLastCalledWith(
+      expect.stringContaining('/study/sessions/session-1/finish'),
+      expect.objectContaining({ method: 'PATCH' }),
+    );
+    expect(store.sessionId).toBeNull();
+  });
+
+  it('does not re-finish a session that already auto-finished on the last rate()', async () => {
+    const fetchMock = vi.fn();
+    fetchMock
+      .mockResolvedValueOnce(jsonResponse({ id: 'session-1' }, 201))
+      .mockResolvedValueOnce(jsonResponse({ learningItemId: 1, rating: 3, reps: 1, lapses: 0, ease: 2.5, intervalDays: 2, dueDate: '2026-08-15' }, 201))
+      .mockResolvedValueOnce(jsonResponse({ id: 'session-1', endedAt: '2026-08-13T00:00:00.000Z' }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    const store = useStudyStore();
+    await store.start('new', [items[0]]);
+    await store.rate(3);
+    expect(store.isDone).toBe(true);
+
+    fetchMock.mockClear();
+    store.reset();
+
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
 });

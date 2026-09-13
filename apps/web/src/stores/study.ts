@@ -71,6 +71,14 @@ export const useStudyStore = defineStore('study', {
       await apiFetch(`/study/sessions/${this.sessionId}/finish`, { method: 'PATCH' });
     },
     reset(): void {
+      // If the learner leaves mid-session (✕ button) rather than finishing
+      // the last card, `rate()` never reaches its isDone->finish() call and
+      // StudySession.endedAt would otherwise stay null forever. Best-effort:
+      // don't block navigation on it, and a failure here is harmless --
+      // nothing currently reads endedAt except as a completion marker.
+      if (this.sessionId && !this.isDone) {
+        apiFetch(`/study/sessions/${this.sessionId}/finish`, { method: 'PATCH' }).catch(() => {});
+      }
       this.sessionId = null;
       this.mode = null;
       this.items = [];

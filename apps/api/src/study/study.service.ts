@@ -86,7 +86,17 @@ export class StudyService {
     return { items, total: items.length };
   }
 
-  /** Assumption: "weak" = at least one lapse ever, or ease has drifted to <=2.1. */
+  /**
+   * Assumption: "weak" = at least one lapse ever, or ease has drifted to <=2.1.
+   *
+   * Deliberately ignores `dueDate`, unlike every other queue -- this is an
+   * off-schedule focus drill so a learner can hammer their known-weak items
+   * on demand instead of waiting for the SRS scheduler to resurface them.
+   * Rating an item here still writes a normal review and recomputes its
+   * `dueDate`/`ease` from `previousState`, so it can pull an item's next
+   * due date earlier than the scheduler would have on its own -- that's the
+   * intended effect, not a bug.
+   */
   async getWeakQueue(userId: string, limit: number): Promise<{ items: QueueItem[]; total: number }> {
     const progress = await this.prisma.learningProgress.findMany({
       where: { userId, OR: [{ lapses: { gte: 1 } }, { ease: { lte: 2.1 } }] },

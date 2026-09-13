@@ -19,6 +19,7 @@ const items = ref<LearningItemDto[]>([]);
 const total = ref(0);
 const loading = ref(false);
 const loadingMore = ref(false);
+const error = ref<string | null>(null);
 const revealedIds = ref<Set<number>>(new Set());
 // List view by default (뜻 항상 표시); toggling to quiz mode hides all and
 // lets each row be tapped to reveal individually.
@@ -37,11 +38,18 @@ function buildParams(limit: number, offset: number) {
 
 async function reload() {
   loading.value = true;
+  error.value = null;
   revealedIds.value = new Set();
   try {
     const res = await apiFetch<QueueResponse>(`/learning-items?${buildParams(PAGE_SIZE, 0)}`);
     items.value = res.items;
     total.value = res.total;
+  } catch (err) {
+    // Previously unhandled -- a real server/network error left `items`
+    // empty and fell through to the "검색 결과가 없습니다" message, which
+    // is indistinguishable from a genuinely empty search from the user's
+    // point of view and offered no way to retry.
+    error.value = err instanceof Error ? err.message : '목록을 불러오지 못했습니다.';
   } finally {
     loading.value = false;
   }
@@ -53,6 +61,8 @@ async function loadMore() {
   try {
     const res = await apiFetch<QueueResponse>(`/learning-items?${buildParams(PAGE_SIZE, items.value.length)}`);
     items.value = [...items.value, ...res.items];
+  } catch (err) {
+    error.value = err instanceof Error ? err.message : '목록을 불러오지 못했습니다.';
   } finally {
     loadingMore.value = false;
   }
@@ -120,8 +130,12 @@ async function startStudy(shuffled: boolean) {
     </div>
 
     <p v-if="loading" class="center">불러오는 중...</p>
+    <div v-else-if="error" class="center error">
+      <p>{{ error }}</p>
+      <button @click="reload">다시 시도</button>
+    </div>
 
-    <ul class="item-list">
+    <ul v-if="!error" class="item-list">
       <li v-for="item in items" :key="item.id" class="item-row" @click="toggleReveal(item.id)">
         <div class="item-main">
           <span class="category-tag">{{ CATEGORY_SHORT_LABELS[item.category] ?? item.category }}</span>
@@ -131,9 +145,9 @@ async function startStudy(shuffled: boolean) {
         <p v-if="showAllKorean || revealedIds.has(item.id)" class="korean">{{ item.korean }}</p>
       </li>
     </ul>
-    <p v-if="!loading && items.length === 0" class="center">검색 결과가 없습니다.</p>
+    <p v-if="!loading && !error && items.length === 0" class="center">검색 결과가 없습니다.</p>
     <p v-else-if="loadingMore" class="center">더 불러오는 중...</p>
-    <p v-else-if="!loading && items.length >= total" class="center muted">모두 불러왔습니다 ({{ total }}개)</p>
+    <p v-else-if="!loading && !error && items.length >= total" class="center muted">모두 불러왔습니다 ({{ total }}개)</p>
     <div ref="sentinel" class="scroll-sentinel" />
   </main>
 </template>
@@ -211,6 +225,14 @@ async function startStudy(shuffled: boolean) {
 }
 .center.muted {
   font-size: 0.8rem;
+}
+.center.error {
+  color: #f87171;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 .item-list {
   list-style: none;
