@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Req, Res, UseGuards } from '@nestjs/common';
+import { Controller, Delete, Get, HttpCode, Post, Req, Res, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { ConfigService } from '@nestjs/config';
 import { Throttle } from '@nestjs/throttler';
@@ -58,5 +58,21 @@ export class AuthController {
   logout(@Res({ passthrough: true }) res: Response): { success: true } {
     res.clearCookie(SESSION_COOKIE_NAME, { path: '/' });
     return { success: true };
+  }
+
+  /**
+   * Self-service account deletion: permanently removes the user row and,
+   * via the schema's cascading FKs, every piece of progress/session/review
+   * data owned by them. No confirmation step is done here -- the frontend
+   * is responsible for confirming intent before calling this.
+   */
+  @Delete('me')
+  @HttpCode(204)
+  async deleteMe(
+    @CurrentUser() user: AuthenticatedUser,
+    @Res({ passthrough: true }) res: Response,
+  ): Promise<void> {
+    await this.usersService.deleteById(user.id);
+    res.clearCookie(SESSION_COOKIE_NAME, { path: '/' });
   }
 }

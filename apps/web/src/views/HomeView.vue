@@ -14,6 +14,25 @@ const router = useRouter();
 const summary = ref<ProgressSummaryResponseDto | null>(null);
 const summaryError = ref<string | null>(null);
 const chunkSummary = ref<ChunkDrillSummaryDto | null>(null);
+const deleting = ref(false);
+const deleteError = ref<string | null>(null);
+
+async function handleDeleteAccount() {
+  const confirmed = confirm(
+    '정말 계정을 삭제하시겠습니까?\n학습 기록과 진행 상황이 영구적으로 삭제되며 복구할 수 없습니다.',
+  );
+  if (!confirmed) return;
+
+  deleteError.value = null;
+  deleting.value = true;
+  try {
+    await auth.deleteAccount();
+  } catch (err) {
+    deleteError.value = err instanceof Error ? err.message : '계정을 삭제하지 못했습니다.';
+  } finally {
+    deleting.value = false;
+  }
+}
 
 const STUDY_MODES: Array<{ mode: 'daily' | 'due' | 'new' | 'weak'; label: string; description: string }> = [
   { mode: 'daily', label: '오늘의 30개', description: '복습 예정 우선, 부족하면 신규 항목' },
@@ -64,6 +83,10 @@ watch(
         <img v-if="user.profileImageUrl" :src="user.profileImageUrl" alt="" class="avatar" />
         <p>{{ user.displayName ?? user.email }}</p>
         <button @click="auth.logout()">로그아웃</button>
+        <button class="danger-link" :disabled="deleting" @click="handleDeleteAccount">
+          {{ deleting ? '삭제 중...' : '계정 삭제' }}
+        </button>
+        <p v-if="deleteError" class="error">{{ deleteError }}</p>
       </section>
 
       <section v-if="summary" class="summary-card">
@@ -113,6 +136,11 @@ watch(
     <section v-else class="card">
       <p>Google 계정으로 로그인하세요.</p>
       <a class="google-btn" :href="googleLoginUrl()">Google로 로그인</a>
+      <p class="privacy-note">
+        로그인 시 Google 계정의 이메일·이름·프로필 사진과, 서비스 이용 중 생성되는 학습 기록(복습 진행 상황
+        등)을 저장합니다. 다른 목적으로 공유하지 않으며, 로그인 후 언제든 "계정 삭제"로 본인 데이터를
+        영구적으로 삭제할 수 있습니다.
+      </p>
     </section>
   </main>
 </template>
@@ -143,6 +171,20 @@ watch(
 }
 .error {
   color: #f87171;
+}
+.danger-link {
+  border: none;
+  background: none;
+  color: #f87171;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  text-decoration: underline;
+}
+.privacy-note {
+  font-size: 0.7rem;
+  opacity: 0.65;
+  line-height: 1.4;
+  max-width: 320px;
 }
 .google-btn {
   display: inline-block;

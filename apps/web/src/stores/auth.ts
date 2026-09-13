@@ -33,5 +33,10 @@ export const useAuthStore = defineStore('auth', {
       await apiFetch('/auth/logout', { method: 'POST' });
       this.user = null;
     },
+    /** Permanently deletes the account and all learning data. Irreversible. */
+    async deleteAccount(): Promise<void> {
+      await apiFetch('/auth/me', { method: 'DELETE' });
+      this.user = null;
+    },
   },
 });

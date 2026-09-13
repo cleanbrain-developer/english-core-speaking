@@ -46,4 +46,26 @@ describe('useAuthStore', () => {
 
     expect(store.user).toEqual(user);
   });
+
+  it('clears the user after a successful account deletion', async () => {
+    const fetchMock = vi.fn().mockResolvedValue({ ok: true, status: 204, json: async () => undefined });
+    vi.stubGlobal('fetch', fetchMock);
+
+    const store = useAuthStore();
+    store.user = {
+      id: '1',
+      email: 'a@example.com',
+      displayName: 'A',
+      profileImageUrl: null,
+      timezone: 'Asia/Seoul',
+    };
+
+    await store.deleteAccount();
+
+    expect(fetchMock).toHaveBeenCalledWith(
+      expect.stringContaining('/auth/me'),
+      expect.objectContaining({ method: 'DELETE' }),
+    );
+    expect(store.user).toBeNull();
+  });
 });

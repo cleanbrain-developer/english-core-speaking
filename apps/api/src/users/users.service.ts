@@ -39,4 +39,14 @@ export class UsersService {
       },
     });
   }
+
+  /**
+   * Permanently deletes the user and all owned data. Every user-scoped
+   * table (progress, sessions, reviews, chunk drill progress) has
+   * `onDelete: Cascade` back to User in the schema, so this one delete is
+   * sufficient -- no other cleanup is needed.
+   */
+  async deleteById(id: string): Promise<void> {
+    await this.prisma.user.delete({ where: { id } });
+  }
 }
