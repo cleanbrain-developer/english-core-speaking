@@ -1,6 +1,6 @@
 {
   "dataset": "Speaking Core 1350",
-  "version": "2.0",
+  "version": "2.1",
   "total": 1350,
   "counts": {
     "Conversation Chunk": 300,
@@ -8,7 +8,7 @@
     "Core Word": 700,
     "Work English": 200
   },
-  "sha256": "4ef3fd04774b133bec3e882be8006de2d4ac55868a62ac6bab6ff5586ce013d7",
+  "sha256": "164b3029aabbc53428fbb77dac5ea9cfadc6b1f5ec423f94c00f801e1c4f782b",
   "validation": {
     "withinCategoryDuplicateEnglish": 0,
     "untranslatedCoreGloss": 0,
