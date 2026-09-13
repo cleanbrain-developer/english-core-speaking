@@ -7,7 +7,7 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/icon-192.png', 'icons/icon-512.png'],
+      includeAssets: ['icons/icon-192.png', 'icons/icon-512.png', 'favicon.ico', 'apple-touch-icon.png'],
       manifest: {
         name: 'Speaking Core 1350',
         short_name: 'Speaking 1350',
