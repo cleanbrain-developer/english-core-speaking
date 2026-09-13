@@ -57,6 +57,17 @@ export interface ProgressSummaryResponseDto {
   categories: ProgressCategoryDto[];
 }
 
+export interface ProgressCalendarDayDto {
+  date: string;
+  count: number;
+}
+
+export interface ProgressCalendarResponseDto {
+  from: string;
+  to: string;
+  days: ProgressCalendarDayDto[];
+}
+
 export interface ChunkDrillItemDto {
   id: number;
   rank: number;

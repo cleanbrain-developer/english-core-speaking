@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router';
 import { useAuthStore } from '../stores/auth';
 import { googleLoginUrl } from '../api/client';
 import { apiFetch } from '../api/client';
-import type { ChunkDrillSummaryDto, ProgressSummaryResponseDto } from '../api/types';
+import type { ChunkDrillSummaryDto, ProgressCalendarResponseDto, ProgressSummaryResponseDto } from '../api/types';
 
 const auth = useAuthStore();
 const { user, status } = storeToRefs(auth);
@@ -14,6 +14,7 @@ const router = useRouter();
 const summary = ref<ProgressSummaryResponseDto | null>(null);
 const summaryError = ref<string | null>(null);
 const chunkSummary = ref<ChunkDrillSummaryDto | null>(null);
+const streak = ref(0);
 const deleting = ref(false);
 const deleteError = ref<string | null>(null);
 
@@ -58,12 +59,31 @@ async function loadChunkSummary() {
   }
 }
 
+// getCalendar's day-by-count data already existed for the "progress calendar"
+// feature but nothing consumed it in the UI. Counting the consecutive days
+// (from today, backwards) with at least one review gives a simple streak
+// with no new backend work.
+async function loadStreak() {
+  try {
+    const res = await apiFetch<ProgressCalendarResponseDto>('/progress/calendar?days=60');
+    let count = 0;
+    for (let i = res.days.length - 1; i >= 0; i--) {
+      if (res.days[i].count <= 0) break;
+      count += 1;
+    }
+    streak.value = count;
+  } catch {
+    streak.value = 0;
+  }
+}
+
 watch(
   user,
   (value) => {
     if (value) {
       loadSummary();
       loadChunkSummary();
+      loadStreak();
     }
   },
   { immediate: true },
@@ -82,6 +102,7 @@ watch(
       <section class="card">
         <img v-if="user.profileImageUrl" :src="user.profileImageUrl" alt="" class="avatar" />
         <p>{{ user.displayName ?? user.email }}</p>
+        <p v-if="streak > 0" class="streak-badge">🔥 {{ streak }}일 연속 학습</p>
         <button @click="auth.logout()">로그아웃</button>
       </section>
 
@@ -177,6 +198,12 @@ watch(
 }
 .error {
   color: #f87171;
+}
+.streak-badge {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f59e0b;
+  margin: 0;
 }
 .account-footer {
   width: 100%;

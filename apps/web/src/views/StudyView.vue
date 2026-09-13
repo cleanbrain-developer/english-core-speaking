@@ -70,6 +70,25 @@ const ratingSummary = computed(() => {
   for (const r of results.value) counts[r.rating] += 1;
   return counts;
 });
+
+// Explains *why* this item is up for review right now -- previously the
+// card showed only English/Korean/example with no visibility into the
+// review history backing the four rating buttons, so a new user had no
+// way to understand or trust the SRS scheduling.
+const srsHint = computed(() => {
+  const progress = current.value?.progress;
+  if (!progress || progress.reps === 0) return '신규 항목';
+
+  const seenPart = progress.lastReviewedAt
+    ? `${daysAgo(progress.lastReviewedAt)}일 전 학습`
+    : '학습 기록 없음';
+  return `${progress.reps}회 복습 · 간격 ${progress.intervalDays}일 · ${seenPart}`;
+});
+
+function daysAgo(isoDate: string): number {
+  const diffMs = Date.now() - new Date(isoDate).getTime();
+  return Math.max(0, Math.floor(diffMs / (1000 * 60 * 60 * 24)));
+}
 </script>
 
 <template>
@@ -98,6 +117,7 @@ const ratingSummary = computed(() => {
 
     <section v-else-if="current" class="card-area">
       <p class="category-badge">{{ categoryLabel(current.category) }}</p>
+      <p class="srs-hint">{{ srsHint }}</p>
 
       <div class="card">
         <div class="english-row">
@@ -178,6 +198,11 @@ const ratingSummary = computed(() => {
 .category-badge {
   font-size: 0.8rem;
   opacity: 0.6;
+}
+.srs-hint {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin: -0.5rem 0 0;
 }
 .card {
   flex: 1;
