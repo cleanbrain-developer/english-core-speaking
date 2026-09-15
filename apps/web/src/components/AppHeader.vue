@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import { fetchAllTimeCount, fetchTodayCount, recordVisitOnce } from '../lib/visitorCounter';
+import { fetchAllTimeCount, fetchTodayCount, recordVisit } from '../lib/visitorCounter';
 
 const todayCount = ref<number | null>(null);
 const allTimeCount = ref<number | null>(null);
 
 onMounted(async () => {
-  await recordVisitOnce();
+  await recordVisit();
   todayCount.value = await fetchTodayCount();
   allTimeCount.value = await fetchAllTimeCount();
 });
