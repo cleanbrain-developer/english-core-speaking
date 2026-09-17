@@ -1,16 +1,39 @@
 {
   "dataset": "Speaking Pattern Core",
-  "version": "1.0",
-  "total": 28,
+  "version": "1.1",
+  "total": 70,
   "families": {
     "it-was": 21,
     "i-think": 4,
-    "the-problem-is": 3
+    "the-problem-is": 3,
+    "there-was": 4,
+    "i-was": 4,
+    "im-trying-to": 5,
+    "i-need-to": 4,
+    "i-want-to": 3,
+    "the-reason-is": 3,
+    "i-used-to": 3,
+    "ive-been": 3,
+    "it-seems-like": 3,
+    "im-not-sure-if": 4,
+    "for-example": 3,
+    "the-thing-is": 3
   },
   "intents": [
     "과거 상황을 설명하고 싶을 때",
     "내 생각을 말하고 싶을 때",
-    "문제를 설명하고 싶을 때"
+    "문제를 설명하고 싶을 때",
+    "과거 내 상태를 설명하고 싶을 때",
+    "지금 하는 일을 설명하고 싶을 때",
+    "해야 할 일을 말하고 싶을 때",
+    "원하는 것을 말하고 싶을 때",
+    "이유를 설명하고 싶을 때",
+    "예전 경험을 말하고 싶을 때",
+    "최근에 해온 일을 말하고 싶을 때",
+    "추측을 말하고 싶을 때",
+    "확실하지 않다고 말하고 싶을 때",
+    "예시를 들고 싶을 때",
+    "설명을 자연스럽게 이어가고 싶을 때"
   ],
-  "sha256": "c55b2696a00cd3fc52d937ed54996d68d0be60ab84a61112ca3dc218edc982a9"
+  "sha256": "d25c8042f2a20d5c61954533dadf42fbac3af407eb6b1f1b6bd114c957c2aa9c"
 }

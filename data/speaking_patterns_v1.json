@@ -69,7 +69,7 @@
     ],
     "difficulty": 1,
     "priority": 100,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -131,7 +131,7 @@
     ],
     "difficulty": 1,
     "priority": 95,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -227,7 +227,7 @@
     ],
     "difficulty": 2,
     "priority": 100,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -287,7 +287,7 @@
     ],
     "difficulty": 2,
     "priority": 80,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -347,7 +347,7 @@
     ],
     "difficulty": 1,
     "priority": 75,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -407,7 +407,7 @@
     ],
     "difficulty": 2,
     "priority": 85,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -467,7 +467,7 @@
     ],
     "difficulty": 2,
     "priority": 70,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -526,7 +526,7 @@
     ],
     "difficulty": 2,
     "priority": 65,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -597,7 +597,7 @@
     ],
     "difficulty": 3,
     "priority": 90,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -665,7 +665,7 @@
     ],
     "difficulty": 3,
     "priority": 60,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -724,7 +724,7 @@
     ],
     "difficulty": 2,
     "priority": 80,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -783,7 +783,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -842,7 +842,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -901,7 +901,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -960,7 +960,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1009,7 +1009,9 @@
     ],
     "expansions": null,
     "relatedPatternIds": [
-      "the-problem-was"
+      "the-problem-was",
+      "its-because",
+      "the-reason-is"
     ],
     "contrastPatternIds": [],
     "tags": [
@@ -1019,7 +1021,7 @@
     ],
     "difficulty": 2,
     "priority": 90,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1083,7 +1085,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1142,7 +1144,7 @@
     ],
     "difficulty": 1,
     "priority": 55,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1202,7 +1204,7 @@
     ],
     "difficulty": 2,
     "priority": 65,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1261,7 +1263,7 @@
     ],
     "difficulty": 2,
     "priority": 45,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1320,7 +1322,7 @@
     ],
     "difficulty": 2,
     "priority": 45,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1379,7 +1381,7 @@
     ],
     "difficulty": 1,
     "priority": 100,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1437,7 +1439,7 @@
     ],
     "difficulty": 1,
     "priority": 80,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1497,7 +1499,7 @@
     ],
     "difficulty": 2,
     "priority": 75,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1556,7 +1558,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1616,7 +1618,7 @@
     ],
     "difficulty": 2,
     "priority": 90,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1675,7 +1677,7 @@
     ],
     "difficulty": 2,
     "priority": 70,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1735,7 +1737,2469 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.0",
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "there-was-a-problem-with",
+    "rank": 29,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "there-was",
+    "familyLabel": "There was ...",
+    "parentPatternId": null,
+    "pattern": "There was a problem with [TOPIC].",
+    "koreanMeaning": "~에 문제가 있었어.",
+    "speakingFunction": "과거에 특정 대상에 문제가 있었음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the server",
+          "the connection",
+          "the payment",
+          "the design"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "There was a problem with the server.",
+        "korean": "서버에 문제가 있었어."
+      },
+      {
+        "english": "There was a problem with the connection.",
+        "korean": "연결에 문제가 있었어."
+      },
+      {
+        "english": "There was a problem with the payment.",
+        "korean": "결제에 문제가 있었어."
+      },
+      {
+        "english": "There was a problem with the design from the start.",
+        "korean": "디자인에 처음부터 문제가 있었어."
+      },
+      {
+        "english": "There was a problem with how we handled it.",
+        "korean": "우리가 처리한 방식에 문제가 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "there-was-an-issue-with",
+      "the-problem-was"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "problem"
+    ],
+    "difficulty": 1,
+    "priority": 70,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "there-was-an-issue-with",
+    "rank": 30,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "there-was",
+    "familyLabel": "There was ...",
+    "parentPatternId": null,
+    "pattern": "There was an issue with [TOPIC].",
+    "koreanMeaning": "~에 이슈가 있었어.",
+    "speakingFunction": "'problem'보다 좀 더 기술적/업무적인 뉘앙스로 이슈가 있었음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the deployment",
+          "the API response",
+          "the login flow",
+          "the data"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "There was an issue with the deployment.",
+        "korean": "배포에 이슈가 있었어."
+      },
+      {
+        "english": "There was an issue with the API response.",
+        "korean": "API 응답에 이슈가 있었어."
+      },
+      {
+        "english": "There was an issue with the login flow.",
+        "korean": "로그인 흐름에 이슈가 있었어."
+      },
+      {
+        "english": "There was an issue with the data format.",
+        "korean": "데이터 형식에 이슈가 있었어."
+      },
+      {
+        "english": "There was an issue with the last release.",
+        "korean": "지난 릴리스에 이슈가 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "there-was-a-problem-with"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "problem",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "there-was-no-way-to",
+    "rank": 31,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "there-was",
+    "familyLabel": "There was ...",
+    "parentPatternId": null,
+    "pattern": "There was no way to [ACTION].",
+    "koreanMeaning": "~할 방법이 없었어.",
+    "speakingFunction": "어떤 행동을 할 방법이 전혀 없었음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "know in advance",
+          "avoid it",
+          "fix it in time",
+          "contact them"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "There was no way to know in advance.",
+        "korean": "미리 알 방법이 없었어."
+      },
+      {
+        "english": "There was no way to avoid it.",
+        "korean": "피할 방법이 없었어."
+      },
+      {
+        "english": "There was no way to fix it in time.",
+        "korean": "제시간에 고칠 방법이 없었어."
+      },
+      {
+        "english": "There was no way to contact them.",
+        "korean": "그들에게 연락할 방법이 없었어."
+      },
+      {
+        "english": "There was no way to test it locally.",
+        "korean": "로컬에서 테스트할 방법이 없었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-impossible-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "difficulty"
+    ],
+    "difficulty": 2,
+    "priority": 50,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "there-was-a-time-when",
+    "rank": 32,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "there-was",
+    "familyLabel": "There was ...",
+    "parentPatternId": null,
+    "pattern": "There was a time when [SENTENCE].",
+    "koreanMeaning": "~했던 때가 있었어.",
+    "speakingFunction": "과거 특정 시기의 경험을 회상하며 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "I almost gave up",
+          "everything went wrong",
+          "we had no backup"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "There was a time when I almost gave up.",
+        "korean": "거의 포기할 뻔했던 때가 있었어."
+      },
+      {
+        "english": "There was a time when everything went wrong.",
+        "korean": "모든 게 잘못됐던 때가 있었어."
+      },
+      {
+        "english": "There was a time when we had no backup at all.",
+        "korean": "백업이 전혀 없었던 때가 있었어."
+      },
+      {
+        "english": "There was a time when this happened every week.",
+        "korean": "이게 매주 일어났던 때가 있었어."
+      },
+      {
+        "english": "There was a time when nobody believed it would work.",
+        "korean": "아무도 이게 될 거라 믿지 않았던 때가 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-used-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "reflection"
+    ],
+    "difficulty": 2,
+    "priority": 45,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-was-trying-to",
+    "rank": 33,
+    "speakingIntent": "과거 내 상태를 설명하고 싶을 때",
+    "familyId": "i-was",
+    "familyLabel": "I was ...",
+    "parentPatternId": null,
+    "pattern": "I was trying to [ACTION].",
+    "koreanMeaning": "~하려고 하는 중이었어.",
+    "speakingFunction": "과거 어떤 행동을 시도하고 있던 중이었음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "fix the bug",
+          "explain the situation",
+          "finish it before the deadline"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I was trying to fix the bug.",
+        "korean": "버그를 고치려던 중이었어."
+      },
+      {
+        "english": "I was trying to explain the situation.",
+        "korean": "상황을 설명하려던 중이었어."
+      },
+      {
+        "english": "I was trying to finish it before the deadline.",
+        "korean": "마감 전에 끝내려던 중이었어."
+      },
+      {
+        "english": "I was trying to reach you all morning.",
+        "korean": "아침 내내 너한테 연락하려던 중이었어."
+      },
+      {
+        "english": "I was trying to keep things simple.",
+        "korean": "최대한 단순하게 하려던 중이었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-was-about-to",
+      "im-trying-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "intent"
+    ],
+    "difficulty": 2,
+    "priority": 75,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-was-about-to",
+    "rank": 34,
+    "speakingIntent": "과거 내 상태를 설명하고 싶을 때",
+    "familyId": "i-was",
+    "familyLabel": "I was ...",
+    "parentPatternId": null,
+    "pattern": "I was about to [ACTION].",
+    "koreanMeaning": "막 ~하려던 참이었어.",
+    "speakingFunction": "어떤 행동을 하기 직전이었음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "leave",
+          "call you",
+          "give up",
+          "send the email"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I was about to leave.",
+        "korean": "막 나가려던 참이었어."
+      },
+      {
+        "english": "I was about to call you.",
+        "korean": "막 너한테 전화하려던 참이었어."
+      },
+      {
+        "english": "I was about to give up.",
+        "korean": "막 포기하려던 참이었어."
+      },
+      {
+        "english": "I was about to send the email when it crashed.",
+        "korean": "이메일 보내려던 참에 멈췄어."
+      },
+      {
+        "english": "I was about to ask the same thing.",
+        "korean": "나도 막 같은 걸 물어보려던 참이었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-was-trying-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "intent"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-was-worried-about",
+    "rank": 35,
+    "speakingIntent": "과거 내 상태를 설명하고 싶을 때",
+    "familyId": "i-was",
+    "familyLabel": "I was ...",
+    "parentPatternId": null,
+    "pattern": "I was worried about [TOPIC].",
+    "koreanMeaning": "~가 걱정됐어.",
+    "speakingFunction": "과거에 무언가를 걱정했음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the deadline",
+          "losing the data",
+          "making a bad impression"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I was worried about the deadline.",
+        "korean": "마감이 걱정됐어."
+      },
+      {
+        "english": "I was worried about losing the data.",
+        "korean": "데이터를 잃을까 봐 걱정됐어."
+      },
+      {
+        "english": "I was worried about making a bad impression.",
+        "korean": "인상이 나쁘게 남을까 걱정됐어."
+      },
+      {
+        "english": "I was worried about how they'd react.",
+        "korean": "그들이 어떻게 반응할지 걱정됐어."
+      },
+      {
+        "english": "I was worried about nothing, it turned out fine.",
+        "korean": "괜한 걱정이었어, 결국 잘 됐어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-not-sure-if"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "emotion"
+    ],
+    "difficulty": 2,
+    "priority": 50,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-was-thinking-about",
+    "rank": 36,
+    "speakingIntent": "과거 내 상태를 설명하고 싶을 때",
+    "familyId": "i-was",
+    "familyLabel": "I was ...",
+    "parentPatternId": null,
+    "pattern": "I was thinking about [TOPIC].",
+    "koreanMeaning": "~에 대해 생각하고 있었어.",
+    "speakingFunction": "과거에 무언가를 고민/생각하고 있었음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "quitting",
+          "the new approach",
+          "what you said"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I was thinking about quitting.",
+        "korean": "그만둘까 생각하고 있었어."
+      },
+      {
+        "english": "I was thinking about the new approach.",
+        "korean": "새로운 방법에 대해 생각하고 있었어."
+      },
+      {
+        "english": "I was thinking about what you said earlier.",
+        "korean": "네가 아까 한 말을 생각하고 있었어."
+      },
+      {
+        "english": "I was thinking about switching teams.",
+        "korean": "팀을 옮길까 생각하고 있었어."
+      },
+      {
+        "english": "I was thinking about how to explain it better.",
+        "korean": "어떻게 더 잘 설명할지 생각하고 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-think",
+      "ive-been-thinking-about"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "opinion"
+    ],
+    "difficulty": 2,
+    "priority": 45,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-trying-to",
+    "rank": 37,
+    "speakingIntent": "지금 하는 일을 설명하고 싶을 때",
+    "familyId": "im-trying-to",
+    "familyLabel": "I'm trying to ...",
+    "parentPatternId": null,
+    "pattern": "I'm trying to [ACTION].",
+    "koreanMeaning": "~하려고 하고 있어.",
+    "speakingFunction": "지금 어떤 행동을 시도하고 있음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "figure it out",
+          "reproduce the bug",
+          "get this working"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm trying to figure it out.",
+        "korean": "알아내려고 하고 있어."
+      },
+      {
+        "english": "I'm trying to reproduce the bug.",
+        "korean": "버그를 재현하려고 하고 있어."
+      },
+      {
+        "english": "I'm trying to get this working by tomorrow.",
+        "korean": "내일까지 이걸 작동시키려고 하고 있어."
+      },
+      {
+        "english": "I'm trying to keep it simple.",
+        "korean": "최대한 단순하게 하려고 하고 있어."
+      },
+      {
+        "english": "I'm trying to understand what changed.",
+        "korean": "뭐가 바뀌었는지 이해하려고 하고 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-working-on",
+      "i-was-trying-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "intent",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 90,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-working-on",
+    "rank": 38,
+    "speakingIntent": "지금 하는 일을 설명하고 싶을 때",
+    "familyId": "im-trying-to",
+    "familyLabel": "I'm trying to ...",
+    "parentPatternId": null,
+    "pattern": "I'm working on [TOPIC].",
+    "koreanMeaning": "~작업하고 있어.",
+    "speakingFunction": "지금 진행 중인 작업/일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the new feature",
+          "a fix for this",
+          "the report"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm working on the new feature.",
+        "korean": "새 기능을 작업하고 있어."
+      },
+      {
+        "english": "I'm working on a fix for this.",
+        "korean": "이거 고치는 걸 작업하고 있어."
+      },
+      {
+        "english": "I'm working on the report right now.",
+        "korean": "지금 보고서를 작업하고 있어."
+      },
+      {
+        "english": "I'm working on it, give me a minute.",
+        "korean": "지금 하고 있으니까 잠깐만."
+      },
+      {
+        "english": "I'm working on something similar.",
+        "korean": "비슷한 걸 작업하고 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-trying-to",
+      "ive-been-working-on"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "work"
+    ],
+    "difficulty": 1,
+    "priority": 70,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-looking-for",
+    "rank": 39,
+    "speakingIntent": "지금 하는 일을 설명하고 싶을 때",
+    "familyId": "im-trying-to",
+    "familyLabel": "I'm trying to ...",
+    "parentPatternId": null,
+    "pattern": "I'm looking for [TOPIC].",
+    "koreanMeaning": "~를 찾고 있어.",
+    "speakingFunction": "무언가를 찾고 있는 중임을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "a better solution",
+          "the right file",
+          "someone who knows this"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm looking for a better solution.",
+        "korean": "더 나은 방법을 찾고 있어."
+      },
+      {
+        "english": "I'm looking for the right file.",
+        "korean": "맞는 파일을 찾고 있어."
+      },
+      {
+        "english": "I'm looking for someone who knows this area.",
+        "korean": "이 분야를 아는 사람을 찾고 있어."
+      },
+      {
+        "english": "I'm looking for feedback on this.",
+        "korean": "이거에 대한 피드백을 찾고 있어."
+      },
+      {
+        "english": "I'm looking for a way to speed this up.",
+        "korean": "이걸 빠르게 할 방법을 찾고 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-trying-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "intent"
+    ],
+    "difficulty": 1,
+    "priority": 50,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-going-to",
+    "rank": 40,
+    "speakingIntent": "지금 하는 일을 설명하고 싶을 때",
+    "familyId": "im-trying-to",
+    "familyLabel": "I'm trying to ...",
+    "parentPatternId": null,
+    "pattern": "I'm going to [ACTION].",
+    "koreanMeaning": "~할 거야.",
+    "speakingFunction": "가까운 미래의 계획을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "fix this today",
+          "talk to the team",
+          "take a break"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm going to fix this today.",
+        "korean": "오늘 이거 고칠 거야."
+      },
+      {
+        "english": "I'm going to talk to the team about it.",
+        "korean": "팀한테 이거에 대해 얘기할 거야."
+      },
+      {
+        "english": "I'm going to take a short break.",
+        "korean": "잠깐 쉴 거야."
+      },
+      {
+        "english": "I'm going to try a different approach.",
+        "korean": "다른 방법을 시도해 볼 거야."
+      },
+      {
+        "english": "I'm going to double-check everything first.",
+        "korean": "먼저 전부 다시 확인할 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-planning-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "future",
+      "plan"
+    ],
+    "difficulty": 1,
+    "priority": 65,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-planning-to",
+    "rank": 41,
+    "speakingIntent": "지금 하는 일을 설명하고 싶을 때",
+    "familyId": "im-trying-to",
+    "familyLabel": "I'm trying to ...",
+    "parentPatternId": null,
+    "pattern": "I'm planning to [ACTION].",
+    "koreanMeaning": "~할 계획이야.",
+    "speakingFunction": "좀 더 구체적인 계획을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "release it next week",
+          "refactor this module",
+          "move to a new stack"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm planning to release it next week.",
+        "korean": "다음 주에 출시할 계획이야."
+      },
+      {
+        "english": "I'm planning to refactor this module.",
+        "korean": "이 모듈을 리팩터링할 계획이야."
+      },
+      {
+        "english": "I'm planning to move to a new stack.",
+        "korean": "새로운 스택으로 옮길 계획이야."
+      },
+      {
+        "english": "I'm planning to finish this by Friday.",
+        "korean": "금요일까지 끝낼 계획이야."
+      },
+      {
+        "english": "I'm planning to take some time off next month.",
+        "korean": "다음 달에 좀 쉴 계획이야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-going-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "future",
+      "plan"
+    ],
+    "difficulty": 2,
+    "priority": 45,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-need-to",
+    "rank": 42,
+    "speakingIntent": "해야 할 일을 말하고 싶을 때",
+    "familyId": "i-need-to",
+    "familyLabel": "I need to ...",
+    "parentPatternId": null,
+    "pattern": "I need to [ACTION].",
+    "koreanMeaning": "~해야 해.",
+    "speakingFunction": "지금 해야 하는 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "check this first",
+          "talk to my manager",
+          "fix this before lunch"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I need to check this first.",
+        "korean": "이거 먼저 확인해야 해."
+      },
+      {
+        "english": "I need to talk to my manager about it.",
+        "korean": "매니저한테 이거 얘기해야 해."
+      },
+      {
+        "english": "I need to fix this before lunch.",
+        "korean": "점심 전에 이거 고쳐야 해."
+      },
+      {
+        "english": "I need to think about it a bit more.",
+        "korean": "좀 더 생각해봐야 해."
+      },
+      {
+        "english": "I need to get this done today.",
+        "korean": "오늘 이거 끝내야 해."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-have-to",
+      "i-had-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "necessity",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 90,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-have-to",
+    "rank": 43,
+    "speakingIntent": "해야 할 일을 말하고 싶을 때",
+    "familyId": "i-need-to",
+    "familyLabel": "I need to ...",
+    "parentPatternId": null,
+    "pattern": "I have to [ACTION].",
+    "koreanMeaning": "~해야만 해.",
+    "speakingFunction": "선택의 여지 없이 해야 하는 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "leave early today",
+          "redo this",
+          "follow the process"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I have to leave early today.",
+        "korean": "오늘 일찍 가야만 해."
+      },
+      {
+        "english": "I have to redo this from scratch.",
+        "korean": "이거 처음부터 다시 해야만 해."
+      },
+      {
+        "english": "I have to follow the process here.",
+        "korean": "여기선 절차를 따라야만 해."
+      },
+      {
+        "english": "I have to be honest with you.",
+        "korean": "솔직하게 말해야만 할 것 같아."
+      },
+      {
+        "english": "I have to admit, I didn't expect that.",
+        "korean": "인정해야겠는데, 그건 예상 못 했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-need-to",
+      "i-had-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "necessity"
+    ],
+    "difficulty": 1,
+    "priority": 60,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-had-to",
+    "rank": 44,
+    "speakingIntent": "해야 할 일을 말하고 싶을 때",
+    "familyId": "i-need-to",
+    "familyLabel": "I need to ...",
+    "parentPatternId": null,
+    "pattern": "I had to [ACTION].",
+    "koreanMeaning": "~해야만 했어.",
+    "speakingFunction": "과거에 어쩔 수 없이 해야 했던 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "rewrite the whole thing",
+          "cancel the meeting",
+          "ask for help"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I had to rewrite the whole thing.",
+        "korean": "전체를 다시 써야만 했어."
+      },
+      {
+        "english": "I had to cancel the meeting.",
+        "korean": "회의를 취소해야만 했어."
+      },
+      {
+        "english": "I had to ask for help.",
+        "korean": "도움을 요청해야만 했어."
+      },
+      {
+        "english": "I had to stay late to finish it.",
+        "korean": "끝내려고 늦게까지 있어야만 했어."
+      },
+      {
+        "english": "I had to make a quick decision.",
+        "korean": "빠르게 결정을 내려야만 했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-have-to",
+      "i-need-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "necessity"
+    ],
+    "difficulty": 1,
+    "priority": 60,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-dont-need-to",
+    "rank": 45,
+    "speakingIntent": "해야 할 일을 말하고 싶을 때",
+    "familyId": "i-need-to",
+    "familyLabel": "I need to ...",
+    "parentPatternId": null,
+    "pattern": "I don't need to [ACTION].",
+    "koreanMeaning": "~할 필요 없어.",
+    "speakingFunction": "그럴 필요가 없다고 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "worry about that",
+          "explain everything",
+          "be there in person"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I don't need to worry about that anymore.",
+        "korean": "이제 그거 걱정할 필요 없어."
+      },
+      {
+        "english": "I don't need to explain everything.",
+        "korean": "다 설명할 필요는 없어."
+      },
+      {
+        "english": "I don't need to be there in person.",
+        "korean": "직접 갈 필요는 없어."
+      },
+      {
+        "english": "I don't need to redo it, it's fine as is.",
+        "korean": "다시 할 필요 없어, 이대로 괜찮아."
+      },
+      {
+        "english": "I don't need to check twice, I already did.",
+        "korean": "두 번 확인할 필요 없어, 이미 했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-need-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "necessity"
+    ],
+    "difficulty": 2,
+    "priority": 40,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-want-to",
+    "rank": 46,
+    "speakingIntent": "원하는 것을 말하고 싶을 때",
+    "familyId": "i-want-to",
+    "familyLabel": "I want to ...",
+    "parentPatternId": null,
+    "pattern": "I want to [ACTION].",
+    "koreanMeaning": "~하고 싶어.",
+    "speakingFunction": "원하는 것을 직접적으로 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "understand this better",
+          "try a different way",
+          "hear your opinion"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I want to understand this better.",
+        "korean": "이걸 더 잘 이해하고 싶어."
+      },
+      {
+        "english": "I want to try a different way.",
+        "korean": "다른 방법을 시도해보고 싶어."
+      },
+      {
+        "english": "I want to hear your opinion first.",
+        "korean": "먼저 네 의견을 듣고 싶어."
+      },
+      {
+        "english": "I want to make sure this is right.",
+        "korean": "이게 맞는지 확실히 하고 싶어."
+      },
+      {
+        "english": "I want to keep things moving.",
+        "korean": "계속 진행되게 하고 싶어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "id-like-to",
+      "i-wanted-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "desire",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 85,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "id-like-to",
+    "rank": 47,
+    "speakingIntent": "원하는 것을 말하고 싶을 때",
+    "familyId": "i-want-to",
+    "familyLabel": "I want to ...",
+    "parentPatternId": null,
+    "pattern": "I'd like to [ACTION].",
+    "koreanMeaning": "~하고 싶습니다.",
+    "speakingFunction": "'want to'보다 정중하게 원하는 바를 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "ask a question",
+          "get some feedback",
+          "schedule a call"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'd like to ask a question.",
+        "korean": "질문 하나 드리고 싶습니다."
+      },
+      {
+        "english": "I'd like to get some feedback on this.",
+        "korean": "이거에 대한 피드백을 받고 싶습니다."
+      },
+      {
+        "english": "I'd like to schedule a call this week.",
+        "korean": "이번 주에 통화 일정을 잡고 싶습니다."
+      },
+      {
+        "english": "I'd like to clarify something.",
+        "korean": "한 가지 명확히 하고 싶습니다."
+      },
+      {
+        "english": "I'd like to hear more about your plan.",
+        "korean": "당신의 계획에 대해 더 듣고 싶습니다."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-want-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "desire",
+      "polite",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-wanted-to",
+    "rank": 48,
+    "speakingIntent": "원하는 것을 말하고 싶을 때",
+    "familyId": "i-want-to",
+    "familyLabel": "I want to ...",
+    "parentPatternId": null,
+    "pattern": "I wanted to [ACTION].",
+    "koreanMeaning": "~하고 싶었어.",
+    "speakingFunction": "과거에 원했던 것을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "let you know earlier",
+          "avoid this situation",
+          "finish it myself"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I wanted to let you know earlier.",
+        "korean": "더 일찍 알려주고 싶었어."
+      },
+      {
+        "english": "I wanted to avoid this situation.",
+        "korean": "이 상황을 피하고 싶었어."
+      },
+      {
+        "english": "I wanted to finish it myself.",
+        "korean": "내가 직접 끝내고 싶었어."
+      },
+      {
+        "english": "I wanted to double-check before telling you.",
+        "korean": "말하기 전에 다시 확인하고 싶었어."
+      },
+      {
+        "english": "I wanted to make a good first impression.",
+        "korean": "좋은 첫인상을 남기고 싶었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-want-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "desire"
+    ],
+    "difficulty": 1,
+    "priority": 45,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "the-reason-is",
+    "rank": 49,
+    "speakingIntent": "이유를 설명하고 싶을 때",
+    "familyId": "the-reason-is",
+    "familyLabel": "The reason is ...",
+    "parentPatternId": null,
+    "pattern": "The reason is that [SENTENCE].",
+    "koreanMeaning": "이유는 ~라는 거야.",
+    "speakingFunction": "이유를 명확하게 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we ran out of time",
+          "the requirements changed",
+          "it wasn't tested enough"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "The reason is that we ran out of time.",
+        "korean": "이유는 시간이 부족했다는 거야."
+      },
+      {
+        "english": "The reason is that the requirements changed.",
+        "korean": "이유는 요구사항이 바뀌었다는 거야."
+      },
+      {
+        "english": "The reason is that it wasn't tested enough.",
+        "korean": "이유는 테스트가 충분하지 않았다는 거야."
+      },
+      {
+        "english": "The reason is simple: nobody checked it.",
+        "korean": "이유는 간단해: 아무도 확인 안 했어."
+      },
+      {
+        "english": "The reason is that we underestimated the scope.",
+        "korean": "이유는 범위를 과소평가했다는 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "thats-why",
+      "its-because"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "reason",
+      "core"
+    ],
+    "difficulty": 2,
+    "priority": 80,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "thats-why",
+    "rank": 50,
+    "speakingIntent": "이유를 설명하고 싶을 때",
+    "familyId": "the-reason-is",
+    "familyLabel": "The reason is ...",
+    "parentPatternId": null,
+    "pattern": "That's why [SENTENCE].",
+    "koreanMeaning": "그래서 ~한 거야.",
+    "speakingFunction": "앞서 말한 이유의 결과를 이어서 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "I decided to change it",
+          "we're behind schedule",
+          "I asked for help"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "That's why I decided to change it.",
+        "korean": "그래서 그걸 바꾸기로 한 거야."
+      },
+      {
+        "english": "That's why we're behind schedule.",
+        "korean": "그래서 일정이 밀린 거야."
+      },
+      {
+        "english": "That's why I asked for help.",
+        "korean": "그래서 도움을 요청한 거야."
+      },
+      {
+        "english": "That's why it took so long.",
+        "korean": "그래서 그렇게 오래 걸린 거야."
+      },
+      {
+        "english": "That's why I wanted to double-check first.",
+        "korean": "그래서 먼저 다시 확인하고 싶었던 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-reason-is"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "reason"
+    ],
+    "difficulty": 1,
+    "priority": 60,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "its-because",
+    "rank": 51,
+    "speakingIntent": "이유를 설명하고 싶을 때",
+    "familyId": "the-reason-is",
+    "familyLabel": "The reason is ...",
+    "parentPatternId": null,
+    "pattern": "It's because [REASON].",
+    "koreanMeaning": "~때문이야.",
+    "speakingFunction": "현재 상황의 이유를 말할 때 ('it was because'의 현재형)",
+    "description": null,
+    "slots": [
+      {
+        "key": "REASON",
+        "type": "reason",
+        "examples": [
+          "I'm still learning",
+          "the system is under maintenance",
+          "we changed the process"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It's because I'm still learning this area.",
+        "korean": "아직 이 분야를 배우는 중이라서 그래."
+      },
+      {
+        "english": "It's because the system is under maintenance.",
+        "korean": "시스템이 점검 중이라서 그래."
+      },
+      {
+        "english": "It's because we changed the process recently.",
+        "korean": "최근에 절차를 바꿔서 그래."
+      },
+      {
+        "english": "It's because nobody flagged it earlier.",
+        "korean": "아무도 일찍 지적하지 않아서 그래."
+      },
+      {
+        "english": "It's because the data hasn't synced yet.",
+        "korean": "데이터가 아직 동기화되지 않아서 그래."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-because",
+      "the-reason-is"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "reason"
+    ],
+    "difficulty": 1,
+    "priority": 65,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-used-to",
+    "rank": 52,
+    "speakingIntent": "예전 경험을 말하고 싶을 때",
+    "familyId": "i-used-to",
+    "familyLabel": "I used to ...",
+    "parentPatternId": null,
+    "pattern": "I used to [ACTION].",
+    "koreanMeaning": "예전엔 ~하곤 했어.",
+    "speakingFunction": "지금은 안 하지만 예전엔 자주 했던 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "work night shifts",
+          "do this manually",
+          "live near here"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I used to work night shifts.",
+        "korean": "예전엔 야간 근무를 하곤 했어."
+      },
+      {
+        "english": "I used to do this manually.",
+        "korean": "예전엔 이걸 수동으로 하곤 했어."
+      },
+      {
+        "english": "I used to live near here.",
+        "korean": "예전엔 이 근처에 살았어."
+      },
+      {
+        "english": "I used to be afraid of public speaking.",
+        "korean": "예전엔 발표하는 걸 무서워했어."
+      },
+      {
+        "english": "I used to think this was impossible.",
+        "korean": "예전엔 이게 불가능하다고 생각했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-used-to-be",
+      "there-was-a-time-when"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "habit",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 70,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-used-to-be",
+    "rank": 53,
+    "speakingIntent": "예전 경험을 말하고 싶을 때",
+    "familyId": "i-used-to",
+    "familyLabel": "I used to ...",
+    "parentPatternId": null,
+    "pattern": "I used to be [ADJECTIVE].",
+    "koreanMeaning": "예전엔 ~였어.",
+    "speakingFunction": "예전의 상태나 신분을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ADJECTIVE",
+        "type": "adjective",
+        "examples": [
+          "nervous about this",
+          "a beginner",
+          "on a different team",
+          "skeptical about it"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I used to be nervous about this.",
+        "korean": "예전엔 이게 긴장됐어."
+      },
+      {
+        "english": "I used to be a complete beginner.",
+        "korean": "예전엔 완전 초보였어."
+      },
+      {
+        "english": "I used to be on a different team.",
+        "korean": "예전엔 다른 팀에 있었어."
+      },
+      {
+        "english": "I used to be skeptical about it.",
+        "korean": "예전엔 이거에 회의적이었어."
+      },
+      {
+        "english": "I used to be much slower at this.",
+        "korean": "예전엔 이거 훨씬 느리게 했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-used-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "habit"
+    ],
+    "difficulty": 1,
+    "priority": 45,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-didnt-use-to",
+    "rank": 54,
+    "speakingIntent": "예전 경험을 말하고 싶을 때",
+    "familyId": "i-used-to",
+    "familyLabel": "I used to ...",
+    "parentPatternId": null,
+    "pattern": "I didn't use to [ACTION].",
+    "koreanMeaning": "예전엔 ~하지 않았어.",
+    "speakingFunction": "예전에는 하지 않았지만 지금은 하는 일을 대비해서 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "like this kind of work",
+          "care about it",
+          "notice these things"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I didn't use to like this kind of work.",
+        "korean": "예전엔 이런 일을 안 좋아했어."
+      },
+      {
+        "english": "I didn't use to care about it much.",
+        "korean": "예전엔 이거에 별로 신경 안 썼어."
+      },
+      {
+        "english": "I didn't use to notice these things.",
+        "korean": "예전엔 이런 걸 눈치채지 못했어."
+      },
+      {
+        "english": "I didn't use to check this every time.",
+        "korean": "예전엔 매번 이걸 확인하지 않았어."
+      },
+      {
+        "english": "I didn't use to trust automated tests.",
+        "korean": "예전엔 자동화 테스트를 안 믿었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-used-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "habit"
+    ],
+    "difficulty": 2,
+    "priority": 35,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "ive-been-working-on",
+    "rank": 55,
+    "speakingIntent": "최근에 해온 일을 말하고 싶을 때",
+    "familyId": "ive-been",
+    "familyLabel": "I've been ...",
+    "parentPatternId": null,
+    "pattern": "I've been working on [TOPIC].",
+    "koreanMeaning": "~를 계속 작업해오고 있어.",
+    "speakingFunction": "일정 기간 동안 계속해온 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "this feature for a week",
+          "the migration",
+          "a side project"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I've been working on this feature for a week.",
+        "korean": "이 기능을 일주일째 작업하고 있어."
+      },
+      {
+        "english": "I've been working on the migration.",
+        "korean": "마이그레이션을 계속 작업해오고 있어."
+      },
+      {
+        "english": "I've been working on a side project lately.",
+        "korean": "요즘 사이드 프로젝트를 하고 있어."
+      },
+      {
+        "english": "I've been working on my English speaking.",
+        "korean": "영어 말하기를 계속 연습해오고 있어."
+      },
+      {
+        "english": "I've been working on it off and on.",
+        "korean": "틈틈이 그걸 작업해오고 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "ive-been-trying-to",
+      "im-working-on"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present-perfect",
+      "work",
+      "core"
+    ],
+    "difficulty": 2,
+    "priority": 75,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "ive-been-trying-to",
+    "rank": 56,
+    "speakingIntent": "최근에 해온 일을 말하고 싶을 때",
+    "familyId": "ive-been",
+    "familyLabel": "I've been ...",
+    "parentPatternId": null,
+    "pattern": "I've been trying to [ACTION].",
+    "koreanMeaning": "계속 ~하려고 하고 있어.",
+    "speakingFunction": "한동안 계속 시도해온 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "reach him",
+          "fix this issue",
+          "learn this framework"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I've been trying to reach him all week.",
+        "korean": "일주일 내내 그에게 연락하려고 하고 있어."
+      },
+      {
+        "english": "I've been trying to fix this issue since Monday.",
+        "korean": "월요일부터 계속 이 이슈를 고치려고 하고 있어."
+      },
+      {
+        "english": "I've been trying to learn this framework.",
+        "korean": "이 프레임워크를 계속 배우려고 하고 있어."
+      },
+      {
+        "english": "I've been trying to explain this more clearly.",
+        "korean": "이걸 더 명확하게 설명하려고 계속 하고 있어."
+      },
+      {
+        "english": "I've been trying to get some feedback.",
+        "korean": "계속 피드백을 받으려고 하고 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "ive-been-working-on",
+      "im-trying-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present-perfect",
+      "intent"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "ive-been-thinking-about",
+    "rank": 57,
+    "speakingIntent": "최근에 해온 일을 말하고 싶을 때",
+    "familyId": "ive-been",
+    "familyLabel": "I've been ...",
+    "parentPatternId": null,
+    "pattern": "I've been thinking about [TOPIC].",
+    "koreanMeaning": "계속 ~에 대해 생각하고 있어.",
+    "speakingFunction": "한동안 마음속으로 고민해온 것을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "changing the approach",
+          "what you said",
+          "moving to a new role"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I've been thinking about changing the approach.",
+        "korean": "방법을 바꾸는 걸 계속 생각하고 있어."
+      },
+      {
+        "english": "I've been thinking about what you said.",
+        "korean": "네가 한 말을 계속 생각하고 있어."
+      },
+      {
+        "english": "I've been thinking about moving to a new role.",
+        "korean": "새로운 역할로 옮기는 걸 계속 생각하고 있어."
+      },
+      {
+        "english": "I've been thinking about this a lot lately.",
+        "korean": "요즘 이거 많이 생각하고 있어."
+      },
+      {
+        "english": "I've been thinking about how to improve this.",
+        "korean": "이걸 어떻게 개선할지 계속 생각하고 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "ive-been-working-on",
+      "i-was-thinking-about"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present-perfect",
+      "opinion"
+    ],
+    "difficulty": 2,
+    "priority": 40,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-seems-like",
+    "rank": 58,
+    "speakingIntent": "추측을 말하고 싶을 때",
+    "familyId": "it-seems-like",
+    "familyLabel": "It seems like ...",
+    "parentPatternId": null,
+    "pattern": "It seems like [SENTENCE].",
+    "koreanMeaning": "~인 것 같아.",
+    "speakingFunction": "확실친 않지만 그런 것 같다고 추측할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it's working now",
+          "everyone agrees",
+          "this is the main issue"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It seems like it's working now.",
+        "korean": "지금은 되는 것 같아."
+      },
+      {
+        "english": "It seems like everyone agrees.",
+        "korean": "다들 동의하는 것 같아."
+      },
+      {
+        "english": "It seems like this is the main issue.",
+        "korean": "이게 주요 문제인 것 같아."
+      },
+      {
+        "english": "It seems like something changed overnight.",
+        "korean": "밤사이에 뭔가 바뀐 것 같아."
+      },
+      {
+        "english": "It seems like we're on the same page.",
+        "korean": "우리 같은 생각인 것 같아."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-looks-like",
+      "it-seems-that"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "guess",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 70,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-looks-like",
+    "rank": 59,
+    "speakingIntent": "추측을 말하고 싶을 때",
+    "familyId": "it-seems-like",
+    "familyLabel": "It seems like ...",
+    "parentPatternId": null,
+    "pattern": "It looks like [SENTENCE].",
+    "koreanMeaning": "~인 것처럼 보여.",
+    "speakingFunction": "시각적/상황적 단서로 추측할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it's going to rain",
+          "we're almost done",
+          "the fix worked"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It looks like it's going to rain.",
+        "korean": "비가 올 것처럼 보여."
+      },
+      {
+        "english": "It looks like we're almost done.",
+        "korean": "거의 끝난 것처럼 보여."
+      },
+      {
+        "english": "It looks like the fix worked.",
+        "korean": "수정이 된 것처럼 보여."
+      },
+      {
+        "english": "It looks like nobody's home.",
+        "korean": "아무도 없는 것처럼 보여."
+      },
+      {
+        "english": "It looks like this needs more testing.",
+        "korean": "테스트가 더 필요한 것처럼 보여."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-seems-like"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "guess"
+    ],
+    "difficulty": 1,
+    "priority": 45,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-seems-that",
+    "rank": 60,
+    "speakingIntent": "추측을 말하고 싶을 때",
+    "familyId": "it-seems-like",
+    "familyLabel": "It seems like ...",
+    "parentPatternId": null,
+    "pattern": "It seems that [SENTENCE].",
+    "koreanMeaning": "~인 듯해.",
+    "speakingFunction": "좀 더 격식 있게 추측을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "the plan needs adjusting",
+          "there's a misunderstanding",
+          "the data is incomplete"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It seems that the plan needs adjusting.",
+        "korean": "계획을 조정해야 할 듯해."
+      },
+      {
+        "english": "It seems that there's a misunderstanding.",
+        "korean": "오해가 있는 듯해."
+      },
+      {
+        "english": "It seems that the data is incomplete.",
+        "korean": "데이터가 불완전한 듯해."
+      },
+      {
+        "english": "It seems that most people prefer this option.",
+        "korean": "대부분 이 옵션을 선호하는 듯해."
+      },
+      {
+        "english": "It seems that we missed something.",
+        "korean": "우리가 뭔가 놓친 듯해."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-seems-like"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "guess",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 40,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-not-sure-if",
+    "rank": 61,
+    "speakingIntent": "확실하지 않다고 말하고 싶을 때",
+    "familyId": "im-not-sure-if",
+    "familyLabel": "I'm not sure if ...",
+    "parentPatternId": null,
+    "pattern": "I'm not sure if [SENTENCE].",
+    "koreanMeaning": "~인지 잘 모르겠어.",
+    "speakingFunction": "확신이 없을 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "this is the right approach",
+          "they got the message",
+          "it's worth the risk"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm not sure if this is the right approach.",
+        "korean": "이게 맞는 방법인지 잘 모르겠어."
+      },
+      {
+        "english": "I'm not sure if they got the message.",
+        "korean": "그들이 메시지를 받았는지 잘 모르겠어."
+      },
+      {
+        "english": "I'm not sure if it's worth the risk.",
+        "korean": "그럴 가치가 있는 위험인지 잘 모르겠어."
+      },
+      {
+        "english": "I'm not sure if this will scale.",
+        "korean": "이게 확장 가능할지 잘 모르겠어."
+      },
+      {
+        "english": "I'm not sure if I explained that well.",
+        "korean": "내가 그걸 잘 설명했는지 잘 모르겠어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-dont-know-if",
+      "it-depends-on"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "uncertainty",
+      "core"
+    ],
+    "difficulty": 2,
+    "priority": 75,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-dont-know-if",
+    "rank": 62,
+    "speakingIntent": "확실하지 않다고 말하고 싶을 때",
+    "familyId": "im-not-sure-if",
+    "familyLabel": "I'm not sure if ...",
+    "parentPatternId": null,
+    "pattern": "I don't know if [SENTENCE].",
+    "koreanMeaning": "~인지 모르겠어.",
+    "speakingFunction": "잘 모르겠다고 직접적으로 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "this is a bug or a feature",
+          "we have time for this",
+          "it's the same issue"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I don't know if this is a bug or a feature.",
+        "korean": "이게 버그인지 의도된 건지 모르겠어."
+      },
+      {
+        "english": "I don't know if we have time for this.",
+        "korean": "이거 할 시간이 있는지 모르겠어."
+      },
+      {
+        "english": "I don't know if it's the same issue.",
+        "korean": "같은 이슈인지 모르겠어."
+      },
+      {
+        "english": "I don't know if that's a good idea.",
+        "korean": "그게 좋은 생각인지 모르겠어."
+      },
+      {
+        "english": "I don't know if anyone else noticed.",
+        "korean": "다른 사람도 눈치챘는지 모르겠어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-not-sure-if"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "uncertainty"
+    ],
+    "difficulty": 1,
+    "priority": 55,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-depends-on",
+    "rank": 63,
+    "speakingIntent": "확실하지 않다고 말하고 싶을 때",
+    "familyId": "im-not-sure-if",
+    "familyLabel": "I'm not sure if ...",
+    "parentPatternId": null,
+    "pattern": "It depends on [TOPIC].",
+    "koreanMeaning": "~에 따라 달라.",
+    "speakingFunction": "무언가에 따라 결과가 달라진다고 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "how much time we have",
+          "what the client wants",
+          "the data size"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It depends on how much time we have.",
+        "korean": "시간이 얼마나 있느냐에 따라 달라."
+      },
+      {
+        "english": "It depends on what the client wants.",
+        "korean": "고객이 뭘 원하는지에 따라 달라."
+      },
+      {
+        "english": "It depends on the data size.",
+        "korean": "데이터 크기에 따라 달라."
+      },
+      {
+        "english": "It depends on who you ask.",
+        "korean": "누구한테 묻느냐에 따라 달라."
+      },
+      {
+        "english": "It depends on the situation.",
+        "korean": "상황에 따라 달라."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-not-sure-if"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "uncertainty",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 60,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "as-far-as-i-know",
+    "rank": 64,
+    "speakingIntent": "확실하지 않다고 말하고 싶을 때",
+    "familyId": "im-not-sure-if",
+    "familyLabel": "I'm not sure if ...",
+    "parentPatternId": null,
+    "pattern": "As far as I know, [SENTENCE].",
+    "koreanMeaning": "내가 알기로는 ~해.",
+    "speakingFunction": "확실친 않지만 알고 있는 선에서 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it's already fixed",
+          "nobody's working on that",
+          "that's still the plan"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "As far as I know, it's already fixed.",
+        "korean": "내가 알기로는 이미 고쳐졌어."
+      },
+      {
+        "english": "As far as I know, nobody's working on that.",
+        "korean": "내가 알기로는 아무도 그거 안 하고 있어."
+      },
+      {
+        "english": "As far as I know, that's still the plan.",
+        "korean": "내가 알기로는 그게 여전히 계획이야."
+      },
+      {
+        "english": "As far as I know, this hasn't happened before.",
+        "korean": "내가 알기로는 이런 적 없었어."
+      },
+      {
+        "english": "As far as I know, everyone approved it.",
+        "korean": "내가 알기로는 다들 승인했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-not-sure-if"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "uncertainty"
+    ],
+    "difficulty": 2,
+    "priority": 35,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "for-example",
+    "rank": 65,
+    "speakingIntent": "예시를 들고 싶을 때",
+    "familyId": "for-example",
+    "familyLabel": "For example ...",
+    "parentPatternId": null,
+    "pattern": "For example, [SENTENCE].",
+    "koreanMeaning": "예를 들면, ~해.",
+    "speakingFunction": "구체적인 예시를 들어 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we could use caching",
+          "this happened last week",
+          "some users reported it"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "For example, we could use caching here.",
+        "korean": "예를 들면, 여기 캐싱을 쓸 수 있어."
+      },
+      {
+        "english": "For example, this happened last week.",
+        "korean": "예를 들면, 지난주에 이런 일이 있었어."
+      },
+      {
+        "english": "For example, some users reported the same issue.",
+        "korean": "예를 들면, 몇몇 유저가 같은 이슈를 신고했어."
+      },
+      {
+        "english": "For example, take a look at this case.",
+        "korean": "예를 들면, 이 케이스를 봐봐."
+      },
+      {
+        "english": "For example, this is what I mean.",
+        "korean": "예를 들면, 이게 내가 말하는 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "for-instance",
+      "lets-say"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "example",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 65,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "for-instance",
+    "rank": 66,
+    "speakingIntent": "예시를 들고 싶을 때",
+    "familyId": "for-example",
+    "familyLabel": "For example ...",
+    "parentPatternId": null,
+    "pattern": "For instance, [SENTENCE].",
+    "koreanMeaning": "예컨대, ~해.",
+    "speakingFunction": "'for example'과 같은 의미로 조금 더 격식 있게 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "the login page is slow",
+          "some fields are missing",
+          "we lost a customer"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "For instance, the login page is slow.",
+        "korean": "예컨대, 로그인 페이지가 느려."
+      },
+      {
+        "english": "For instance, some fields are missing in the response.",
+        "korean": "예컨대, 응답에 일부 필드가 빠져 있어."
+      },
+      {
+        "english": "For instance, we lost a customer because of this.",
+        "korean": "예컨대, 이것 때문에 고객을 잃었어."
+      },
+      {
+        "english": "For instance, this worked fine in staging.",
+        "korean": "예컨대, 스테이징에서는 잘 됐어."
+      },
+      {
+        "english": "For instance, take last quarter's numbers.",
+        "korean": "예컨대, 지난 분기 수치를 봐."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "for-example"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "example",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 35,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "lets-say",
+    "rank": 67,
+    "speakingIntent": "예시를 들고 싶을 때",
+    "familyId": "for-example",
+    "familyLabel": "For example ...",
+    "parentPatternId": null,
+    "pattern": "Let's say [SENTENCE].",
+    "koreanMeaning": "예를 들어 ~라고 해보자.",
+    "speakingFunction": "가정을 들어 설명을 시작할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we have 1,000 users",
+          "the deadline moves up",
+          "this fails"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "Let's say we have 1,000 users.",
+        "korean": "예를 들어 유저가 1,000명 있다고 해보자."
+      },
+      {
+        "english": "Let's say the deadline moves up by a week.",
+        "korean": "예를 들어 마감이 일주일 당겨진다고 해보자."
+      },
+      {
+        "english": "Let's say this fails in production.",
+        "korean": "예를 들어 이게 운영에서 실패한다고 해보자."
+      },
+      {
+        "english": "Let's say I'm wrong about this.",
+        "korean": "예를 들어 내가 이거 틀렸다고 해보자."
+      },
+      {
+        "english": "Let's say we go with option A.",
+        "korean": "예를 들어 A안으로 간다고 해보자."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "for-example"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "example",
+      "hypothetical"
+    ],
+    "difficulty": 2,
+    "priority": 40,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "the-thing-is",
+    "rank": 68,
+    "speakingIntent": "설명을 자연스럽게 이어가고 싶을 때",
+    "familyId": "the-thing-is",
+    "familyLabel": "The thing is ...",
+    "parentPatternId": null,
+    "pattern": "The thing is, [SENTENCE].",
+    "koreanMeaning": "그게, ~야.",
+    "speakingFunction": "생각할 시간을 벌면서 자연스럽게 설명을 시작할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "I didn't know about it",
+          "we don't have enough time",
+          "it's more complicated than that"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "The thing is, I didn't know about it.",
+        "korean": "그게, 나는 그거 몰랐어."
+      },
+      {
+        "english": "The thing is, we don't have enough time.",
+        "korean": "그게, 우리 시간이 충분치 않아."
+      },
+      {
+        "english": "The thing is, it's more complicated than that.",
+        "korean": "그게, 그것보다 좀 더 복잡해."
+      },
+      {
+        "english": "The thing is, nobody told me.",
+        "korean": "그게, 아무도 나한테 말 안 해줬어."
+      },
+      {
+        "english": "The thing is, it worked yesterday.",
+        "korean": "그게, 어제는 됐거든."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "what-i-mean-is",
+      "basically"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "discourse",
+      "core"
+    ],
+    "difficulty": 2,
+    "priority": 60,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "what-i-mean-is",
+    "rank": 69,
+    "speakingIntent": "설명을 자연스럽게 이어가고 싶을 때",
+    "familyId": "the-thing-is",
+    "familyLabel": "The thing is ...",
+    "parentPatternId": null,
+    "pattern": "What I mean is, [SENTENCE].",
+    "koreanMeaning": "내 말은, ~라는 거야.",
+    "speakingFunction": "앞서 한 말을 다시 풀어서 명확히 할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we should slow down",
+          "this isn't urgent",
+          "I need more context"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "What I mean is, we should slow down a bit.",
+        "korean": "내 말은, 좀 천천히 해야 한다는 거야."
+      },
+      {
+        "english": "What I mean is, this isn't urgent.",
+        "korean": "내 말은, 이게 급한 건 아니라는 거야."
+      },
+      {
+        "english": "What I mean is, I need more context.",
+        "korean": "내 말은, 좀 더 맥락이 필요하다는 거야."
+      },
+      {
+        "english": "What I mean is, it's not your fault.",
+        "korean": "내 말은, 네 잘못이 아니라는 거야."
+      },
+      {
+        "english": "What I mean is, let's double-check before we ship.",
+        "korean": "내 말은, 배포 전에 다시 확인하자는 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-thing-is"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "discourse"
+    ],
+    "difficulty": 2,
+    "priority": 40,
+    "datasetVersion": "1.1",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "basically",
+    "rank": 70,
+    "speakingIntent": "설명을 자연스럽게 이어가고 싶을 때",
+    "familyId": "the-thing-is",
+    "familyLabel": "The thing is ...",
+    "parentPatternId": null,
+    "pattern": "Basically, [SENTENCE].",
+    "koreanMeaning": "간단히 말하면, ~야.",
+    "speakingFunction": "복잡한 내용을 짧게 요약해서 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it broke because of a typo",
+          "we're back on schedule",
+          "nothing has changed"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "Basically, it broke because of a typo.",
+        "korean": "간단히 말하면, 오타 때문에 망가졌어."
+      },
+      {
+        "english": "Basically, we're back on schedule.",
+        "korean": "간단히 말하면, 다시 일정대로야."
+      },
+      {
+        "english": "Basically, nothing has changed.",
+        "korean": "간단히 말하면, 바뀐 건 없어."
+      },
+      {
+        "english": "Basically, we need more people on this.",
+        "korean": "간단히 말하면, 사람이 더 필요해."
+      },
+      {
+        "english": "Basically, it's the same problem as before.",
+        "korean": "간단히 말하면, 예전과 같은 문제야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-thing-is",
+      "what-i-mean-is"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "discourse"
+    ],
+    "difficulty": 1,
+    "priority": 45,
+    "datasetVersion": "1.1",
     "sourceType": "curated-speaking-pattern-core"
   }
 ]

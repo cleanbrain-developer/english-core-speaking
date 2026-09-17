@@ -43,12 +43,24 @@ describe('seedSpeakingPatterns', () => {
 
     const result = await seedSpeakingPatterns(prisma);
 
-    expect(result.total).toBe(28);
+    expect(result.total).toBe(70);
     expect(result.families).toEqual({
       'it-was': 21,
       'i-think': 4,
       'the-problem-is': 3,
+      'there-was': 4,
+      'i-was': 4,
+      'im-trying-to': 5,
+      'i-need-to': 4,
+      'i-want-to': 3,
+      'the-reason-is': 3,
+      'i-used-to': 3,
+      'ive-been': 3,
+      'it-seems-like': 3,
+      'im-not-sure-if': 4,
+      'for-example': 3,
+      'the-thing-is': 3,
     });
-    expect((prisma.speakingPattern.upsert as jest.Mock)).toHaveBeenCalledTimes(28);
+    expect((prisma.speakingPattern.upsert as jest.Mock)).toHaveBeenCalledTimes(70);
   });
 });
