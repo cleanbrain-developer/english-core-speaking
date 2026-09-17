@@ -1,7 +1,7 @@
 {
   "dataset": "Speaking Pattern Core",
-  "version": "1.1",
-  "total": 70,
+  "version": "1.2",
+  "total": 96,
   "families": {
     "it-was": 21,
     "i-think": 4,
@@ -17,7 +17,16 @@
     "it-seems-like": 3,
     "im-not-sure-if": 4,
     "for-example": 3,
-    "the-thing-is": 3
+    "the-thing-is": 3,
+    "i-decided-to": 3,
+    "i-tried-to": 3,
+    "i-remember": 4,
+    "i-agree-that": 4,
+    "compared-to": 4,
+    "its-getting": 2,
+    "in-my-case": 2,
+    "i-feel-like": 2,
+    "what-do-you-mean": 2
   },
   "intents": [
     "과거 상황을 설명하고 싶을 때",
@@ -33,7 +42,16 @@
     "추측을 말하고 싶을 때",
     "확실하지 않다고 말하고 싶을 때",
     "예시를 들고 싶을 때",
-    "설명을 자연스럽게 이어가고 싶을 때"
+    "설명을 자연스럽게 이어가고 싶을 때",
+    "결정한 것을 말하고 싶을 때",
+    "시도한 것을 말하고 싶을 때",
+    "예전 기억을 떠올리며 말하고 싶을 때",
+    "동의하거나 반대 의견을 말하고 싶을 때",
+    "비교하고 싶을 때",
+    "지금 상황이 변하고 있다고 말하고 싶을 때",
+    "내 경우를 말하고 싶을 때",
+    "감정이나 직관을 말하고 싶을 때",
+    "명확히 확인하고 싶을 때"
   ],
-  "sha256": "d25c8042f2a20d5c61954533dadf42fbac3af407eb6b1f1b6bd114c957c2aa9c"
+  "sha256": "9cf176a41dc0904f4be9862d8fa63a8fbd40c12f1eeaa00ecf2fc7e3475283a3"
 }
