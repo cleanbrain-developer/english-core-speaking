@@ -14,7 +14,7 @@ export default defineConfig({
         description:
           'Practice English speaking with 1,350 curated conversation chunks, phrasal verbs, core words, and business English, reviewed with a spaced-repetition scheduler.',
         theme_color: '#f97316',
-        background_color: '#0f172a',
+        background_color: '#1c1917',
         display: 'standalone',
         start_url: '/',
         scope: '/',

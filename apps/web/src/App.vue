@@ -10,7 +10,7 @@ import AppHeader from './components/AppHeader.vue';
 <style>
 :root {
   color-scheme: dark;
-  background-color: #0f172a;
+  background-color: #1c1917;
   color: #f8fafc;
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
