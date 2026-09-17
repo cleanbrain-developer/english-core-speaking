@@ -230,8 +230,8 @@ function startExpansionDrill() {
   margin: 0;
 }
 .pattern-line .slot {
-  color: #10b981;
-  border-bottom: 2px dashed #10b981;
+  color: #f97316;
+  border-bottom: 2px dashed #f97316;
 }
 .meaning {
   font-size: 1.1rem;
@@ -262,8 +262,8 @@ function startExpansionDrill() {
 .slot-block {
   padding: 0.75rem;
   border-radius: 12px;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.3);
 }
 .slot-row {
   display: flex;
@@ -273,7 +273,7 @@ function startExpansionDrill() {
 }
 .slot-key {
   font-weight: 700;
-  color: #10b981;
+  color: #f97316;
 }
 .slot-examples {
   opacity: 0.7;
@@ -334,8 +334,8 @@ function startExpansionDrill() {
 .related-chip {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(16, 185, 129, 0.5);
-  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  background: rgba(249, 115, 22, 0.1);
   color: inherit;
   font-size: 0.8rem;
   cursor: pointer;
@@ -357,13 +357,13 @@ function startExpansionDrill() {
   padding: 0.8rem;
   border-radius: 999px;
   border: none;
-  background: #10b981;
+  background: #f97316;
   color: white;
   font-weight: 700;
   font-size: 0.9rem;
   cursor: pointer;
 }
 .drill-cta.cue {
-  background: #059669;
+  background: #ea580c;
 }
 </style>

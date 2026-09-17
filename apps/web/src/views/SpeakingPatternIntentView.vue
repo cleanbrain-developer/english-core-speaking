@@ -116,8 +116,8 @@ function openIntent(intent: string) {
   justify-content: space-between;
   padding: 1rem;
   border-radius: 14px;
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.35);
+  background: rgba(249, 115, 22, 0.12);
+  border: 1px solid rgba(249, 115, 22, 0.35);
   cursor: pointer;
 }
 .intent-label {
@@ -130,7 +130,7 @@ function openIntent(intent: string) {
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #10b981;
+  border: 1px solid #f97316;
   background: transparent;
   color: inherit;
   cursor: pointer;

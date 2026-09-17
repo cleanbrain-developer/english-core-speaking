@@ -249,7 +249,7 @@ watch(
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
-  background: #4f46e5;
+  background: #f97316;
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -257,7 +257,7 @@ watch(
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #4f46e5;
+  border: 1px solid #f97316;
   background: transparent;
   color: inherit;
   cursor: pointer;
@@ -297,8 +297,8 @@ button {
   gap: 0.35rem;
   padding: 1rem;
   border-radius: 14px;
-  background: rgba(79, 70, 229, 0.15);
-  border: 1px solid rgba(79, 70, 229, 0.4);
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid rgba(249, 115, 22, 0.4);
   text-align: left;
 }
 .mode-label {
@@ -320,8 +320,8 @@ button {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 14px;
-  background: rgba(217, 119, 6, 0.15);
-  border: 1px solid rgba(217, 119, 6, 0.45);
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid rgba(249, 115, 22, 0.45);
   cursor: pointer;
   text-align: left;
 }
@@ -355,8 +355,8 @@ button {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 14px;
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.45);
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid rgba(249, 115, 22, 0.45);
   cursor: pointer;
   text-align: left;
 }

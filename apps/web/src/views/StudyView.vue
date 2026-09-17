@@ -234,7 +234,7 @@ function daysAgo(isoDate: string): number {
   padding: 1rem;
   border-radius: 999px;
   border: none;
-  background: #4f46e5;
+  background: #f97316;
   color: white;
   font-size: 1rem;
   font-weight: 600;

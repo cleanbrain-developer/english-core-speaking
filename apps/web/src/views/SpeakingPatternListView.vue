@@ -148,8 +148,8 @@ function startFullDrill(mode: 'slot' | 'cue') {
   flex: 1;
   padding: 0.7rem;
   border-radius: 999px;
-  border: 1px solid #10b981;
-  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid #f97316;
+  background: rgba(249, 115, 22, 0.15);
   color: inherit;
   font-weight: 600;
   font-size: 0.85rem;

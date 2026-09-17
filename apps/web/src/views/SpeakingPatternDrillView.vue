@@ -196,7 +196,7 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
-  color: #10b981;
+  color: #f97316;
 }
 .example-text {
   opacity: 0.75;
@@ -212,7 +212,7 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
   align-self: flex-start;
   padding: 0.7rem 1.4rem;
   border-radius: 999px;
-  border: 1px solid #10b981;
+  border: 1px solid #f97316;
   background: transparent;
   color: inherit;
   cursor: pointer;
@@ -225,8 +225,8 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
 .slot-chip {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(16, 185, 129, 0.5);
-  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  background: rgba(249, 115, 22, 0.1);
   color: inherit;
   font-size: 0.85rem;
   cursor: pointer;
@@ -239,7 +239,7 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
   padding: 1rem;
   border-radius: 999px;
   border: none;
-  background: #10b981;
+  background: #f97316;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -252,7 +252,7 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #10b981;
+  border: 1px solid #f97316;
   background: transparent;
   color: inherit;
   cursor: pointer;

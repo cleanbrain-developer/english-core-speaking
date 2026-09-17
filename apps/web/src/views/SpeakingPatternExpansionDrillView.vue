@@ -187,7 +187,7 @@ async function retrySave() {
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
-  color: #10b981;
+  color: #f97316;
 }
 .expansion-desc {
   font-size: 0.8rem;
@@ -202,7 +202,7 @@ async function retrySave() {
   padding: 1rem;
   border-radius: 999px;
   border: none;
-  background: #10b981;
+  background: #f97316;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -211,7 +211,7 @@ async function retrySave() {
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #10b981;
+  border: 1px solid #f97316;
   background: transparent;
   color: inherit;
   cursor: pointer;

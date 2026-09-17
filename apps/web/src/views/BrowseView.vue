@@ -210,7 +210,7 @@ async function startStudy(shuffled: boolean) {
   min-width: 8rem;
   padding: 0.6rem;
   border-radius: 999px;
-  border: 1px solid #4f46e5;
+  border: 1px solid #f97316;
   background: transparent;
   color: inherit;
   cursor: pointer;
@@ -259,7 +259,7 @@ async function startStudy(shuffled: boolean) {
   font-weight: 600;
   padding: 0.15rem 0.5rem;
   border-radius: 999px;
-  background: rgba(79, 70, 229, 0.25);
+  background: rgba(249, 115, 22, 0.25);
   color: #c7d2fe;
 }
 .english {

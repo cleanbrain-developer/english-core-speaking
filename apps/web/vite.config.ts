@@ -13,7 +13,7 @@ export default defineConfig({
         short_name: 'Speaking 1350',
         description:
           'Practice English speaking with 1,350 curated conversation chunks, phrasal verbs, core words, and business English, reviewed with a spaced-repetition scheduler.',
-        theme_color: '#4f46e5',
+        theme_color: '#f97316',
         background_color: '#0f172a',
         display: 'standalone',
         start_url: '/',
