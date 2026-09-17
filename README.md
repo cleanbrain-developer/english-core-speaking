@@ -6,7 +6,7 @@ A mobile-first PWA for practicing English speaking through 1,350 curated items a
 
 ## Status
 
-Core product is implemented and running in production: the monorepo scaffold, Google OAuth session auth, deterministic seed import, an SRS-based review scheduler (daily/due/new/weak queues), study sessions and progress tracking, and a separate "Chunk Speaking Drill" mode for shadowing high-frequency spoken chunks outside the SRS loop. See `CLAUDE.md`, `docs/IMPLEMENTATION_SPEC.md`, and `docs/API_CONTRACT.md` for the full spec.
+Core product is implemented and running in production: the monorepo scaffold, Google OAuth session auth, deterministic seed import, an SRS-based review scheduler (daily/due/new/weak queues), study sessions and progress tracking, a separate "Chunk Speaking Drill" mode for shadowing high-frequency spoken chunks outside the SRS loop, and "Speaking Pattern Core" -- reusable sentence-frame ("It was difficult to ___") learning with Slot Replacement / Korean Cue / Expansion drills, browsable by Speaking Intent instead of grammar terms. See `CLAUDE.md`, `docs/IMPLEMENTATION_SPEC.md`, and `docs/API_CONTRACT.md` for the full spec.
 
 ## Architecture
 
@@ -37,12 +37,12 @@ english-core-speaking/
 │  ├─ web/                  # Vue 3 + Vite + PWA
 │  │  └─ src/{api,components,composables,router,stores,views}
 │  └─ api/                  # NestJS
-│     └─ src/{auth,users,learning-items,study,progress,chunk-drill,health,prisma,common}
+│     └─ src/{auth,users,learning-items,study,progress,chunk-drill,speaking-pattern,health,prisma,common}
 ├─ prisma/
 │  ├─ schema.prisma         # schema actually used at runtime (kept in sync with database/schema.prisma)
-│  └─ seed.ts                # deterministic, upsert-based seed script (canonical seed + chunk drill dataset)
+│  └─ seed.ts                # deterministic, upsert-based seed script (canonical seed + chunk drill + speaking pattern datasets)
 ├─ database/schema.prisma   # original schema contract (reference document)
-├─ data/                     # canonical seed (1,350 items, not to be edited ad hoc) + chunk_drill_v1.json
+├─ data/                     # canonical seed (1,350 items, not to be edited ad hoc) + chunk_drill_v1.json + speaking_patterns_v1.json
 ├─ .github/workflows/        # CI/CD (test, build/push images, SSH deploy) — see CI/CD below
 ├─ docker-compose.dev.yml    # local PostgreSQL only
 ├─ scripts/                  # seed validation, PWA icon generation
@@ -99,7 +99,7 @@ pnpm prisma:migrate --name init
 pnpm seed
 ```
 
-Upserts, by `id`, the 1,350 items from `data/speaking_core_1350_seed_v2.json` and the 100 chunk-drill items from `data/chunk_drill_v1.json`. Safe to run repeatedly — it's idempotent. The API also seeds itself on every boot using the same logic (`apps/api/src/prisma/seed.service.ts`), so starting the API in the next step already populates the data; this command is only for seeding without running the server.
+Upserts, by `id`, the 1,350 items from `data/speaking_core_1350_seed_v2.json`, the 100 chunk-drill items from `data/chunk_drill_v1.json`, and the 28 Speaking Pattern Core items from `data/speaking_patterns_v1.json`. Safe to run repeatedly — it's idempotent. The API also seeds itself on every boot using the same logic (`apps/api/src/prisma/seed.service.ts`), so starting the API in the next step already populates the data; this command is only for seeding without running the server.
 
 Validate the seed:
 
@@ -261,6 +261,15 @@ A separate menu from SRS-based review, above. The goal here isn't retention but 
 - **Practice flow:** a dedicated home screen card leads into `GET /api/chunk-drill/set`, which prioritizes items not yet practiced, then the least-recently-practiced ones. Each card auto-plays via `SpeechSynthesis` (1, 3, or 5 repetitions, configurable) for immediate shadowing; "Next" advances. Finishing a set calls `POST /api/chunk-drill/complete`.
 - **Progress tracking:** a lightweight `ChunkDrillProgress` model (per-user `practiceCount` / `lastPracticedAt`), fully independent from `LearningProgress`/the SRS scheduler. The home screen shows a "N/100 practiced · M today" summary (`GET /api/chunk-drill/summary`).
 
+## Speaking Pattern Core
+
+A third, structurally distinct menu: reusable sentence frames ("It was difficult to ___") that a learner recalls as one automatic unit and fills a slot into, instead of building an English sentence from scratch every time. Separate `SpeakingPattern`/`SpeakingPatternProgress` models, no SRS due dates.
+
+- **Content:** `data/speaking_patterns_v1.json` — 28 patterns across 3 families this pass (`it-was`: 21 patterns including a full 6-level expansion ladder on "It was difficult to ..." and a `to V` vs. `for + noun` contrast pair; `i-think` and `the-problem-is`: thin proof-of-concept families, 3-4 patterns each). The data model (slots, examples, an optional `expansions` ladder, `relatedPatternIds`/`contrastPatternIds`, arbitrary `speakingIntent`/`familyId` grouping) supports the full 30-50 family / 150-250 pattern design target from the original spec without any code changes — adding a family is a seed-JSON change only, the same pattern as extending `data/chunk_drill_v1.json`.
+- **Discovery:** `/speaking-patterns` groups patterns by **Speaking Intent** ("과거 상황을 설명하고 싶을 때") rather than grammar terminology (`GET /api/speaking-patterns/intents`), per the "no grammar-term browsing" requirement in the original design spec.
+- **Practice flow:** three drills reuse the pattern data directly — **Slot Replacement** (tap a candidate word/phrase into the pattern's blank, hear it spoken), **Korean Cue** (see the meaning, recall the pattern, reveal to check), and **Expansion** (step through a pattern's `expansions` ladder from its shortest form to its longest connected utterance). Drills 1/2 share the same list-stepping store state (`stores/speakingPattern.ts`), reusing the double-tap guard / failed-save surfacing pattern already proven in `stores/chunkDrill.ts`. Combinatorial random-slot drilling and free-speaking-against-recommendations (spec Drills 4/5) are intentionally deferred to a later pass.
+- **Progress tracking:** `SpeakingPatternProgress` (`practiceCount`, `favorite`, `lastPracticedAt`) upserted via `POST /api/speaking-patterns/practice`; mastery status (New/Learning/Familiar/Mastered) is derived from `practiceCount` on read, not stored, matching how the SRS module derives "weak" items rather than persisting a status flag that could drift.
+
 ## Roadmap
 
 - Automated E2E UI tests (e.g. Playwright) that exercise an authenticated session
@@ -268,3 +277,5 @@ A separate menu from SRS-based review, above. The goal here isn't retention but 
 - Progress calendar visualization (the API already exists: `GET /api/progress/calendar`)
 - Offline progress sync for the PWA
 - Expand the Chunk Speaking Drill dataset using real corpus frequency data
+- Add the remaining Speaking Pattern Core families from the original design spec (25+ Speaking Intent categories beyond the 3 shipped this pass) — seed-content-only, no code changes needed
+- Random-Slot and Free-Speaking drills for Speaking Pattern Core (deferred Drills 4/5)

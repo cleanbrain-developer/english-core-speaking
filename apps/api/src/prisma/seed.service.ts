@@ -1,6 +1,6 @@
 import { Injectable, Logger, OnApplicationBootstrap } from '@nestjs/common';
 import { PrismaService } from './prisma.service';
-import { seedChunkDrillItems, seedLearningItems } from './seed-data';
+import { seedChunkDrillItems, seedLearningItems, seedSpeakingPatterns } from './seed-data';
 
 /**
  * Injects the canonical seed data on every app boot (fresh install, redeploy,
@@ -19,5 +19,8 @@ export class SeedService implements OnApplicationBootstrap {
 
     const chunkDrillItems = await seedChunkDrillItems(this.prisma);
     this.logger.log(`Chunk drill seed complete: ${chunkDrillItems.total} rows`);
+
+    const speakingPatterns = await seedSpeakingPatterns(this.prisma);
+    this.logger.log(`Speaking pattern seed complete: ${speakingPatterns.total} rows`);
   }
 }

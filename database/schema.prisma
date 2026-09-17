@@ -19,6 +19,7 @@ model User {
   sessions           StudySession[]
   reviews            StudyReview[]
   chunkDrillProgress ChunkDrillProgress[]
+  speakingPatternProgress SpeakingPatternProgress[]
   createdAt          DateTime             @default(now())
   updatedAt          DateTime             @updatedAt
   lastLoginAt        DateTime?
@@ -108,5 +109,54 @@ model ChunkDrillProgress {
   user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   chunkItem       ChunkItem @relation(fields: [chunkItemId], references: [id], onDelete: Cascade)
   @@unique([userId, chunkItemId])
+  @@index([userId, practiceCount])
+}
+
+// Speaking Pattern Core: reusable sentence-frame ("It was difficult to ___")
+// learning, distinct from the item-level LearningItem/ChunkItem catalogs
+// above -- a SpeakingPattern is a frame with slots, examples, an optional
+// multi-level expansion ladder, and related/contrast pattern links. slots/
+// examples/expansions are stored as Json (always read whole, never queried
+// by sub-field) rather than join tables, matching this schema's existing
+// preference for simplicity over enterprise abstraction. parentPatternId is
+// a soft self-reference by id (not a Prisma @relation) to a family's root
+// pattern, used for grouping only -- deleting a parent never cascades to
+// children through it.
+model SpeakingPattern {
+  id                  String                    @id
+  rank                Int                       @unique
+  speakingIntent      String
+  familyId            String
+  familyLabel         String
+  parentPatternId     String?
+  pattern             String
+  koreanMeaning       String
+  speakingFunction    String
+  description         String?
+  slots               Json
+  examples            Json
+  expansions          Json?
+  relatedPatternIds   String[]                  @default([])
+  contrastPatternIds  String[]                  @default([])
+  tags                String[]                  @default([])
+  difficulty          Int                       @default(1)
+  priority            Int                       @default(0)
+  datasetVersion      String                    @default("1.0")
+  isActive            Boolean                   @default(true)
+  progress            SpeakingPatternProgress[]
+  @@index([speakingIntent, isActive])
+  @@index([familyId])
+}
+
+model SpeakingPatternProgress {
+  id              String          @id @default(uuid())
+  userId          String
+  patternId       String
+  practiceCount   Int             @default(0)
+  favorite        Boolean         @default(false)
+  lastPracticedAt DateTime?
+  user            User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  pattern         SpeakingPattern @relation(fields: [patternId], references: [id], onDelete: Cascade)
+  @@unique([userId, patternId])
   @@index([userId, practiceCount])
 }

@@ -25,6 +25,7 @@ speaking-core-1350/
 │     │  ├─ study/
 │     │  ├─ progress/
 │     │  ├─ chunk-drill/           # shadowing/speed drill, independent of the SRS scheduler above
+│     │  ├─ speaking-pattern/      # reusable sentence-frame learning, independent of both modules above
 │     │  ├─ health/
 │     │  └─ prisma/
 │     └─ Dockerfile
@@ -33,7 +34,8 @@ speaking-core-1350/
 │  └─ seed.ts
 ├─ data/
 │  ├─ speaking_core_1350_seed_v2.json    # canonical seed, do not edit
-│  └─ chunk_drill_v1.json                 # independent chunk-drill dataset
+│  ├─ chunk_drill_v1.json                 # independent chunk-drill dataset
+│  └─ speaking_patterns_v1.json           # independent Speaking Pattern Core dataset
 ├─ docker-compose.dev.yml   # local PostgreSQL only
 └─ docs/
    ├─ IMPLEMENTATION_SPEC.md

@@ -1,0 +1,16 @@
+{
+  "dataset": "Speaking Pattern Core",
+  "version": "1.0",
+  "total": 28,
+  "families": {
+    "it-was": 21,
+    "i-think": 4,
+    "the-problem-is": 3
+  },
+  "intents": [
+    "과거 상황을 설명하고 싶을 때",
+    "내 생각을 말하고 싶을 때",
+    "문제를 설명하고 싶을 때"
+  ],
+  "sha256": "c55b2696a00cd3fc52d937ed54996d68d0be60ab84a61112ca3dc218edc982a9"
+}

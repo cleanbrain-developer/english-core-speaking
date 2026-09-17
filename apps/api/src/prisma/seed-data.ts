@@ -27,6 +27,28 @@ interface ChunkDrillRow {
   example: string;
 }
 
+interface SpeakingPatternRow {
+  id: string;
+  rank: number;
+  speakingIntent: string;
+  familyId: string;
+  familyLabel: string;
+  parentPatternId: string | null;
+  pattern: string;
+  koreanMeaning: string;
+  speakingFunction: string;
+  description: string | null;
+  slots: unknown;
+  examples: unknown;
+  expansions: unknown;
+  relatedPatternIds: string[];
+  contrastPatternIds: string[];
+  tags: string[];
+  difficulty: number;
+  priority: number;
+  datasetVersion: string;
+}
+
 const EXPECTED_LEARNING_ITEM_COUNTS: Record<string, number> = {
   'Conversation Chunk': 300,
   'Phrasal Verb': 150,
@@ -35,6 +57,7 @@ const EXPECTED_LEARNING_ITEM_COUNTS: Record<string, number> = {
 };
 
 const EXPECTED_CHUNK_DRILL_COUNT = 100;
+const EXPECTED_SPEAKING_PATTERN_COUNT = 28;
 
 export interface LearningItemSeedResult {
   total: number;
@@ -43,6 +66,11 @@ export interface LearningItemSeedResult {
 
 export interface ChunkDrillSeedResult {
   total: number;
+}
+
+export interface SpeakingPatternSeedResult {
+  total: number;
+  families: Record<string, number>;
 }
 
 export async function seedLearningItems(prisma: PrismaClient): Promise<LearningItemSeedResult> {
@@ -108,4 +136,46 @@ export async function seedChunkDrillItems(prisma: PrismaClient): Promise<ChunkDr
   }
 
   return { total: rows.length };
+}
+
+export async function seedSpeakingPatterns(prisma: PrismaClient): Promise<SpeakingPatternSeedResult> {
+  const seedPath = join(DATA_DIR, 'speaking_patterns_v1.json');
+  const rows: SpeakingPatternRow[] = JSON.parse(readFileSync(seedPath, 'utf-8'));
+
+  if (rows.length !== EXPECTED_SPEAKING_PATTERN_COUNT) {
+    throw new Error(`Expected ${EXPECTED_SPEAKING_PATTERN_COUNT} speaking pattern rows, found ${rows.length}`);
+  }
+
+  const families: Record<string, number> = {};
+  for (const row of rows) families[row.familyId] = (families[row.familyId] ?? 0) + 1;
+
+  for (const row of rows) {
+    const shared = {
+      rank: row.rank,
+      speakingIntent: row.speakingIntent,
+      familyId: row.familyId,
+      familyLabel: row.familyLabel,
+      parentPatternId: row.parentPatternId,
+      pattern: row.pattern,
+      koreanMeaning: row.koreanMeaning,
+      speakingFunction: row.speakingFunction,
+      description: row.description,
+      slots: row.slots as object,
+      examples: row.examples as object,
+      expansions: (row.expansions ?? undefined) as object | undefined,
+      relatedPatternIds: row.relatedPatternIds,
+      contrastPatternIds: row.contrastPatternIds,
+      tags: row.tags,
+      difficulty: row.difficulty,
+      priority: row.priority,
+      datasetVersion: row.datasetVersion,
+    };
+    await prisma.speakingPattern.upsert({
+      where: { id: row.id },
+      create: { id: row.id, ...shared },
+      update: shared,
+    });
+  }
+
+  return { total: rows.length, families };
 }

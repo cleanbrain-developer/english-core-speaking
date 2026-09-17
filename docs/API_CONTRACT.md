@@ -59,3 +59,24 @@ Separate from Study/SRS above — a shadowing/production-speed drill over `data/
   Ordering: never-practiced items first (by `rank`), then practiced items by ascending `practiceCount`, then least-recently-practiced first.
 - POST `/api/chunk-drill/complete` — body `{ "chunkItemIds": [1, 2, 3] }` (deduplicated server-side). Upserts `ChunkDrillProgress` per id: `practiceCount += 1`, `lastPracticedAt = now`. Returns `{ "practicedCount": 3 }`.
 - GET `/api/chunk-drill/summary` — `{ total, practicedAtLeastOnce, practicedToday }`, `practicedToday` computed in the user's timezone like the Progress endpoints.
+
+## Speaking Pattern Core
+
+Separate from Study/SRS and Chunk Drill above — reusable sentence-frame ("It was difficult to ___") learning over `data/speaking_patterns_v1.json` (independent `SpeakingPattern` catalog: slots, examples, an optional multi-level expansion ladder, related/contrast pattern links). No due dates, no scheduler; mastery status (`new`/`learning`/`familiar`/`mastered`) is derived from `practiceCount`, not stored. All endpoints require an authenticated session.
+
+- GET `/api/speaking-patterns/intents` — `[{ speakingIntent, total }]`, for the Speaking-Intent discovery screen (§19 of the design spec — browsing by "무엇을 말하고 싶을 때" rather than grammar terms).
+- GET `/api/speaking-patterns?intent=&familyId=` — both filters optional. Returns `{ items, total }`; no pagination (dataset is small, unlike Learning Items). Each item:
+  ```json
+  { "id": "it-was-difficult-to", "rank": 3, "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was", "familyLabel": "It was ...", "parentPatternId": "it-was-adjective",
+    "pattern": "It was difficult to [ACTION].", "koreanMeaning": "~하기 어려웠어.",
+    "speakingFunction": "...", "description": "...",
+    "slots": [{ "key": "ACTION", "type": "verb", "examples": ["understand", "explain"] }],
+    "examples": [{ "english": "It was difficult to understand.", "korean": "이해하기 어려웠어." }],
+    "expansions": [{ "level": 1, "pattern": "It was difficult." }],
+    "relatedPatternIds": ["it-was-hard-to"], "contrastPatternIds": [], "tags": ["past", "difficulty"],
+    "difficulty": 2, "practiceCount": 0, "favorite": false, "lastPracticedAt": null, "status": "new" }
+  ```
+- GET `/api/speaking-patterns/:id` — same shape plus `relatedPatterns`/`contrastPatterns`, each `relatedPatternIds`/`contrastPatternIds` entry resolved to `{ id, pattern, koreanMeaning }` for display. 404 if not found or inactive.
+- POST `/api/speaking-patterns/practice` — body `{ "patternIds": ["it-was-difficult-to"] }` (deduplicated server-side, max 100). Upserts `SpeakingPatternProgress` per id: `practiceCount += 1`, `lastPracticedAt = now`. Returns `{ "practicedCount": 1 }`.
+- POST `/api/speaking-patterns/:id/favorite` — body `{ "favorite": true }`. Upserts `SpeakingPatternProgress.favorite`. 404 if the pattern doesn't exist or is inactive.

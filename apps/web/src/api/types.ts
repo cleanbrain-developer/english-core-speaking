@@ -88,3 +88,71 @@ export interface ChunkDrillSummaryDto {
   practicedAtLeastOnce: number;
   practicedToday: number;
 }
+
+export type PatternSlotType = 'noun' | 'verb' | 'adjective' | 'person' | 'reason' | 'clause' | 'topic' | 'free';
+
+export interface PatternSlotDto {
+  key: string;
+  type: PatternSlotType;
+  placeholder?: string;
+  examples?: string[];
+}
+
+export interface PatternExampleDto {
+  english: string;
+  korean?: string;
+  note?: string;
+}
+
+export interface PatternExpansionDto {
+  level: number;
+  pattern: string;
+  description?: string;
+}
+
+export type PatternStatus = 'new' | 'learning' | 'familiar' | 'mastered';
+
+export interface SpeakingPatternDto {
+  id: string;
+  rank: number;
+  speakingIntent: string;
+  familyId: string;
+  familyLabel: string;
+  parentPatternId: string | null;
+  pattern: string;
+  koreanMeaning: string;
+  speakingFunction: string;
+  description: string | null;
+  slots: PatternSlotDto[];
+  examples: PatternExampleDto[];
+  expansions: PatternExpansionDto[] | null;
+  relatedPatternIds: string[];
+  contrastPatternIds: string[];
+  tags: string[];
+  difficulty: number;
+  practiceCount: number;
+  favorite: boolean;
+  lastPracticedAt: string | null;
+  status: PatternStatus;
+}
+
+export interface RelatedPatternRefDto {
+  id: string;
+  pattern: string;
+  koreanMeaning: string;
+}
+
+export interface SpeakingPatternDetailDto extends SpeakingPatternDto {
+  relatedPatterns: RelatedPatternRefDto[];
+  contrastPatterns: RelatedPatternRefDto[];
+}
+
+export interface SpeakingPatternListResponseDto {
+  items: SpeakingPatternDto[];
+  total: number;
+}
+
+export interface SpeakingIntentDto {
+  speakingIntent: string;
+  total: number;
+}

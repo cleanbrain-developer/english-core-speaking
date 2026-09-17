@@ -1,0 +1,1741 @@
+[
+  {
+    "id": "it-was-adjective",
+    "rank": 1,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was [ADJECTIVE].",
+    "koreanMeaning": "~했어. / ~였어.",
+    "speakingFunction": "과거의 상태나 느낌을 짧게 평가할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ADJECTIVE",
+        "type": "adjective",
+        "placeholder": "difficult / easy / strange ...",
+        "examples": [
+          "difficult",
+          "easy",
+          "strange",
+          "interesting",
+          "confusing",
+          "unexpected",
+          "frustrating"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was difficult.",
+        "korean": "어려웠어."
+      },
+      {
+        "english": "It was easy.",
+        "korean": "쉬웠어."
+      },
+      {
+        "english": "It was strange.",
+        "korean": "이상했어."
+      },
+      {
+        "english": "It was interesting.",
+        "korean": "흥미로웠어."
+      },
+      {
+        "english": "It was confusing.",
+        "korean": "헷갈렸어."
+      },
+      {
+        "english": "It was unexpected.",
+        "korean": "예상 밖이었어."
+      },
+      {
+        "english": "It was frustrating.",
+        "korean": "답답했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-difficult-to",
+      "it-was-noun"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "evaluation",
+      "basic"
+    ],
+    "difficulty": 1,
+    "priority": 100,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-noun",
+    "rank": 2,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was a/an [NOUN].",
+    "koreanMeaning": "~였어.",
+    "speakingFunction": "과거 상황을 하나의 명사로 규정할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "NOUN",
+        "type": "noun",
+        "placeholder": "a mistake / a problem ...",
+        "examples": [
+          "a mistake",
+          "a problem",
+          "a good experience",
+          "a difficult situation",
+          "a misunderstanding"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was a mistake.",
+        "korean": "실수였어."
+      },
+      {
+        "english": "It was a problem.",
+        "korean": "문제였어."
+      },
+      {
+        "english": "It was a good experience.",
+        "korean": "좋은 경험이었어."
+      },
+      {
+        "english": "It was a difficult situation.",
+        "korean": "어려운 상황이었어."
+      },
+      {
+        "english": "It was a misunderstanding.",
+        "korean": "오해였어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-adjective"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "evaluation",
+      "basic"
+    ],
+    "difficulty": 1,
+    "priority": 95,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-difficult-to",
+    "rank": 3,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": "it-was-adjective",
+    "pattern": "It was difficult to [ACTION].",
+    "koreanMeaning": "~하기 어려웠어.",
+    "speakingFunction": "과거 상황에서 어떤 행동을 하기 어려웠음을 설명할 때",
+    "description": "가장 많이 쓰이는 'It was + 형용사 + to' 패턴의 대표형. 이 chunk를 통째로 외워두면 다른 형용사로 바로 교체할 수 있다.",
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "placeholder": "understand / explain / find ...",
+        "examples": [
+          "understand",
+          "explain",
+          "find the cause",
+          "reproduce the issue",
+          "make a decision"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was difficult to understand.",
+        "korean": "이해하기 어려웠어."
+      },
+      {
+        "english": "It was difficult to explain.",
+        "korean": "설명하기 어려웠어."
+      },
+      {
+        "english": "It was difficult to find the cause.",
+        "korean": "원인을 찾기 어려웠어."
+      },
+      {
+        "english": "It was difficult to reproduce the issue.",
+        "korean": "이슈를 재현하기 어려웠어."
+      },
+      {
+        "english": "It was difficult to make a decision.",
+        "korean": "결정을 내리기 어려웠어."
+      },
+      {
+        "english": "It was difficult to get everyone's approval.",
+        "korean": "모두의 승인을 받기 어려웠어."
+      }
+    ],
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "It was difficult."
+      },
+      {
+        "level": 2,
+        "pattern": "It was difficult to explain."
+      },
+      {
+        "level": 3,
+        "pattern": "It was difficult for me to explain."
+      },
+      {
+        "level": 4,
+        "pattern": "It was difficult for me to explain the issue."
+      },
+      {
+        "level": 5,
+        "pattern": "It was difficult for me to explain the issue because I didn't know the exact cause."
+      },
+      {
+        "level": 6,
+        "pattern": "At first, it was difficult for me to explain the issue because I didn't know the exact cause, but eventually I figured it out.",
+        "description": "여러 chunk(because / eventually)를 연결해 하나의 긴 발화로 확장한 최종 단계"
+      }
+    ],
+    "relatedPatternIds": [
+      "it-was-hard-to",
+      "it-was-easy-to",
+      "it-was-difficult-for-me-to",
+      "it-was-adjective"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "difficulty",
+      "core",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 100,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-hard-to",
+    "rank": 4,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": "it-was-adjective",
+    "pattern": "It was hard to [ACTION].",
+    "koreanMeaning": "~하기 힘들었어.",
+    "speakingFunction": "difficult보다 조금 더 구어적으로 '힘들었음'을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "believe",
+          "tell",
+          "keep up",
+          "focus",
+          "say no"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was hard to believe.",
+        "korean": "믿기 힘들었어."
+      },
+      {
+        "english": "It was hard to tell what happened.",
+        "korean": "무슨 일이었는지 말하기 힘들었어."
+      },
+      {
+        "english": "It was hard to keep up with the changes.",
+        "korean": "변화를 따라가기 힘들었어."
+      },
+      {
+        "english": "It was hard to focus during the meeting.",
+        "korean": "회의 중 집중하기 힘들었어."
+      },
+      {
+        "english": "It was hard to say no.",
+        "korean": "거절하기 힘들었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-difficult-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "difficulty"
+    ],
+    "difficulty": 2,
+    "priority": 80,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-easy-to",
+    "rank": 5,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": "it-was-adjective",
+    "pattern": "It was easy to [ACTION].",
+    "koreanMeaning": "~하기 쉬웠어.",
+    "speakingFunction": "어떤 일이 수월했음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "fix",
+          "understand",
+          "set up",
+          "follow",
+          "miss"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was easy to fix.",
+        "korean": "고치기 쉬웠어."
+      },
+      {
+        "english": "It was easy to understand once he explained it.",
+        "korean": "설명을 들으니 이해하기 쉬웠어."
+      },
+      {
+        "english": "It was easy to set up.",
+        "korean": "설정하기 쉬웠어."
+      },
+      {
+        "english": "It was easy to follow the instructions.",
+        "korean": "설명을 따라 하기 쉬웠어."
+      },
+      {
+        "english": "It was easy to miss that detail.",
+        "korean": "그 부분을 놓치기 쉬웠어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-difficult-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "ease"
+    ],
+    "difficulty": 1,
+    "priority": 75,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-important-to",
+    "rank": 6,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was important to [ACTION].",
+    "koreanMeaning": "~하는 게 중요했어.",
+    "speakingFunction": "과거에 어떤 행동이 중요했음을 강조할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "check twice",
+          "tell the team",
+          "ask first",
+          "keep it simple"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was important to check twice.",
+        "korean": "두 번 확인하는 게 중요했어."
+      },
+      {
+        "english": "It was important to tell the team early.",
+        "korean": "팀에 일찍 알리는 게 중요했어."
+      },
+      {
+        "english": "It was important to ask first.",
+        "korean": "먼저 물어보는 게 중요했어."
+      },
+      {
+        "english": "It was important to keep it simple.",
+        "korean": "단순하게 유지하는 게 중요했어."
+      },
+      {
+        "english": "It was important to document the decision.",
+        "korean": "결정을 문서화하는 게 중요했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-necessary-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "priority",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 85,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-necessary-to",
+    "rank": 7,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was necessary to [ACTION].",
+    "koreanMeaning": "~할 필요가 있었어.",
+    "speakingFunction": "선택이 아니라 꼭 해야 했던 일을 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "restart the server",
+          "get approval",
+          "change the plan",
+          "update the config"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was necessary to restart the server.",
+        "korean": "서버를 재시작할 필요가 있었어."
+      },
+      {
+        "english": "It was necessary to get approval first.",
+        "korean": "먼저 승인을 받을 필요가 있었어."
+      },
+      {
+        "english": "It was necessary to change the plan.",
+        "korean": "계획을 바꿀 필요가 있었어."
+      },
+      {
+        "english": "It was necessary to update the config.",
+        "korean": "설정을 업데이트할 필요가 있었어."
+      },
+      {
+        "english": "It was necessary to slow down and double-check.",
+        "korean": "속도를 늦추고 다시 확인할 필요가 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-important-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "necessity",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 70,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-impossible-to",
+    "rank": 8,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was impossible to [ACTION].",
+    "koreanMeaning": "~하는 게 불가능했어.",
+    "speakingFunction": "아무리 해도 할 수 없었던 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "reproduce the bug",
+          "meet the deadline",
+          "predict the result",
+          "reach him"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was impossible to reproduce the bug.",
+        "korean": "버그를 재현하는 게 불가능했어."
+      },
+      {
+        "english": "It was impossible to meet the deadline.",
+        "korean": "마감을 맞추는 게 불가능했어."
+      },
+      {
+        "english": "It was impossible to predict the result.",
+        "korean": "결과를 예측하는 게 불가능했어."
+      },
+      {
+        "english": "It was impossible to reach him that day.",
+        "korean": "그날 그와 연락이 안 됐어."
+      },
+      {
+        "english": "It was impossible to fit everything in one slide.",
+        "korean": "슬라이드 하나에 다 담는 게 불가능했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-difficult-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "difficulty"
+    ],
+    "difficulty": 2,
+    "priority": 65,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-difficult-for-me-to",
+    "rank": 9,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": "it-was-difficult-to",
+    "pattern": "It was difficult for [PERSON] to [ACTION].",
+    "koreanMeaning": "~가 ~하기 어려웠어.",
+    "speakingFunction": "누구에게 어려웠는지 사람을 명시하고 싶을 때",
+    "description": "'It was difficult to ...'에 'for + 사람'을 넣어 누구에게 어려웠는지 구체화한 확장형.",
+    "slots": [
+      {
+        "key": "PERSON",
+        "type": "person",
+        "examples": [
+          "me",
+          "us",
+          "them",
+          "everyone"
+        ]
+      },
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "understand",
+          "find the cause",
+          "reproduce the issue",
+          "know"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was difficult for me to understand.",
+        "korean": "나한테는 이해하기 어려웠어."
+      },
+      {
+        "english": "It was difficult for us to find the cause.",
+        "korean": "우리한테는 원인을 찾기 어려웠어."
+      },
+      {
+        "english": "It was difficult for them to reproduce the issue.",
+        "korean": "그들에겐 이슈를 재현하기 어려웠어."
+      },
+      {
+        "english": "It was difficult for everyone to know what was happening.",
+        "korean": "다들 무슨 일인지 알기 어려웠어."
+      },
+      {
+        "english": "It was difficult for me to explain it in English.",
+        "korean": "영어로 설명하기 어려웠어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-difficult-to",
+      "it-was-hard-for-us-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "difficulty",
+      "expansion"
+    ],
+    "difficulty": 3,
+    "priority": 90,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-hard-for-us-to",
+    "rank": 10,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": "it-was-difficult-to",
+    "pattern": "It was hard for [PERSON] to [ACTION].",
+    "koreanMeaning": "~가 ~하기 힘들었어.",
+    "speakingFunction": "'difficult for'보다 구어적인 'hard for' 버전",
+    "description": null,
+    "slots": [
+      {
+        "key": "PERSON",
+        "type": "person",
+        "examples": [
+          "us",
+          "the team",
+          "me"
+        ]
+      },
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "find the cause",
+          "agree on a plan",
+          "keep going"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was hard for us to find the cause.",
+        "korean": "우리는 원인을 찾기가 힘들었어."
+      },
+      {
+        "english": "It was hard for the team to agree on a plan.",
+        "korean": "팀이 계획에 합의하기 힘들었어."
+      },
+      {
+        "english": "It was hard for me to keep going.",
+        "korean": "나는 계속하기가 힘들었어."
+      },
+      {
+        "english": "It was hard for us to work remotely at first.",
+        "korean": "처음엔 원격으로 일하기 힘들었어."
+      },
+      {
+        "english": "It was hard for her to say it out loud.",
+        "korean": "그녀는 그걸 입 밖으로 꺼내기 힘들었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-difficult-for-me-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "difficulty",
+      "expansion"
+    ],
+    "difficulty": 3,
+    "priority": 60,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-clear-that",
+    "rank": 11,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was clear that [SENTENCE].",
+    "koreanMeaning": "~라는 게 분명했어.",
+    "speakingFunction": "상황이 확실했다는 것을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "something was wrong",
+          "we needed more time",
+          "he didn't know the answer"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was clear that something was wrong.",
+        "korean": "뭔가 잘못됐다는 게 분명했어."
+      },
+      {
+        "english": "It was clear that we needed more time.",
+        "korean": "시간이 더 필요하다는 게 분명했어."
+      },
+      {
+        "english": "It was clear that he didn't know the answer.",
+        "korean": "그가 답을 모른다는 게 분명했어."
+      },
+      {
+        "english": "It was clear that the plan wasn't working.",
+        "korean": "계획이 안 통한다는 게 분명했어."
+      },
+      {
+        "english": "It was clear that nobody had tested it.",
+        "korean": "아무도 테스트를 안 했다는 게 분명했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-obvious-that"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "opinion",
+      "clause"
+    ],
+    "difficulty": 2,
+    "priority": 80,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-obvious-that",
+    "rank": 12,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was obvious that [SENTENCE].",
+    "koreanMeaning": "~라는 게 명백했어.",
+    "speakingFunction": "'clear'보다 더 강하게 명백했음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it wouldn't work",
+          "she was upset",
+          "we made a mistake"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was obvious that it wouldn't work.",
+        "korean": "그게 안 될 거라는 게 명백했어."
+      },
+      {
+        "english": "It was obvious that she was upset.",
+        "korean": "그녀가 화났다는 게 명백했어."
+      },
+      {
+        "english": "It was obvious that we made a mistake.",
+        "korean": "우리가 실수했다는 게 명백했어."
+      },
+      {
+        "english": "It was obvious that the design needed changes.",
+        "korean": "디자인을 바꿔야 한다는 게 명백했어."
+      },
+      {
+        "english": "It was obvious that no one had read the email.",
+        "korean": "아무도 메일을 안 읽었다는 게 명백했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-clear-that"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "opinion",
+      "clause"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-strange-that",
+    "rank": 13,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was strange that [SENTENCE].",
+    "koreanMeaning": "~라는 게 이상했어.",
+    "speakingFunction": "예상과 다르고 의아했던 상황을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "nobody noticed it",
+          "it just stopped working",
+          "he didn't call back"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was strange that nobody noticed it.",
+        "korean": "아무도 눈치 못 챘다는 게 이상했어."
+      },
+      {
+        "english": "It was strange that it just stopped working.",
+        "korean": "그냥 멈춰버렸다는 게 이상했어."
+      },
+      {
+        "english": "It was strange that he didn't call back.",
+        "korean": "그가 다시 전화 안 했다는 게 이상했어."
+      },
+      {
+        "english": "It was strange that the error disappeared on its own.",
+        "korean": "에러가 저절로 사라졌다는 게 이상했어."
+      },
+      {
+        "english": "It was strange that everyone was so quiet.",
+        "korean": "다들 그렇게 조용했다는 게 이상했어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-surprising-that"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "opinion",
+      "clause"
+    ],
+    "difficulty": 2,
+    "priority": 50,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-surprising-that",
+    "rank": 14,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was surprising that [SENTENCE].",
+    "koreanMeaning": "~라는 게 놀라웠어.",
+    "speakingFunction": "예상 밖이라 놀랐던 상황을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it worked on the first try",
+          "she agreed so quickly",
+          "nobody complained"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was surprising that it worked on the first try.",
+        "korean": "첫 시도에 됐다는 게 놀라웠어."
+      },
+      {
+        "english": "It was surprising that she agreed so quickly.",
+        "korean": "그녀가 그렇게 빨리 동의했다는 게 놀라웠어."
+      },
+      {
+        "english": "It was surprising that nobody complained.",
+        "korean": "아무도 불평하지 않았다는 게 놀라웠어."
+      },
+      {
+        "english": "It was surprising that the fix was so simple.",
+        "korean": "해결책이 그렇게 간단했다는 게 놀라웠어."
+      },
+      {
+        "english": "It was surprising how fast it got resolved.",
+        "korean": "그렇게 빨리 해결됐다는 게 놀라웠어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-strange-that"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "opinion",
+      "clause"
+    ],
+    "difficulty": 2,
+    "priority": 50,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-good-that",
+    "rank": 15,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was good that [SENTENCE].",
+    "koreanMeaning": "~해서 다행이었어.",
+    "speakingFunction": "결과적으로 다행이었던 일을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we checked it first",
+          "we had a backup",
+          "someone caught the bug"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was good that we checked it first.",
+        "korean": "먼저 확인해서 다행이었어."
+      },
+      {
+        "english": "It was good that we had a backup.",
+        "korean": "백업이 있어서 다행이었어."
+      },
+      {
+        "english": "It was good that someone caught the bug early.",
+        "korean": "누군가 버그를 일찍 발견해서 다행이었어."
+      },
+      {
+        "english": "It was good that I asked before deploying.",
+        "korean": "배포 전에 물어봐서 다행이었어."
+      },
+      {
+        "english": "It was good that we didn't rush it.",
+        "korean": "서두르지 않아서 다행이었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-clear-that"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "relief",
+      "clause"
+    ],
+    "difficulty": 2,
+    "priority": 60,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-because",
+    "rank": 16,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was because [REASON].",
+    "koreanMeaning": "~때문이었어.",
+    "speakingFunction": "결과의 원인을 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "REASON",
+        "type": "reason",
+        "examples": [
+          "I was tired",
+          "the server was down",
+          "we didn't have enough time"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was because I was tired.",
+        "korean": "내가 피곤했기 때문이었어."
+      },
+      {
+        "english": "It was because the server was down.",
+        "korean": "서버가 다운돼서였어."
+      },
+      {
+        "english": "It was because we didn't have enough time.",
+        "korean": "시간이 부족했기 때문이었어."
+      },
+      {
+        "english": "It was because I misunderstood the question.",
+        "korean": "질문을 잘못 이해했기 때문이었어."
+      },
+      {
+        "english": "It was because there was a problem with the system.",
+        "korean": "시스템에 문제가 있었기 때문이었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-problem-was"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "reason",
+      "core"
+    ],
+    "difficulty": 2,
+    "priority": 90,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-for",
+    "rank": 17,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was for [PURPOSE].",
+    "koreanMeaning": "~용도였어. / ~를 위한 거였어.",
+    "speakingFunction": "무엇을 위한 것이었는지 목적/용도를 말할 때",
+    "description": "'It was to V'(~하려는 목적/행동)와 의미가 다르다. 'It was for + 명사/-ing'는 용도를 말하고, 'It was to V'는 의도한 행동 자체를 말한다. 예: 'It was to test the system.'(시스템을 테스트하려는 거였어) vs 'It was for testing.'(테스트 용도였어)",
+    "slots": [
+      {
+        "key": "PURPOSE",
+        "type": "topic",
+        "examples": [
+          "testing",
+          "a customer",
+          "security reasons",
+          "testing the new feature"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was for testing.",
+        "korean": "테스트 용도였어."
+      },
+      {
+        "english": "It was for a customer.",
+        "korean": "고객을 위한 거였어."
+      },
+      {
+        "english": "It was for security reasons.",
+        "korean": "보안상의 이유였어."
+      },
+      {
+        "english": "It was for testing the new feature.",
+        "korean": "새 기능을 테스트하기 위한 거였어."
+      },
+      {
+        "english": "It was for the demo tomorrow.",
+        "korean": "내일 데모를 위한 거였어."
+      },
+      {
+        "english": "It was to test the system.",
+        "korean": "시스템을 테스트하려는 거였어.",
+        "note": "대비: 'for + 명사'(용도)가 아니라 'to V'(목적/행동) 형태"
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-about"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "purpose"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-about",
+    "rank": 18,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was about [TOPIC].",
+    "koreanMeaning": "~에 관한 거였어.",
+    "speakingFunction": "무엇에 관한 것이었는지 주제를 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the project",
+          "improving the process",
+          "solving the problem",
+          "finding a better way"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was about the project.",
+        "korean": "프로젝트에 관한 거였어."
+      },
+      {
+        "english": "It was about improving the process.",
+        "korean": "프로세스를 개선하는 것에 관한 거였어."
+      },
+      {
+        "english": "It was about solving the problem.",
+        "korean": "문제를 해결하는 것에 관한 거였어."
+      },
+      {
+        "english": "It was about finding a better way.",
+        "korean": "더 나은 방법을 찾는 것에 관한 거였어."
+      },
+      {
+        "english": "It was about the new API.",
+        "korean": "새 API에 관한 거였어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-for"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "topic"
+    ],
+    "difficulty": 1,
+    "priority": 55,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-getting",
+    "rank": 19,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was getting [ADJECTIVE].",
+    "koreanMeaning": "점점 ~해지고 있었어.",
+    "speakingFunction": "과거에 상태가 점점 변해가고 있었음을 말할 때 (단순 동명사가 아니라 변화/진행을 나타냄)",
+    "description": null,
+    "slots": [
+      {
+        "key": "ADJECTIVE",
+        "type": "adjective",
+        "examples": [
+          "better",
+          "worse",
+          "late",
+          "complicated"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was getting better.",
+        "korean": "점점 나아지고 있었어."
+      },
+      {
+        "english": "It was getting worse.",
+        "korean": "점점 나빠지고 있었어."
+      },
+      {
+        "english": "It was getting late.",
+        "korean": "시간이 점점 늦어지고 있었어."
+      },
+      {
+        "english": "It was getting complicated.",
+        "korean": "점점 복잡해지고 있었어."
+      },
+      {
+        "english": "It was getting hard to keep track of everything.",
+        "korean": "모든 걸 따라가기 점점 힘들어지고 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-becoming",
+      "it-was-taking"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "change"
+    ],
+    "difficulty": 2,
+    "priority": 65,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-becoming",
+    "rank": 20,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was becoming [ADJECTIVE].",
+    "koreanMeaning": "점점 ~해지고 있었어.",
+    "speakingFunction": "'getting'보다 약간 격식 있는 변화 표현",
+    "description": null,
+    "slots": [
+      {
+        "key": "ADJECTIVE",
+        "type": "adjective",
+        "examples": [
+          "difficult",
+          "obvious",
+          "clear",
+          "a real problem"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was becoming difficult to manage.",
+        "korean": "관리하기가 점점 어려워지고 있었어."
+      },
+      {
+        "english": "It was becoming obvious that we needed help.",
+        "korean": "도움이 필요하다는 게 점점 분명해지고 있었어."
+      },
+      {
+        "english": "It was becoming clear that the plan had to change.",
+        "korean": "계획을 바꿔야 한다는 게 점점 분명해지고 있었어."
+      },
+      {
+        "english": "It was becoming a real problem.",
+        "korean": "점점 진짜 문제가 되고 있었어."
+      },
+      {
+        "english": "It was becoming too complicated to explain.",
+        "korean": "설명하기엔 점점 너무 복잡해지고 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-getting"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "change"
+    ],
+    "difficulty": 2,
+    "priority": 45,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-was-taking",
+    "rank": 21,
+    "speakingIntent": "과거 상황을 설명하고 싶을 때",
+    "familyId": "it-was",
+    "familyLabel": "It was ...",
+    "parentPatternId": null,
+    "pattern": "It was taking [DURATION].",
+    "koreanMeaning": "~하는 데 시간이 걸리고 있었어.",
+    "speakingFunction": "예상보다 시간이 오래 걸리고 있었던 상황을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "DURATION",
+        "type": "free",
+        "examples": [
+          "too long",
+          "forever",
+          "longer than expected"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It was taking too long.",
+        "korean": "너무 오래 걸리고 있었어."
+      },
+      {
+        "english": "It was taking forever to load.",
+        "korean": "로딩하는 데 한참 걸리고 있었어."
+      },
+      {
+        "english": "It was taking longer than expected.",
+        "korean": "예상보다 오래 걸리고 있었어."
+      },
+      {
+        "english": "It was taking a toll on the whole team.",
+        "korean": "팀 전체에 부담이 되고 있었어."
+      },
+      {
+        "english": "It was taking up most of my day.",
+        "korean": "하루의 대부분을 차지하고 있었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "it-was-getting"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "past",
+      "change",
+      "time"
+    ],
+    "difficulty": 2,
+    "priority": 45,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-think",
+    "rank": 22,
+    "speakingIntent": "내 생각을 말하고 싶을 때",
+    "familyId": "i-think",
+    "familyLabel": "I think ...",
+    "parentPatternId": null,
+    "pattern": "I think [SENTENCE].",
+    "koreanMeaning": "내 생각엔 ~인 것 같아.",
+    "speakingFunction": "자신의 의견을 말할 때 가장 기본이 되는 표현",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it's a good idea",
+          "we should wait",
+          "this will work"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I think it's a good idea.",
+        "korean": "좋은 생각인 것 같아."
+      },
+      {
+        "english": "I think we should wait.",
+        "korean": "기다리는 게 좋을 것 같아."
+      },
+      {
+        "english": "I think this will work.",
+        "korean": "이게 될 것 같아."
+      },
+      {
+        "english": "I think there's a better way.",
+        "korean": "더 나은 방법이 있을 것 같아."
+      },
+      {
+        "english": "I think we're overcomplicating this.",
+        "korean": "우리가 너무 복잡하게 만드는 것 같아."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-think-its",
+      "i-think-we-should"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "opinion",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 100,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-think-its",
+    "rank": 23,
+    "speakingIntent": "내 생각을 말하고 싶을 때",
+    "familyId": "i-think",
+    "familyLabel": "I think ...",
+    "parentPatternId": "i-think",
+    "pattern": "I think it's [EVALUATION].",
+    "koreanMeaning": "그거 ~인 것 같아.",
+    "speakingFunction": "대상에 대한 평가를 짧게 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "EVALUATION",
+        "type": "free",
+        "examples": [
+          "fine",
+          "too risky",
+          "a great idea",
+          "worth trying"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I think it's fine.",
+        "korean": "괜찮은 것 같아."
+      },
+      {
+        "english": "I think it's too risky.",
+        "korean": "너무 위험한 것 같아."
+      },
+      {
+        "english": "I think it's a great idea.",
+        "korean": "정말 좋은 생각인 것 같아."
+      },
+      {
+        "english": "I think it's worth trying.",
+        "korean": "시도해 볼 만한 것 같아."
+      },
+      {
+        "english": "I think it's the best option we have.",
+        "korean": "우리가 가진 것 중 최선인 것 같아."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-think"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "opinion"
+    ],
+    "difficulty": 1,
+    "priority": 80,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-think-we-should",
+    "rank": 24,
+    "speakingIntent": "내 생각을 말하고 싶을 때",
+    "familyId": "i-think",
+    "familyLabel": "I think ...",
+    "parentPatternId": "i-think",
+    "pattern": "I think we should [ACTION].",
+    "koreanMeaning": "우리 ~하는 게 좋을 것 같아.",
+    "speakingFunction": "제안이나 권고를 할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "wait a bit",
+          "talk to the team",
+          "try a different approach",
+          "double-check first"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I think we should wait a bit.",
+        "korean": "조금 기다리는 게 좋을 것 같아."
+      },
+      {
+        "english": "I think we should talk to the team first.",
+        "korean": "먼저 팀과 얘기하는 게 좋을 것 같아."
+      },
+      {
+        "english": "I think we should try a different approach.",
+        "korean": "다른 방법을 시도하는 게 좋을 것 같아."
+      },
+      {
+        "english": "I think we should double-check before deploying.",
+        "korean": "배포 전에 다시 확인하는 게 좋을 것 같아."
+      },
+      {
+        "english": "I think we should keep it simple.",
+        "korean": "단순하게 유지하는 게 좋을 것 같아."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-think",
+      "i-think-the-problem-is"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "opinion",
+      "suggestion"
+    ],
+    "difficulty": 2,
+    "priority": 75,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-think-the-problem-is",
+    "rank": 25,
+    "speakingIntent": "내 생각을 말하고 싶을 때",
+    "familyId": "i-think",
+    "familyLabel": "I think ...",
+    "parentPatternId": null,
+    "pattern": "I think the problem is [SENTENCE].",
+    "koreanMeaning": "문제는 ~인 것 같아.",
+    "speakingFunction": "문제의 원인에 대한 자신의 생각을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we didn't test enough",
+          "the config is wrong",
+          "we're missing information"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I think the problem is we didn't test enough.",
+        "korean": "문제는 테스트를 충분히 안 한 것 같아."
+      },
+      {
+        "english": "I think the problem is the config.",
+        "korean": "문제는 설정인 것 같아."
+      },
+      {
+        "english": "I think the problem is we're missing some information.",
+        "korean": "문제는 정보가 부족한 것 같아."
+      },
+      {
+        "english": "I think the problem is timing.",
+        "korean": "문제는 타이밍인 것 같아."
+      },
+      {
+        "english": "I think the problem is on our end.",
+        "korean": "문제는 우리 쪽에 있는 것 같아."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-problem-is",
+      "i-think-we-should"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "opinion",
+      "problem"
+    ],
+    "difficulty": 2,
+    "priority": 60,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "the-problem-is",
+    "rank": 26,
+    "speakingIntent": "문제를 설명하고 싶을 때",
+    "familyId": "the-problem-is",
+    "familyLabel": "The problem is ...",
+    "parentPatternId": null,
+    "pattern": "The problem is that [SENTENCE].",
+    "koreanMeaning": "문제는 ~라는 거야.",
+    "speakingFunction": "현재 발생 중인 문제의 핵심을 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it only happens sometimes",
+          "we don't have enough data",
+          "nobody owns this"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "The problem is that it only happens sometimes.",
+        "korean": "문제는 가끔씩만 발생한다는 거야."
+      },
+      {
+        "english": "The problem is that we don't have enough data.",
+        "korean": "문제는 데이터가 부족하다는 거야."
+      },
+      {
+        "english": "The problem is that nobody owns this.",
+        "korean": "문제는 이걸 담당하는 사람이 없다는 거야."
+      },
+      {
+        "english": "The problem is that it's hard to reproduce.",
+        "korean": "문제는 재현하기 어렵다는 거야."
+      },
+      {
+        "english": "The problem is that we're running out of time.",
+        "korean": "문제는 시간이 부족하다는 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-problem-was",
+      "i-had-trouble"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "problem",
+      "present",
+      "core"
+    ],
+    "difficulty": 2,
+    "priority": 90,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "the-problem-was",
+    "rank": 27,
+    "speakingIntent": "문제를 설명하고 싶을 때",
+    "familyId": "the-problem-is",
+    "familyLabel": "The problem is ...",
+    "parentPatternId": "the-problem-is",
+    "pattern": "The problem was that [SENTENCE].",
+    "koreanMeaning": "문제는 ~였다는 거였어.",
+    "speakingFunction": "과거에 있었던 문제의 핵심을 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "the logs didn't show anything",
+          "we assumed the wrong thing",
+          "the test data was outdated"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "The problem was that the logs didn't show anything.",
+        "korean": "문제는 로그에 아무것도 안 보였다는 거였어."
+      },
+      {
+        "english": "The problem was that we assumed the wrong thing.",
+        "korean": "문제는 우리가 잘못 가정했다는 거였어."
+      },
+      {
+        "english": "The problem was that the test data was outdated.",
+        "korean": "문제는 테스트 데이터가 오래됐다는 거였어."
+      },
+      {
+        "english": "The problem was that two teams were editing the same file.",
+        "korean": "문제는 두 팀이 같은 파일을 수정하고 있었다는 거였어."
+      },
+      {
+        "english": "The problem was that I didn't check the docs first.",
+        "korean": "문제는 내가 문서를 먼저 안 봤다는 거였어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-problem-is",
+      "it-was-because"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "problem",
+      "past"
+    ],
+    "difficulty": 2,
+    "priority": 70,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-had-trouble",
+    "rank": 28,
+    "speakingIntent": "문제를 설명하고 싶을 때",
+    "familyId": "the-problem-is",
+    "familyLabel": "The problem is ...",
+    "parentPatternId": null,
+    "pattern": "I had trouble [ACTION-ING].",
+    "koreanMeaning": "~하는 데 애먹었어.",
+    "speakingFunction": "무언가를 하는 데 어려움을 겪었음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION-ING",
+        "type": "verb",
+        "placeholder": "understanding it / finding the file ...",
+        "examples": [
+          "understanding it",
+          "finding the file",
+          "trying to log in"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I had trouble understanding the requirements.",
+        "korean": "요구사항을 이해하는 데 애먹었어."
+      },
+      {
+        "english": "I had trouble finding the right file.",
+        "korean": "맞는 파일을 찾는 데 애먹었어."
+      },
+      {
+        "english": "I had trouble trying to log in.",
+        "korean": "로그인하는 데 애먹었어."
+      },
+      {
+        "english": "I had trouble explaining it clearly.",
+        "korean": "명확하게 설명하는 데 애먹었어."
+      },
+      {
+        "english": "I had trouble getting it to work on my machine.",
+        "korean": "내 컴퓨터에서 작동하게 하는 데 애먹었어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-problem-was"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "problem",
+      "past",
+      "difficulty"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.0",
+    "sourceType": "curated-speaking-pattern-core"
+  }
+]

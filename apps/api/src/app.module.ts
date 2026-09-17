@@ -10,6 +10,7 @@ import { LearningItemsModule } from './learning-items/learning-items.module';
 import { StudyModule } from './study/study.module';
 import { ProgressModule } from './progress/progress.module';
 import { ChunkDrillModule } from './chunk-drill/chunk-drill.module';
+import { SpeakingPatternModule } from './speaking-pattern/speaking-pattern.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { ChunkDrillModule } from './chunk-drill/chunk-drill.module';
     StudyModule,
     ProgressModule,
     ChunkDrillModule,
+    SpeakingPatternModule,
   ],
   providers: [
     {

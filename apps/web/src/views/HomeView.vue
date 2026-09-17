@@ -149,6 +149,16 @@ watch(
         </p>
       </section>
 
+      <section class="pattern-card" @click="router.push('/speaking-patterns')">
+        <div class="chunk-drill-heading">
+          <span class="chunk-drill-icon">🧩</span>
+          <div>
+            <p class="chunk-drill-title">Speaking Pattern Core</p>
+            <p class="chunk-drill-desc">"It was difficult to ..." 같은 문장 골격을 통째로 익혀서 바로 발화</p>
+          </div>
+        </div>
+      </section>
+
       <footer class="account-footer">
         <button class="danger-link" :disabled="deleting" @click="handleDeleteAccount">
           {{ deleting ? '탈퇴 처리 중...' : '탈퇴하기' }}
@@ -336,5 +346,18 @@ button {
   font-size: 0.75rem;
   opacity: 0.7;
   margin: 0;
+}
+.pattern-card {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  cursor: pointer;
+  text-align: left;
 }
 </style>

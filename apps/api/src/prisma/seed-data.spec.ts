@@ -1,10 +1,11 @@
 import { PrismaClient } from '@prisma/client';
-import { seedChunkDrillItems, seedLearningItems } from './seed-data';
+import { seedChunkDrillItems, seedLearningItems, seedSpeakingPatterns } from './seed-data';
 
 function fakePrisma() {
   return {
     learningItem: { upsert: jest.fn().mockResolvedValue({}) },
     chunkItem: { upsert: jest.fn().mockResolvedValue({}) },
+    speakingPattern: { upsert: jest.fn().mockResolvedValue({}) },
   } as unknown as PrismaClient;
 }
 
@@ -33,5 +34,21 @@ describe('seedChunkDrillItems', () => {
 
     expect(result.total).toBe(100);
     expect((prisma.chunkItem.upsert as jest.Mock)).toHaveBeenCalledTimes(100);
+  });
+});
+
+describe('seedSpeakingPatterns', () => {
+  it('upserts every canonical row and reports per-family counts', async () => {
+    const prisma = fakePrisma();
+
+    const result = await seedSpeakingPatterns(prisma);
+
+    expect(result.total).toBe(28);
+    expect(result.families).toEqual({
+      'it-was': 21,
+      'i-think': 4,
+      'the-problem-is': 3,
+    });
+    expect((prisma.speakingPattern.upsert as jest.Mock)).toHaveBeenCalledTimes(28);
   });
 });
