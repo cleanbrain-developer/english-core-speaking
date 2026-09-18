@@ -69,7 +69,7 @@
     ],
     "difficulty": 1,
     "priority": 100,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -131,7 +131,7 @@
     ],
     "difficulty": 1,
     "priority": 95,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -227,7 +227,7 @@
     ],
     "difficulty": 2,
     "priority": 100,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -287,7 +287,7 @@
     ],
     "difficulty": 2,
     "priority": 80,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -347,7 +347,7 @@
     ],
     "difficulty": 1,
     "priority": 75,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -407,7 +407,7 @@
     ],
     "difficulty": 2,
     "priority": 85,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -467,7 +467,7 @@
     ],
     "difficulty": 2,
     "priority": 70,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -526,7 +526,7 @@
     ],
     "difficulty": 2,
     "priority": 65,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -597,7 +597,7 @@
     ],
     "difficulty": 3,
     "priority": 90,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -665,7 +665,7 @@
     ],
     "difficulty": 3,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -724,7 +724,7 @@
     ],
     "difficulty": 2,
     "priority": 80,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -783,7 +783,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -842,7 +842,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -901,7 +901,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -960,7 +960,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1021,7 +1021,7 @@
     ],
     "difficulty": 2,
     "priority": 90,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1085,7 +1085,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1144,7 +1144,7 @@
     ],
     "difficulty": 1,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1205,7 +1205,7 @@
     ],
     "difficulty": 2,
     "priority": 65,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1265,7 +1265,7 @@
     ],
     "difficulty": 2,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1324,7 +1324,7 @@
     ],
     "difficulty": 2,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1385,7 +1385,7 @@
     ],
     "difficulty": 1,
     "priority": 100,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1443,7 +1443,7 @@
     ],
     "difficulty": 1,
     "priority": 80,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1503,7 +1503,7 @@
     ],
     "difficulty": 2,
     "priority": 75,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1562,7 +1562,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1622,7 +1622,7 @@
     ],
     "difficulty": 2,
     "priority": 90,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1681,7 +1681,7 @@
     ],
     "difficulty": 2,
     "priority": 70,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1741,7 +1741,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1801,7 +1801,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1861,7 +1861,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1920,7 +1920,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1978,7 +1978,7 @@
     ],
     "difficulty": 2,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2037,7 +2037,7 @@
     ],
     "difficulty": 2,
     "priority": 75,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2096,7 +2096,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2154,7 +2154,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2213,7 +2213,7 @@
     ],
     "difficulty": 2,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2273,7 +2273,7 @@
     ],
     "difficulty": 1,
     "priority": 90,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2332,7 +2332,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2390,7 +2390,7 @@
     ],
     "difficulty": 1,
     "priority": 50,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2448,7 +2448,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2506,7 +2506,7 @@
     ],
     "difficulty": 2,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2566,7 +2566,7 @@
     ],
     "difficulty": 1,
     "priority": 90,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2625,7 +2625,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2684,7 +2684,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2742,7 +2742,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2802,7 +2802,7 @@
     ],
     "difficulty": 1,
     "priority": 85,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2862,7 +2862,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2920,7 +2920,7 @@
     ],
     "difficulty": 1,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2979,7 +2979,7 @@
     ],
     "difficulty": 2,
     "priority": 80,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3036,7 +3036,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3094,7 +3094,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3154,7 +3154,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3213,7 +3213,7 @@
     ],
     "difficulty": 1,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3271,7 +3271,7 @@
     ],
     "difficulty": 2,
     "priority": 35,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3331,7 +3331,7 @@
     ],
     "difficulty": 2,
     "priority": 75,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3390,7 +3390,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3449,7 +3449,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3508,7 +3508,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3565,7 +3565,7 @@
     ],
     "difficulty": 1,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3623,7 +3623,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3682,7 +3682,7 @@
     ],
     "difficulty": 2,
     "priority": 75,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3739,7 +3739,7 @@
     ],
     "difficulty": 1,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3797,7 +3797,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3854,7 +3854,7 @@
     ],
     "difficulty": 2,
     "priority": 35,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3913,7 +3913,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3971,7 +3971,7 @@
     ],
     "difficulty": 2,
     "priority": 35,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4029,7 +4029,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4079,7 +4079,8 @@
     "expansions": null,
     "relatedPatternIds": [
       "what-i-mean-is",
-      "basically"
+      "basically",
+      "what-im-trying-to-say-is"
     ],
     "contrastPatternIds": [],
     "tags": [
@@ -4088,7 +4089,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4145,7 +4146,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4203,7 +4204,7 @@
     ],
     "difficulty": 1,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4263,7 +4264,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4321,7 +4322,7 @@
     ],
     "difficulty": 1,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4379,7 +4380,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4440,7 +4441,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4500,7 +4501,7 @@
     ],
     "difficulty": 3,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4559,7 +4560,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4618,7 +4619,7 @@
     ],
     "difficulty": 1,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4675,7 +4676,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4734,7 +4735,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4792,7 +4793,7 @@
     ],
     "difficulty": 2,
     "priority": 35,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4852,7 +4853,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4910,7 +4911,7 @@
     ],
     "difficulty": 1,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4969,7 +4970,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5029,7 +5030,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5088,7 +5089,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5146,7 +5147,7 @@
     ],
     "difficulty": 1,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5203,7 +5204,7 @@
     ],
     "difficulty": 1,
     "priority": 35,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5260,7 +5261,7 @@
     ],
     "difficulty": 2,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5321,7 +5322,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5380,7 +5381,7 @@
     ],
     "difficulty": 2,
     "priority": 35,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5437,7 +5438,7 @@
     ],
     "difficulty": 1,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5496,7 +5497,7 @@
     ],
     "difficulty": 1,
     "priority": 40,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5555,7 +5556,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5613,7 +5614,7 @@
     ],
     "difficulty": 2,
     "priority": 35,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5670,7 +5671,7 @@
     ],
     "difficulty": 1,
     "priority": 45,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5727,7 +5728,1336 @@
     ],
     "difficulty": 2,
     "priority": 30,
-    "datasetVersion": "1.2",
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-interested-in",
+    "rank": 97,
+    "speakingIntent": "관심이나 걱정을 말하고 싶을 때",
+    "familyId": "im-interested-in",
+    "familyLabel": "I'm interested in ...",
+    "parentPatternId": null,
+    "pattern": "I'm interested in [TOPIC].",
+    "koreanMeaning": "~에 관심이 있어.",
+    "speakingFunction": "무언가에 관심이 있음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "this role",
+          "learning more about it",
+          "how this works"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm interested in this role.",
+        "korean": "이 자리에 관심이 있어."
+      },
+      {
+        "english": "I'm interested in learning more about it.",
+        "korean": "이거에 대해 더 배우는 데 관심이 있어."
+      },
+      {
+        "english": "I'm interested in how this works.",
+        "korean": "이게 어떻게 작동하는지 관심이 있어."
+      },
+      {
+        "english": "I'm interested in your approach.",
+        "korean": "당신의 방식에 관심이 있어."
+      },
+      {
+        "english": "I'm interested in hearing more.",
+        "korean": "더 듣는 데 관심이 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-worried-about"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "interest"
+    ],
+    "difficulty": 1,
+    "priority": 45,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-worried-about",
+    "rank": 98,
+    "speakingIntent": "관심이나 걱정을 말하고 싶을 때",
+    "familyId": "im-interested-in",
+    "familyLabel": "I'm interested in ...",
+    "parentPatternId": null,
+    "pattern": "I'm worried about [TOPIC].",
+    "koreanMeaning": "~가 걱정돼.",
+    "speakingFunction": "지금 무언가를 걱정하고 있음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the deadline",
+          "how this will scale",
+          "the budget"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm worried about the deadline.",
+        "korean": "마감이 걱정돼."
+      },
+      {
+        "english": "I'm worried about how this will scale.",
+        "korean": "이게 확장될지 걱정돼."
+      },
+      {
+        "english": "I'm worried about the budget.",
+        "korean": "예산이 걱정돼."
+      },
+      {
+        "english": "I'm worried about making the wrong call.",
+        "korean": "잘못된 결정을 내릴까 걱정돼."
+      },
+      {
+        "english": "I'm worried about the team's morale.",
+        "korean": "팀 사기가 걱정돼."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-interested-in",
+      "i-was-worried-about"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "present",
+      "emotion"
+    ],
+    "difficulty": 1,
+    "priority": 55,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-realized",
+    "rank": 99,
+    "speakingIntent": "깨달은 것을 말하고 싶을 때",
+    "familyId": "i-realized",
+    "familyLabel": "I realized ...",
+    "parentPatternId": null,
+    "pattern": "I realized [SENTENCE].",
+    "koreanMeaning": "~라는 걸 깨달았어.",
+    "speakingFunction": "몰랐던 것을 문득 깨달았을 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "I made a mistake",
+          "we were solving the wrong problem",
+          "this wasn't necessary"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I realized I made a mistake.",
+        "korean": "내가 실수했다는 걸 깨달았어."
+      },
+      {
+        "english": "I realized we were solving the wrong problem.",
+        "korean": "우리가 잘못된 문제를 풀고 있었다는 걸 깨달았어."
+      },
+      {
+        "english": "I realized this wasn't necessary.",
+        "korean": "이게 필요 없었다는 걸 깨달았어."
+      },
+      {
+        "english": "I realized I forgot to save it.",
+        "korean": "저장하는 걸 깜빡했다는 걸 깨달았어."
+      },
+      {
+        "english": "I realized halfway through that it wouldn't work.",
+        "korean": "중간에 이게 안 될 거라는 걸 깨달았어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-found-out",
+      "it-turned-out"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "realization"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-found-out",
+    "rank": 100,
+    "speakingIntent": "깨달은 것을 말하고 싶을 때",
+    "familyId": "i-realized",
+    "familyLabel": "I realized ...",
+    "parentPatternId": null,
+    "pattern": "I found out [SENTENCE].",
+    "koreanMeaning": "~라는 걸 알게 됐어.",
+    "speakingFunction": "조사/확인해서 새롭게 알게 된 것을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "the issue was on their end",
+          "we had the wrong version",
+          "it's a known bug"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I found out the issue was on their end.",
+        "korean": "문제가 그쪽에 있었다는 걸 알게 됐어."
+      },
+      {
+        "english": "I found out we had the wrong version.",
+        "korean": "우리가 잘못된 버전을 갖고 있었다는 걸 알게 됐어."
+      },
+      {
+        "english": "I found out it's a known bug.",
+        "korean": "알려진 버그라는 걸 알게 됐어."
+      },
+      {
+        "english": "I found out later that it was fixed.",
+        "korean": "나중에 그게 고쳐졌다는 걸 알게 됐어."
+      },
+      {
+        "english": "I found out he already left the team.",
+        "korean": "그가 이미 팀을 떠났다는 걸 알게 됐어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-realized",
+      "it-turned-out"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "realization"
+    ],
+    "difficulty": 2,
+    "priority": 40,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "it-turned-out",
+    "rank": 101,
+    "speakingIntent": "깨달은 것을 말하고 싶을 때",
+    "familyId": "i-realized",
+    "familyLabel": "I realized ...",
+    "parentPatternId": null,
+    "pattern": "It turned out [SENTENCE].",
+    "koreanMeaning": "결국 ~한 걸로 드러났어.",
+    "speakingFunction": "결과적으로 예상과 다르게 드러난 사실을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "to be a simple typo",
+          "we didn't need it after all",
+          "everyone agreed"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "It turned out to be a simple typo.",
+        "korean": "결국 단순 오타였던 걸로 드러났어."
+      },
+      {
+        "english": "It turned out we didn't need it after all.",
+        "korean": "결국 그게 필요 없었던 걸로 드러났어."
+      },
+      {
+        "english": "It turned out everyone agreed.",
+        "korean": "결국 다들 동의했던 걸로 드러났어."
+      },
+      {
+        "english": "It turned out the fix was already deployed.",
+        "korean": "결국 수정이 이미 배포돼 있었던 걸로 드러났어."
+      },
+      {
+        "english": "It turned out much better than expected.",
+        "korean": "결국 예상보다 훨씬 좋게 됐어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-realized",
+      "i-found-out"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "realization",
+      "core"
+    ],
+    "difficulty": 2,
+    "priority": 50,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "what-i-did-was",
+    "rank": 102,
+    "speakingIntent": "내가 한 일을 설명하고 싶을 때",
+    "familyId": "what-i-did-was",
+    "familyLabel": "What I did was ...",
+    "parentPatternId": null,
+    "pattern": "What I did was [ACTION].",
+    "koreanMeaning": "내가 한 건 ~야.",
+    "speakingFunction": "본인이 실제로 취한 행동을 강조해서 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "check the logs first",
+          "roll it back immediately",
+          "ask the team for input"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "What I did was check the logs first.",
+        "korean": "내가 한 건 로그부터 확인한 거야."
+      },
+      {
+        "english": "What I did was roll it back immediately.",
+        "korean": "내가 한 건 바로 롤백한 거야."
+      },
+      {
+        "english": "What I did was ask the team for input.",
+        "korean": "내가 한 건 팀한테 의견을 물어본 거야."
+      },
+      {
+        "english": "What I did was isolate the problem first.",
+        "korean": "내가 한 건 문제부터 격리한 거야."
+      },
+      {
+        "english": "What I did was write a small test for it.",
+        "korean": "내가 한 건 작은 테스트를 작성한 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "what-we-did-was",
+      "i-figured-out"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "process",
+      "core",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 55,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "what-we-did-was",
+    "rank": 103,
+    "speakingIntent": "내가 한 일을 설명하고 싶을 때",
+    "familyId": "what-i-did-was",
+    "familyLabel": "What I did was ...",
+    "parentPatternId": null,
+    "pattern": "What we did was [ACTION].",
+    "koreanMeaning": "우리가 한 건 ~야.",
+    "speakingFunction": "팀/우리가 취한 행동을 설명할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "split the task in two",
+          "run it in a staging environment first",
+          "add more logging"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "What we did was split the task in two.",
+        "korean": "우리가 한 건 작업을 둘로 나눈 거야."
+      },
+      {
+        "english": "What we did was run it in a staging environment first.",
+        "korean": "우리가 한 건 스테이징에서 먼저 돌려본 거야."
+      },
+      {
+        "english": "What we did was add more logging.",
+        "korean": "우리가 한 건 로그를 더 추가한 거야."
+      },
+      {
+        "english": "What we did was get a second reviewer.",
+        "korean": "우리가 한 건 리뷰어를 한 명 더 구한 거야."
+      },
+      {
+        "english": "What we did was pause the release.",
+        "korean": "우리가 한 건 릴리스를 멈춘 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "what-i-did-was"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "process",
+      "work"
+    ],
+    "difficulty": 2,
+    "priority": 35,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-figured-out",
+    "rank": 104,
+    "speakingIntent": "내가 한 일을 설명하고 싶을 때",
+    "familyId": "what-i-did-was",
+    "familyLabel": "What I did was ...",
+    "parentPatternId": null,
+    "pattern": "I figured out [SENTENCE].",
+    "koreanMeaning": "~라는 걸 알아냈어.",
+    "speakingFunction": "고민 끝에 원인이나 해결책을 알아냈음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "what was causing it",
+          "a workaround",
+          "how to reproduce it"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I figured out what was causing it.",
+        "korean": "원인이 뭔지 알아냈어."
+      },
+      {
+        "english": "I figured out a workaround.",
+        "korean": "우회책을 알아냈어."
+      },
+      {
+        "english": "I figured out how to reproduce it.",
+        "korean": "재현하는 방법을 알아냈어."
+      },
+      {
+        "english": "I figured out where the bug was.",
+        "korean": "버그가 어디 있는지 알아냈어."
+      },
+      {
+        "english": "I figured it out after a lot of trial and error.",
+        "korean": "시행착오 끝에 알아냈어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "what-i-did-was",
+      "i-realized"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "process",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 60,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "actually",
+    "rank": 105,
+    "speakingIntent": "정정하거나 강조하고 싶을 때",
+    "familyId": "actually",
+    "familyLabel": "Actually ...",
+    "parentPatternId": null,
+    "pattern": "Actually, [SENTENCE].",
+    "koreanMeaning": "사실, ~해.",
+    "speakingFunction": "상대의 생각을 정정하거나 예상 밖의 사실을 강조할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it's already fixed",
+          "that's not quite right",
+          "I disagree"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "Actually, it's already fixed.",
+        "korean": "사실, 이미 고쳐졌어."
+      },
+      {
+        "english": "Actually, that's not quite right.",
+        "korean": "사실, 그게 좀 맞지 않아."
+      },
+      {
+        "english": "Actually, I disagree.",
+        "korean": "사실, 난 동의하지 않아."
+      },
+      {
+        "english": "Actually, we tried that already.",
+        "korean": "사실, 그건 이미 해봤어."
+      },
+      {
+        "english": "Actually, this is more common than you'd think.",
+        "korean": "사실, 이건 생각보다 흔해."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "to-be-honest"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "discourse",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 60,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "to-be-honest",
+    "rank": 106,
+    "speakingIntent": "정정하거나 강조하고 싶을 때",
+    "familyId": "actually",
+    "familyLabel": "Actually ...",
+    "parentPatternId": null,
+    "pattern": "To be honest, [SENTENCE].",
+    "koreanMeaning": "솔직히, ~해.",
+    "speakingFunction": "솔직한 의견을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "I'm not sure this will work",
+          "I didn't expect this",
+          "I think we should reconsider"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "To be honest, I'm not sure this will work.",
+        "korean": "솔직히, 이게 될지 잘 모르겠어."
+      },
+      {
+        "english": "To be honest, I didn't expect this.",
+        "korean": "솔직히, 이건 예상 못 했어."
+      },
+      {
+        "english": "To be honest, I think we should reconsider.",
+        "korean": "솔직히, 다시 생각해봐야 할 것 같아."
+      },
+      {
+        "english": "To be honest, it's not my favorite approach.",
+        "korean": "솔직히, 내가 제일 선호하는 방법은 아니야."
+      },
+      {
+        "english": "To be honest, I was a bit surprised.",
+        "korean": "솔직히, 좀 놀랐어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "actually"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "discourse"
+    ],
+    "difficulty": 1,
+    "priority": 40,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "what-time-works-for-you",
+    "rank": 107,
+    "speakingIntent": "일정을 조율하고 싶을 때",
+    "familyId": "what-time-works-for-you",
+    "familyLabel": "What time works for you ...",
+    "parentPatternId": null,
+    "pattern": "What time works for you?",
+    "koreanMeaning": "몇 시가 괜찮아?",
+    "speakingFunction": "상대방의 가능한 시간을 물어볼 때",
+    "description": null,
+    "slots": [],
+    "examples": [
+      {
+        "english": "What time works for you tomorrow?",
+        "korean": "내일 몇 시가 괜찮아?"
+      },
+      {
+        "english": "What time works for you this week?",
+        "korean": "이번 주에 몇 시가 괜찮아?"
+      },
+      {
+        "english": "What time works for you on Friday?",
+        "korean": "금요일에 몇 시가 괜찮아?"
+      },
+      {
+        "english": "What time works for you for a quick call?",
+        "korean": "짧은 통화하기엔 몇 시가 괜찮아?"
+      },
+      {
+        "english": "What time works for you next Monday?",
+        "korean": "다음 주 월요일에 몇 시가 괜찮아?"
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "that-time-works-for-me",
+      "i-have-a-conflict-at"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "scheduling",
+      "work"
+    ],
+    "difficulty": 1,
+    "priority": 45,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "that-time-works-for-me",
+    "rank": 108,
+    "speakingIntent": "일정을 조율하고 싶을 때",
+    "familyId": "what-time-works-for-you",
+    "familyLabel": "What time works for you ...",
+    "parentPatternId": null,
+    "pattern": "[TIME] works for me.",
+    "koreanMeaning": "그 시간 괜찮아.",
+    "speakingFunction": "제안받은 시간이 괜찮다고 답할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TIME",
+        "type": "free",
+        "examples": [
+          "3pm",
+          "Tuesday morning",
+          "right after lunch"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "3pm works for me.",
+        "korean": "오후 3시 괜찮아."
+      },
+      {
+        "english": "Tuesday morning works for me.",
+        "korean": "화요일 오전 괜찮아."
+      },
+      {
+        "english": "Right after lunch works for me.",
+        "korean": "점심 직후 괜찮아."
+      },
+      {
+        "english": "Any time after 2 works for me.",
+        "korean": "2시 이후면 아무 때나 괜찮아."
+      },
+      {
+        "english": "That works for me.",
+        "korean": "그거 괜찮아."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "what-time-works-for-you"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "scheduling",
+      "work"
+    ],
+    "difficulty": 1,
+    "priority": 35,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-have-a-conflict-at",
+    "rank": 109,
+    "speakingIntent": "일정을 조율하고 싶을 때",
+    "familyId": "what-time-works-for-you",
+    "familyLabel": "What time works for you ...",
+    "parentPatternId": null,
+    "pattern": "I have a conflict at [TIME].",
+    "koreanMeaning": "그 시간엔 다른 일정이 있어.",
+    "speakingFunction": "제안받은 시간에 다른 일정이 있다고 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TIME",
+        "type": "free",
+        "examples": [
+          "that time",
+          "10am",
+          "the same time"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I have a conflict at that time.",
+        "korean": "그 시간엔 다른 일정이 있어."
+      },
+      {
+        "english": "I have a conflict at 10am.",
+        "korean": "오전 10시엔 다른 일정이 있어."
+      },
+      {
+        "english": "I have a conflict at the same time.",
+        "korean": "같은 시간에 다른 일정이 있어."
+      },
+      {
+        "english": "I have a conflict, can we do it later?",
+        "korean": "다른 일정이 있는데, 나중에 할 수 있을까?"
+      },
+      {
+        "english": "I have a conflict tomorrow morning.",
+        "korean": "내일 아침엔 다른 일정이 있어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "what-time-works-for-you",
+      "that-time-works-for-me"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "scheduling",
+      "work"
+    ],
+    "difficulty": 1,
+    "priority": 30,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-cant-believe",
+    "rank": 110,
+    "speakingIntent": "놀라움이나 감탄을 말하고 싶을 때",
+    "familyId": "i-cant-believe",
+    "familyLabel": "I can't believe ...",
+    "parentPatternId": null,
+    "pattern": "I can't believe [SENTENCE].",
+    "koreanMeaning": "~라니 믿기지 않아.",
+    "speakingFunction": "놀랍거나 믿기 힘든 상황을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it actually worked",
+          "we missed that",
+          "this took so long"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I can't believe it actually worked.",
+        "korean": "이게 실제로 됐다니 믿기지 않아."
+      },
+      {
+        "english": "I can't believe we missed that.",
+        "korean": "우리가 그걸 놓쳤다니 믿기지 않아."
+      },
+      {
+        "english": "I can't believe this took so long.",
+        "korean": "이게 이렇게 오래 걸렸다니 믿기지 않아."
+      },
+      {
+        "english": "I can't believe nobody noticed.",
+        "korean": "아무도 눈치 못 챘다니 믿기지 않아."
+      },
+      {
+        "english": "I can't believe how simple the fix was.",
+        "korean": "해결책이 이렇게 간단했다니 믿기지 않아."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-surprised",
+      "im-glad"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "emotion",
+      "core"
+    ],
+    "difficulty": 1,
+    "priority": 40,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-glad",
+    "rank": 111,
+    "speakingIntent": "놀라움이나 감탄을 말하고 싶을 때",
+    "familyId": "i-cant-believe",
+    "familyLabel": "I can't believe ...",
+    "parentPatternId": null,
+    "pattern": "I'm glad [SENTENCE].",
+    "koreanMeaning": "~해서 기뻐/다행이야.",
+    "speakingFunction": "긍정적인 감정을 표현할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we caught this early",
+          "you asked",
+          "it worked out"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm glad we caught this early.",
+        "korean": "이걸 일찍 발견해서 다행이야."
+      },
+      {
+        "english": "I'm glad you asked.",
+        "korean": "물어봐줘서 기뻐."
+      },
+      {
+        "english": "I'm glad it worked out.",
+        "korean": "잘 돼서 다행이야."
+      },
+      {
+        "english": "I'm glad we didn't rush it.",
+        "korean": "서두르지 않아서 다행이야."
+      },
+      {
+        "english": "I'm glad to hear that.",
+        "korean": "그 말 들으니 기뻐."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-cant-believe"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "emotion"
+    ],
+    "difficulty": 1,
+    "priority": 35,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-surprised",
+    "rank": 112,
+    "speakingIntent": "놀라움이나 감탄을 말하고 싶을 때",
+    "familyId": "i-cant-believe",
+    "familyLabel": "I can't believe ...",
+    "parentPatternId": null,
+    "pattern": "I'm surprised [SENTENCE].",
+    "koreanMeaning": "~라서 놀랐어.",
+    "speakingFunction": "예상 밖의 일에 놀랐음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "it broke again",
+          "they agreed so fast",
+          "nobody mentioned it"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm surprised it broke again.",
+        "korean": "또 고장 나서 놀랐어."
+      },
+      {
+        "english": "I'm surprised they agreed so fast.",
+        "korean": "그들이 그렇게 빨리 동의해서 놀랐어."
+      },
+      {
+        "english": "I'm surprised nobody mentioned it.",
+        "korean": "아무도 언급 안 해서 놀랐어."
+      },
+      {
+        "english": "I'm surprised how well this went.",
+        "korean": "이게 이렇게 잘 됐다는 게 놀라워."
+      },
+      {
+        "english": "I'm surprised you remember that.",
+        "korean": "네가 그걸 기억한다는 게 놀라워."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-cant-believe"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "emotion"
+    ],
+    "difficulty": 1,
+    "priority": 30,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-cant-help-v-ing",
+    "rank": 113,
+    "speakingIntent": "저절로 그렇게 된다고 말하고 싶을 때",
+    "familyId": "i-cant-help",
+    "familyLabel": "I can't help ...",
+    "parentPatternId": null,
+    "pattern": "I can't help [V-ing].",
+    "koreanMeaning": "~하지 않을 수가 없어.",
+    "speakingFunction": "의지와 상관없이 자꾸 그렇게 되는 것을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "V-ing",
+        "type": "verb",
+        "examples": [
+          "thinking about it",
+          "feeling a bit nervous",
+          "wondering why"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I can't help thinking about it.",
+        "korean": "그것에 대해 생각하지 않을 수가 없어."
+      },
+      {
+        "english": "I can't help feeling a bit nervous.",
+        "korean": "좀 긴장되지 않을 수가 없어."
+      },
+      {
+        "english": "I can't help wondering why.",
+        "korean": "왜 그런지 궁금하지 않을 수가 없어."
+      },
+      {
+        "english": "I can't help comparing it to the old version.",
+        "korean": "옛날 버전과 비교하지 않을 수가 없어."
+      },
+      {
+        "english": "I can't help noticing the pattern.",
+        "korean": "그 패턴을 눈치채지 않을 수가 없어."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-keep-v-ing"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "emotion",
+      "habit"
+    ],
+    "difficulty": 3,
+    "priority": 30,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-keep-v-ing",
+    "rank": 114,
+    "speakingIntent": "저절로 그렇게 된다고 말하고 싶을 때",
+    "familyId": "i-cant-help",
+    "familyLabel": "I can't help ...",
+    "parentPatternId": null,
+    "pattern": "I keep [V-ing].",
+    "koreanMeaning": "자꾸 ~하게 돼.",
+    "speakingFunction": "의도치 않게 반복되는 행동을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "V-ing",
+        "type": "verb",
+        "examples": [
+          "forgetting this",
+          "making the same mistake",
+          "getting distracted"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I keep forgetting this.",
+        "korean": "자꾸 이걸 잊어버려."
+      },
+      {
+        "english": "I keep making the same mistake.",
+        "korean": "자꾸 같은 실수를 해."
+      },
+      {
+        "english": "I keep getting distracted.",
+        "korean": "자꾸 집중이 흐트러져."
+      },
+      {
+        "english": "I keep checking my phone.",
+        "korean": "자꾸 폰을 확인하게 돼."
+      },
+      {
+        "english": "I keep coming back to this idea.",
+        "korean": "자꾸 이 아이디어로 돌아오게 돼."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-cant-help-v-ing"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "habit"
+    ],
+    "difficulty": 2,
+    "priority": 40,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "whats-the-status-of",
+    "rank": 115,
+    "speakingIntent": "진행 상황을 확인하고 싶을 때",
+    "familyId": "whats-the-status-of",
+    "familyLabel": "What's the status of ...?",
+    "parentPatternId": null,
+    "pattern": "What's the status of [TOPIC]?",
+    "koreanMeaning": "~는 어떻게 돼가?",
+    "speakingFunction": "특정 작업의 진행 상황을 물어볼 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the deployment",
+          "your part",
+          "the review"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "What's the status of the deployment?",
+        "korean": "배포는 어떻게 돼가?"
+      },
+      {
+        "english": "What's the status of your part?",
+        "korean": "네 파트는 어떻게 돼가?"
+      },
+      {
+        "english": "What's the status of the review?",
+        "korean": "리뷰는 어떻게 돼가?"
+      },
+      {
+        "english": "What's the status of the migration?",
+        "korean": "마이그레이션은 어떻게 돼가?"
+      },
+      {
+        "english": "What's the status of that ticket?",
+        "korean": "그 티켓은 어떻게 돼가?"
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "hows-it-going-with"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "work",
+      "status"
+    ],
+    "difficulty": 1,
+    "priority": 50,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "hows-it-going-with",
+    "rank": 116,
+    "speakingIntent": "진행 상황을 확인하고 싶을 때",
+    "familyId": "whats-the-status-of",
+    "familyLabel": "What's the status of ...?",
+    "parentPatternId": null,
+    "pattern": "How's it going with [TOPIC]?",
+    "koreanMeaning": "~는 잘 돼가?",
+    "speakingFunction": "진행 상황을 좀 더 캐주얼하게 물어볼 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "the new feature",
+          "the client",
+          "your side of things"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "How's it going with the new feature?",
+        "korean": "새 기능은 잘 돼가?"
+      },
+      {
+        "english": "How's it going with the client?",
+        "korean": "고객 쪽은 잘 돼가?"
+      },
+      {
+        "english": "How's it going with your side of things?",
+        "korean": "네 쪽은 잘 돼가?"
+      },
+      {
+        "english": "How's it going with the hiring?",
+        "korean": "채용은 잘 돼가?"
+      },
+      {
+        "english": "How's it going with the refactor?",
+        "korean": "리팩터링은 잘 돼가?"
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "whats-the-status-of"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "work",
+      "status"
+    ],
+    "difficulty": 1,
+    "priority": 35,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "i-cant-wait-to",
+    "rank": 117,
+    "speakingIntent": "기대감을 말하고 싶을 때",
+    "familyId": "i-cant-wait-to",
+    "familyLabel": "I can't wait to ...",
+    "parentPatternId": null,
+    "pattern": "I can't wait to [ACTION].",
+    "koreanMeaning": "~하는 게 너무 기대돼.",
+    "speakingFunction": "무언가를 몹시 기대하고 있음을 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "ACTION",
+        "type": "verb",
+        "examples": [
+          "see the results",
+          "try the new version",
+          "show you this"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I can't wait to see the results.",
+        "korean": "결과 보는 게 너무 기대돼."
+      },
+      {
+        "english": "I can't wait to try the new version.",
+        "korean": "새 버전 써보는 게 너무 기대돼."
+      },
+      {
+        "english": "I can't wait to show you this.",
+        "korean": "이거 보여주는 게 너무 기대돼."
+      },
+      {
+        "english": "I can't wait to get started.",
+        "korean": "시작하는 게 너무 기대돼."
+      },
+      {
+        "english": "I can't wait for the weekend.",
+        "korean": "주말이 너무 기대돼."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "im-looking-forward-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "emotion",
+      "future"
+    ],
+    "difficulty": 1,
+    "priority": 35,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "im-looking-forward-to",
+    "rank": 118,
+    "speakingIntent": "기대감을 말하고 싶을 때",
+    "familyId": "i-cant-wait-to",
+    "familyLabel": "I can't wait to ...",
+    "parentPatternId": null,
+    "pattern": "I'm looking forward to [TOPIC].",
+    "koreanMeaning": "~가 기대돼.",
+    "speakingFunction": "좀 더 격식 있게 기대감을 표현할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "TOPIC",
+        "type": "topic",
+        "examples": [
+          "working with you",
+          "the next release",
+          "hearing your feedback"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "I'm looking forward to working with you.",
+        "korean": "함께 일하게 돼서 기대돼."
+      },
+      {
+        "english": "I'm looking forward to the next release.",
+        "korean": "다음 릴리스가 기대돼."
+      },
+      {
+        "english": "I'm looking forward to hearing your feedback.",
+        "korean": "네 피드백을 듣는 게 기대돼."
+      },
+      {
+        "english": "I'm looking forward to seeing how this turns out.",
+        "korean": "이게 어떻게 될지 기대돼."
+      },
+      {
+        "english": "I'm looking forward to next week.",
+        "korean": "다음 주가 기대돼."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "i-cant-wait-to"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "emotion",
+      "future",
+      "work"
+    ],
+    "difficulty": 1,
+    "priority": 30,
+    "datasetVersion": "1.3",
+    "sourceType": "curated-speaking-pattern-core"
+  },
+  {
+    "id": "what-im-trying-to-say-is",
+    "rank": 119,
+    "speakingIntent": "설명을 자연스럽게 이어가고 싶을 때",
+    "familyId": "the-thing-is",
+    "familyLabel": "The thing is ...",
+    "parentPatternId": null,
+    "pattern": "What I'm trying to say is, [SENTENCE].",
+    "koreanMeaning": "내가 하려는 말은, ~야.",
+    "speakingFunction": "복잡한 설명을 명확히 정리해서 말할 때",
+    "description": null,
+    "slots": [
+      {
+        "key": "SENTENCE",
+        "type": "clause",
+        "examples": [
+          "we need a different strategy",
+          "this isn't anyone's fault",
+          "we should talk in person"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "english": "What I'm trying to say is, we need a different strategy.",
+        "korean": "내가 하려는 말은, 다른 전략이 필요하다는 거야."
+      },
+      {
+        "english": "What I'm trying to say is, this isn't anyone's fault.",
+        "korean": "내가 하려는 말은, 이게 누구 잘못도 아니라는 거야."
+      },
+      {
+        "english": "What I'm trying to say is, we should talk in person.",
+        "korean": "내가 하려는 말은, 직접 만나서 얘기해야 한다는 거야."
+      },
+      {
+        "english": "What I'm trying to say is, it's more nuanced than that.",
+        "korean": "내가 하려는 말은, 그것보다 좀 더 복잡하다는 거야."
+      },
+      {
+        "english": "What I'm trying to say is, thank you.",
+        "korean": "내가 하려는 말은, 고맙다는 거야."
+      }
+    ],
+    "expansions": null,
+    "relatedPatternIds": [
+      "the-thing-is",
+      "what-i-mean-is"
+    ],
+    "contrastPatternIds": [],
+    "tags": [
+      "discourse"
+    ],
+    "difficulty": 2,
+    "priority": 35,
+    "datasetVersion": "1.3",
     "sourceType": "curated-speaking-pattern-core"
   }
 ]

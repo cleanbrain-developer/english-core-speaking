@@ -1,7 +1,7 @@
 {
   "dataset": "Speaking Pattern Core",
-  "version": "1.2",
-  "total": 96,
+  "version": "1.3",
+  "total": 119,
   "families": {
     "it-was": 21,
     "i-think": 4,
@@ -17,7 +17,7 @@
     "it-seems-like": 3,
     "im-not-sure-if": 4,
     "for-example": 3,
-    "the-thing-is": 3,
+    "the-thing-is": 4,
     "i-decided-to": 3,
     "i-tried-to": 3,
     "i-remember": 4,
@@ -26,7 +26,16 @@
     "its-getting": 2,
     "in-my-case": 2,
     "i-feel-like": 2,
-    "what-do-you-mean": 2
+    "what-do-you-mean": 2,
+    "im-interested-in": 2,
+    "i-realized": 3,
+    "what-i-did-was": 3,
+    "actually": 2,
+    "what-time-works-for-you": 3,
+    "i-cant-believe": 3,
+    "i-cant-help": 2,
+    "whats-the-status-of": 2,
+    "i-cant-wait-to": 2
   },
   "intents": [
     "과거 상황을 설명하고 싶을 때",
@@ -51,7 +60,16 @@
     "지금 상황이 변하고 있다고 말하고 싶을 때",
     "내 경우를 말하고 싶을 때",
     "감정이나 직관을 말하고 싶을 때",
-    "명확히 확인하고 싶을 때"
+    "명확히 확인하고 싶을 때",
+    "관심이나 걱정을 말하고 싶을 때",
+    "깨달은 것을 말하고 싶을 때",
+    "내가 한 일을 설명하고 싶을 때",
+    "정정하거나 강조하고 싶을 때",
+    "일정을 조율하고 싶을 때",
+    "놀라움이나 감탄을 말하고 싶을 때",
+    "저절로 그렇게 된다고 말하고 싶을 때",
+    "진행 상황을 확인하고 싶을 때",
+    "기대감을 말하고 싶을 때"
   ],
-  "sha256": "9cf176a41dc0904f4be9862d8fa63a8fbd40c12f1eeaa00ecf2fc7e3475283a3"
+  "sha256": "3ab5a8b5ee2b633a57f3d713adb6d1f75ab7a70df27454af9f46023c5e924920"
 }

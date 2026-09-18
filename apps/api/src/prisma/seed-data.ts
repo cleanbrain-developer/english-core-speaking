@@ -57,7 +57,7 @@ const EXPECTED_LEARNING_ITEM_COUNTS: Record<string, number> = {
 };
 
 const EXPECTED_CHUNK_DRILL_COUNT = 100;
-const EXPECTED_SPEAKING_PATTERN_COUNT = 96;
+const EXPECTED_SPEAKING_PATTERN_COUNT = 119;
 
 export interface LearningItemSeedResult {
   total: number;
