@@ -129,11 +129,13 @@ watch(
     </section>
 
     <template v-else-if="user">
-      <section class="card">
+      <section class="profile-row">
         <img v-if="user.profileImageUrl" :src="user.profileImageUrl" alt="" class="avatar" />
-        <p>{{ user.displayName ?? user.email }}</p>
-        <p v-if="streak > 0" class="streak-badge">🔥 {{ streak }}일 연속 학습</p>
-        <button @click="auth.logout()">로그아웃</button>
+        <div class="profile-info">
+          <p class="profile-name">{{ user.displayName ?? user.email }}</p>
+          <p v-if="streak > 0" class="streak-badge">🔥 {{ streak }}일 연속</p>
+        </div>
+        <button class="ghost-btn" @click="auth.logout()">로그아웃</button>
       </section>
 
       <section v-if="summary" class="summary-card">
@@ -164,27 +166,27 @@ watch(
         </button>
       </section>
 
-      <button class="browse-btn" @click="router.push('/browse')">카테고리 / 검색으로 학습</button>
+      <button class="browse-btn ghost-btn" @click="router.push('/browse')">카테고리 / 검색으로 학습</button>
 
-      <section class="chunk-drill-card" @click="router.push('/chunk-drill')">
-        <div class="chunk-drill-heading">
-          <span class="chunk-drill-icon">🗣️</span>
+      <section class="feature-card" @click="router.push('/chunk-drill')">
+        <div class="feature-heading">
+          <span class="icon-chip">🗣️</span>
           <div>
-            <p class="chunk-drill-title">Chunk 스피킹 드릴</p>
-            <p class="chunk-drill-desc">회화에 자주 쓰이는 chunk를 쉐도잉으로 반복 연습</p>
+            <p class="feature-title">Chunk 스피킹 드릴</p>
+            <p class="feature-desc">회화에 자주 쓰이는 chunk를 쉐도잉으로 반복 연습</p>
           </div>
         </div>
-        <p v-if="chunkSummary" class="chunk-drill-stat">
+        <p v-if="chunkSummary" class="feature-stat">
           {{ chunkSummary.practicedAtLeastOnce }}/{{ chunkSummary.total }} 연습함 · 오늘 {{ chunkSummary.practicedToday }}개
         </p>
       </section>
 
-      <section class="pattern-card" @click="router.push('/speaking-patterns')">
-        <div class="chunk-drill-heading">
-          <span class="chunk-drill-icon">🧩</span>
+      <section class="feature-card" @click="router.push('/speaking-patterns')">
+        <div class="feature-heading">
+          <span class="icon-chip">🧩</span>
           <div>
-            <p class="chunk-drill-title">Speaking Pattern Core</p>
-            <p class="chunk-drill-desc">"It was difficult to ..." 같은 문장 골격을 통째로 익혀서 바로 발화</p>
+            <p class="feature-title">Speaking Pattern Core</p>
+            <p class="feature-desc">"It was difficult to ..." 같은 문장 골격을 통째로 익혀서 바로 발화</p>
           </div>
         </div>
         <button
@@ -226,10 +228,18 @@ watch(
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
-  padding: 2rem 1rem;
+  gap: 1.1rem;
+  padding: 2.5rem 1rem;
   max-width: 480px;
   margin: 0 auto;
+}
+.page h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.5rem;
+  color: #eafff2;
+  text-shadow: 0 0 18px rgba(0, 255, 65, 0.25);
 }
 .card {
   width: 100%;
@@ -239,23 +249,63 @@ watch(
   gap: 0.75rem;
   text-align: center;
 }
+
+/* Every card below shares the same "glass" surface recipe: a soft neutral
+   tint lifted off the black background with a shadow, not a saturated
+   color fill. Green is reserved for accents (icon chips, key numbers,
+   borders, the one primary CTA), not whole-surface fills -- that's what
+   read as flat/cheap at the previous heavier rgba(0,255,65,0.15) fill. */
+.profile-row {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 1.1rem;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
 .avatar {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  border: 2px solid rgba(0, 255, 65, 0.4);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.2);
+  flex-shrink: 0;
+}
+.profile-info {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+.profile-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .error {
   color: #f87171;
 }
 .streak-badge {
-  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  margin: 0.3rem 0 0;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  font-size: 0.72rem;
   font-weight: 600;
-  color: #f59e0b;
-  margin: 0;
+  color: #fbbf24;
 }
 .account-footer {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
@@ -273,15 +323,15 @@ watch(
 }
 .privacy-note {
   font-size: 0.7rem;
-  opacity: 0.65;
-  line-height: 1.4;
+  opacity: 0.6;
+  line-height: 1.5;
   max-width: 320px;
 }
 .intro {
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 340px;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 .google-btn {
   display: inline-block;
@@ -293,121 +343,139 @@ watch(
   text-decoration: none;
   font-weight: 600;
 }
-button {
-  padding: 0.6rem 1.2rem;
+
+/* Ghost/secondary buttons: thin border, no fill -- reserves solid green
+   fill + glow for the one truly primary action (⚡ 빠른 연습 시작). */
+.ghost-btn {
+  padding: 0.55rem 1.1rem;
   border-radius: 999px;
-  border: 1px solid #00ff41;
+  border: 1px solid rgba(0, 255, 65, 0.4);
   background: transparent;
-  color: inherit;
+  color: rgba(234, 255, 242, 0.9);
+  font-size: 0.8rem;
+  font-weight: 500;
   cursor: pointer;
 }
 .summary-card {
   width: 100%;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 14px;
-  padding: 1rem 0.5rem;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  padding: 1.1rem 0.5rem;
 }
 .summary-stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.15rem;
+  gap: 0.2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+.summary-stat:first-child {
+  border-left: none;
 }
 .summary-stat strong {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #eafff2;
 }
 .summary-stat span {
-  font-size: 0.7rem;
-  opacity: 0.7;
+  font-size: 0.68rem;
+  opacity: 0.6;
 }
 .mode-grid {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
+  gap: 0.7rem;
 }
 .mode-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.35rem;
+  gap: 0.3rem;
   padding: 1rem;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 2px solid rgba(0, 255, 65, 0.5);
   border-radius: 14px;
-  background: rgba(0, 255, 65, 0.15);
-  border: 1px solid rgba(0, 255, 65, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   text-align: left;
+  color: inherit;
+  cursor: pointer;
 }
 .mode-label {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .mode-desc {
-  font-size: 0.75rem;
-  opacity: 0.75;
+  font-size: 0.72rem;
+  opacity: 0.65;
+  line-height: 1.4;
 }
 .browse-btn {
   width: 100%;
 }
-.chunk-drill-card {
+.feature-card {
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem;
-  border-radius: 14px;
-  background: rgba(0, 255, 65, 0.15);
-  border: 1px solid rgba(0, 255, 65, 0.45);
+  gap: 0.6rem;
+  padding: 1.1rem;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   text-align: left;
 }
-.chunk-drill-heading {
+.feature-heading {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
-.chunk-drill-icon {
-  font-size: 1.5rem;
-}
-.chunk-drill-title {
-  font-weight: 700;
-  margin: 0;
-}
-.chunk-drill-desc {
-  font-size: 0.75rem;
-  opacity: 0.75;
-  margin: 0.15rem 0 0;
-}
-.chunk-drill-stat {
-  font-size: 0.75rem;
-  opacity: 0.7;
-  margin: 0;
-}
-.pattern-card {
-  width: 100%;
-  box-sizing: border-box;
+.icon-chip {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem;
-  border-radius: 14px;
-  background: rgba(0, 255, 65, 0.15);
-  border: 1px solid rgba(0, 255, 65, 0.45);
-  cursor: pointer;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid rgba(0, 255, 65, 0.25);
+  font-size: 1.3rem;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0;
+}
+.feature-desc {
+  font-size: 0.75rem;
+  opacity: 0.65;
+  line-height: 1.4;
+  margin: 0.2rem 0 0;
+}
+.feature-stat {
+  font-size: 0.72rem;
+  opacity: 0.55;
+  margin: 0;
 }
 .pattern-quick-start {
   align-self: flex-start;
   padding: 0.45rem 1rem;
   border-radius: 999px;
-  border: 1px solid #00ff41;
-  background: rgba(0, 255, 65, 0.25);
-  color: inherit;
+  border: none;
+  background: #00ff41;
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.45);
+  color: #04120a;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 </style>
