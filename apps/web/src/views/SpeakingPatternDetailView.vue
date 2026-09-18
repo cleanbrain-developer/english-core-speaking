@@ -2,6 +2,7 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useSpeakingPatternStore } from '../stores/speakingPattern';
+import type { DrillMode } from '../stores/speakingPattern';
 import { speak } from '../composables/useSpeech';
 
 const route = useRoute();
@@ -59,9 +60,16 @@ async function toggleFavorite() {
   }
 }
 
-function startDrill(mode: 'slot' | 'cue') {
+const RANDOM_SLOT_ROUNDS = 5;
+
+function startDrill(mode: DrillMode) {
   if (!store.detail) return;
-  store.startDrill([store.detail], mode);
+  // Random Slot re-rolls its slot values every round (see
+  // SpeakingPatternDrillView's watch on drillIndex), so repeating the same
+  // pattern several times gives genuinely different combinations to
+  // practice instead of a single one-off round.
+  const items = mode === 'random-slot' ? Array(RANDOM_SLOT_ROUNDS).fill(store.detail) : [store.detail];
+  store.startDrill(items, mode);
   router.push('/speaking-patterns/drill');
 }
 
@@ -176,6 +184,13 @@ function startExpansionDrill() {
           @click="startDrill('slot')"
         >
           Slot 연습
+        </button>
+        <button
+          v-if="store.detail.slots.length > 0"
+          class="drill-cta random"
+          @click="startDrill('random-slot')"
+        >
+          🎲 Random Slot
         </button>
         <button class="drill-cta cue" @click="startDrill('cue')">한국어 cue 연습</button>
       </footer>
@@ -353,21 +368,26 @@ function startExpansionDrill() {
 }
 .drill-bar {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   position: sticky;
   bottom: 0;
   padding-top: 0.5rem;
 }
 .drill-cta {
-  flex: 1;
-  padding: 0.8rem;
+  flex: 1 1 30%;
+  min-width: 6.5rem;
+  padding: 0.75rem 0.5rem;
   border-radius: 999px;
   border: none;
   background: #f97316;
   color: white;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   cursor: pointer;
+}
+.drill-cta.random {
+  background: #c2410c;
 }
 .drill-cta.cue {
   background: #ea580c;

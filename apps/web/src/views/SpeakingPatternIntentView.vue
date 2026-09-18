@@ -46,6 +46,9 @@ function openIntent(intent: string) {
       <button class="quick-link" @click="router.push('/speaking-patterns/list?view=review')">
         📌 복습 필요
       </button>
+      <button class="quick-link" @click="router.push('/speaking-patterns/free-speaking')">
+        🗣️ Free Speaking
+      </button>
     </div>
 
     <div v-if="loading" class="center">불러오는 중...</div>
@@ -113,16 +116,18 @@ function openIntent(intent: string) {
 }
 .quick-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .quick-link {
-  flex: 1;
-  padding: 0.6rem;
+  flex: 1 1 28%;
+  min-width: 6rem;
+  padding: 0.6rem 0.4rem;
   border-radius: 999px;
   border: 1px solid rgba(249, 115, 22, 0.5);
   background: rgba(249, 115, 22, 0.08);
   color: inherit;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
 }

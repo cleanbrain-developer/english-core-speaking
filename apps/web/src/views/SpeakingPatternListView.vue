@@ -2,6 +2,7 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useSpeakingPatternStore } from '../stores/speakingPattern';
+import type { DrillMode } from '../stores/speakingPattern';
 import { speakingIntentLabel } from '../constants/speakingIntent';
 import type { SpeakingPatternDto } from '../api/types';
 
@@ -78,7 +79,7 @@ const emptyMessage = computed(() => {
   return '패턴이 없습니다.';
 });
 
-function startFullDrill(mode: 'slot' | 'cue') {
+function startFullDrill(mode: DrillMode) {
   const pool = displayedPatterns.value;
   if (pool.length === 0) return;
   const items = drillSize.value === 'all' ? pool : pool.slice(0, drillSize.value);
@@ -112,6 +113,7 @@ function startFullDrill(mode: 'slot' | 'cue') {
         </div>
         <div class="drill-actions">
           <button class="drill-cta slot" @click="startFullDrill('slot')">Slot 연습</button>
+          <button class="drill-cta random" @click="startFullDrill('random-slot')">🎲 Random Slot</button>
           <button class="drill-cta cue" @click="startFullDrill('cue')">한국어 cue 연습</button>
         </div>
       </div>
@@ -215,17 +217,19 @@ function startFullDrill(mode: 'slot' | 'cue') {
 }
 .drill-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .drill-cta {
-  flex: 1;
-  padding: 0.7rem;
+  flex: 1 1 30%;
+  min-width: 6.5rem;
+  padding: 0.7rem 0.4rem;
   border-radius: 999px;
   border: 1px solid #f97316;
   background: rgba(249, 115, 22, 0.15);
   color: inherit;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   cursor: pointer;
 }
 .family-group {

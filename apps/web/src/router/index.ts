@@ -8,6 +8,7 @@ import SpeakingPatternListView from '../views/SpeakingPatternListView.vue';
 import SpeakingPatternDetailView from '../views/SpeakingPatternDetailView.vue';
 import SpeakingPatternDrillView from '../views/SpeakingPatternDrillView.vue';
 import SpeakingPatternExpansionDrillView from '../views/SpeakingPatternExpansionDrillView.vue';
+import SpeakingPatternFreeSpeakingView from '../views/SpeakingPatternFreeSpeakingView.vue';
 import { useAuthStore } from '../stores/auth';
 
 export const router = createRouter({
@@ -45,6 +46,12 @@ export const router = createRouter({
       path: '/speaking-patterns/drill/expansion/:id',
       name: 'speaking-pattern-expansion-drill',
       component: SpeakingPatternExpansionDrillView,
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/speaking-patterns/free-speaking',
+      name: 'speaking-pattern-free-speaking',
+      component: SpeakingPatternFreeSpeakingView,
       meta: { requiresAuth: true },
     },
   ],

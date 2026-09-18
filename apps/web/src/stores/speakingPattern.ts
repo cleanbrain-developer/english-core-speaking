@@ -7,7 +7,7 @@ import type {
   SpeakingPatternListResponseDto,
 } from '../api/types';
 
-export type DrillMode = 'slot' | 'cue';
+export type DrillMode = 'slot' | 'cue' | 'random-slot';
 
 export const useSpeakingPatternStore = defineStore('speakingPattern', {
   state: () => ({

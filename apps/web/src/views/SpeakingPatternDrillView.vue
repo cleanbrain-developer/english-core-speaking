@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useRouter } from 'vue-router';
 import { useSpeakingPatternStore } from '../stores/speakingPattern';
 import { speak } from '../composables/useSpeech';
+import type { PatternSlotDto } from '../api/types';
 
 const router = useRouter();
 const store = useSpeakingPatternStore();
@@ -48,10 +49,50 @@ function pickSlotExample(value: string) {
 async function onNext() {
   revealed.value = false;
   filledSentence.value = null;
+  randomRevealed.value = false;
   await store.nextDrillItem();
 }
 
 const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
+
+const modeLabel = computed(() => {
+  if (drillMode.value === 'cue') return '🇰🇷 Korean Cue';
+  if (drillMode.value === 'random-slot') return '🎲 Random Slot';
+  return '🧩 Slot Replacement';
+});
+
+// Drill 4 (Random Slot): unlike Slot Replacement (which drills one chosen
+// slot and auto-fills the rest), every slot gets a random value picked for
+// the learner to combine themselves -- they see "ADJECTIVE: hard /
+// ACTION: explain the issue" and have to produce "It was hard to explain
+// the issue." on their own before revealing. Re-rolled whenever the drill
+// moves to a new card (including repeats of the same pattern, e.g. the
+// Detail page's 5-round single-pattern drill), not on every render.
+const randomRevealed = ref(false);
+const randomChoices = ref<Array<{ slot: PatternSlotDto; value: string }>>([]);
+
+function rollRandomSlots() {
+  const item = currentDrillItem.value;
+  randomChoices.value =
+    item?.slots
+      .filter((slot) => slot.examples && slot.examples.length > 0)
+      .map((slot) => ({
+        slot,
+        value: slot.examples![Math.floor(Math.random() * slot.examples!.length)],
+      })) ?? [];
+}
+
+watch(drillIndex, rollRandomSlots, { immediate: true });
+
+const randomFilledSentence = computed(() => {
+  const item = currentDrillItem.value;
+  if (!item) return '';
+  let result = item.pattern;
+  for (const { slot, value } of randomChoices.value) {
+    result = result.replace(`[${slot.key}]`, value);
+  }
+  return result;
+});
 </script>
 
 <template>
@@ -80,7 +121,7 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
 
     <template v-else-if="currentDrillItem">
       <section class="card-area">
-        <p class="mode-badge">{{ drillMode === 'slot' ? '🧩 Slot Replacement' : '🇰🇷 Korean Cue' }}</p>
+        <p class="mode-badge">{{ modeLabel }}</p>
 
         <template v-if="drillMode === 'cue'">
           <div class="card">
@@ -95,7 +136,25 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
           </div>
         </template>
 
-        <template v-else-if="firstSlot?.examples?.length">
+        <template v-else-if="drillMode === 'random-slot' && randomChoices.length > 0">
+          <div class="card">
+            <p class="korean-cue small">{{ currentDrillItem.koreanMeaning }}</p>
+            <p class="pattern-text">{{ currentDrillItem.pattern }}</p>
+            <p class="instruction">아래 단어를 넣어서 문장을 완성해 소리 내어 말해보세요.</p>
+            <div class="random-slot-hints">
+              <p v-for="c in randomChoices" :key="c.slot.key" class="random-slot-hint">
+                <span class="slot-key-badge">{{ c.slot.key }}</span> {{ c.value }}
+              </p>
+            </div>
+            <template v-if="randomRevealed">
+              <p class="filled-preview">{{ randomFilledSentence }}</p>
+              <button class="icon-btn" aria-label="발음 듣기" @click="speak(randomFilledSentence)">🔊</button>
+            </template>
+            <button v-else class="reveal-btn" @click="randomRevealed = true">정답 확인</button>
+          </div>
+        </template>
+
+        <template v-else-if="drillMode === 'slot' && firstSlot?.examples?.length">
           <div class="card">
             <p class="korean-cue small">{{ currentDrillItem.koreanMeaning }}</p>
             <p class="pattern-text">{{ currentDrillItem.pattern }}</p>
@@ -111,10 +170,11 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
         </template>
 
         <!-- A handful of patterns (e.g. "What time works for you?") are fixed
-             chunks with no swappable slot -- a full-drill session that mixes
-             families can still land on one of these even though the Slot
-             drill CTA is hidden for them on the detail page. Fall back to a
-             plain repeat-after-me card instead of an empty slot-chip area. -->
+             chunks with no swappable slot -- a full-drill session (Slot or
+             Random Slot mode) can still land on one of these even though the
+             Slot/Random Slot CTAs are hidden for them on the detail page.
+             Fall back to a plain repeat-after-me card instead of an empty
+             slot area. -->
         <template v-else>
           <div class="card">
             <p class="korean-cue small">{{ currentDrillItem.koreanMeaning }}</p>
@@ -244,6 +304,26 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
   color: inherit;
   font-size: 0.85rem;
   cursor: pointer;
+}
+.random-slot-hints {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.random-slot-hint {
+  margin: 0;
+  font-size: 1rem;
+}
+.slot-key-badge {
+  display: inline-block;
+  min-width: 3.5rem;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(249, 115, 22, 0.2);
+  color: #f97316;
+  font-size: 0.7rem;
+  font-weight: 700;
 }
 .next-bar {
   padding: 1rem;
