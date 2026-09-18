@@ -39,14 +39,23 @@ function openIntent(intent: string) {
       매번 문장을 처음부터 조립하지 않고 바로 말할 수 있어요.
     </p>
 
+    <div class="quick-links">
+      <button class="quick-link" @click="router.push('/speaking-patterns/list?view=favorites')">
+        ⭐ 즐겨찾기
+      </button>
+      <button class="quick-link" @click="router.push('/speaking-patterns/list?view=review')">
+        📌 복습 필요
+      </button>
+    </div>
+
     <div v-if="loading" class="center">불러오는 중...</div>
     <div v-else-if="error" class="center error">
       <p>{{ error }}</p>
       <button @click="router.go(0)">다시 시도</button>
     </div>
 
-    <ul v-else class="intent-list">
-      <li v-for="item in store.intents" :key="item.speakingIntent" class="intent-row" @click="openIntent(item.speakingIntent)">
+    <ul v-else class="intent-grid">
+      <li v-for="item in store.intents" :key="item.speakingIntent" class="intent-card" @click="openIntent(item.speakingIntent)">
         <span class="intent-label">{{ speakingIntentLabel(item.speakingIntent) }}</span>
         <span class="intent-count">{{ item.total }}개</span>
       </li>
@@ -102,19 +111,37 @@ function openIntent(intent: string) {
   color: #f87171;
   opacity: 1;
 }
-.intent-list {
+.quick-links {
+  display: flex;
+  gap: 0.5rem;
+}
+.quick-link {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  background: rgba(249, 115, 22, 0.08);
+  color: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.intent-grid {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.6rem;
 }
-.intent-row {
+.intent-card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem;
+  gap: 0.5rem;
+  min-height: 4.5rem;
+  padding: 0.85rem;
   border-radius: 14px;
   background: rgba(249, 115, 22, 0.12);
   border: 1px solid rgba(249, 115, 22, 0.35);
@@ -122,10 +149,20 @@ function openIntent(intent: string) {
 }
 .intent-label {
   font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  /* Registered intents are short by convention (see constants/speakingIntent.ts),
+     but this clamps gracefully if a new family's intent is ever added without
+     a registered short label, instead of blowing up the grid. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .intent-count {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   opacity: 0.65;
+  align-self: flex-end;
 }
 button {
   padding: 0.6rem 1.2rem;

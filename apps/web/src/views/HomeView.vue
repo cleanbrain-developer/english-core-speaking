@@ -3,6 +3,7 @@ import { ref, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '../stores/auth';
+import { useSpeakingPatternStore } from '../stores/speakingPattern';
 import { googleLoginUrl } from '../api/client';
 import { apiFetch } from '../api/client';
 import type { ChunkDrillSummaryDto, ProgressCalendarResponseDto, ProgressSummaryResponseDto } from '../api/types';
@@ -10,6 +11,9 @@ import type { ChunkDrillSummaryDto, ProgressCalendarResponseDto, ProgressSummary
 const auth = useAuthStore();
 const { user, status } = storeToRefs(auth);
 const router = useRouter();
+const speakingPatternStore = useSpeakingPatternStore();
+const startingPatternDrill = ref(false);
+const patternDrillError = ref<string | null>(null);
 
 const summary = ref<ProgressSummaryResponseDto | null>(null);
 const summaryError = ref<string | null>(null);
@@ -74,6 +78,32 @@ async function loadStreak() {
     streak.value = count;
   } catch {
     streak.value = 0;
+  }
+}
+
+// One-tap entry into a Speaking Pattern Core drill from Home, instead of
+// Home -> Intent grid -> List -> Detail -> Drill (4 screens) for someone
+// who just wants to practice, not browse. Prefers the learner's own
+// favorites; falls back to the highest-priority patterns overall (the
+// dataset's own curated ordering) when there are no favorites yet.
+async function startQuickPatternDrill() {
+  if (startingPatternDrill.value) return;
+  patternDrillError.value = null;
+  startingPatternDrill.value = true;
+  try {
+    await speakingPatternStore.loadPatterns({});
+    const favorites = speakingPatternStore.patterns.filter((p) => p.favorite);
+    const pool = favorites.length > 0 ? favorites : speakingPatternStore.patterns;
+    if (pool.length === 0) {
+      patternDrillError.value = '연습할 패턴이 없습니다.';
+      return;
+    }
+    speakingPatternStore.startDrill(pool.slice(0, 5), 'cue');
+    router.push('/speaking-patterns/drill');
+  } catch (err) {
+    patternDrillError.value = err instanceof Error ? err.message : '패턴을 불러오지 못했습니다.';
+  } finally {
+    startingPatternDrill.value = false;
   }
 }
 
@@ -157,6 +187,14 @@ watch(
             <p class="chunk-drill-desc">"It was difficult to ..." 같은 문장 골격을 통째로 익혀서 바로 발화</p>
           </div>
         </div>
+        <button
+          class="pattern-quick-start"
+          :disabled="startingPatternDrill"
+          @click.stop="startQuickPatternDrill"
+        >
+          {{ startingPatternDrill ? '불러오는 중...' : '⚡ 빠른 연습 시작' }}
+        </button>
+        <p v-if="patternDrillError" class="error">{{ patternDrillError }}</p>
       </section>
 
       <footer class="account-footer">
@@ -359,5 +397,16 @@ button {
   border: 1px solid rgba(249, 115, 22, 0.45);
   cursor: pointer;
   text-align: left;
+}
+.pattern-quick-start {
+  align-self: flex-start;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #f97316;
+  background: rgba(249, 115, 22, 0.25);
+  color: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 </style>

@@ -95,17 +95,31 @@ const firstSlot = computed(() => currentDrillItem.value?.slots[0] ?? null);
           </div>
         </template>
 
-        <template v-else>
+        <template v-else-if="firstSlot?.examples?.length">
           <div class="card">
             <p class="korean-cue small">{{ currentDrillItem.koreanMeaning }}</p>
             <p class="pattern-text">{{ currentDrillItem.pattern }}</p>
             <p class="instruction">빈칸을 채워서 소리 내어 말해보세요.</p>
             <p v-if="filledSentence" class="filled-preview">{{ filledSentence }}</p>
-            <div v-if="firstSlot?.examples?.length" class="slot-chips">
+            <div class="slot-chips">
               <button v-for="opt in firstSlot.examples" :key="opt" class="slot-chip" @click="pickSlotExample(opt)">
                 {{ opt }}
               </button>
             </div>
+            <button class="icon-btn" aria-label="원문 발음 듣기" @click="onSpeak">🔊 예문 듣기</button>
+          </div>
+        </template>
+
+        <!-- A handful of patterns (e.g. "What time works for you?") are fixed
+             chunks with no swappable slot -- a full-drill session that mixes
+             families can still land on one of these even though the Slot
+             drill CTA is hidden for them on the detail page. Fall back to a
+             plain repeat-after-me card instead of an empty slot-chip area. -->
+        <template v-else>
+          <div class="card">
+            <p class="korean-cue small">{{ currentDrillItem.koreanMeaning }}</p>
+            <p class="pattern-text">{{ currentDrillItem.pattern }}</p>
+            <p class="instruction">이 표현은 고정된 문장이에요. 그대로 소리 내어 말해보세요.</p>
             <button class="icon-btn" aria-label="원문 발음 듣기" @click="onSpeak">🔊 예문 듣기</button>
           </div>
         </template>

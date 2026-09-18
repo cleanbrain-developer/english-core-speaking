@@ -170,7 +170,13 @@ function startExpansionDrill() {
       </section>
 
       <footer class="drill-bar">
-        <button class="drill-cta slot" @click="startDrill('slot')">Slot 연습</button>
+        <button
+          v-if="store.detail.slots.length > 0"
+          class="drill-cta slot"
+          @click="startDrill('slot')"
+        >
+          Slot 연습
+        </button>
         <button class="drill-cta cue" @click="startDrill('cue')">한국어 cue 연습</button>
       </footer>
     </template>
