@@ -1007,7 +1007,24 @@
         "korean": "시스템에 문제가 있었기 때문이었어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "It was because I was tired."
+      },
+      {
+        "level": 2,
+        "pattern": "It was because I was really tired that day."
+      },
+      {
+        "level": 3,
+        "pattern": "It was because I was really tired that day and wasn't paying attention."
+      },
+      {
+        "level": 4,
+        "pattern": "It was because I was really tired that day and wasn't paying attention, so I missed the warning."
+      }
+    ],
     "relatedPatternIds": [
       "the-problem-was",
       "its-because",
@@ -1021,7 +1038,7 @@
     ],
     "difficulty": 2,
     "priority": 90,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1371,7 +1388,24 @@
         "korean": "우리가 너무 복잡하게 만드는 것 같아."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I think so."
+      },
+      {
+        "level": 2,
+        "pattern": "I think this will work."
+      },
+      {
+        "level": 3,
+        "pattern": "I think this will work if we test it first."
+      },
+      {
+        "level": 4,
+        "pattern": "I think this will work if we test it first, but I could be wrong."
+      }
+    ],
     "relatedPatternIds": [
       "i-think-its",
       "i-think-we-should",
@@ -1385,7 +1419,7 @@
     ],
     "difficulty": 1,
     "priority": 100,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -1609,7 +1643,24 @@
         "korean": "문제는 시간이 부족하다는 거야."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "The problem is timing."
+      },
+      {
+        "level": 2,
+        "pattern": "The problem is that the timing is off."
+      },
+      {
+        "level": 3,
+        "pattern": "The problem is that the timing is off because we started late."
+      },
+      {
+        "level": 4,
+        "pattern": "The problem is that the timing is off because we started late, so we're now behind schedule."
+      }
+    ],
     "relatedPatternIds": [
       "the-problem-was",
       "i-had-trouble"
@@ -1622,7 +1673,7 @@
     ],
     "difficulty": 2,
     "priority": 90,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2260,7 +2311,24 @@
         "korean": "뭐가 바뀌었는지 이해하려고 하고 있어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I'm trying to fix it."
+      },
+      {
+        "level": 2,
+        "pattern": "I'm trying to fix it before the deadline."
+      },
+      {
+        "level": 3,
+        "pattern": "I'm trying to fix it before the deadline, but it's harder than expected."
+      },
+      {
+        "level": 4,
+        "pattern": "I'm trying to fix it before the deadline, but it's harder than expected because the logs aren't clear."
+      }
+    ],
     "relatedPatternIds": [
       "im-working-on",
       "i-was-trying-to"
@@ -2273,7 +2341,7 @@
     ],
     "difficulty": 1,
     "priority": 90,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2553,7 +2621,24 @@
         "korean": "오늘 이거 끝내야 해."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I need to check this."
+      },
+      {
+        "level": 2,
+        "pattern": "I need to check this before we deploy."
+      },
+      {
+        "level": 3,
+        "pattern": "I need to check this before we deploy, so give me a few minutes."
+      },
+      {
+        "level": 4,
+        "pattern": "I need to check this before we deploy, so give me a few minutes before we move on."
+      }
+    ],
     "relatedPatternIds": [
       "i-have-to",
       "i-had-to"
@@ -2566,7 +2651,7 @@
     ],
     "difficulty": 1,
     "priority": 90,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2789,7 +2874,24 @@
         "korean": "계속 진행되게 하고 싶어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I want to understand this."
+      },
+      {
+        "level": 2,
+        "pattern": "I want to understand this better."
+      },
+      {
+        "level": 3,
+        "pattern": "I want to understand this better before I say anything."
+      },
+      {
+        "level": 4,
+        "pattern": "I want to understand this better before I say anything, so let's go over it together."
+      }
+    ],
     "relatedPatternIds": [
       "id-like-to",
       "i-wanted-to"
@@ -2802,7 +2904,7 @@
     ],
     "difficulty": 1,
     "priority": 85,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -2967,7 +3069,24 @@
         "korean": "이유는 범위를 과소평가했다는 거야."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "The reason is timing."
+      },
+      {
+        "level": 2,
+        "pattern": "The reason is that we ran out of time."
+      },
+      {
+        "level": 3,
+        "pattern": "The reason is that we ran out of time, not that the plan was wrong."
+      },
+      {
+        "level": 4,
+        "pattern": "The reason is that we ran out of time, not that the plan was wrong, so let's just extend the deadline."
+      }
+    ],
     "relatedPatternIds": [
       "thats-why",
       "its-because"
@@ -2979,7 +3098,7 @@
     ],
     "difficulty": 2,
     "priority": 80,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3141,7 +3260,24 @@
         "korean": "예전엔 이게 불가능하다고 생각했어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I used to work night shifts."
+      },
+      {
+        "level": 2,
+        "pattern": "I used to work night shifts a few years ago."
+      },
+      {
+        "level": 3,
+        "pattern": "I used to work night shifts a few years ago, but it wasn't sustainable."
+      },
+      {
+        "level": 4,
+        "pattern": "I used to work night shifts a few years ago, but it wasn't sustainable, so I switched teams."
+      }
+    ],
     "relatedPatternIds": [
       "i-used-to-be",
       "there-was-a-time-when"
@@ -3154,7 +3290,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3318,7 +3454,24 @@
         "korean": "틈틈이 그걸 작업해오고 있어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I've been working on this."
+      },
+      {
+        "level": 2,
+        "pattern": "I've been working on this for a week."
+      },
+      {
+        "level": 3,
+        "pattern": "I've been working on this for a week, and it's almost done."
+      },
+      {
+        "level": 4,
+        "pattern": "I've been working on this for a week, and it's almost done, so I should finish by Friday."
+      }
+    ],
     "relatedPatternIds": [
       "ive-been-trying-to",
       "im-working-on"
@@ -3331,7 +3484,7 @@
     ],
     "difficulty": 2,
     "priority": 75,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3496,7 +3649,24 @@
         "korean": "우리 같은 생각인 것 같아."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "It seems like it's working."
+      },
+      {
+        "level": 2,
+        "pattern": "It seems like it's working now."
+      },
+      {
+        "level": 3,
+        "pattern": "It seems like it's working now, but let's keep monitoring it."
+      },
+      {
+        "level": 4,
+        "pattern": "It seems like it's working now, but let's keep monitoring it just in case."
+      }
+    ],
     "relatedPatternIds": [
       "it-looks-like",
       "it-seems-that"
@@ -3508,7 +3678,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3670,7 +3840,24 @@
         "korean": "내가 그걸 잘 설명했는지 잘 모르겠어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I'm not sure if this works."
+      },
+      {
+        "level": 2,
+        "pattern": "I'm not sure if this works for everyone."
+      },
+      {
+        "level": 3,
+        "pattern": "I'm not sure if this works for everyone, so let's get more feedback."
+      },
+      {
+        "level": 4,
+        "pattern": "I'm not sure if this works for everyone, so let's get more feedback before we ship it."
+      }
+    ],
     "relatedPatternIds": [
       "i-dont-know-if",
       "it-depends-on"
@@ -3682,7 +3869,7 @@
     ],
     "difficulty": 2,
     "priority": 75,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3786,7 +3973,24 @@
         "korean": "상황에 따라 달라."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "It depends on the situation."
+      },
+      {
+        "level": 2,
+        "pattern": "It depends on how much time we have."
+      },
+      {
+        "level": 3,
+        "pattern": "It depends on how much time we have before the deadline."
+      },
+      {
+        "level": 4,
+        "pattern": "It depends on how much time we have before the deadline, so let's check first."
+      }
+    ],
     "relatedPatternIds": [
       "im-not-sure-if"
     ],
@@ -3797,7 +4001,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -3901,7 +4105,24 @@
         "korean": "예를 들면, 이게 내가 말하는 거야."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "For example, this happened before."
+      },
+      {
+        "level": 2,
+        "pattern": "For example, this happened last week."
+      },
+      {
+        "level": 3,
+        "pattern": "For example, this happened last week when we deployed too early."
+      },
+      {
+        "level": 4,
+        "pattern": "For example, this happened last week when we deployed too early, and we had to roll back."
+      }
+    ],
     "relatedPatternIds": [
       "for-instance",
       "lets-say"
@@ -3913,7 +4134,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4076,7 +4297,24 @@
         "korean": "그게, 어제는 됐거든."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "The thing is, I didn't know."
+      },
+      {
+        "level": 2,
+        "pattern": "The thing is, I didn't know about this."
+      },
+      {
+        "level": 3,
+        "pattern": "The thing is, I didn't know about this until today."
+      },
+      {
+        "level": 4,
+        "pattern": "The thing is, I didn't know about this until today, so I couldn't have prevented it."
+      }
+    ],
     "relatedPatternIds": [
       "what-i-mean-is",
       "basically",
@@ -4089,7 +4327,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4251,7 +4489,24 @@
         "korean": "내일까지 기다리기로 결정했어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I decided to change it."
+      },
+      {
+        "level": 2,
+        "pattern": "I decided to change it after thinking it over."
+      },
+      {
+        "level": 3,
+        "pattern": "I decided to change it after thinking it over, even though it was risky."
+      },
+      {
+        "level": 4,
+        "pattern": "I decided to change it after thinking it over, even though it was risky, because the old way wasn't working."
+      }
+    ],
     "relatedPatternIds": [
       "i-decided-not-to",
       "i-decided-that"
@@ -4264,7 +4519,7 @@
     ],
     "difficulty": 1,
     "priority": 70,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4427,7 +4682,24 @@
         "korean": "짧게 하려고 시도했어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I tried to fix it."
+      },
+      {
+        "level": 2,
+        "pattern": "I tried to fix it myself."
+      },
+      {
+        "level": 3,
+        "pattern": "I tried to fix it myself, but it didn't work."
+      },
+      {
+        "level": 4,
+        "pattern": "I tried to fix it myself, but it didn't work, so I asked for help."
+      }
+    ],
     "relatedPatternIds": [
       "i-ended-up"
     ],
@@ -4441,7 +4713,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4548,7 +4820,24 @@
         "korean": "결국 그들 말에 동의하게 됐어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I ended up asking for help."
+      },
+      {
+        "level": 2,
+        "pattern": "I ended up asking for help after an hour."
+      },
+      {
+        "level": 3,
+        "pattern": "I ended up asking for help after an hour of trying alone."
+      },
+      {
+        "level": 4,
+        "pattern": "I ended up asking for help after an hour of trying alone, and it took five minutes to solve."
+      }
+    ],
     "relatedPatternIds": [
       "i-tried-to"
     ],
@@ -4560,7 +4849,7 @@
     ],
     "difficulty": 2,
     "priority": 60,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4607,7 +4896,24 @@
         "korean": "같은 질문을 했던 게 기억나."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I remember this."
+      },
+      {
+        "level": 2,
+        "pattern": "I remember seeing this before."
+      },
+      {
+        "level": 3,
+        "pattern": "I remember seeing this before, a long time ago."
+      },
+      {
+        "level": 4,
+        "pattern": "I remember seeing this before, a long time ago, but I can't recall the details."
+      }
+    ],
     "relatedPatternIds": [
       "i-remember-when",
       "if-i-remember-correctly"
@@ -4619,7 +4925,7 @@
     ],
     "difficulty": 1,
     "priority": 55,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -4840,7 +5146,24 @@
         "korean": "지금 방식이 안 통한다는 것에 동의해."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I agree that it's risky."
+      },
+      {
+        "level": 2,
+        "pattern": "I agree that this is risky."
+      },
+      {
+        "level": 3,
+        "pattern": "I agree that this is risky, but I think it's worth it."
+      },
+      {
+        "level": 4,
+        "pattern": "I agree that this is risky, but I think it's worth it if we plan carefully."
+      }
+    ],
     "relatedPatternIds": [
       "i-agree-with",
       "i-dont-think"
@@ -4853,7 +5176,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5017,7 +5340,24 @@
         "korean": "이걸 서둘러야 한다고 생각하지 않아."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I don't think that's right."
+      },
+      {
+        "level": 2,
+        "pattern": "I don't think that's the right approach."
+      },
+      {
+        "level": 3,
+        "pattern": "I don't think that's the right approach for this case."
+      },
+      {
+        "level": 4,
+        "pattern": "I don't think that's the right approach for this case, so let's consider alternatives."
+      }
+    ],
     "relatedPatternIds": [
       "i-see-your-point-but",
       "i-agree-that"
@@ -5030,7 +5370,7 @@
     ],
     "difficulty": 1,
     "priority": 65,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5077,7 +5417,24 @@
         "korean": "예상했던 것에 비하면, 이건 꽤 괜찮아."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "Compared to before, it's better."
+      },
+      {
+        "level": 2,
+        "pattern": "Compared to last time, this went smoother."
+      },
+      {
+        "level": 3,
+        "pattern": "Compared to last time, this went smoother because we planned ahead."
+      },
+      {
+        "level": 4,
+        "pattern": "Compared to last time, this went smoother because we planned ahead, so let's keep doing that."
+      }
+    ],
     "relatedPatternIds": [
       "its-different-from",
       "the-difference-is"
@@ -5089,7 +5446,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -5309,7 +5666,24 @@
         "korean": "생각보다 점점 복잡해지고 있어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "It's getting better."
+      },
+      {
+        "level": 2,
+        "pattern": "It's getting better every day."
+      },
+      {
+        "level": 3,
+        "pattern": "It's getting better every day since we changed the process."
+      },
+      {
+        "level": 4,
+        "pattern": "It's getting better every day since we changed the process, so let's keep it up."
+      }
+    ],
     "relatedPatternIds": [
       "its-becoming",
       "it-was-getting"
@@ -5322,7 +5696,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -6008,7 +6382,24 @@
         "korean": "결국 예상보다 훨씬 좋게 됐어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "It turned out fine."
+      },
+      {
+        "level": 2,
+        "pattern": "It turned out to be a simple fix."
+      },
+      {
+        "level": 3,
+        "pattern": "It turned out to be a simple fix, much easier than expected."
+      },
+      {
+        "level": 4,
+        "pattern": "It turned out to be a simple fix, much easier than expected, so we finished early."
+      }
+    ],
     "relatedPatternIds": [
       "i-realized",
       "i-found-out"
@@ -6020,7 +6411,7 @@
     ],
     "difficulty": 2,
     "priority": 50,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -6067,7 +6458,24 @@
         "korean": "내가 한 건 작은 테스트를 작성한 거야."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "What I did was check the logs."
+      },
+      {
+        "level": 2,
+        "pattern": "What I did was check the logs first."
+      },
+      {
+        "level": 3,
+        "pattern": "What I did was check the logs first before assuming anything."
+      },
+      {
+        "level": 4,
+        "pattern": "What I did was check the logs first before assuming anything, and that's how I found it."
+      }
+    ],
     "relatedPatternIds": [
       "what-we-did-was",
       "i-figured-out"
@@ -6080,7 +6488,7 @@
     ],
     "difficulty": 2,
     "priority": 55,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -6185,7 +6593,24 @@
         "korean": "시행착오 끝에 알아냈어."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I figured out the cause."
+      },
+      {
+        "level": 2,
+        "pattern": "I figured out what was causing it."
+      },
+      {
+        "level": 3,
+        "pattern": "I figured out what was causing it after checking the logs."
+      },
+      {
+        "level": 4,
+        "pattern": "I figured out what was causing it after checking the logs carefully."
+      }
+    ],
     "relatedPatternIds": [
       "what-i-did-was",
       "i-realized"
@@ -6197,7 +6622,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -6244,7 +6669,24 @@
         "korean": "사실, 이건 생각보다 흔해."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "Actually, it's fixed."
+      },
+      {
+        "level": 2,
+        "pattern": "Actually, it's already fixed."
+      },
+      {
+        "level": 3,
+        "pattern": "Actually, it's already fixed, so no need to worry."
+      },
+      {
+        "level": 4,
+        "pattern": "Actually, it's already fixed, so no need to worry about it anymore."
+      }
+    ],
     "relatedPatternIds": [
       "to-be-honest"
     ],
@@ -6255,7 +6697,7 @@
     ],
     "difficulty": 1,
     "priority": 60,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
@@ -6525,7 +6967,24 @@
         "korean": "해결책이 이렇게 간단했다니 믿기지 않아."
       }
     ],
-    "expansions": null,
+    "expansions": [
+      {
+        "level": 1,
+        "pattern": "I can't believe it worked."
+      },
+      {
+        "level": 2,
+        "pattern": "I can't believe it actually worked."
+      },
+      {
+        "level": 3,
+        "pattern": "I can't believe it actually worked on the first try."
+      },
+      {
+        "level": 4,
+        "pattern": "I can't believe it actually worked on the first try, after all that trouble."
+      }
+    ],
     "relatedPatternIds": [
       "im-surprised",
       "im-glad"
@@ -6537,7 +6996,7 @@
     ],
     "difficulty": 1,
     "priority": 40,
-    "datasetVersion": "1.3",
+    "datasetVersion": "1.4",
     "sourceType": "curated-speaking-pattern-core"
   },
   {
