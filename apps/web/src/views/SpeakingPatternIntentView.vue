@@ -124,8 +124,8 @@ function openIntent(intent: string) {
   min-width: 6rem;
   padding: 0.6rem 0.4rem;
   border-radius: 999px;
-  border: 1px solid rgba(249, 115, 22, 0.5);
-  background: rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(0, 255, 65, 0.5);
+  background: rgba(0, 255, 65, 0.08);
   color: inherit;
   font-size: 0.75rem;
   font-weight: 600;
@@ -148,8 +148,8 @@ function openIntent(intent: string) {
   min-height: 4.5rem;
   padding: 0.85rem;
   border-radius: 14px;
-  background: rgba(249, 115, 22, 0.12);
-  border: 1px solid rgba(249, 115, 22, 0.35);
+  background: rgba(0, 255, 65, 0.12);
+  border: 1px solid rgba(0, 255, 65, 0.35);
   cursor: pointer;
 }
 .intent-label {
@@ -172,7 +172,7 @@ function openIntent(intent: string) {
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #f97316;
+  border: 1px solid #00ff41;
   background: transparent;
   color: inherit;
   cursor: pointer;

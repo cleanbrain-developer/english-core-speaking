@@ -199,15 +199,15 @@ function goHome() {
 .repeat-btn {
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(249, 115, 22, 0.5);
+  border: 1px solid rgba(0, 255, 65, 0.5);
   background: transparent;
   color: inherit;
   cursor: pointer;
   font-size: 0.85rem;
 }
 .repeat-btn.active {
-  background: rgba(249, 115, 22, 0.25);
-  border-color: #f97316;
+  background: rgba(0, 255, 65, 0.25);
+  border-color: #00ff41;
   font-weight: 600;
 }
 .next-bar {
@@ -218,8 +218,9 @@ function goHome() {
   padding: 1rem;
   border-radius: 999px;
   border: none;
-  background: #f97316;
-  color: white;
+  background: #00ff41;
+  box-shadow: 0 0 14px rgba(0, 255, 65, 0.55);
+  color: #04120a;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -231,7 +232,7 @@ function goHome() {
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #f97316;
+  border: 1px solid #00ff41;
   background: transparent;
   color: inherit;
   cursor: pointer;

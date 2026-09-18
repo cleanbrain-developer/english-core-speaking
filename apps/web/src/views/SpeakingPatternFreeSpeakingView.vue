@@ -134,8 +134,8 @@ function goHome() {
   gap: 0.5rem;
   padding: 1.1rem;
   border-radius: 14px;
-  background: rgba(249, 115, 22, 0.12);
-  border: 1px solid rgba(249, 115, 22, 0.35);
+  background: rgba(0, 255, 65, 0.12);
+  border: 1px solid rgba(0, 255, 65, 0.35);
 }
 .cue-label {
   font-size: 0.7rem;
@@ -195,8 +195,9 @@ function goHome() {
   padding: 1rem;
   border-radius: 999px;
   border: none;
-  background: #f97316;
-  color: white;
+  background: #00ff41;
+  box-shadow: 0 0 14px rgba(0, 255, 65, 0.55);
+  color: #04120a;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;

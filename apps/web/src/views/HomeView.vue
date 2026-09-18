@@ -287,15 +287,16 @@ watch(
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
-  background: #f97316;
-  color: white;
+  background: #00ff41;
+  box-shadow: 0 0 14px rgba(0, 255, 65, 0.55);
+  color: #04120a;
   text-decoration: none;
   font-weight: 600;
 }
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #f97316;
+  border: 1px solid #00ff41;
   background: transparent;
   color: inherit;
   cursor: pointer;
@@ -335,8 +336,8 @@ button {
   gap: 0.35rem;
   padding: 1rem;
   border-radius: 14px;
-  background: rgba(249, 115, 22, 0.15);
-  border: 1px solid rgba(249, 115, 22, 0.4);
+  background: rgba(0, 255, 65, 0.15);
+  border: 1px solid rgba(0, 255, 65, 0.4);
   text-align: left;
 }
 .mode-label {
@@ -358,8 +359,8 @@ button {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 14px;
-  background: rgba(249, 115, 22, 0.15);
-  border: 1px solid rgba(249, 115, 22, 0.45);
+  background: rgba(0, 255, 65, 0.15);
+  border: 1px solid rgba(0, 255, 65, 0.45);
   cursor: pointer;
   text-align: left;
 }
@@ -393,8 +394,8 @@ button {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 14px;
-  background: rgba(249, 115, 22, 0.15);
-  border: 1px solid rgba(249, 115, 22, 0.45);
+  background: rgba(0, 255, 65, 0.15);
+  border: 1px solid rgba(0, 255, 65, 0.45);
   cursor: pointer;
   text-align: left;
 }
@@ -402,8 +403,8 @@ button {
   align-self: flex-start;
   padding: 0.45rem 1rem;
   border-radius: 999px;
-  border: 1px solid #f97316;
-  background: rgba(249, 115, 22, 0.25);
+  border: 1px solid #00ff41;
+  background: rgba(0, 255, 65, 0.25);
   color: inherit;
   font-size: 0.8rem;
   font-weight: 600;

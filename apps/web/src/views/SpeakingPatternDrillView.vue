@@ -270,7 +270,8 @@ const randomFilledSentence = computed(() => {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
-  color: #f97316;
+  color: #00ff41;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
 }
 .example-text {
   opacity: 0.75;
@@ -286,7 +287,7 @@ const randomFilledSentence = computed(() => {
   align-self: flex-start;
   padding: 0.7rem 1.4rem;
   border-radius: 999px;
-  border: 1px solid #f97316;
+  border: 1px solid #00ff41;
   background: transparent;
   color: inherit;
   cursor: pointer;
@@ -299,8 +300,8 @@ const randomFilledSentence = computed(() => {
 .slot-chip {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(249, 115, 22, 0.5);
-  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(0, 255, 65, 0.5);
+  background: rgba(0, 255, 65, 0.1);
   color: inherit;
   font-size: 0.85rem;
   cursor: pointer;
@@ -320,8 +321,8 @@ const randomFilledSentence = computed(() => {
   margin-right: 0.5rem;
   padding: 0.1rem 0.5rem;
   border-radius: 6px;
-  background: rgba(249, 115, 22, 0.2);
-  color: #f97316;
+  background: rgba(0, 255, 65, 0.2);
+  color: #00ff41;
   font-size: 0.7rem;
   font-weight: 700;
 }
@@ -333,8 +334,9 @@ const randomFilledSentence = computed(() => {
   padding: 1rem;
   border-radius: 999px;
   border: none;
-  background: #f97316;
-  color: white;
+  background: #00ff41;
+  box-shadow: 0 0 14px rgba(0, 255, 65, 0.55);
+  color: #04120a;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -346,7 +348,7 @@ const randomFilledSentence = computed(() => {
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid #f97316;
+  border: 1px solid #00ff41;
   background: transparent;
   color: inherit;
   cursor: pointer;

@@ -202,7 +202,7 @@ function startFullDrill(mode: DrillMode) {
 .size-picker button {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid rgba(249, 115, 22, 0.4);
+  border: 1px solid rgba(0, 255, 65, 0.4);
   background: transparent;
   color: inherit;
   font-size: 0.75rem;
@@ -210,8 +210,8 @@ function startFullDrill(mode: DrillMode) {
   opacity: 0.7;
 }
 .size-picker button.active {
-  background: rgba(249, 115, 22, 0.2);
-  border-color: #f97316;
+  background: rgba(0, 255, 65, 0.2);
+  border-color: #00ff41;
   opacity: 1;
   font-weight: 600;
 }
@@ -225,8 +225,8 @@ function startFullDrill(mode: DrillMode) {
   min-width: 6.5rem;
   padding: 0.7rem 0.4rem;
   border-radius: 999px;
-  border: 1px solid #f97316;
-  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid #00ff41;
+  background: rgba(0, 255, 65, 0.15);
   color: inherit;
   font-weight: 600;
   font-size: 0.78rem;
